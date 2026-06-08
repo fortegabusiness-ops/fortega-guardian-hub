@@ -126,20 +126,6 @@ function ContactPage() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-ink py-16">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <h2 className="font-display text-2xl font-bold text-foreground">Serving organizations across Canada</h2>
-          <p className="mt-2 max-w-2xl text-sm text-muted-foreground">From our operations bases, we deliver projects and support coast to coast.</p>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-border">
-            <iframe
-              title="Service area map"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-141.0,41.7,-52.6,70.0&layer=mapnik"
-              className="h-[420px] w-full bg-surface"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
