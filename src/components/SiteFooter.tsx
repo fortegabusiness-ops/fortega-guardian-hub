@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Linkedin, Facebook, Twitter, Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 
 const services = [
   "Consulting & Professional Services",
@@ -29,18 +29,6 @@ export function SiteFooter() {
               A trusted, technology-driven security partner delivering integrated electronic
               security, monitoring, automation and cyber security across Canada.
             </p>
-            <div className="mt-6 flex items-center gap-3">
-              {[Linkedin, Twitter, Facebook].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="grid h-9 w-9 place-items-center rounded-md border border-border text-muted-foreground transition-colors hover:border-brand-glow hover:text-foreground"
-                  aria-label="social link"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="lg:col-span-2">
