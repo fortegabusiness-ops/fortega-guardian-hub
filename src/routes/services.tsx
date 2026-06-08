@@ -1,0 +1,103 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock, ArrowRight,
+} from "lucide-react";
+
+export const Route = createFileRoute("/services")({
+  head: () => ({
+    meta: [
+      { title: "Security Services — CCTV, Access, Monitoring, Cyber | Fortega" },
+      { name: "description", content: "Integrated security services across Canada: consulting, CCTV, alarms, access control, remote monitoring, guards, smart building and cyber security." },
+      { property: "og:title", content: "Fortega Security Services" },
+      { property: "og:description", content: "Consulting, CCTV, alarms, access control, monitoring, guards, automation and cyber security." },
+      { property: "og:url", content: "/services" },
+    ],
+    links: [{ rel: "canonical", href: "/services" }],
+  }),
+  component: ServicesPage,
+});
+
+type ServiceBlock = {
+  id: string;
+  icon: typeof Search;
+  title: string;
+  desc: string;
+  bullets: string[];
+  cta: string;
+};
+
+const blocks: ServiceBlock[] = [
+  { id: "consulting", icon: Search, title: "Consulting & Professional Services", desc: "Independent expertise to design, validate and optimize your security program.", bullets: ["Security audits", "Risk assessments", "System design", "Compliance consulting", "Project management"], cta: "Schedule a Consultation" },
+  { id: "cctv", icon: Video, title: "CCTV & Video Surveillance Systems", desc: "Modern video platforms that deliver clarity, intelligence and operational insight.", bullets: ["Camera installation", "AI video analytics", "Remote viewing", "Video management systems", "Cloud surveillance"], cta: "Request a Site Assessment" },
+  { id: "intrusion", icon: Bell, title: "Intrusion & Burglar Alarm Systems", desc: "Reliable intrusion detection for commercial and industrial environments.", bullets: ["Commercial alarms", "Motion detection", "Monitoring systems", "Panic systems", "Environmental sensors"], cta: "Protect Your Property" },
+  { id: "access", icon: KeyRound, title: "Access Control Systems", desc: "Manage who goes where — across one site or a national portfolio.", bullets: ["Card access", "Mobile credentials", "Visitor management", "Biometric systems", "Cloud access control"], cta: "Secure Access Now" },
+  { id: "remote", icon: Eye, title: "Remote Guarding & Monitoring", desc: "24/7 eyes on your sites with intelligent verification and intervention.", bullets: ["Live monitoring", "Virtual patrols", "Alarm verification", "Remote intervention"], cta: "Learn About Remote Monitoring" },
+  { id: "guards", icon: UserCheck, title: "Security Guard Services", desc: "Licensed, trained personnel for on-site presence and response.", bullets: ["On-site guards", "Mobile patrol", "Event security", "Concierge security"], cta: "Request Security Personnel" },
+  { id: "smart", icon: Building2, title: "Smart Building & Automation", desc: "Connected buildings that are safer, more efficient and easier to operate.", bullets: ["Building automation", "Smart lighting", "Energy control", "IoT integration"], cta: "Modernize Your Building" },
+  { id: "cyber", icon: Lock, title: "Cyber Security", desc: "Protect networks, endpoints and operations from evolving cyber threats.", bullets: ["Network security", "Threat monitoring", "Vulnerability assessments", "Endpoint protection", "Incident response"], cta: "Strengthen Cyber Security" },
+];
+
+function ServicesPage() {
+  return (
+    <>
+      <section className="relative isolate overflow-hidden border-b border-border">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,oklch(0.55_0.18_252/0.18),transparent_60%)]" />
+        <div className="mx-auto max-w-7xl px-4 py-24 md:px-8 md:py-32">
+          <span className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-glow">Services</span>
+          <h1 className="mt-4 max-w-4xl font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl">
+            Integrated security services. Engineered end-to-end.
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+            From consulting to cyber, Fortega delivers every layer of modern enterprise security
+            under a single, accountable team.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-2">
+            {blocks.map((b) => (
+              <a key={b.id} href={`#${b.id}`} className="rounded-full border border-border bg-surface/60 px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-brand-glow/60 hover:text-foreground">
+                {b.title.replace(" & ", " · ").split(" Systems")[0]}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="divide-y divide-border">
+        {blocks.map((b, i) => (
+          <ServiceSection key={b.id} block={b} flip={i % 2 === 1} />
+        ))}
+      </div>
+    </>
+  );
+}
+
+function ServiceSection({ block, flip }: { block: ServiceBlock; flip: boolean }) {
+  const { id, icon: Icon, title, desc, bullets, cta } = block;
+  return (
+    <section id={id} className={`scroll-mt-24 py-20 md:py-24 ${flip ? "bg-ink" : "bg-background"}`}>
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 md:px-8 lg:grid-cols-12 lg:items-center">
+        <div className={`lg:col-span-5 ${flip ? "lg:order-2" : ""}`}>
+          <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-brand to-brand-glow text-brand-foreground shadow-[0_12px_40px_-12px_var(--brand-glow)]">
+            <Icon className="h-6 w-6" />
+          </div>
+          <h2 className="mt-6 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">{title}</h2>
+          <p className="mt-4 text-muted-foreground">{desc}</p>
+          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-brand to-brand-glow px-6 py-3.5 text-sm font-semibold text-brand-foreground">
+            {cta} <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <div className={`lg:col-span-7 ${flip ? "lg:order-1" : ""}`}>
+          <ul className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
+            {bullets.map((b) => (
+              <li key={b} className="flex items-center gap-3 bg-surface p-5 text-sm text-foreground">
+                <span className="grid h-7 w-7 flex-none place-items-center rounded-md bg-brand/20 text-brand-glow">
+                  <Icon className="h-3.5 w-3.5" />
+                </span>
+                {b}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
