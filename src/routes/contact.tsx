@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import { Mail, Phone, MapPin, Clock, AlertTriangle, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -119,21 +119,9 @@ function ContactPage() {
 
           <aside className="space-y-5 lg:col-span-5">
             <InfoCard icon={Phone} title="Call Us" lines={["1-800-FORTEGA", "Sales & support"]} />
-            <InfoCard icon={Mail} title="Email" lines={["info@fortega.ca", "sales@fortega.ca"]} />
+            <InfoCard icon={Mail} title="Email" lines={["info@fortega.ca"]} />
             <InfoCard icon={MapPin} title="Service Area" lines={["Canada-wide coverage", "All provinces and territories"]} />
             <InfoCard icon={Clock} title="Business Hours" lines={["Mon–Fri · 8:00–18:00 ET", "Monitoring & support 24/7"]} />
-            <div className="rounded-2xl border border-destructive/40 bg-destructive/10 p-6">
-              <div className="flex items-start gap-3">
-                <AlertTriangle className="mt-0.5 h-5 w-5 flex-none text-destructive" />
-                <div>
-                  <h3 className="font-display text-base font-semibold text-foreground">24/7 Emergency Line</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">For active incidents, alarm verification, or critical system outages.</p>
-                  <a href="tel:18003678342" className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-foreground">
-                    Call 1-800-FORTEGA <ArrowRight className="h-4 w-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
           </aside>
         </div>
       </section>
