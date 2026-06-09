@@ -64,7 +64,7 @@ export function SiteFooter() {
             <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-foreground">Contact</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-3"><MapPin className="mt-0.5 h-4 w-4 text-brand-glow" /> Serving all of Canada</li>
-              <li className="flex gap-3"><Phone className="mt-0.5 h-4 w-4 text-brand-glow" /> 1-800-FORTEGA</li>
+              <li className="flex gap-3"><Phone className="mt-0.5 h-4 w-4 text-brand-glow" /> (888) 869-1679</li>
               <li className="flex gap-3"><Mail className="mt-0.5 h-4 w-4 text-brand-glow" /> info@fortega.ca</li>
             </ul>
             <Link
