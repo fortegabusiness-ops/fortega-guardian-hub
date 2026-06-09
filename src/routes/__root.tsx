@@ -82,11 +82,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Fortega — Integrated Security Solutions for Modern Businesses" },
       { name: "description", content: "Fortega delivers advanced electronic security, CCTV, access control, monitoring, automation and cyber security across Canada." },
       { name: "author", content: "Fortega" },
-      { property: "og:title", content: "Fortega — Integrated Security Solutions" },
-      { property: "og:description", content: "Electronic security, monitoring, automation and cyber security across Canada." },
+      { property: "og:title", content: "Fortega — Integrated Security Solutions for Modern Businesses" },
+      { property: "og:description", content: "Fortega delivers advanced electronic security, CCTV, access control, monitoring, automation and cyber security across Canada." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Fortega" },
+      { name: "twitter:title", content: "Fortega — Integrated Security Solutions for Modern Businesses" },
+      { name: "twitter:description", content: "Fortega delivers advanced electronic security, CCTV, access control, monitoring, automation and cyber security across Canada." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f1ee9735-0d6c-4d9f-85e1-bb0cba2c0038/id-preview-241acf5a--eb38f20d-f359-421d-b007-119c82fc3a0c.lovable.app-1781040321451.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f1ee9735-0d6c-4d9f-85e1-bb0cba2c0038/id-preview-241acf5a--eb38f20d-f359-421d-b007-119c82fc3a0c.lovable.app-1781040321451.png" },
     ],
     links: [
       {
