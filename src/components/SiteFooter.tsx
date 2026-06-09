@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const services = [
   "Consulting & Professional Services",
@@ -19,10 +19,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-brand to-brand-glow">
-                <ShieldCheck className="h-5 w-5 text-brand-foreground" strokeWidth={2.4} />
-              </span>
+            <div className="flex items-center">
               <span className="font-display text-xl font-bold tracking-[0.18em] text-foreground">FORTEGA</span>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
