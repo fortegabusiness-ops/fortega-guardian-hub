@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, ShieldCheck } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -30,9 +30,6 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:h-20 md:px-8">
         <Link to="/" className="group flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-brand to-brand-glow shadow-[0_0_24px_-6px_var(--brand-glow)]">
-            <ShieldCheck className="h-5 w-5 text-brand-foreground" strokeWidth={2.4} />
-          </span>
           <span className="font-display text-xl font-bold tracking-[0.18em] text-foreground">
             FORTEGA
           </span>
