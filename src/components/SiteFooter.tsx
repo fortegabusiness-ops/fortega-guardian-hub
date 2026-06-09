@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/fortega-logo-new.png.asset.json";
 
 const services = [
   "Consulting & Professional Services",
@@ -20,7 +21,7 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <div className="flex items-center">
-              <span className="font-display text-xl font-bold tracking-[0.18em] text-foreground">FORTEGA</span>
+              <img src={logo.url} alt="Fortega" className="h-10 w-auto" />
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               A trusted, technology-driven security partner delivering integrated electronic
