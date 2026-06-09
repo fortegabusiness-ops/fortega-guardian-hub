@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/fortega-logo-new.png.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -30,9 +31,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:h-20 md:px-8">
         <Link to="/" className="group flex items-center gap-2.5">
-          <span className="font-display text-xl font-bold tracking-[0.18em] text-foreground">
-            FORTEGA
-          </span>
+          <img src={logo.url} alt="Fortega" className="h-8 w-auto md:h-10" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
