@@ -89,6 +89,13 @@ function ServicesPage() {
           <ServiceSection key={b.id} block={b} flip={i % 2 === 1} />
         ))}
       </div>
+
+      <FAQSection
+        eyebrow="FAQ"
+        title="Security services — answered"
+        sub="Common questions on integrated security, monitoring, access control and cyber."
+        faqs={servicesFaqs}
+      />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { z } from "zod";
 import { Mail, Phone, MapPin, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useServerFn } from "@tanstack/react-start";
 import { submitContact } from "@/lib/contact.functions";
+import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -15,6 +16,21 @@ export const Route = createFileRoute("/contact")({
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
+    scripts: [
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]),
+      ),
+      jsonLd({
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        url: `${SITE_URL}/contact`,
+        name: "Contact Fortega",
+        mainEntity: { "@id": `${SITE_URL}/#organization` },
+      }),
+    ],
   }),
   component: ContactPage,
 });
