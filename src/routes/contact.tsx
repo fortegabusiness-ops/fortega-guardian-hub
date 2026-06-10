@@ -21,7 +21,6 @@ export const Route = createFileRoute("/contact")({
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
-  company: z.string().trim().min(1, "Company is required").max(120),
   email: z.string().trim().email("Valid email required").max(255),
   phone: z.string().trim().min(7, "Phone is required").max(30),
   service: z.string().min(1, "Select a service"),
@@ -92,7 +91,7 @@ function ContactPage() {
           <div className="lg:col-span-7">
             <div className="rounded-2xl border border-border bg-surface p-6 md:p-10">
               <h2 className="font-display text-2xl font-bold text-foreground">Request a Consultation</h2>
-              <p className="mt-2 text-sm text-muted-foreground">All fields required. We'll never share your information.</p>
+              <p className="mt-2 text-sm text-muted-foreground">We'll never share your information.</p>
 
               {submitted ? (
                 <div className="mt-8 flex items-start gap-3 rounded-lg border border-brand-glow/40 bg-brand/10 p-5 text-sm text-foreground">
@@ -105,7 +104,6 @@ function ContactPage() {
               ) : (
                 <form onSubmit={onSubmit} className="mt-8 grid gap-5 sm:grid-cols-2" noValidate>
                   <Field label="Full Name" name="name" error={errors.name} />
-                  <Field label="Company" name="company" error={errors.company} />
                   <Field label="Email" name="email" type="email" error={errors.email} />
                   <Field label="Phone" name="phone" type="tel" error={errors.phone} />
                   <div className="sm:col-span-2">
