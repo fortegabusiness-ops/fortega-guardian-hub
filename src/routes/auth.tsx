@@ -17,7 +17,6 @@ export const Route = createFileRoute("/auth")({
 
 function AuthPage() {
   const navigate = useNavigate();
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -32,20 +31,9 @@ function AuthPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      if (mode === "signup") {
-        const { error } = await supabase.auth.signUp({
-          email,
-          password,
-          options: { emailRedirectTo: window.location.origin + "/admin/blog" },
-        });
-        if (error) throw error;
-        toast.success("Account created. You can sign in now.");
-        setMode("signin");
-      } else {
-        const { error } = await supabase.auth.signInWithPassword({ email, password });
-        if (error) throw error;
-        navigate({ to: "/admin/blog" });
-      }
+      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) throw error;
+      navigate({ to: "/admin/blog" });
     } catch (err: any) {
       toast.error(err?.message ?? "Authentication failed");
     } finally {
@@ -71,7 +59,7 @@ function AuthPage() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4 pt-20">
       <div className="w-full max-w-md rounded-2xl border border-border bg-card p-8 shadow-xl">
         <h1 className="text-2xl font-bold tracking-tight text-foreground">
-          {mode === "signin" ? "Sign in" : "Create account"}
+          Sign in
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
           Admin access for Fortega blog management.
@@ -124,16 +112,9 @@ function AuthPage() {
             disabled={loading}
             className="w-full rounded-md bg-gradient-to-r from-brand to-brand-glow px-4 py-2.5 text-sm font-semibold text-brand-foreground transition hover:-translate-y-0.5 disabled:opacity-50"
           >
-            {loading ? "Please wait…" : mode === "signin" ? "Sign in" : "Sign up"}
+            {loading ? "Please wait…" : "Sign in"}
           </button>
         </form>
-
-        <button
-          onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
-          className="mt-4 w-full text-center text-xs text-muted-foreground hover:text-foreground"
-        >
-          {mode === "signin" ? "Need an account? Sign up" : "Have an account? Sign in"}
-        </button>
 
         <div className="mt-6 text-center text-xs text-muted-foreground">
           <Link to="/" className="hover:text-foreground">← Back to site</Link>
