@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
 import { Mail, Phone, MapPin, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
+import { useServerFn } from "@tanstack/react-start";
+import { submitContact } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -41,8 +43,11 @@ const services = [
 function ContactPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+  const submit = useServerFn(submitContact);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const data = Object.fromEntries(form.entries());
@@ -54,7 +59,16 @@ function ContactPage() {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setServerError(null);
+    setSending(true);
+    try {
+      await submit({ data: result.data });
+      setSubmitted(true);
+    } catch (err) {
+      setServerError(err instanceof Error ? err.message : "Failed to send. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -108,9 +122,10 @@ function ContactPage() {
                     {errors.message && <p className="mt-1.5 text-xs text-destructive">{errors.message}</p>}
                   </div>
                   <div className="sm:col-span-2">
-                    <button type="submit" className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-brand to-brand-glow px-6 py-3.5 text-sm font-semibold text-brand-foreground sm:w-auto">
-                      Send Request <ArrowRight className="h-4 w-4" />
+                    <button type="submit" disabled={sending} className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-brand to-brand-glow px-6 py-3.5 text-sm font-semibold text-brand-foreground disabled:opacity-60 sm:w-auto">
+                      {sending ? "Sending…" : <>Send Request <ArrowRight className="h-4 w-4" /></>}
                     </button>
+                    {serverError && <p className="mt-3 text-xs text-destructive">{serverError}</p>}
                   </div>
                 </form>
               )}
