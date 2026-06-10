@@ -1,0 +1,53 @@
+# Fortega
+
+> Fortega is a Canadian electronic security company delivering integrated physical security, monitoring, automation and cyber security solutions across Canada.
+
+Fortega protects people, property and operations through intelligent, integrated systems — combining best-in-class hardware, software and human expertise. We serve corporations, institutions and critical infrastructure operators from coast to coast with a single, accountable team.
+
+Headquartered in Canada, Fortega delivers end-to-end security programs that span consulting, design, installation, monitoring and ongoing support. Our services include CCTV and video surveillance, intrusion alarms, access control, remote guarding, security guards, smart building automation and cyber security. Every program is tailored to the operational rhythm, threat landscape and compliance requirements of the industries we serve.
+
+Fortega is committed to transparency and ethical operations. Our AI usage is limited to operational efficiency and security analytics; we do not train generative AI models on client data. All personal data is handled in accordance with Canadian privacy legislation.
+
+## Pages
+
+- [Home](/): Fortega — integrated security solutions across Canada
+- [About](/about): Company overview, mission, vision and core values
+- [Services](/services): Full list of security services from consulting to cyber
+- [Contact](/contact): Request a security consultation or site assessment
+- [Locations](/locations): Service areas and cities across Canada
+- [Industries](/industries): Industry-specific security programs
+- [Blog](/blog): Security insights, threat updates and best practices
+
+## Services
+
+- [Consulting & Professional Services](/services#consulting): Security audits, risk assessments and compliance consulting
+- [CCTV & Video Surveillance](/services#cctv): Camera installation, AI analytics and remote viewing
+- [Intrusion & Burglar Alarms](/services#intrusion): Commercial alarms, motion detection and 24/7 monitoring
+- [Access Control Systems](/services#access): Card access, mobile credentials and visitor management
+- [Remote Guarding & Monitoring](/services#remote): Live virtual patrols, alarm verification and remote intervention
+- [Security Guard Services](/services#guards): Licensed on-site guards, mobile patrol and event security
+- [Smart Building & Automation](/services#smart): Building automation, smart lighting and IoT integration
+- [Cyber Security](/services#cyber): Network defense, threat monitoring, endpoint protection and incident response
+
+## Industries
+
+- [Commercial Real Estate](/industries/commercial-real-estate): Portfolio-wide standards for office towers and mixed-use buildings
+- [Retail](/industries/retail): Loss prevention, POS integration and shoplifting deterrence
+- [Healthcare](/industries/healthcare): Patient safety, pharmacy security and HIPAA-aligned programs
+- [Industrial & Manufacturing](/industries/industrial-manufacturing): Perimeter protection, hazardous-area safety and OT security
+- [Logistics & Warehousing](/industries/logistics-warehousing): Yard management, cargo theft prevention and inventory protection
+- [Financial Services](/industries/financial-services): Bank branch security, ATM protection and fraud deterrence
+- [Government](/industries/government): Federal and municipal facility security with clearance-ready teams
+- [Education](/industries/education): Campus safety, emergency notification and after-hours protection
+
+## Optional
+
+- [Construction](/industries/construction): Site security, equipment protection and vandalism prevention
+- [Hospitality](/industries/hospitality): Guest safety, back-of-house protection and loss prevention
+- [Automotive Dealerships](/industries/automotive-dealerships): Lot protection, key control and showroom security
+- [Energy & Utilities](/industries/energy-utilities): Critical infrastructure protection and NERC-aligned monitoring
+- [Data Centers](/industries/data-centers): Layered physical security for colocation and cloud facilities
+- [Transportation & Transit](/industries/transportation-transit): Fare-evasion deterrence, platform safety and depot security
+- [Sports & Entertainment](/industries/sports-entertainment): Crowd management, venue access and athlete protection
+- [Cannabis](/industries/cannabis): Compliance-first security for licensed producers and retailers
+- [Multi-Family Residential](/industries/multi-family-residential): Resident safety, amenity protection and package theft prevention
