@@ -249,6 +249,14 @@ export async function createAIDraft(): Promise<{ id: string; slug: string }> {
 
   const autoPublishAt = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
 
+  // Try to generate a hero/OG image. Failures must NOT block draft creation.
+  let heroImageUrl: string | null = null;
+  try {
+    heroImageUrl = await generateAndStoreHeroImage(slug, draft.title, draft.topic);
+  } catch (e) {
+    console.error("[createAIDraft] hero image generation failed", e);
+  }
+
   const { data, error } = await supabaseAdmin
     .from("blog_posts")
     .insert({
@@ -262,6 +270,7 @@ export async function createAIDraft(): Promise<{ id: string; slug: string }> {
       status: "draft",
       ai_generated: true,
       auto_publish_at: autoPublishAt,
+      hero_image_url: heroImageUrl,
     })
     .select("id,slug")
     .single();
@@ -274,4 +283,70 @@ export const generateDraftNow = createServerFn({ method: "POST" })
   .handler(async ({ context }) => {
     await assertAdmin(context.supabase, context.userId);
     return await createAIDraft();
+  });
+
+// ---------- Hero/OG image generation ----------
+
+async function generateAndStoreHeroImage(
+  slug: string,
+  title: string,
+  topic: string,
+): Promise<string | null> {
+  const key = process.env.LOVABLE_API_KEY;
+  if (!key) return null;
+
+  const imgPrompt = `Editorial cover image for a Canadian commercial security blog article titled "${title}"${topic ? ` (topic: ${topic})` : ""}. Modern, professional, cinematic lighting, subtle blue and orange accents. Subject should visually reference the article topic (e.g., warehouse, CCTV camera, access control reader, urban storefront at dusk, construction site fencing, control room monitors). No text, no logos, no watermarks, no human faces in focus. 16:9 wide composition, photorealistic.`;
+
+  const res = await fetch("https://ai.gateway.lovable.dev/v1/images/generations", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${key}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: "google/gemini-2.5-flash-image",
+      prompt: imgPrompt,
+      size: "1536x1024",
+    }),
+  });
+  if (!res.ok) {
+    const t = await res.text().catch(() => "");
+    throw new Error(`image gen ${res.status}: ${t.slice(0, 300)}`);
+  }
+  const json: any = await res.json();
+  const b64: string | undefined = json?.data?.[0]?.b64_json;
+  if (!b64) throw new Error("image gen returned no b64_json");
+
+  const bytes = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+  const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+  const path = `${slug}.png`;
+  const { error: upErr } = await supabaseAdmin.storage
+    .from("blog-images")
+    .upload(path, bytes, { contentType: "image/png", upsert: true });
+  if (upErr) throw new Error(upErr.message);
+
+  return `https://fortega.ca/api/public/og/${slug}.png`;
+}
+
+export const regenerateHeroImage = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
+  .handler(async ({ data, context }) => {
+    await assertAdmin(context.supabase, context.userId);
+    const { data: row, error } = await context.supabase
+      .from("blog_posts")
+      .select("id,slug,title,topic")
+      .eq("id", data.id)
+      .maybeSingle();
+    if (error) throw new Error(error.message);
+    if (!row) throw new Error("Not found");
+    const url = await generateAndStoreHeroImage(row.slug, row.title, row.topic ?? "");
+    if (!url) throw new Error("Image generation unavailable");
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { error: updErr } = await supabaseAdmin
+      .from("blog_posts")
+      .update({ hero_image_url: url })
+      .eq("id", data.id);
+    if (updErr) throw new Error(updErr.message);
+    return { ok: true, hero_image_url: url };
   });
