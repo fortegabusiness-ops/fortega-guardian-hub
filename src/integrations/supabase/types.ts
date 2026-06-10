@@ -244,6 +244,7 @@ export type Database = {
         }[]
       }
       setup_blog_cron: { Args: never; Returns: string }
+      verify_cron_secret: { Args: { _provided: string }; Returns: boolean }
     }
     Enums: {
       app_role: "admin" | "editor" | "user"
