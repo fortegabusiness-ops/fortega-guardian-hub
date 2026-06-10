@@ -67,7 +67,7 @@ export const Route = createFileRoute("/industries/$industry")({
 });
 
 function IndustryPage() {
-  const { industry } = Route.useLoaderData();
+  const { industry } = Route.useLoaderData() as { industry: Industry };
 
   return (
     <>
