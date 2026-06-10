@@ -24,6 +24,18 @@ export const Route = createFileRoute("/services")({
       { property: "og:url", content: "/services" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
+    scripts: [
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/services" },
+        ]),
+      ),
+      jsonLd(faqSchema(servicesFaqs)),
+      ...blocks.map((b) =>
+        jsonLd(serviceSchema({ name: b.title, description: b.desc, slug: b.id })),
+      ),
+    ],
   }),
   component: ServicesPage,
 });
