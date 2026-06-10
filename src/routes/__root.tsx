@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { WebMcpProvider } from "@/components/WebMcpProvider";
 
 function NotFoundComponent() {
   return (
@@ -128,6 +129,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col bg-background font-sans text-foreground antialiased">
+        <WebMcpProvider />
         <SiteHeader />
         <main className="flex-1 pt-16 md:pt-20">
           <Outlet />
