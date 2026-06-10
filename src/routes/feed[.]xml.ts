@@ -23,7 +23,7 @@ export const Route = createFileRoute("/feed.xml")({
         const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
         const { data: posts, error } = await supabaseAdmin
           .from("blog_posts")
-          .select("slug,title,excerpt,content,hero_image_url,published_at,topic")
+          .select("slug,title,excerpt,hero_image_url,published_at,topic")
           .eq("status", "published")
           .order("published_at", { ascending: false })
           .limit(50);
