@@ -14,6 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
+      blog_posts: {
+        Row: {
+          ai_generated: boolean
+          auto_publish_at: string | null
+          content_md: string
+          created_at: string
+          excerpt: string | null
+          hero_image_url: string | null
+          id: string
+          published_at: string | null
+          reviewed_at: string | null
+          reviewed_by: string | null
+          seo_description: string | null
+          seo_title: string | null
+          slug: string
+          status: string
+          title: string
+          topic: string | null
+          updated_at: string
+        }
+        Insert: {
+          ai_generated?: boolean
+          auto_publish_at?: string | null
+          content_md?: string
+          created_at?: string
+          excerpt?: string | null
+          hero_image_url?: string | null
+          id?: string
+          published_at?: string | null
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          seo_description?: string | null
+          seo_title?: string | null
+          slug: string
+          status?: string
+          title: string
+          topic?: string | null
+          updated_at?: string
+        }
+        Update: {
+          ai_generated?: boolean
+          auto_publish_at?: string | null
+          content_md?: string
+          created_at?: string
+          excerpt?: string | null
+          hero_image_url?: string | null
+          id?: string
+          published_at?: string | null
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          seo_description?: string | null
+          seo_title?: string | null
+          slug?: string
+          status?: string
+          title?: string
+          topic?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       email_send_log: {
         Row: {
           created_at: string
@@ -125,6 +185,27 @@ export type Database = {
         }
         Relationships: []
       }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -137,6 +218,13 @@ export type Database = {
       enqueue_email: {
         Args: { payload: Json; queue_name: string }
         Returns: number
+      }
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
       }
       move_to_dlq: {
         Args: {
@@ -157,7 +245,7 @@ export type Database = {
       }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "editor" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -284,6 +372,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "editor", "user"],
+    },
   },
 } as const
