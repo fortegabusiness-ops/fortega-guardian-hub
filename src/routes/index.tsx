@@ -27,6 +27,11 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      jsonLd(localBusinessSchema),
+      jsonLd(breadcrumbSchema([{ name: "Home", path: "/" }])),
+      jsonLd(faqSchema(homeFaqs)),
+    ],
   }),
   component: Index,
 });
@@ -281,6 +286,13 @@ function Index() {
           </Link>
         </div>
       </section>
+
+      <FAQSection
+        eyebrow="FAQ"
+        title="Common questions about Fortega"
+        sub="Quick answers about our services, coverage and how we work."
+        faqs={homeFaqs}
+      />
     </>
   );
 }
