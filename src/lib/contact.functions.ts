@@ -3,7 +3,6 @@ import { z } from "zod";
 
 const schema = z.object({
   name: z.string().trim().min(1).max(100),
-  company: z.string().trim().min(1).max(120),
   email: z.string().trim().email().max(255),
   phone: z.string().trim().min(7).max(30),
   service: z.string().min(1).max(120),
@@ -37,18 +36,17 @@ export const submitContact = createServerFn({ method: "POST" })
         .insert({ token: unsubscribeToken, email: RECIPIENT });
     }
 
-    const subject = `New contact request from ${data.name} (${data.company})`;
+    const subject = `New contact request from ${data.name}`;
     const html = `
       <h2>New Contact Request</h2>
       <p><strong>Name:</strong> ${esc(data.name)}</p>
-      <p><strong>Company:</strong> ${esc(data.company)}</p>
       <p><strong>Email:</strong> ${esc(data.email)}</p>
       <p><strong>Phone:</strong> ${esc(data.phone)}</p>
       <p><strong>Service:</strong> ${esc(data.service)}</p>
       <p><strong>Message:</strong></p>
       <p>${esc(data.message).replace(/\n/g, "<br/>")}</p>
     `;
-    const text = `New Contact Request\n\nName: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nPhone: ${data.phone}\nService: ${data.service}\n\nMessage:\n${data.message}`;
+    const text = `New Contact Request\n\nName: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nService: ${data.service}\n\nMessage:\n${data.message}`;
 
     const payload = {
       to: RECIPIENT,
