@@ -27,7 +27,7 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes/[.]well-known.oauth-protected-resource'
 import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
 import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
-import { Route as ApiPublicSetupCronOnceRouteImport } from './routes/api/public/_setup-cron-once'
+import { Route as ApiPublicSetupCronOnceRouteImport } from './routes/api/public/setup-cron-once'
 import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[.]well-known.mcp.server-card[.]json'
 import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './routes/[.]well-known.agent-skills.index[.]json'
 import { Route as AuthenticatedAdminBlogIndexRouteImport } from './routes/_authenticated/admin.blog.index'
@@ -129,8 +129,8 @@ const DotwellKnownApiCatalogRoute = DotwellKnownApiCatalogRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicSetupCronOnceRoute = ApiPublicSetupCronOnceRouteImport.update({
-  id: '/api/public/_setup-cron-once',
-  path: '/api/public',
+  id: '/api/public/setup-cron-once',
+  path: '/api/public/setup-cron-once',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DotwellKnownMcpServerCardDotjsonRoute =
@@ -201,7 +201,7 @@ export interface FileRoutesByFullPath {
   '/locations/': typeof LocationsIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
-  '/api/public': typeof ApiPublicSetupCronOnceRoute
+  '/api/public/setup-cron-once': typeof ApiPublicSetupCronOnceRoute
   '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
   '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
   '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
@@ -229,7 +229,7 @@ export interface FileRoutesByTo {
   '/locations': typeof LocationsIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
-  '/api/public': typeof ApiPublicSetupCronOnceRoute
+  '/api/public/setup-cron-once': typeof ApiPublicSetupCronOnceRoute
   '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
   '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
   '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
@@ -259,7 +259,7 @@ export interface FileRoutesById {
   '/locations/': typeof LocationsIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
-  '/api/public/_setup-cron-once': typeof ApiPublicSetupCronOnceRoute
+  '/api/public/setup-cron-once': typeof ApiPublicSetupCronOnceRoute
   '/_authenticated/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
   '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
   '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
@@ -289,7 +289,7 @@ export interface FileRouteTypes {
     | '/locations/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
-    | '/api/public'
+    | '/api/public/setup-cron-once'
     | '/admin/blog/$id'
     | '/api/public/hooks/auto-publish-stale'
     | '/api/public/hooks/generate-daily-draft'
@@ -317,7 +317,7 @@ export interface FileRouteTypes {
     | '/locations'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
-    | '/api/public'
+    | '/api/public/setup-cron-once'
     | '/admin/blog/$id'
     | '/api/public/hooks/auto-publish-stale'
     | '/api/public/hooks/generate-daily-draft'
@@ -346,7 +346,7 @@ export interface FileRouteTypes {
     | '/locations/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
-    | '/api/public/_setup-cron-once'
+    | '/api/public/setup-cron-once'
     | '/_authenticated/admin/blog/$id'
     | '/api/public/hooks/auto-publish-stale'
     | '/api/public/hooks/generate-daily-draft'
@@ -511,10 +511,10 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DotwellKnownApiCatalogRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/_setup-cron-once': {
-      id: '/api/public/_setup-cron-once'
-      path: '/api/public'
-      fullPath: '/api/public'
+    '/api/public/setup-cron-once': {
+      id: '/api/public/setup-cron-once'
+      path: '/api/public/setup-cron-once'
+      fullPath: '/api/public/setup-cron-once'
       preLoaderRoute: typeof ApiPublicSetupCronOnceRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -623,3 +623,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
