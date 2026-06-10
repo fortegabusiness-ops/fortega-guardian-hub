@@ -28,6 +28,7 @@ import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[
 import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './routes/[.]well-known.agent-skills.index[.]json'
 import { Route as AuthenticatedAdminBlogIndexRouteImport } from './routes/_authenticated/admin.blog.index'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
+import { Route as ApiPublicOgSlugRouteImport } from './routes/api/public/og/$slug'
 import { Route as ApiPublicHooksGenerateDailyDraftRouteImport } from './routes/api/public/hooks/generate-daily-draft'
 import { Route as ApiPublicHooksAutoPublishStaleRouteImport } from './routes/api/public/hooks/auto-publish-stale'
 import { Route as AuthenticatedAdminBlogIdRouteImport } from './routes/_authenticated/admin.blog.$id'
@@ -132,6 +133,11 @@ const LovableEmailQueueProcessRoute =
     path: '/lovable/email/queue/process',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicOgSlugRoute = ApiPublicOgSlugRouteImport.update({
+  id: '/api/public/og/$slug',
+  path: '/api/public/og/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicHooksGenerateDailyDraftRoute =
   ApiPublicHooksGenerateDailyDraftRouteImport.update({
     id: '/api/public/hooks/generate-daily-draft',
@@ -171,6 +177,7 @@ export interface FileRoutesByFullPath {
   '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
   '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
   '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
+  '/api/public/og/$slug': typeof ApiPublicOgSlugRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
   '/admin/blog/': typeof AuthenticatedAdminBlogIndexRoute
 }
@@ -194,6 +201,7 @@ export interface FileRoutesByTo {
   '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
   '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
   '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
+  '/api/public/og/$slug': typeof ApiPublicOgSlugRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
   '/admin/blog': typeof AuthenticatedAdminBlogIndexRoute
 }
@@ -219,6 +227,7 @@ export interface FileRoutesById {
   '/_authenticated/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
   '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
   '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
+  '/api/public/og/$slug': typeof ApiPublicOgSlugRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
   '/_authenticated/admin/blog/': typeof AuthenticatedAdminBlogIndexRoute
 }
@@ -244,6 +253,7 @@ export interface FileRouteTypes {
     | '/admin/blog/$id'
     | '/api/public/hooks/auto-publish-stale'
     | '/api/public/hooks/generate-daily-draft'
+    | '/api/public/og/$slug'
     | '/lovable/email/queue/process'
     | '/admin/blog/'
   fileRoutesByTo: FileRoutesByTo
@@ -267,6 +277,7 @@ export interface FileRouteTypes {
     | '/admin/blog/$id'
     | '/api/public/hooks/auto-publish-stale'
     | '/api/public/hooks/generate-daily-draft'
+    | '/api/public/og/$slug'
     | '/lovable/email/queue/process'
     | '/admin/blog'
   id:
@@ -291,6 +302,7 @@ export interface FileRouteTypes {
     | '/_authenticated/admin/blog/$id'
     | '/api/public/hooks/auto-publish-stale'
     | '/api/public/hooks/generate-daily-draft'
+    | '/api/public/og/$slug'
     | '/lovable/email/queue/process'
     | '/_authenticated/admin/blog/'
   fileRoutesById: FileRoutesById
@@ -315,6 +327,7 @@ export interface RootRouteChildren {
   DotwellKnownMcpServerCardDotjsonRoute: typeof DotwellKnownMcpServerCardDotjsonRoute
   ApiPublicHooksAutoPublishStaleRoute: typeof ApiPublicHooksAutoPublishStaleRoute
   ApiPublicHooksGenerateDailyDraftRoute: typeof ApiPublicHooksGenerateDailyDraftRoute
+  ApiPublicOgSlugRoute: typeof ApiPublicOgSlugRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
@@ -453,6 +466,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/og/$slug': {
+      id: '/api/public/og/$slug'
+      path: '/api/public/og/$slug'
+      fullPath: '/api/public/og/$slug'
+      preLoaderRoute: typeof ApiPublicOgSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/hooks/generate-daily-draft': {
       id: '/api/public/hooks/generate-daily-draft'
       path: '/api/public/hooks/generate-daily-draft'
@@ -513,8 +533,19 @@ const rootRouteChildren: RootRouteChildren = {
   DotwellKnownMcpServerCardDotjsonRoute: DotwellKnownMcpServerCardDotjsonRoute,
   ApiPublicHooksAutoPublishStaleRoute: ApiPublicHooksAutoPublishStaleRoute,
   ApiPublicHooksGenerateDailyDraftRoute: ApiPublicHooksGenerateDailyDraftRoute,
+  ApiPublicOgSlugRoute: ApiPublicOgSlugRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
