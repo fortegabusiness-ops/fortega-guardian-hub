@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { CITIES } from "@/lib/seo/cities";
+import { INDUSTRIES } from "@/lib/seo/industries";
 
 const BASE_URL = "https://fortega.ca";
 
@@ -30,6 +31,12 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/contact", changefreq: "monthly", priority: "0.7" },
           { path: "/locations", changefreq: "monthly", priority: "0.8" },
           { path: "/blog", changefreq: "daily", priority: "0.9" },
+          { path: "/industries", changefreq: "monthly", priority: "0.8" },
+          ...INDUSTRIES.map((i) => ({
+            path: `/industries/${i.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.7",
+          })),
           ...blogSlugs.map((s) => ({
             path: `/blog/${s}`,
             changefreq: "monthly" as const,
