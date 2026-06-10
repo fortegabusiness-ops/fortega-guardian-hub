@@ -243,7 +243,7 @@ export type Database = {
           read_ct: number
         }[]
       }
-      setup_blog_cron: { Args: { _secret: string }; Returns: string }
+      setup_blog_cron: { Args: never; Returns: string }
     }
     Enums: {
       app_role: "admin" | "editor" | "user"
