@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as FeedDotxmlRouteImport } from './routes/feed[.]xml'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthDotmdRouteImport } from './routes/auth[.]md'
 import { Route as AuthRouteImport } from './routes/auth'
@@ -43,6 +44,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeedDotxmlRoute = FeedDotxmlRouteImport.update({
+  id: '/feed.xml',
+  path: '/feed.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -175,6 +181,7 @@ export interface FileRoutesByFullPath {
   '/auth': typeof AuthRoute
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
+  '/feed.xml': typeof FeedDotxmlRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
@@ -201,6 +208,7 @@ export interface FileRoutesByTo {
   '/auth': typeof AuthRoute
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
+  '/feed.xml': typeof FeedDotxmlRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
@@ -229,6 +237,7 @@ export interface FileRoutesById {
   '/auth': typeof AuthRoute
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
+  '/feed.xml': typeof FeedDotxmlRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
@@ -257,6 +266,7 @@ export interface FileRouteTypes {
     | '/auth'
     | '/auth.md'
     | '/contact'
+    | '/feed.xml'
     | '/services'
     | '/sitemap.xml'
     | '/.well-known/api-catalog'
@@ -283,6 +293,7 @@ export interface FileRouteTypes {
     | '/auth'
     | '/auth.md'
     | '/contact'
+    | '/feed.xml'
     | '/services'
     | '/sitemap.xml'
     | '/.well-known/api-catalog'
@@ -310,6 +321,7 @@ export interface FileRouteTypes {
     | '/auth'
     | '/auth.md'
     | '/contact'
+    | '/feed.xml'
     | '/services'
     | '/sitemap.xml'
     | '/.well-known/api-catalog'
@@ -338,6 +350,7 @@ export interface RootRouteChildren {
   AuthRoute: typeof AuthRoute
   AuthDotmdRoute: typeof AuthDotmdRoute
   ContactRoute: typeof ContactRoute
+  FeedDotxmlRoute: typeof FeedDotxmlRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
@@ -371,6 +384,13 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feed.xml': {
+      id: '/feed.xml'
+      path: '/feed.xml'
+      fullPath: '/feed.xml'
+      preLoaderRoute: typeof FeedDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -557,6 +577,7 @@ const rootRouteChildren: RootRouteChildren = {
   AuthRoute: AuthRoute,
   AuthDotmdRoute: AuthDotmdRoute,
   ContactRoute: ContactRoute,
+  FeedDotxmlRoute: FeedDotxmlRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   DotwellKnownApiCatalogRoute: DotwellKnownApiCatalogRoute,
@@ -581,3 +602,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
