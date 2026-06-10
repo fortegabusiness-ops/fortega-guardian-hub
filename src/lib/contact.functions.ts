@@ -19,6 +19,24 @@ export const submitContact = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const messageId = `contact-${crypto.randomUUID()}`;
+    const RECIPIENT = "info@fortega.ca";
+
+    // Ensure an unsubscribe token exists for the recipient
+    let unsubscribeToken: string;
+    const { data: existing } = await supabaseAdmin
+      .from("email_unsubscribe_tokens")
+      .select("token")
+      .eq("email", RECIPIENT)
+      .maybeSingle();
+    if (existing?.token) {
+      unsubscribeToken = existing.token as string;
+    } else {
+      unsubscribeToken = crypto.randomUUID().replace(/-/g, "") + crypto.randomUUID().replace(/-/g, "");
+      await supabaseAdmin
+        .from("email_unsubscribe_tokens")
+        .insert({ token: unsubscribeToken, email: RECIPIENT });
+    }
+
     const subject = `New contact request from ${data.name} (${data.company})`;
     const html = `
       <h2>New Contact Request</h2>
@@ -33,7 +51,7 @@ export const submitContact = createServerFn({ method: "POST" })
     const text = `New Contact Request\n\nName: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nPhone: ${data.phone}\nService: ${data.service}\n\nMessage:\n${data.message}`;
 
     const payload = {
-      to: "info@fortega.ca",
+      to: RECIPIENT,
       from: "Fortega Website <notify@notify.fortega.ca>",
       sender_domain: "notify.fortega.ca",
       subject,
@@ -44,6 +62,7 @@ export const submitContact = createServerFn({ method: "POST" })
       label: "contact-form",
       message_id: messageId,
       idempotency_key: messageId,
+      unsubscribe_token: unsubscribeToken,
       queued_at: new Date().toISOString(),
     };
 
@@ -56,7 +75,7 @@ export const submitContact = createServerFn({ method: "POST" })
     await supabaseAdmin.from("email_send_log").insert({
       message_id: messageId,
       template_name: "contact-form",
-      recipient_email: "info@fortega.ca",
+      recipient_email: RECIPIENT,
       status: "pending",
     });
 
