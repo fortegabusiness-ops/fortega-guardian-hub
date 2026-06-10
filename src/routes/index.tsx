@@ -6,6 +6,16 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-ops.jpg";
 import cyberBg from "@/assets/cyber-bg.jpg";
+import { FAQSection } from "@/components/FAQSection";
+import { breadcrumbSchema, faqSchema, jsonLd, localBusinessSchema } from "@/lib/seo/schema";
+
+const homeFaqs = [
+  { q: "What security services does Fortega offer in Canada?", a: "Fortega delivers a full stack of integrated security: CCTV and video surveillance, intrusion and burglar alarms, access control, remote guarding and 24/7 monitoring, on-site security guards, smart building automation and cyber security — all designed, installed and supported by one accountable team." },
+  { q: "What areas in Canada does Fortega serve?", a: "Fortega provides Canada-wide coverage with project and service delivery across every province and territory, including major markets like Toronto, Montreal, Vancouver, Calgary, Edmonton, Ottawa and Winnipeg." },
+  { q: "Does Fortega offer 24/7 monitoring and support?", a: "Yes. Fortega operates a 24/7 monitoring and support service for alarms, video verification and remote guarding, with rapid response protocols and dedicated escalation paths for commercial and enterprise clients." },
+  { q: "Can Fortega integrate with my existing security systems?", a: "Yes. Our engineers specialize in integrating modern CCTV, access control, alarm and building-automation platforms with existing infrastructure — reducing vendor sprawl while strengthening your overall security posture." },
+  { q: "How do I request a security consultation?", a: "Contact our team through the consultation form or call (888) 869-1679. A Fortega specialist will respond within one business day to scope a site assessment, audit or full security program design." },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,6 +27,11 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      jsonLd(localBusinessSchema),
+      jsonLd(breadcrumbSchema([{ name: "Home", path: "/" }])),
+      jsonLd(faqSchema(homeFaqs)),
+    ],
   }),
   component: Index,
 });
@@ -271,6 +286,13 @@ function Index() {
           </Link>
         </div>
       </section>
+
+      <FAQSection
+        eyebrow="FAQ"
+        title="Common questions about Fortega"
+        sub="Quick answers about our services, coverage and how we work."
+        faqs={homeFaqs}
+      />
     </>
   );
 }

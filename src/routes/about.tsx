@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, Lightbulb, Handshake, Award, Heart, ArrowRight } from "lucide-react";
 import buildingImg from "@/assets/smart-building.jpg";
 import logo from "@/assets/fortega-logo.png.asset.json";
+import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -13,6 +14,21 @@ export const Route = createFileRoute("/about")({
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
+    scripts: [
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ]),
+      ),
+      jsonLd({
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        url: `${SITE_URL}/about`,
+        name: "About Fortega",
+        about: { "@id": `${SITE_URL}/#organization` },
+      }),
+    ],
   }),
   component: AboutPage,
 });
