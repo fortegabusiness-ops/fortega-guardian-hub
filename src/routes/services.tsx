@@ -2,6 +2,17 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock, ArrowRight,
 } from "lucide-react";
+import { FAQSection } from "@/components/FAQSection";
+import { breadcrumbSchema, faqSchema, jsonLd, serviceSchema } from "@/lib/seo/schema";
+
+const servicesFaqs = [
+  { q: "What is the difference between CCTV monitoring and remote guarding?", a: "CCTV monitoring records and reviews video for incidents. Remote guarding adds live operator oversight: virtual patrols, real-time alarm verification, two-way audio intervention and dispatch — turning cameras into an active deterrent rather than a passive record." },
+  { q: "Which access control system is right for my business?", a: "It depends on site count, user volume and compliance needs. Cloud-based access control suits multi-site, mobile-credential and remote-managed environments; on-prem suits regulated or air-gapped sites. Fortega designs systems around your operations, then standardizes credentials across all locations." },
+  { q: "Do you provide both physical security and cyber security?", a: "Yes. Fortega delivers physical security (CCTV, alarms, access, guards) and cyber security (network defense, endpoint protection, threat monitoring, incident response) as a single program — eliminating the gaps that appear when these are owned by different vendors." },
+  { q: "How long does a typical security system installation take?", a: "Small commercial deployments usually run 1–3 weeks from design to commissioning. Enterprise and multi-site rollouts follow a phased schedule with engineering, procurement, installation and cutover milestones agreed up-front." },
+  { q: "Are Fortega technicians licensed and certified?", a: "Yes. Our field technicians and consultants are licensed, vetted and certified on the platforms we deploy, and follow Canadian electrical, security and life-safety standards." },
+  { q: "Can Fortega monitor alarms 24/7?", a: "Yes. Our 24/7 monitoring service handles intrusion, panic, environmental and video alarms with verification protocols and pre-agreed dispatch paths to authorities or on-site responders." },
+];
 
 export const Route = createFileRoute("/services")({
   head: () => ({
