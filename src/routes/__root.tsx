@@ -93,6 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Fortega delivers advanced electronic security, CCTV, access control, monitoring, automation and cyber security across Canada." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f1ee9735-0d6c-4d9f-85e1-bb0cba2c0038/id-preview-241acf5a--eb38f20d-f359-421d-b007-119c82fc3a0c.lovable.app-1781040321451.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f1ee9735-0d6c-4d9f-85e1-bb0cba2c0038/id-preview-241acf5a--eb38f20d-f359-421d-b007-119c82fc3a0c.lovable.app-1781040321451.png" },
+      { name: "google-site-verification", content: "ylRWHQ2iy3XhKg_KbNt1ULBA98FfWmAktZwrGWfiIuA" },
     ],
     links: [
       {
