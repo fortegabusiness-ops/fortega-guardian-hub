@@ -40,6 +40,10 @@ export const localBusinessSchema = {
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "3080 Yonge Street, Suite 6060",
+    addressLocality: "Toronto",
+    addressRegion: "ON",
+    postalCode: "M4N 3N1",
     addressCountry: "CA",
   },
   areaServed: [

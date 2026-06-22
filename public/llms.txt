@@ -4,7 +4,7 @@
 
 Fortega protects people, property and operations through intelligent, integrated systems — combining best-in-class hardware, software and human expertise. We serve corporations, institutions and critical infrastructure operators from coast to coast with a single, accountable team.
 
-Headquartered in Canada, Fortega delivers end-to-end security programs that span consulting, design, installation, monitoring and ongoing support. Our services include CCTV and video surveillance, intrusion alarms, access control, remote guarding, security guards, smart building automation and cyber security. Every program is tailored to the operational rhythm, threat landscape and compliance requirements of the industries we serve.
+Headquartered at 3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1, Fortega delivers end-to-end security programs that span consulting, design, installation, monitoring and ongoing support. Our services include CCTV and video surveillance, intrusion alarms, access control, remote guarding, security guards, smart building automation and cyber security. Every program is tailored to the operational rhythm, threat landscape and compliance requirements of the industries we serve.
 
 Fortega is committed to transparency and ethical operations. Our AI usage is limited to operational efficiency and security analytics; we do not train generative AI models on client data. All personal data is handled in accordance with Canadian privacy legislation.
 
