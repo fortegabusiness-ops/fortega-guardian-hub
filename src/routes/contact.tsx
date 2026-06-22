@@ -149,7 +149,7 @@ function ContactPage() {
           <aside className="space-y-5 lg:col-span-5">
             <InfoCard icon={Phone} title="Call Us" lines={["(888) 869-1679", "Sales & support"]} />
             <InfoCard icon={Mail} title="Email" lines={["info@fortega.ca"]} />
-            <InfoCard icon={MapPin} title="Service Area" lines={["Canada-wide coverage", "All provinces and territories"]} />
+            <InfoCard icon={MapPin} title="Head Office" lines={["3080 Yonge Street, Suite 6060", "Toronto, ON M4N 3N1", "Canada-wide service coverage"]} />
             <InfoCard icon={Clock} title="Business Hours" lines={["Mon–Fri · 8:00–18:00 ET", "Monitoring & support 24/7"]} />
           </aside>
         </div>
