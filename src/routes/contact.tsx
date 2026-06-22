@@ -9,11 +9,13 @@ import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Fortega — Request a Security Consultation" },
-      { name: "description", content: "Get in touch with Fortega for integrated security solutions across Canada. Request a consultation, site assessment or 24/7 support." },
-      { property: "og:title", content: "Contact Fortega" },
-      { property: "og:description", content: "Request a security consultation. Canada-wide service. 24/7 support." },
+      { title: "Contact Fortega — Toronto Head Office & Canada-Wide Security" },
+      { name: "description", content: "Contact Fortega at 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Request a security consultation, site assessment or 24/7 support across Canada." },
+      { property: "og:title", content: "Contact Fortega — Toronto Head Office" },
+      { property: "og:description", content: "Head office: 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Request a security consultation. Canada-wide service. 24/7 support." },
       { property: "og:url", content: "/contact" },
+      { name: "twitter:title", content: "Contact Fortega — Toronto Head Office" },
+      { name: "twitter:description", content: "Head office: 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Canada-wide security service." },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
     scripts: [
