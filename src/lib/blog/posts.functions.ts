@@ -110,6 +110,20 @@ export const updatePost = createServerFn({ method: "POST" })
       })
       .eq("id", data.id);
     if (error) throw new Error(error.message);
+    // If updating an already-published post, ping IndexNow for the change.
+    try {
+      const { data: row } = await context.supabase
+        .from("blog_posts")
+        .select("status,slug")
+        .eq("id", data.id)
+        .maybeSingle();
+      if (row?.status === "published" && row.slug) {
+        const { submitToIndexNow, blogPostUrls } = await import("@/lib/seo/indexnow.server");
+        await submitToIndexNow(blogPostUrls(row.slug));
+      }
+    } catch (e: any) {
+      console.warn("[indexnow] updatePost ping skipped:", e?.message ?? e);
+    }
     return { ok: true };
   });
 
@@ -119,7 +133,7 @@ export const publishPost = createServerFn({ method: "POST" })
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const now = new Date().toISOString();
-    const { error } = await context.supabase
+    const { data: row, error } = await context.supabase
       .from("blog_posts")
       .update({
         status: "published",
@@ -127,8 +141,14 @@ export const publishPost = createServerFn({ method: "POST" })
         reviewed_at: now,
         reviewed_by: context.userId,
       })
-      .eq("id", data.id);
+      .eq("id", data.id)
+      .select("slug")
+      .maybeSingle();
     if (error) throw new Error(error.message);
+    if (row?.slug) {
+      const { submitToIndexNow, blogPostUrls } = await import("@/lib/seo/indexnow.server");
+      await submitToIndexNow(blogPostUrls(row.slug));
+    }
     return { ok: true };
   });
 
