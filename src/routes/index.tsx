@@ -7,7 +7,7 @@ import {
 import heroImg from "@/assets/hero-ops.jpg";
 import cyberBg from "@/assets/cyber-bg.jpg";
 import { FAQSection } from "@/components/FAQSection";
-import { breadcrumbSchema, faqSchema, jsonLd, localBusinessSchema } from "@/lib/seo/schema";
+import { breadcrumbSchema, faqSchema, jsonLd, localBusinessSchema, socialMeta, SITE_URL } from "@/lib/seo/schema";
 import { SERVICES } from "@/lib/seo/services";
 
 const SERVICE_ICONS = { Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock } as const;
@@ -25,11 +25,13 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Fortega — Integrated Security Solutions for Modern Businesses" },
       { name: "description", content: "Advanced electronic security, CCTV, access control, monitoring, automation and cyber security solutions across Canada." },
-      { property: "og:title", content: "Fortega — Integrated Security Solutions" },
-      { property: "og:description", content: "Electronic security, monitoring, automation and cyber security across Canada." },
-      { property: "og:url", content: "/" },
+      ...socialMeta({
+        title: "Fortega — Integrated Security Solutions for Modern Businesses",
+        description: "Advanced electronic security, CCTV, access control, monitoring, automation and cyber security solutions across Canada.",
+        url: `${SITE_URL}/`,
+      }),
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
     scripts: [
       jsonLd(localBusinessSchema),
       jsonLd(breadcrumbSchema([{ name: "Home", path: "/" }])),
@@ -42,7 +44,7 @@ export const Route = createFileRoute("/")({
 const whyChoose = [
   { icon: Award, title: "Industry Expertise", desc: "Decades of combined experience securing enterprise environments." },
   { icon: Layers, title: "End-to-End Solutions", desc: "From audit and design to install, integration and lifecycle support." },
-  { icon: BadgeCheck, title: "Certified Professionals", desc: "Licensed, vetted technicians and security consultants." },
+  { icon: BadgeCheck, title: "Engineering-Led Delivery", desc: "Standards-based design, rigorous commissioning and documented handover." },
   { icon: Headphones, title: "24/7 Monitoring & Support", desc: "Around-the-clock operations center and rapid response." },
   { icon: TrendingUp, title: "Scalable Systems", desc: "Architectures that grow with your sites, users and risk profile." },
   { icon: MapPin, title: "National Coverage", desc: "Trusted partner serving organizations coast to coast in Canada." },
