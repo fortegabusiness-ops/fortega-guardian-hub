@@ -5,7 +5,6 @@ import {
   Search, PenTool, Wrench, LifeBuoy, Network,
 } from "lucide-react";
 import heroImg from "@/assets/hero-ops.jpg";
-import cyberBg from "@/assets/cyber-bg.jpg";
 import { FAQSection } from "@/components/FAQSection";
 import { breadcrumbSchema, faqSchema, jsonLd, localBusinessSchema, socialMeta, SITE_URL } from "@/lib/seo/schema";
 import { SERVICES } from "@/lib/seo/services";
@@ -235,10 +234,24 @@ function Index() {
               Speak with a Security Expert <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
-          <div className="relative">
-            <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-br from-brand/30 to-brand-glow/10 blur-2xl" />
-            <div className="overflow-hidden rounded-2xl border border-border">
-              <img src={cyberBg} alt="Cyber security network" loading="lazy" width={1600} height={900} className="aspect-[16/10] w-full object-cover" />
+          <div className="flex flex-col justify-center rounded-2xl border border-border bg-surface p-8 lg:p-10">
+            <p className="font-display text-xl font-semibold text-foreground">Trusted across Canada</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              From single-site installations to multi-province rollouts, our clients rely on Fortega
+              for consistent delivery, transparent communication, and systems that keep performing.
+            </p>
+            <div className="mt-6 grid grid-cols-2 gap-4">
+              {[
+                ["24/7", "Monitoring & Support"],
+                ["Coast-to-Coast", "National Coverage"],
+                ["Engineering-led", "Design & Deployment"],
+                ["Integrated", "Security Ecosystem"],
+              ].map(([n, l]) => (
+                <div key={l} className="rounded-xl bg-ink p-4">
+                  <p className="font-display text-lg font-bold text-brand-glow">{n}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{l}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
