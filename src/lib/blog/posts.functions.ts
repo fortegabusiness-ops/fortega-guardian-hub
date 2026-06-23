@@ -425,52 +425,6 @@ SELF-CHECK before returning (fix any fail first):
   };
 }
 
-  const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${key}`,
-    },
-    body: JSON.stringify({
-      model: "google/gemini-2.5-flash",
-      messages: [
-        { role: "system", content: system },
-        { role: "user", content: prompt },
-      ],
-      response_format: { type: "json_object" },
-    }),
-  });
-
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`AI gateway error ${res.status}: ${text.slice(0, 400)}`);
-  }
-  const json = await res.json();
-  const content: string = json?.choices?.[0]?.message?.content ?? "";
-  if (!content) throw new Error("AI returned empty content");
-  let parsed: any;
-  try {
-    parsed = JSON.parse(content);
-  } catch {
-    const m = content.match(/\{[\s\S]*\}/);
-    if (!m) throw new Error("AI did not return JSON");
-    parsed = JSON.parse(m[0]);
-  }
-
-  const title = String(parsed.title ?? "").trim();
-  if (!title) throw new Error("AI draft missing title");
-  const slugBase = slugify(String(parsed.slug ?? title));
-  return {
-    title,
-    slug: slugBase,
-    excerpt: String(parsed.excerpt ?? "").trim(),
-    content_md: String(parsed.content_md ?? "").trim(),
-    seo_title: String(parsed.seo_title ?? title).trim(),
-    seo_description: String(parsed.seo_description ?? parsed.excerpt ?? "").trim(),
-    topic: String(parsed.topic ?? "").trim(),
-  };
-}
-
 export async function createAIDraft(): Promise<{ id: string; slug: string }> {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
   const draft = await generateDraftViaAI();
