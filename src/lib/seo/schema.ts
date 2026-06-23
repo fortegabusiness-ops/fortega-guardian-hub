@@ -103,7 +103,7 @@ export function serviceSchema(s: {
     serviceType: s.serviceType ?? s.name,
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: { "@type": "Country", name: "Canada" },
-    url: `${SITE_URL}/services#${s.slug}`,
+    url: `${SITE_URL}/services/${s.slug}`,
   };
 }
 

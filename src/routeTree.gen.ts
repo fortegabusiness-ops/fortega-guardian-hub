@@ -21,6 +21,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as ServicesServiceRouteImport } from './routes/services.$service'
 import { Route as LocationsCityRouteImport } from './routes/locations.$city'
 import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
@@ -94,6 +95,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesServiceRoute = ServicesServiceRouteImport.update({
+  id: '/$service',
+  path: '/$service',
+  getParentRoute: () => ServicesRoute,
 } as any)
 const LocationsCityRoute = LocationsCityRouteImport.update({
   id: '/locations/$city',
@@ -182,7 +188,7 @@ export interface FileRoutesByFullPath {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/feed.xml': typeof FeedDotxmlRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
@@ -190,6 +196,7 @@ export interface FileRoutesByFullPath {
   '/blog/$slug': typeof BlogSlugRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
+  '/services/$service': typeof ServicesServiceRoute
   '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
   '/locations/': typeof LocationsIndexRoute
@@ -209,7 +216,7 @@ export interface FileRoutesByTo {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/feed.xml': typeof FeedDotxmlRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
@@ -217,6 +224,7 @@ export interface FileRoutesByTo {
   '/blog/$slug': typeof BlogSlugRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
+  '/services/$service': typeof ServicesServiceRoute
   '/blog': typeof BlogIndexRoute
   '/industries': typeof IndustriesIndexRoute
   '/locations': typeof LocationsIndexRoute
@@ -238,7 +246,7 @@ export interface FileRoutesById {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/feed.xml': typeof FeedDotxmlRoute
-  '/services': typeof ServicesRoute
+  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
@@ -246,6 +254,7 @@ export interface FileRoutesById {
   '/blog/$slug': typeof BlogSlugRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
+  '/services/$service': typeof ServicesServiceRoute
   '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
   '/locations/': typeof LocationsIndexRoute
@@ -275,6 +284,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/industries/$industry'
     | '/locations/$city'
+    | '/services/$service'
     | '/blog/'
     | '/industries/'
     | '/locations/'
@@ -302,6 +312,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/industries/$industry'
     | '/locations/$city'
+    | '/services/$service'
     | '/blog'
     | '/industries'
     | '/locations'
@@ -330,6 +341,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/industries/$industry'
     | '/locations/$city'
+    | '/services/$service'
     | '/blog/'
     | '/industries/'
     | '/locations/'
@@ -351,7 +363,7 @@ export interface RootRouteChildren {
   AuthDotmdRoute: typeof AuthDotmdRoute
   ContactRoute: typeof ContactRoute
   FeedDotxmlRoute: typeof FeedDotxmlRoute
-  ServicesRoute: typeof ServicesRoute
+  ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
   DotwellKnownOauthAuthorizationServerRoute: typeof DotwellKnownOauthAuthorizationServerRoute
@@ -455,6 +467,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/blog/'
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/services/$service': {
+      id: '/services/$service'
+      path: '/$service'
+      fullPath: '/services/$service'
+      preLoaderRoute: typeof ServicesServiceRouteImport
+      parentRoute: typeof ServicesRoute
     }
     '/locations/$city': {
       id: '/locations/$city'
@@ -570,6 +589,18 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
 const AuthenticatedRouteRouteWithChildren =
   AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
 
+interface ServicesRouteChildren {
+  ServicesServiceRoute: typeof ServicesServiceRoute
+}
+
+const ServicesRouteChildren: ServicesRouteChildren = {
+  ServicesServiceRoute: ServicesServiceRoute,
+}
+
+const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
+  ServicesRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
@@ -578,7 +609,7 @@ const rootRouteChildren: RootRouteChildren = {
   AuthDotmdRoute: AuthDotmdRoute,
   ContactRoute: ContactRoute,
   FeedDotxmlRoute: FeedDotxmlRoute,
-  ServicesRoute: ServicesRoute,
+  ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   DotwellKnownApiCatalogRoute: DotwellKnownApiCatalogRoute,
   DotwellKnownOauthAuthorizationServerRoute:

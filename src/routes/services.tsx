@@ -4,6 +4,9 @@ import {
 } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
 import { breadcrumbSchema, faqSchema, jsonLd, serviceSchema } from "@/lib/seo/schema";
+import { SERVICES, type ServiceDetail } from "@/lib/seo/services";
+
+const ICONS = { Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock } as const;
 
 const servicesFaqs = [
   { q: "What is the difference between CCTV monitoring and remote guarding?", a: "CCTV monitoring records and reviews video for incidents. Remote guarding adds live operator oversight: virtual patrols, real-time alarm verification, two-way audio intervention and dispatch — turning cameras into an active deterrent rather than a passive record." },
@@ -32,33 +35,13 @@ export const Route = createFileRoute("/services")({
         ]),
       ),
       jsonLd(faqSchema(servicesFaqs)),
-      ...blocks.map((b) =>
-        jsonLd(serviceSchema({ name: b.title, description: b.desc, slug: b.id })),
+      ...SERVICES.map((s) =>
+        jsonLd(serviceSchema({ name: s.name, description: s.metaDescription, slug: s.slug })),
       ),
     ],
   }),
   component: ServicesPage,
 });
-
-type ServiceBlock = {
-  id: string;
-  icon: typeof Search;
-  title: string;
-  desc: string;
-  bullets: string[];
-  cta: string;
-};
-
-const blocks: ServiceBlock[] = [
-  { id: "consulting", icon: Search, title: "Consulting & Professional Services", desc: "Independent expertise to design, validate and optimize your security program.", bullets: ["Security audits", "Risk assessments", "System design", "Compliance consulting", "Project management"], cta: "Schedule a Consultation" },
-  { id: "cctv", icon: Video, title: "CCTV & Video Surveillance Systems", desc: "Modern video platforms that deliver clarity, intelligence and operational insight.", bullets: ["Camera installation", "AI video analytics", "Remote viewing", "Video management systems", "Cloud surveillance"], cta: "Request a Site Assessment" },
-  { id: "intrusion", icon: Bell, title: "Intrusion & Burglar Alarm Systems", desc: "Reliable intrusion detection for commercial and industrial environments.", bullets: ["Commercial alarms", "Motion detection", "Monitoring systems", "Panic systems", "Environmental sensors"], cta: "Protect Your Property" },
-  { id: "access", icon: KeyRound, title: "Access Control Systems", desc: "Manage who goes where — across one site or a national portfolio.", bullets: ["Card access", "Mobile credentials", "Visitor management", "Biometric systems", "Cloud access control"], cta: "Secure Access Now" },
-  { id: "remote", icon: Eye, title: "Remote Guarding & Monitoring", desc: "24/7 eyes on your sites with intelligent verification and intervention.", bullets: ["Live monitoring", "Virtual patrols", "Alarm verification", "Remote intervention"], cta: "Learn About Remote Monitoring" },
-  { id: "guards", icon: UserCheck, title: "Security Guard Services", desc: "Licensed, trained personnel for on-site presence and response.", bullets: ["On-site guards", "Mobile patrol", "Event security", "Concierge security"], cta: "Request Security Personnel" },
-  { id: "smart", icon: Building2, title: "Smart Building & Automation", desc: "Connected buildings that are safer, more efficient and easier to operate.", bullets: ["Building automation", "Smart lighting", "Energy control", "IoT integration"], cta: "Modernize Your Building" },
-  { id: "cyber", icon: Lock, title: "Cyber Security", desc: "Protect networks, endpoints and operations from evolving cyber threats.", bullets: ["Network security", "Threat monitoring", "Vulnerability assessments", "Endpoint protection", "Incident response"], cta: "Strengthen Cyber Security" },
-];
 
 function ServicesPage() {
   return (
@@ -75,18 +58,23 @@ function ServicesPage() {
             under a single, accountable team.
           </p>
           <div className="mt-10 flex flex-wrap gap-2">
-            {blocks.map((b) => (
-              <a key={b.id} href={`#${b.id}`} className="rounded-full border border-border bg-surface/60 px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-brand-glow/60 hover:text-foreground">
-                {b.title.replace(" & ", " · ").split(" Systems")[0]}
-              </a>
+            {SERVICES.map((s) => (
+              <Link
+                key={s.slug}
+                to="/services/$service"
+                params={{ service: s.slug }}
+                className="rounded-full border border-border bg-surface/60 px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-brand-glow/60 hover:text-foreground"
+              >
+                {s.name.replace(" & ", " · ").split(" Systems")[0]}
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       <div className="divide-y divide-border">
-        {blocks.map((b, i) => (
-          <ServiceSection key={b.id} block={b} flip={i % 2 === 1} />
+        {SERVICES.map((s, i) => (
+          <ServiceSection key={s.slug} block={s} flip={i % 2 === 1} />
         ))}
       </div>
 
@@ -100,20 +88,33 @@ function ServicesPage() {
   );
 }
 
-function ServiceSection({ block, flip }: { block: ServiceBlock; flip: boolean }) {
-  const { id, icon: Icon, title, desc, bullets, cta } = block;
+function ServiceSection({ block, flip }: { block: ServiceDetail; flip: boolean }) {
+  const { slug, iconName, name, tagline, bullets, cta } = block;
+  const Icon = ICONS[iconName];
   return (
-    <section id={id} className={`scroll-mt-24 py-20 md:py-24 ${flip ? "bg-ink" : "bg-background"}`}>
+    <section id={slug} className={`scroll-mt-24 py-20 md:py-24 ${flip ? "bg-ink" : "bg-background"}`}>
       <div className="mx-auto grid max-w-7xl gap-12 px-4 md:px-8 lg:grid-cols-12 lg:items-center">
         <div className={`lg:col-span-5 ${flip ? "lg:order-2" : ""}`}>
           <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-brand to-brand-glow text-brand-foreground shadow-[0_12px_40px_-12px_var(--brand-glow)]">
             <Icon className="h-6 w-6" />
           </div>
-          <h2 className="mt-6 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">{title}</h2>
-          <p className="mt-4 text-muted-foreground">{desc}</p>
-          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-brand to-brand-glow px-6 py-3.5 text-sm font-semibold text-brand-foreground">
-            {cta} <ArrowRight className="h-4 w-4" />
-          </Link>
+          <h2 className="mt-6 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">{name}</h2>
+          <p className="mt-4 text-muted-foreground">{tagline}</p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              to="/services/$service"
+              params={{ service: slug }}
+              className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-brand to-brand-glow px-6 py-3.5 text-sm font-semibold text-brand-foreground"
+            >
+              Explore {block.shortName.toLowerCase()} <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-surface/60 px-6 py-3.5 text-sm font-semibold text-foreground hover:border-brand-glow/60"
+            >
+              {cta}
+            </Link>
+          </div>
         </div>
         <div className={`lg:col-span-7 ${flip ? "lg:order-1" : ""}`}>
           <ul className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">

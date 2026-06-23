@@ -3,6 +3,7 @@ import { ArrowRight, Check, ShieldAlert, Shield, Award, Sparkles } from "lucide-
 import { FAQSection } from "@/components/FAQSection";
 import { INDUSTRY_BY_SLUG, type Industry } from "@/lib/seo/industries";
 import { breadcrumbSchema, faqSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
+import { SERVICES } from "@/lib/seo/services";
 
 export const Route = createFileRoute("/industries/$industry")({
   loader: ({ params }) => {
@@ -161,6 +162,23 @@ function IndustryPage() {
                 <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-14 rounded-2xl border border-border bg-surface/40 p-6 md:p-8">
+            <h3 className="font-display text-lg font-semibold text-foreground">
+              Fortega services available for {industry.shortName.toLowerCase()}
+            </h3>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {SERVICES.filter((s) => s.industriesServed.includes(industry.slug)).map((s) => (
+                <Link
+                  key={s.slug}
+                  to="/services/$service"
+                  params={{ service: s.slug }}
+                  className="rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-brand-glow/60"
+                >
+                  {s.shortName}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
