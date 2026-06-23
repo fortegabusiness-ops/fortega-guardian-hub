@@ -30,8 +30,17 @@ export async function submitToIndexNow(urls: string[]): Promise<void> {
     if (!key) return;
 
     // Only submit from real production. Skip preview/localhost/lovable.app.
-    const envHost = (process.env.PUBLIC_SITE_HOST || "").toLowerCase();
-    if (envHost && envHost !== PROD_HOST) return;
+    let currentHost = (process.env.PUBLIC_SITE_HOST || "").toLowerCase();
+    if (!currentHost) {
+      try {
+        const { getRequestHost } = await import("@tanstack/react-start/server");
+        currentHost = (getRequestHost() || "").toLowerCase();
+      } catch {
+        // no request context — be conservative and skip
+        return;
+      }
+    }
+    if (currentHost !== PROD_HOST) return;
 
     const cleaned = Array.from(
       new Set(
