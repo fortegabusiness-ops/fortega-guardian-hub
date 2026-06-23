@@ -20,14 +20,14 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 
 ## Services
 
-- [Consulting & Professional Services](/services#consulting): Security audits, risk assessments and compliance consulting
-- [CCTV & Video Surveillance](/services#cctv): Camera installation, AI analytics and remote viewing
-- [Intrusion & Burglar Alarms](/services#intrusion): Commercial alarms, motion detection and 24/7 monitoring
-- [Access Control Systems](/services#access): Card access, mobile credentials and visitor management
-- [Remote Guarding & Monitoring](/services#remote): Live virtual patrols, alarm verification and remote intervention
-- [Security Guard Services](/services#guards): Licensed on-site guards, mobile patrol and event security
-- [Smart Building & Automation](/services#smart): Building automation, smart lighting and IoT integration
-- [Cyber Security](/services#cyber): Network defense, threat monitoring, endpoint protection and incident response
+- [Consulting & Professional Services](/services/consulting): Security audits, risk assessments and compliance consulting
+- [CCTV & Video Surveillance](/services/cctv): Camera installation, AI analytics and remote viewing
+- [Intrusion & Burglar Alarms](/services/intrusion): Commercial alarms, motion detection and 24/7 monitoring
+- [Access Control Systems](/services/access): Card access, mobile credentials and visitor management
+- [Remote Guarding & Monitoring](/services/remote): Live virtual patrols, alarm verification and remote intervention
+- [Security Guard Services](/services/guards): On-site guards, mobile patrol and event security
+- [Smart Building & Automation](/services/smart): Building automation, smart lighting and IoT integration
+- [Cyber Security](/services/cyber): Network defense, threat monitoring, endpoint protection and incident response
 
 ## Industries
 

@@ -6,21 +6,24 @@ import { SERVICES } from "@/lib/seo/services";
 
 const BASE_URL = "https://fortega.ca";
 
-interface SitemapEntry { path: string; changefreq?: string; priority?: string; }
+interface SitemapEntry { path: string; changefreq?: string; priority?: string; lastmod?: string; }
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
         const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-        let blogSlugs: string[] = [];
+        let blogPosts: { slug: string; lastmod: string }[] = [];
         try {
           const { data } = await supabaseAdmin
             .from("blog_posts")
-            .select("slug")
+            .select("slug,updated_at,published_at")
             .eq("status", "published")
             .order("published_at", { ascending: false });
-          blogSlugs = (data ?? []).map((r) => r.slug);
+          blogPosts = (data ?? []).map((r: any) => ({
+            slug: r.slug,
+            lastmod: new Date(r.updated_at ?? r.published_at ?? Date.now()).toISOString(),
+          }));
         } catch (e) {
           console.error("[sitemap] blog query failed", e);
         }
@@ -33,6 +36,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/locations", changefreq: "monthly", priority: "0.8" },
           { path: "/blog", changefreq: "daily", priority: "0.9" },
           { path: "/industries", changefreq: "monthly", priority: "0.8" },
+          { path: "/privacy", changefreq: "yearly", priority: "0.3" },
+          { path: "/terms", changefreq: "yearly", priority: "0.3" },
           ...INDUSTRIES.map((i) => ({
             path: `/industries/${i.slug}`,
             changefreq: "monthly" as const,
@@ -43,10 +48,11 @@ export const Route = createFileRoute("/sitemap.xml")({
             changefreq: "monthly" as const,
             priority: "0.8",
           })),
-          ...blogSlugs.map((s) => ({
-            path: `/blog/${s}`,
+          ...blogPosts.map((p) => ({
+            path: `/blog/${p.slug}`,
             changefreq: "monthly" as const,
             priority: "0.6",
+            lastmod: p.lastmod,
           })),
           ...CITIES.map((c) => ({
             path: `/locations/${c.slug}`,
@@ -55,7 +61,14 @@ export const Route = createFileRoute("/sitemap.xml")({
           })),
         ];
         const urls = entries.map((e) =>
-          `  <url>\n    <loc>${BASE_URL}${e.path}</loc>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`
+          [
+            `  <url>`,
+            `    <loc>${BASE_URL}${e.path}</loc>`,
+            e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
+            e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
+            e.priority ? `    <priority>${e.priority}</priority>` : null,
+            `  </url>`,
+          ].filter(Boolean).join("\n")
         );
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
