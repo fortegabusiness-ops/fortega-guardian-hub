@@ -28,6 +28,16 @@ export const Route = createFileRoute("/api/public/hooks/auto-publish-stale")({
             .lte("auto_publish_at", now)
             .select("id,slug");
           if (error) throw error;
+          try {
+            const slugs = (data ?? []).map((r: any) => r.slug).filter(Boolean);
+            if (slugs.length) {
+              const { submitToIndexNow, blogPostUrls } = await import("@/lib/seo/indexnow.server");
+              const urls = Array.from(new Set(slugs.flatMap((s: string) => blogPostUrls(s))));
+              await submitToIndexNow(urls);
+            }
+          } catch (e: any) {
+            console.warn("[indexnow] auto-publish ping skipped:", e?.message ?? e);
+          }
           return Response.json({ ok: true, published: data?.length ?? 0, ids: data });
         } catch (e: any) {
           console.error("[auto-publish-stale]", e);
