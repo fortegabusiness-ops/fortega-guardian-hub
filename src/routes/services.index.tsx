@@ -3,7 +3,7 @@ import {
   Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock, ArrowRight,
 } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
-import { breadcrumbSchema, faqSchema, jsonLd, serviceSchema } from "@/lib/seo/schema";
+import { breadcrumbSchema, faqSchema, jsonLd, serviceSchema, SITE_URL, socialMeta } from "@/lib/seo/schema";
 import { SERVICES, type ServiceDetail } from "@/lib/seo/services";
 
 const ICONS = { Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock } as const;
@@ -13,7 +13,7 @@ const servicesFaqs = [
   { q: "Which access control system is right for my business?", a: "It depends on site count, user volume and compliance needs. Cloud-based access control suits multi-site, mobile-credential and remote-managed environments; on-prem suits regulated or air-gapped sites. Fortega designs systems around your operations, then standardizes credentials across all locations." },
   { q: "Do you provide both physical security and cyber security?", a: "Yes. Fortega delivers physical security (CCTV, alarms, access, guards) and cyber security (network defense, endpoint protection, threat monitoring, incident response) as a single program — eliminating the gaps that appear when these are owned by different vendors." },
   { q: "How long does a typical security system installation take?", a: "Small commercial deployments usually run 1–3 weeks from design to commissioning. Enterprise and multi-site rollouts follow a phased schedule with engineering, procurement, installation and cutover milestones agreed up-front." },
-  { q: "Are Fortega technicians licensed and certified?", a: "Yes. Our field technicians and consultants are licensed, vetted and certified on the platforms we deploy, and follow Canadian electrical, security and life-safety standards." },
+  { q: "How does Fortega ensure installation quality?", a: "Every Fortega deployment follows a documented design, install and commissioning workflow aligned to Canadian electrical, security and life-safety standards. Each project ends with a written handover package covering as-built drawings, device inventory, configuration baselines and operator training." },
   { q: "Can Fortega monitor alarms 24/7?", a: "Yes. Our 24/7 monitoring service handles intrusion, panic, environmental and video alarms with verification protocols and pre-agreed dispatch paths to authorities or on-site responders." },
 ];
 
@@ -22,11 +22,13 @@ export const Route = createFileRoute("/services/")({
     meta: [
       { title: "Security Services — CCTV, Access, Monitoring, Cyber | Fortega" },
       { name: "description", content: "Integrated security services across Canada: consulting, CCTV, alarms, access control, remote monitoring, guards, smart building and cyber security." },
-      { property: "og:title", content: "Fortega Security Services" },
-      { property: "og:description", content: "Consulting, CCTV, alarms, access control, monitoring, guards, automation and cyber security." },
-      { property: "og:url", content: "/services" },
+      ...socialMeta({
+        title: "Security Services — CCTV, Access, Monitoring, Cyber | Fortega",
+        description: "Integrated security services across Canada: consulting, CCTV, alarms, access control, remote monitoring, guards, smart building and cyber security.",
+        url: `${SITE_URL}/services`,
+      }),
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/services` }],
     scripts: [
       jsonLd(
         breadcrumbSchema([

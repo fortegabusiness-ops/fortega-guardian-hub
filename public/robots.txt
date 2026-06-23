@@ -1,4 +1,42 @@
+# Fortega Security — robots.txt
+# Allow general crawlers and major AI / answer-engine crawlers to read and cite our content.
+
 User-agent: *
+Allow: /
+
+# Major search engines (explicit for clarity)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI / answer-engine crawlers (allowed to read & cite)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 # Content Signals (https://contentsignals.org/)

@@ -4,20 +4,20 @@ import { z } from "zod";
 import { Mail, Phone, MapPin, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useServerFn } from "@tanstack/react-start";
 import { submitContact } from "@/lib/contact.functions";
-import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
+import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact Fortega — Toronto Head Office & Canada-Wide Security" },
       { name: "description", content: "Contact Fortega at 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Request a security consultation, site assessment or 24/7 support across Canada." },
-      { property: "og:title", content: "Contact Fortega — Toronto Head Office" },
-      { property: "og:description", content: "Head office: 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Request a security consultation. Canada-wide service. 24/7 support." },
-      { property: "og:url", content: "/contact" },
-      { name: "twitter:title", content: "Contact Fortega — Toronto Head Office" },
-      { name: "twitter:description", content: "Head office: 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Canada-wide security service." },
+      ...socialMeta({
+        title: "Contact Fortega — Toronto Head Office",
+        description: "Head office: 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Request a security consultation. Canada-wide service. 24/7 support.",
+        url: `${SITE_URL}/contact`,
+      }),
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/contact` }],
     scripts: [
       jsonLd(
         breadcrumbSchema([

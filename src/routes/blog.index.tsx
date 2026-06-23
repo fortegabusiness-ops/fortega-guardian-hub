@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery, queryOptions } from "@tanstack/react-query";
 import { listPublishedPosts } from "@/lib/blog/posts.functions";
+import { SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 const postsQuery = queryOptions({
   queryKey: ["blog", "published"],
@@ -13,11 +14,13 @@ export const Route = createFileRoute("/blog/")({
     meta: [
       { title: "Blog — Commercial Security Insights | Fortega" },
       { name: "description", content: "Daily insights on commercial security, CCTV, alarm monitoring, access control, and risk management for Canadian businesses." },
-      { property: "og:title", content: "Blog — Commercial Security Insights | Fortega" },
-      { property: "og:description", content: "Daily insights on commercial security across Canada." },
-      { property: "og:url", content: "https://fortega.ca/blog" },
+      ...socialMeta({
+        title: "Blog — Commercial Security Insights | Fortega",
+        description: "Daily insights on commercial security, CCTV, alarm monitoring, access control, and risk management for Canadian businesses.",
+        url: `${SITE_URL}/blog`,
+      }),
     ],
-    links: [{ rel: "canonical", href: "https://fortega.ca/blog" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/blog` }],
   }),
   component: BlogIndex,
 });

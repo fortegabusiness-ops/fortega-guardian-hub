@@ -2,7 +2,10 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useSuspenseQuery, queryOptions } from "@tanstack/react-query";
 import { getPostBySlug } from "@/lib/blog/posts.functions";
 import { renderMarkdown, plainTextFromMarkdown } from "@/lib/blog/markdown";
-import { jsonLd } from "@/lib/seo/schema";
+import {
+  articleSchema, breadcrumbSchema, faqSchema, jsonLd, socialMeta, SITE_URL,
+  BLOG_AUTHOR_NAME,
+} from "@/lib/seo/schema";
 
 const postQuery = (slug: string) =>
   queryOptions({
@@ -19,21 +22,50 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData }) => {
     const p = loaderData as any;
     if (!p) return {};
-    const url = `https://fortega.ca/blog/${p.slug}`;
+    const url = `${SITE_URL}/blog/${p.slug}`;
     const title = (p.seo_title || p.title) + " | Fortega";
     const desc = p.seo_description || p.excerpt || plainTextFromMarkdown(p.content_md, 160);
+    const heroImg: string | null = p.hero_image_url || null;
+    const faqs: { q: string; a: string }[] = Array.isArray(p.faqs)
+      ? p.faqs.filter((f: any) => f && f.q && f.a)
+      : [];
+    const scripts = [
+      jsonLd(
+        articleSchema({
+          title: p.title,
+          description: desc,
+          slug: p.slug,
+          datePublished: p.published_at,
+          dateModified: p.updated_at ?? p.published_at,
+          image: heroImg,
+        }),
+      ),
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: p.title, path: `/blog/${p.slug}` },
+        ]),
+      ),
+      ...(faqs.length ? [jsonLd(faqSchema(faqs))] : []),
+    ];
     return {
       meta: [
         { title },
         { name: "description", content: desc },
-        { property: "og:title", content: title },
-        { property: "og:description", content: desc },
-        { property: "og:type", content: "article" },
-        { property: "og:url", content: url },
-        ...(p.hero_image_url ? [{ property: "og:image", content: p.hero_image_url }] : []),
-        { name: "twitter:card", content: p.hero_image_url ? "summary_large_image" : "summary" },
+        ...socialMeta({
+          title,
+          description: desc,
+          url,
+          type: "article",
+          image: heroImg || undefined,
+        }),
+        ...(p.published_at ? [{ property: "article:published_time", content: new Date(p.published_at).toISOString() }] : []),
+        ...(p.updated_at ? [{ property: "article:modified_time", content: new Date(p.updated_at).toISOString() }] : []),
+        { property: "article:author", content: BLOG_AUTHOR_NAME },
       ],
       links: [{ rel: "canonical", href: url }],
+      scripts,
     };
   },
   component: BlogPost,
@@ -50,53 +82,28 @@ function BlogPost() {
   const { data: post } = useSuspenseQuery(postQuery(slug));
   if (!post) return null;
 
-  const url = `https://fortega.ca/blog/${post.slug}`;
-  const desc = post.seo_description || post.excerpt || plainTextFromMarkdown(post.content_md, 160);
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: desc,
-    datePublished: post.published_at,
-    dateModified: post.updated_at,
-    author: { "@type": "Organization", name: "Fortega" },
-    publisher: {
-      "@type": "Organization",
-      name: "Fortega",
-      logo: { "@type": "ImageObject", url: "https://fortega.ca/favicon.ico" },
-    },
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    ...(post.hero_image_url ? { image: post.hero_image_url } : {}),
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://fortega.ca" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://fortega.ca/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: url },
-    ],
-  };
-
   return (
     <article className="mx-auto max-w-3xl px-4 pb-20 pt-28 md:pt-32">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
-
       <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">← All posts</Link>
 
       <header className="mt-4">
         {post.topic && <div className="text-xs font-medium uppercase tracking-wide text-brand">{post.topic}</div>}
         <h1 className="mt-2 text-4xl font-bold tracking-tight text-foreground md:text-5xl">{post.title}</h1>
-        {post.published_at && (
-          <time className="mt-3 block text-sm text-muted-foreground">
-            {new Date(post.published_at).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
-          </time>
-        )}
+        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>By {BLOG_AUTHOR_NAME}</span>
+          {post.published_at && (
+            <time dateTime={new Date(post.published_at).toISOString()}>
+              Published {new Date(post.published_at).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
+            </time>
+          )}
+          {(post as any).updated_at && (post as any).updated_at !== post.published_at && (
+            <time dateTime={new Date((post as any).updated_at).toISOString()}>
+              Updated {new Date((post as any).updated_at).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
+            </time>
+          )}
+        </div>
         {post.hero_image_url && (
-          <img src={post.hero_image_url} alt="" className="mt-6 w-full rounded-xl border border-border" />
+          <img src={post.hero_image_url} alt={post.title} className="mt-6 w-full rounded-xl border border-border" />
         )}
       </header>
 
@@ -110,6 +117,15 @@ function BlogPost() {
         <Link to="/contact" className="mt-4 inline-flex rounded-md bg-gradient-to-r from-brand to-brand-glow px-4 py-2 text-sm font-semibold text-brand-foreground">
           Request a consultation
         </Link>
+        <div className="mt-6 border-t border-border pt-4 text-sm text-muted-foreground">
+          Explore related services: {" "}
+          <Link to="/services" className="text-brand hover:underline">all security services</Link>
+          {" · "}
+          <Link to="/services/$service" params={{ service: "cctv" }} className="text-brand hover:underline">CCTV & video surveillance</Link>
+          {" · "}
+          <Link to="/services/$service" params={{ service: "remote" }} className="text-brand hover:underline">remote guarding & monitoring</Link>
+          .
+        </div>
       </div>
     </article>
   );
