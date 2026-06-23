@@ -169,8 +169,10 @@ function CityPage() {
           </p>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s) => (
-              <div
+              <Link
                 key={s.id}
+                to="/services/$service"
+                params={{ service: s.id }}
                 className="group rounded-xl border border-border bg-surface/40 p-6 transition-colors hover:border-brand-glow/60"
               >
                 <s.icon className="h-6 w-6 text-brand-glow" />
@@ -178,7 +180,10 @@ function CityPage() {
                   {s.name} in {city.name}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
-              </div>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-glow">
+                  Learn more <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
             ))}
           </div>
         </div>
