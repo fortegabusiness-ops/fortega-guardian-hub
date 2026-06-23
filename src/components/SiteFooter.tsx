@@ -1,17 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/fortega-logo-new.png.asset.json";
-
-const services = [
-  "Consulting & Professional Services",
-  "CCTV & Video Surveillance",
-  "Intrusion & Burglar Alarms",
-  "Access Control Systems",
-  "Remote Guarding & Monitoring",
-  "Security Guard Services",
-  "Smart Building & Automation",
-  "Cyber Security",
-];
+import { SERVICES } from "@/lib/seo/services";
 
 export function SiteFooter() {
   return (
@@ -52,10 +42,14 @@ export function SiteFooter() {
           <div className="lg:col-span-3">
             <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-foreground">Services</h4>
             <ul className="mt-4 space-y-2.5 text-sm">
-              {services.map((s) => (
-                <li key={s}>
-                  <Link to="/services" className="text-muted-foreground transition-colors hover:text-foreground">
-                    {s}
+              {SERVICES.map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    to="/services/$service"
+                    params={{ service: s.slug }}
+                    className="text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {s.name}
                   </Link>
                 </li>
               ))}
