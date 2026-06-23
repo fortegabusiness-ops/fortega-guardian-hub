@@ -2,18 +2,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, Lightbulb, Handshake, Award, Heart, ArrowRight } from "lucide-react";
 import buildingImg from "@/assets/smart-building.jpg";
 import logo from "@/assets/fortega-logo.png.asset.json";
-import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
+import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Fortega — Canadian Integrated Security Company" },
       { name: "description", content: "Fortega is a Canadian electronic security company delivering integrated security, monitoring, automation and cyber security solutions." },
-      { property: "og:title", content: "About Fortega" },
-      { property: "og:description", content: "Integrated security, monitoring, automation and cyber security solutions across Canada." },
-      { property: "og:url", content: "/about" },
+      ...socialMeta({
+        title: "About Fortega — Canadian Integrated Security Company",
+        description: "Fortega is a Canadian electronic security company delivering integrated security, monitoring, automation and cyber security solutions.",
+        url: `${SITE_URL}/about`,
+      }),
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/about` }],
     scripts: [
       jsonLd(
         breadcrumbSchema([
