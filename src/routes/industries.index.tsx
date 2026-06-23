@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Building2 } from "lucide-react";
 import { INDUSTRIES } from "@/lib/seo/industries";
-import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
+import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/industries/")({
   head: () => ({
@@ -12,12 +12,11 @@ export const Route = createFileRoute("/industries/")({
         content:
           "Industry-specific security programs from Fortega — commercial real estate, retail, industrial, healthcare, education, government, cannabis, financial services and more.",
       },
-      { property: "og:title", content: "Fortega Industry Security Solutions" },
-      {
-        property: "og:description",
-        content: "Integrated security and cyber programs engineered for each industry Fortega serves across Canada.",
-      },
-      { property: "og:url", content: `${SITE_URL}/industries` },
+      ...socialMeta({
+        title: "Security Solutions by Industry | Fortega",
+        description: "Integrated security and cyber programs engineered for each industry Fortega serves across Canada.",
+        url: `${SITE_URL}/industries`,
+      }),
     ],
     links: [{ rel: "canonical", href: `${SITE_URL}/industries` }],
     scripts: [

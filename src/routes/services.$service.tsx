@@ -8,6 +8,7 @@ import { SERVICE_BY_SLUG, SERVICES, type ServiceDetail } from "@/lib/seo/service
 import { INDUSTRY_BY_SLUG } from "@/lib/seo/industries";
 import {
   breadcrumbSchema, faqSchema, jsonLd, serviceSchema, SITE_URL,
+  socialMeta,
 } from "@/lib/seo/schema";
 
 const ICONS = { Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock } as const;
@@ -27,10 +28,12 @@ export const Route = createFileRoute("/services/$service")({
       meta: [
         { title: service.metaTitle },
         { name: "description", content: service.metaDescription },
-        { property: "og:title", content: service.metaTitle },
-        { property: "og:description", content: service.metaDescription },
-        { property: "og:url", content: url },
-        { property: "og:type", content: "article" },
+        ...socialMeta({
+          title: service.metaTitle,
+          description: service.metaDescription,
+          url,
+          type: "article",
+        }),
       ],
       links: [{ rel: "canonical", href: url }],
       scripts: [

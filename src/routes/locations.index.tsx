@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CITIES, CITIES_BY_PROVINCE } from "@/lib/seo/cities";
-import { breadcrumbSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
+import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/locations/")({
   head: () => ({
@@ -10,12 +10,11 @@ export const Route = createFileRoute("/locations/")({
         name: "description",
         content: `Fortega delivers CCTV, access control, alarm monitoring and cyber security across ${CITIES.length}+ Canadian cities. Find your local service area.`,
       },
-      { property: "og:title", content: "Fortega Service Locations Across Canada" },
-      {
-        property: "og:description",
-        content: "Integrated security solutions in every province and territory across Canada.",
-      },
-      { property: "og:url", content: `${SITE_URL}/locations` },
+      ...socialMeta({
+        title: "Fortega Service Locations Across Canada",
+        description: "Integrated security solutions in every province and territory across Canada.",
+        url: `${SITE_URL}/locations`,
+      }),
     ],
     links: [{ rel: "canonical", href: `${SITE_URL}/locations` }],
     scripts: [

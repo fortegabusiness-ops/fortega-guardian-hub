@@ -8,6 +8,7 @@ import {
   jsonLd,
   serviceSchema,
   SITE_URL,
+  socialMeta,
 } from "@/lib/seo/schema";
 
 const SERVICES = [
@@ -63,9 +64,7 @@ export const Route = createFileRoute("/locations/$city")({
       meta: [
         { title },
         { name: "description", content: description },
-        { property: "og:title", content: title },
-        { property: "og:description", content: description },
-        { property: "og:url", content: url },
+        ...socialMeta({ title, description, url, type: "article" }),
       ],
       links: [{ rel: "canonical", href: url }],
       scripts: [

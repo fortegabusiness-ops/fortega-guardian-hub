@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, Check, ShieldAlert, Shield, Award, Sparkles } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
 import { INDUSTRY_BY_SLUG, type Industry } from "@/lib/seo/industries";
-import { breadcrumbSchema, faqSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
+import { breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 import { SERVICES } from "@/lib/seo/services";
 
 export const Route = createFileRoute("/industries/$industry")({
@@ -22,10 +22,12 @@ export const Route = createFileRoute("/industries/$industry")({
       meta: [
         { title: industry.metaTitle },
         { name: "description", content: industry.metaDescription },
-        { property: "og:title", content: industry.metaTitle },
-        { property: "og:description", content: industry.metaDescription },
-        { property: "og:url", content: url },
-        { property: "og:type", content: "article" },
+        ...socialMeta({
+          title: industry.metaTitle,
+          description: industry.metaDescription,
+          url,
+          type: "article",
+        }),
       ],
       links: [{ rel: "canonical", href: url }],
       scripts: [
