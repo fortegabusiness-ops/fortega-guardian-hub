@@ -17,7 +17,7 @@ const servicesFaqs = [
   { q: "Can Fortega monitor alarms 24/7?", a: "Yes. Our 24/7 monitoring service handles intrusion, panic, environmental and video alarms with verification protocols and pre-agreed dispatch paths to authorities or on-site responders." },
 ];
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
       { title: "Security Services — CCTV, Access, Monitoring, Cyber | Fortega" },

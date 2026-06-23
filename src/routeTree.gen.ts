@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ServicesRouteImport } from './routes/services'
 import { Route as FeedDotxmlRouteImport } from './routes/feed[.]xml'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthDotmdRouteImport } from './routes/auth[.]md'
@@ -18,6 +17,7 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
@@ -40,11 +40,6 @@ import { Route as AuthenticatedAdminBlogIdRouteImport } from './routes/_authenti
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FeedDotxmlRoute = FeedDotxmlRouteImport.update({
@@ -81,6 +76,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesIndexRoute = ServicesIndexRouteImport.update({
+  id: '/services/',
+  path: '/services/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocationsIndexRoute = LocationsIndexRouteImport.update({
   id: '/locations/',
   path: '/locations/',
@@ -97,9 +97,9 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesServiceRoute = ServicesServiceRouteImport.update({
-  id: '/$service',
-  path: '/$service',
-  getParentRoute: () => ServicesRoute,
+  id: '/services/$service',
+  path: '/services/$service',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const LocationsCityRoute = LocationsCityRouteImport.update({
   id: '/locations/$city',
@@ -188,7 +188,6 @@ export interface FileRoutesByFullPath {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/feed.xml': typeof FeedDotxmlRoute
-  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
@@ -200,6 +199,7 @@ export interface FileRoutesByFullPath {
   '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
   '/locations/': typeof LocationsIndexRoute
+  '/services/': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
@@ -216,7 +216,6 @@ export interface FileRoutesByTo {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/feed.xml': typeof FeedDotxmlRoute
-  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
@@ -228,6 +227,7 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogIndexRoute
   '/industries': typeof IndustriesIndexRoute
   '/locations': typeof LocationsIndexRoute
+  '/services': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
@@ -246,7 +246,6 @@ export interface FileRoutesById {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/feed.xml': typeof FeedDotxmlRoute
-  '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
@@ -258,6 +257,7 @@ export interface FileRoutesById {
   '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
   '/locations/': typeof LocationsIndexRoute
+  '/services/': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/_authenticated/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
@@ -276,7 +276,6 @@ export interface FileRouteTypes {
     | '/auth.md'
     | '/contact'
     | '/feed.xml'
-    | '/services'
     | '/sitemap.xml'
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
@@ -288,6 +287,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/industries/'
     | '/locations/'
+    | '/services/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
     | '/admin/blog/$id'
@@ -304,7 +304,6 @@ export interface FileRouteTypes {
     | '/auth.md'
     | '/contact'
     | '/feed.xml'
-    | '/services'
     | '/sitemap.xml'
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
@@ -316,6 +315,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/industries'
     | '/locations'
+    | '/services'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
     | '/admin/blog/$id'
@@ -333,7 +333,6 @@ export interface FileRouteTypes {
     | '/auth.md'
     | '/contact'
     | '/feed.xml'
-    | '/services'
     | '/sitemap.xml'
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
@@ -345,6 +344,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/industries/'
     | '/locations/'
+    | '/services/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
     | '/_authenticated/admin/blog/$id'
@@ -363,7 +363,6 @@ export interface RootRouteChildren {
   AuthDotmdRoute: typeof AuthDotmdRoute
   ContactRoute: typeof ContactRoute
   FeedDotxmlRoute: typeof FeedDotxmlRoute
-  ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
   DotwellKnownOauthAuthorizationServerRoute: typeof DotwellKnownOauthAuthorizationServerRoute
@@ -371,9 +370,11 @@ export interface RootRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
   IndustriesIndustryRoute: typeof IndustriesIndustryRoute
   LocationsCityRoute: typeof LocationsCityRoute
+  ServicesServiceRoute: typeof ServicesServiceRoute
   BlogIndexRoute: typeof BlogIndexRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
   LocationsIndexRoute: typeof LocationsIndexRoute
+  ServicesIndexRoute: typeof ServicesIndexRoute
   DotwellKnownAgentSkillsIndexDotjsonRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   DotwellKnownMcpServerCardDotjsonRoute: typeof DotwellKnownMcpServerCardDotjsonRoute
   ApiPublicHooksAutoPublishStaleRoute: typeof ApiPublicHooksAutoPublishStaleRoute
@@ -389,13 +390,6 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/feed.xml': {
@@ -447,6 +441,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/': {
+      id: '/services/'
+      path: '/services'
+      fullPath: '/services/'
+      preLoaderRoute: typeof ServicesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations/': {
       id: '/locations/'
       path: '/locations'
@@ -470,10 +471,10 @@ declare module '@tanstack/react-router' {
     }
     '/services/$service': {
       id: '/services/$service'
-      path: '/$service'
+      path: '/services/$service'
       fullPath: '/services/$service'
       preLoaderRoute: typeof ServicesServiceRouteImport
-      parentRoute: typeof ServicesRoute
+      parentRoute: typeof rootRouteImport
     }
     '/locations/$city': {
       id: '/locations/$city'
@@ -589,18 +590,6 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
 const AuthenticatedRouteRouteWithChildren =
   AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
 
-interface ServicesRouteChildren {
-  ServicesServiceRoute: typeof ServicesServiceRoute
-}
-
-const ServicesRouteChildren: ServicesRouteChildren = {
-  ServicesServiceRoute: ServicesServiceRoute,
-}
-
-const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
-  ServicesRouteChildren,
-)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
@@ -609,7 +598,6 @@ const rootRouteChildren: RootRouteChildren = {
   AuthDotmdRoute: AuthDotmdRoute,
   ContactRoute: ContactRoute,
   FeedDotxmlRoute: FeedDotxmlRoute,
-  ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   DotwellKnownApiCatalogRoute: DotwellKnownApiCatalogRoute,
   DotwellKnownOauthAuthorizationServerRoute:
@@ -619,9 +607,11 @@ const rootRouteChildren: RootRouteChildren = {
   BlogSlugRoute: BlogSlugRoute,
   IndustriesIndustryRoute: IndustriesIndustryRoute,
   LocationsCityRoute: LocationsCityRoute,
+  ServicesServiceRoute: ServicesServiceRoute,
   BlogIndexRoute: BlogIndexRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
   LocationsIndexRoute: LocationsIndexRoute,
+  ServicesIndexRoute: ServicesIndexRoute,
   DotwellKnownAgentSkillsIndexDotjsonRoute:
     DotwellKnownAgentSkillsIndexDotjsonRoute,
   DotwellKnownMcpServerCardDotjsonRoute: DotwellKnownMcpServerCardDotjsonRoute,
