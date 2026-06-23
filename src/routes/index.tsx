@@ -8,6 +8,9 @@ import heroImg from "@/assets/hero-ops.jpg";
 import cyberBg from "@/assets/cyber-bg.jpg";
 import { FAQSection } from "@/components/FAQSection";
 import { breadcrumbSchema, faqSchema, jsonLd, localBusinessSchema } from "@/lib/seo/schema";
+import { SERVICES } from "@/lib/seo/services";
+
+const SERVICE_ICONS = { Search, Video, Bell, KeyRound, Eye, UserCheck, Building2, Lock } as const;
 
 const homeFaqs = [
   { q: "What security services does Fortega offer in Canada?", a: "Fortega delivers a full stack of integrated security: CCTV and video surveillance, intrusion and burglar alarms, access control, remote guarding and 24/7 monitoring, on-site security guards, smart building automation and cyber security — all designed, installed and supported by one accountable team." },
@@ -43,17 +46,6 @@ const whyChoose = [
   { icon: Headphones, title: "24/7 Monitoring & Support", desc: "Around-the-clock operations center and rapid response." },
   { icon: TrendingUp, title: "Scalable Systems", desc: "Architectures that grow with your sites, users and risk profile." },
   { icon: MapPin, title: "National Coverage", desc: "Trusted partner serving organizations coast to coast in Canada." },
-];
-
-const services = [
-  { icon: Search, title: "Consulting & Professional Services", desc: "Security audits, risk assessments, design and compliance." },
-  { icon: Video, title: "CCTV & Video Surveillance", desc: "AI analytics, VMS platforms and cloud-managed cameras." },
-  { icon: Bell, title: "Intrusion & Burglar Alarms", desc: "Commercial alarm, motion, panic and environmental sensors." },
-  { icon: KeyRound, title: "Access Control Systems", desc: "Card, mobile, biometric and cloud access platforms." },
-  { icon: Eye, title: "Remote Guarding & Monitoring", desc: "Live monitoring, virtual patrols and alarm verification." },
-  { icon: UserCheck, title: "Security Guard Services", desc: "On-site, mobile patrol, concierge and event security." },
-  { icon: Building2, title: "Smart Building & Automation", desc: "Automation, lighting, energy and IoT integration." },
-  { icon: Lock, title: "Cyber Security", desc: "Network defense, threat monitoring and incident response." },
 ];
 
 const process = [
@@ -168,18 +160,25 @@ function Index() {
             sub="Eight integrated practice areas — designed, deployed and supported by Fortega specialists."
           />
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map(({ icon: Icon, title, desc }) => (
-              <article key={title} className="group relative flex flex-col rounded-xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-brand-glow/60 hover:bg-surface-elevated">
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-glow text-brand-foreground shadow-[0_8px_30px_-12px_var(--brand-glow)]">
-                  <Icon className="h-5 w-5" />
-                </div>
-                <h3 className="mt-5 font-display text-base font-semibold leading-snug text-foreground">{title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{desc}</p>
-                <Link to="/services" className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-glow">
-                  Learn more <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                </Link>
-              </article>
-            ))}
+            {SERVICES.map((s) => {
+              const Icon = SERVICE_ICONS[s.iconName];
+              return (
+                <article key={s.slug} className="group relative flex flex-col rounded-xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-brand-glow/60 hover:bg-surface-elevated">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-glow text-brand-foreground shadow-[0_8px_30px_-12px_var(--brand-glow)]">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-5 font-display text-base font-semibold leading-snug text-foreground">{s.name}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{s.tagline}</p>
+                  <Link
+                    to="/services/$service"
+                    params={{ service: s.slug }}
+                    className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-glow"
+                  >
+                    Learn more <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </Link>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
