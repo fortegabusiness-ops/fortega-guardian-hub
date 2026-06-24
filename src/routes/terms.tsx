@@ -3,7 +3,7 @@ import { SITE_URL, socialMeta, breadcrumbSchema, jsonLd } from "@/lib/seo/schema
 
 const TITLE = "Terms of Service | Fortega";
 const DESC =
-  "Terms governing use of the fortega.ca website operated by Fortega Security Inc.";
+  "Terms governing use of the fortega.ca website operated by Fortega Inc.";
 
 export const Route = createFileRoute("/terms")({
   head: () => ({
@@ -37,7 +37,7 @@ function TermsPage() {
       <div className="mt-8 space-y-6 text-foreground">
         <p>
           These Terms of Service ("Terms") govern your access to and use of the website
-          operated at fortega.ca (the "Site") by Fortega Security Inc. ("Fortega"). By
+          operated at fortega.ca (the "Site") by Fortega Inc. ("Fortega"). By
           accessing or using the Site you agree to these Terms.
         </p>
 
@@ -59,7 +59,7 @@ function TermsPage() {
         <h2 className="font-display text-2xl font-semibold">Intellectual property</h2>
         <p>
           The Site, including its design, text, graphics and trademarks, is owned by
-          Fortega Security Inc. or its licensors and is protected by applicable
+          Fortega Inc. or its licensors and is protected by applicable
           intellectual-property laws. You may not copy, modify or redistribute material
           from the Site without our written permission, except for fair-dealing uses
           permitted by law.
