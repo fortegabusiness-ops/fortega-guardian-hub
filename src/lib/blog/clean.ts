@@ -50,10 +50,12 @@ export function normalizeTables(md: string): string {
       const sepText = sepMatch[0];
       const sepCells = sepText.split("|").map((c) => c.trim()).filter(Boolean);
       const cellCount = sepCells.length;
-      const allCells = raw.split("|").map((c) => c.trim());
-      // Drop empty leading/trailing cells caused by leading/trailing pipes
-      while (allCells.length && allCells[0] === "") allCells.shift();
-      while (allCells.length && allCells[allCells.length - 1] === "") allCells.pop();
+      // For collapsed tables, adjacent pipes ("| |") produce empty splits we
+      // should drop entirely — they are seam artifacts, not real empty cells.
+      const allCells = raw
+        .split("|")
+        .map((c) => c.trim())
+        .filter((c) => c !== "");
       // Find the separator cells in the array
       const isSepCell = (c: string) => /^:?-{3,}:?$/.test(c);
       const firstSepIdx = allCells.findIndex(isSepCell);
