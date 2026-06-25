@@ -123,7 +123,7 @@ export const updatePost = createServerFn({ method: "POST" })
     }
     const { error } = await context.supabase
       .from("blog_posts")
-      .update(patch)
+      .update(patch as any)
       .eq("id", data.id);
     if (error) throw new Error(error.message);
     // If updating an already-published post, ping IndexNow for the change.
