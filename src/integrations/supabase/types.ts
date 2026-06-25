@@ -21,8 +21,10 @@ export type Database = {
           content_md: string
           created_at: string
           excerpt: string | null
+          faqs: Json | null
           hero_image_url: string | null
           id: string
+          internal_meta: Json | null
           published_at: string | null
           reviewed_at: string | null
           reviewed_by: string | null
@@ -40,8 +42,10 @@ export type Database = {
           content_md?: string
           created_at?: string
           excerpt?: string | null
+          faqs?: Json | null
           hero_image_url?: string | null
           id?: string
+          internal_meta?: Json | null
           published_at?: string | null
           reviewed_at?: string | null
           reviewed_by?: string | null
@@ -59,8 +63,10 @@ export type Database = {
           content_md?: string
           created_at?: string
           excerpt?: string | null
+          faqs?: Json | null
           hero_image_url?: string | null
           id?: string
+          internal_meta?: Json | null
           published_at?: string | null
           reviewed_at?: string | null
           reviewed_by?: string | null
