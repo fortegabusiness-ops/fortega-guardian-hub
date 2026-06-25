@@ -1,6 +1,13 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
+import {
+  cleanArticleBody,
+  extractMetaBlock,
+  normalizeFaqs,
+  scanForbiddenClaims,
+  findCannibalization,
+} from "./clean";
 
 const slugify = (s: string) =>
   s
@@ -96,18 +103,27 @@ export const updatePost = createServerFn({ method: "POST" })
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const slug = slugify(data.slug || data.title);
+    // Re-clean on admin save in case the editor pasted backstage content.
+    const { body, meta } = extractMetaBlock(data.content_md);
+    const cleanedBody = cleanArticleBody(body);
+    const patch: Record<string, unknown> = {
+      title: data.title,
+      slug,
+      excerpt: data.excerpt ?? null,
+      content_md: cleanedBody,
+      hero_image_url: data.hero_image_url || null,
+      seo_title: data.seo_title ?? null,
+      seo_description: data.seo_description ?? null,
+      topic: data.topic ?? null,
+    };
+    if (meta) {
+      const faqs = normalizeFaqs(meta.faqs);
+      if (faqs) patch.faqs = faqs;
+      patch.internal_meta = meta;
+    }
     const { error } = await context.supabase
       .from("blog_posts")
-      .update({
-        title: data.title,
-        slug,
-        excerpt: data.excerpt ?? null,
-        content_md: data.content_md,
-        hero_image_url: data.hero_image_url || null,
-        seo_title: data.seo_title ?? null,
-        seo_description: data.seo_description ?? null,
-        topic: data.topic ?? null,
-      })
+      .update(patch)
       .eq("id", data.id);
     if (error) throw new Error(error.message);
     // If updating an already-published post, ping IndexNow for the change.
