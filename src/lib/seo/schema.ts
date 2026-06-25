@@ -1,7 +1,6 @@
 const SITE_URL = "https://fortega.ca";
 const LOGO_URL = "https://fortega.ca/favicon.ico";
 const OG_IMAGE_URL = `${SITE_URL}/__l5e/assets-v1/a45ab0c4-bdca-405e-a26d-d24869130bfc/og-default.jpg`;
-const BLOG_AUTHOR_NAME = "Fortega Security Team";
 
 const POSTAL_ADDRESS = {
   "@type": "PostalAddress",
@@ -119,34 +118,6 @@ export function jsonLd(data: unknown) {
   };
 }
 
-export function articleSchema(p: {
-  title: string;
-  description: string;
-  slug: string;
-  datePublished?: string | null;
-  dateModified?: string | null;
-  image?: string | null;
-}) {
-  const url = `${SITE_URL}/blog/${p.slug}`;
-  return {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: p.title,
-    description: p.description,
-    ...(p.image ? { image: p.image } : {}),
-    ...(p.datePublished ? { datePublished: new Date(p.datePublished).toISOString() } : {}),
-    ...(p.dateModified ? { dateModified: new Date(p.dateModified).toISOString() } : {}),
-    author: {
-      "@type": "Organization",
-      name: BLOG_AUTHOR_NAME,
-      url: SITE_URL,
-    },
-    publisher: { "@id": `${SITE_URL}/#organization` },
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    url,
-  };
-}
-
 /** Build absolute URL for a project-relative path. */
 export function absUrl(path: string) {
   if (path.startsWith("http")) return path;
@@ -178,4 +149,4 @@ export function socialMeta(opts: {
   ];
 }
 
-export { SITE_URL, OG_IMAGE_URL, BLOG_AUTHOR_NAME };
+export { SITE_URL, OG_IMAGE_URL };

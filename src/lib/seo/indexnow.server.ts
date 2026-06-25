@@ -80,7 +80,3 @@ export async function submitToIndexNow(urls: string[]): Promise<void> {
     console.warn("[indexnow] submit failed:", e?.message ?? e);
   }
 }
-
-export function blogPostUrls(slug: string): string[] {
-  return [`${PROD_ORIGIN}/blog/${slug}`, `${PROD_ORIGIN}/blog`];
-}

@@ -14,72 +14,6 @@ export type Database = {
   }
   public: {
     Tables: {
-      blog_posts: {
-        Row: {
-          ai_generated: boolean
-          auto_publish_at: string | null
-          content_md: string
-          created_at: string
-          excerpt: string | null
-          faqs: Json | null
-          hero_image_url: string | null
-          id: string
-          internal_meta: Json | null
-          published_at: string | null
-          reviewed_at: string | null
-          reviewed_by: string | null
-          seo_description: string | null
-          seo_title: string | null
-          slug: string
-          status: string
-          title: string
-          topic: string | null
-          updated_at: string
-        }
-        Insert: {
-          ai_generated?: boolean
-          auto_publish_at?: string | null
-          content_md?: string
-          created_at?: string
-          excerpt?: string | null
-          faqs?: Json | null
-          hero_image_url?: string | null
-          id?: string
-          internal_meta?: Json | null
-          published_at?: string | null
-          reviewed_at?: string | null
-          reviewed_by?: string | null
-          seo_description?: string | null
-          seo_title?: string | null
-          slug: string
-          status?: string
-          title: string
-          topic?: string | null
-          updated_at?: string
-        }
-        Update: {
-          ai_generated?: boolean
-          auto_publish_at?: string | null
-          content_md?: string
-          created_at?: string
-          excerpt?: string | null
-          faqs?: Json | null
-          hero_image_url?: string | null
-          id?: string
-          internal_meta?: Json | null
-          published_at?: string | null
-          reviewed_at?: string | null
-          reviewed_by?: string | null
-          seo_description?: string | null
-          seo_title?: string | null
-          slug?: string
-          status?: string
-          title?: string
-          topic?: string | null
-          updated_at?: string
-        }
-        Relationships: []
-      }
       email_send_log: {
         Row: {
           created_at: string
@@ -249,7 +183,6 @@ export type Database = {
           read_ct: number
         }[]
       }
-      setup_blog_cron: { Args: never; Returns: string }
       verify_cron_secret: { Args: { _provided: string }; Returns: boolean }
     }
     Enums: {

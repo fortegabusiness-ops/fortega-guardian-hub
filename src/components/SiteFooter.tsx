@@ -27,7 +27,6 @@ export function SiteFooter() {
                 ["About Us", "/about"],
                 ["Services", "/services"],
                 ["Industries", "/industries"],
-                ["Blog", "/blog"],
                 ["Contact", "/contact"],
               ].map(([l, t]) => (
                 <li key={t}>

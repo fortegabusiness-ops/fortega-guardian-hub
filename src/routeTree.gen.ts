@@ -13,12 +13,9 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as FeedDotxmlRouteImport } from './routes/feed[.]xml'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthDotmdRouteImport } from './routes/auth[.]md'
-import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AboutRouteImport } from './routes/about'
-import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
@@ -27,19 +24,13 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServicesServiceRouteImport } from './routes/services.$service'
 import { Route as LocationsCityRouteImport } from './routes/locations.$city'
 import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes/[.]well-known.oauth-protected-resource'
 import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
 import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
 import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[.]well-known.mcp.server-card[.]json'
 import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './routes/[.]well-known.agent-skills.index[.]json'
-import { Route as AuthenticatedAdminBlogIndexRouteImport } from './routes/_authenticated/admin.blog.index'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
-import { Route as ApiPublicOgSlugRouteImport } from './routes/api/public/og/$slug'
-import { Route as ApiPublicHooksIndexnowSubmitRouteImport } from './routes/api/public/hooks/indexnow-submit'
-import { Route as ApiPublicHooksGenerateDailyDraftRouteImport } from './routes/api/public/hooks/generate-daily-draft'
-import { Route as ApiPublicHooksAutoPublishStaleRouteImport } from './routes/api/public/hooks/auto-publish-stale'
-import { Route as AuthenticatedAdminBlogIdRouteImport } from './routes/_authenticated/admin.blog.$id'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -61,11 +52,6 @@ const PrivacyRoute = PrivacyRouteImport.update({
   path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FeedDotxmlRoute = FeedDotxmlRouteImport.update({
-  id: '/feed.xml',
-  path: '/feed.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -76,18 +62,9 @@ const AuthDotmdRoute = AuthDotmdRouteImport.update({
   path: '/auth.md',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthRoute = AuthRouteImport.update({
-  id: '/auth',
-  path: '/auth',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
-  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -130,9 +107,9 @@ const IndustriesIndustryRoute = IndustriesIndustryRouteImport.update({
   path: '/industries/$industry',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/blog/$',
+  path: '/blog/$',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DotwellKnownOauthProtectedResourceRoute =
@@ -164,55 +141,18 @@ const DotwellKnownAgentSkillsIndexDotjsonRoute =
     path: '/.well-known/agent-skills/index.json',
     getParentRoute: () => rootRouteImport,
   } as any)
-const AuthenticatedAdminBlogIndexRoute =
-  AuthenticatedAdminBlogIndexRouteImport.update({
-    id: '/admin/blog/',
-    path: '/admin/blog/',
-    getParentRoute: () => AuthenticatedRouteRoute,
-  } as any)
 const LovableEmailQueueProcessRoute =
   LovableEmailQueueProcessRouteImport.update({
     id: '/lovable/email/queue/process',
     path: '/lovable/email/queue/process',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ApiPublicOgSlugRoute = ApiPublicOgSlugRouteImport.update({
-  id: '/api/public/og/$slug',
-  path: '/api/public/og/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicHooksIndexnowSubmitRoute =
-  ApiPublicHooksIndexnowSubmitRouteImport.update({
-    id: '/api/public/hooks/indexnow-submit',
-    path: '/api/public/hooks/indexnow-submit',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicHooksGenerateDailyDraftRoute =
-  ApiPublicHooksGenerateDailyDraftRouteImport.update({
-    id: '/api/public/hooks/generate-daily-draft',
-    path: '/api/public/hooks/generate-daily-draft',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicHooksAutoPublishStaleRoute =
-  ApiPublicHooksAutoPublishStaleRouteImport.update({
-    id: '/api/public/hooks/auto-publish-stale',
-    path: '/api/public/hooks/auto-publish-stale',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const AuthenticatedAdminBlogIdRoute =
-  AuthenticatedAdminBlogIdRouteImport.update({
-    id: '/admin/blog/$id',
-    path: '/admin/blog/$id',
-    getParentRoute: () => AuthenticatedRouteRoute,
-  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/auth': typeof AuthRoute
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
-  '/feed.xml': typeof FeedDotxmlRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -220,7 +160,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
-  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
   '/services/$service': typeof ServicesServiceRoute
@@ -230,28 +170,20 @@ export interface FileRoutesByFullPath {
   '/services/': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
-  '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
-  '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
-  '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
-  '/api/public/hooks/indexnow-submit': typeof ApiPublicHooksIndexnowSubmitRoute
-  '/api/public/og/$slug': typeof ApiPublicOgSlugRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
-  '/admin/blog/': typeof AuthenticatedAdminBlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/auth': typeof AuthRoute
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
-  '/feed.xml': typeof FeedDotxmlRoute
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
-  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
   '/services/$service': typeof ServicesServiceRoute
@@ -261,23 +193,14 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
-  '/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
-  '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
-  '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
-  '/api/public/hooks/indexnow-submit': typeof ApiPublicHooksIndexnowSubmitRoute
-  '/api/public/og/$slug': typeof ApiPublicOgSlugRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
-  '/admin/blog': typeof AuthenticatedAdminBlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/about': typeof AboutRoute
-  '/auth': typeof AuthRoute
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
-  '/feed.xml': typeof FeedDotxmlRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -285,7 +208,7 @@ export interface FileRoutesById {
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
-  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
   '/services/$service': typeof ServicesServiceRoute
@@ -295,23 +218,15 @@ export interface FileRoutesById {
   '/services/': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
-  '/_authenticated/admin/blog/$id': typeof AuthenticatedAdminBlogIdRoute
-  '/api/public/hooks/auto-publish-stale': typeof ApiPublicHooksAutoPublishStaleRoute
-  '/api/public/hooks/generate-daily-draft': typeof ApiPublicHooksGenerateDailyDraftRoute
-  '/api/public/hooks/indexnow-submit': typeof ApiPublicHooksIndexnowSubmitRoute
-  '/api/public/og/$slug': typeof ApiPublicOgSlugRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
-  '/_authenticated/admin/blog/': typeof AuthenticatedAdminBlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
-    | '/auth'
     | '/auth.md'
     | '/contact'
-    | '/feed.xml'
     | '/privacy'
     | '/services'
     | '/sitemap.xml'
@@ -319,7 +234,7 @@ export interface FileRouteTypes {
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
-    | '/blog/$slug'
+    | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
     | '/services/$service'
@@ -329,28 +244,20 @@ export interface FileRouteTypes {
     | '/services/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
-    | '/admin/blog/$id'
-    | '/api/public/hooks/auto-publish-stale'
-    | '/api/public/hooks/generate-daily-draft'
-    | '/api/public/hooks/indexnow-submit'
-    | '/api/public/og/$slug'
     | '/lovable/email/queue/process'
-    | '/admin/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/auth'
     | '/auth.md'
     | '/contact'
-    | '/feed.xml'
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
-    | '/blog/$slug'
+    | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
     | '/services/$service'
@@ -360,22 +267,13 @@ export interface FileRouteTypes {
     | '/services'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
-    | '/admin/blog/$id'
-    | '/api/public/hooks/auto-publish-stale'
-    | '/api/public/hooks/generate-daily-draft'
-    | '/api/public/hooks/indexnow-submit'
-    | '/api/public/og/$slug'
     | '/lovable/email/queue/process'
-    | '/admin/blog'
   id:
     | '__root__'
     | '/'
-    | '/_authenticated'
     | '/about'
-    | '/auth'
     | '/auth.md'
     | '/contact'
-    | '/feed.xml'
     | '/privacy'
     | '/services'
     | '/sitemap.xml'
@@ -383,7 +281,7 @@ export interface FileRouteTypes {
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
-    | '/blog/$slug'
+    | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
     | '/services/$service'
@@ -393,23 +291,14 @@ export interface FileRouteTypes {
     | '/services/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
-    | '/_authenticated/admin/blog/$id'
-    | '/api/public/hooks/auto-publish-stale'
-    | '/api/public/hooks/generate-daily-draft'
-    | '/api/public/hooks/indexnow-submit'
-    | '/api/public/og/$slug'
     | '/lovable/email/queue/process'
-    | '/_authenticated/admin/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AboutRoute: typeof AboutRoute
-  AuthRoute: typeof AuthRoute
   AuthDotmdRoute: typeof AuthDotmdRoute
   ContactRoute: typeof ContactRoute
-  FeedDotxmlRoute: typeof FeedDotxmlRoute
   PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -417,7 +306,7 @@ export interface RootRouteChildren {
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
   DotwellKnownOauthAuthorizationServerRoute: typeof DotwellKnownOauthAuthorizationServerRoute
   DotwellKnownOauthProtectedResourceRoute: typeof DotwellKnownOauthProtectedResourceRoute
-  BlogSlugRoute: typeof BlogSlugRoute
+  BlogSplatRoute: typeof BlogSplatRoute
   IndustriesIndustryRoute: typeof IndustriesIndustryRoute
   LocationsCityRoute: typeof LocationsCityRoute
   BlogIndexRoute: typeof BlogIndexRoute
@@ -425,10 +314,6 @@ export interface RootRouteChildren {
   LocationsIndexRoute: typeof LocationsIndexRoute
   DotwellKnownAgentSkillsIndexDotjsonRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   DotwellKnownMcpServerCardDotjsonRoute: typeof DotwellKnownMcpServerCardDotjsonRoute
-  ApiPublicHooksAutoPublishStaleRoute: typeof ApiPublicHooksAutoPublishStaleRoute
-  ApiPublicHooksGenerateDailyDraftRoute: typeof ApiPublicHooksGenerateDailyDraftRoute
-  ApiPublicHooksIndexnowSubmitRoute: typeof ApiPublicHooksIndexnowSubmitRoute
-  ApiPublicOgSlugRoute: typeof ApiPublicOgSlugRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
@@ -462,13 +347,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/feed.xml': {
-      id: '/feed.xml'
-      path: '/feed.xml'
-      fullPath: '/feed.xml'
-      preLoaderRoute: typeof FeedDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -483,25 +361,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthDotmdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_authenticated': {
-      id: '/_authenticated'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -560,11 +424,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndustriesIndustryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/blog/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.well-known/oauth-protected-resource': {
@@ -602,13 +466,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_authenticated/admin/blog/': {
-      id: '/_authenticated/admin/blog/'
-      path: '/admin/blog'
-      fullPath: '/admin/blog/'
-      preLoaderRoute: typeof AuthenticatedAdminBlogIndexRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
-    }
     '/lovable/email/queue/process': {
       id: '/lovable/email/queue/process'
       path: '/lovable/email/queue/process'
@@ -616,56 +473,8 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/og/$slug': {
-      id: '/api/public/og/$slug'
-      path: '/api/public/og/$slug'
-      fullPath: '/api/public/og/$slug'
-      preLoaderRoute: typeof ApiPublicOgSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/hooks/indexnow-submit': {
-      id: '/api/public/hooks/indexnow-submit'
-      path: '/api/public/hooks/indexnow-submit'
-      fullPath: '/api/public/hooks/indexnow-submit'
-      preLoaderRoute: typeof ApiPublicHooksIndexnowSubmitRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/hooks/generate-daily-draft': {
-      id: '/api/public/hooks/generate-daily-draft'
-      path: '/api/public/hooks/generate-daily-draft'
-      fullPath: '/api/public/hooks/generate-daily-draft'
-      preLoaderRoute: typeof ApiPublicHooksGenerateDailyDraftRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/hooks/auto-publish-stale': {
-      id: '/api/public/hooks/auto-publish-stale'
-      path: '/api/public/hooks/auto-publish-stale'
-      fullPath: '/api/public/hooks/auto-publish-stale'
-      preLoaderRoute: typeof ApiPublicHooksAutoPublishStaleRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_authenticated/admin/blog/$id': {
-      id: '/_authenticated/admin/blog/$id'
-      path: '/admin/blog/$id'
-      fullPath: '/admin/blog/$id'
-      preLoaderRoute: typeof AuthenticatedAdminBlogIdRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
-    }
   }
 }
-
-interface AuthenticatedRouteRouteChildren {
-  AuthenticatedAdminBlogIdRoute: typeof AuthenticatedAdminBlogIdRoute
-  AuthenticatedAdminBlogIndexRoute: typeof AuthenticatedAdminBlogIndexRoute
-}
-
-const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
-  AuthenticatedAdminBlogIdRoute: AuthenticatedAdminBlogIdRoute,
-  AuthenticatedAdminBlogIndexRoute: AuthenticatedAdminBlogIndexRoute,
-}
-
-const AuthenticatedRouteRouteWithChildren =
-  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
 
 interface ServicesRouteChildren {
   ServicesServiceRoute: typeof ServicesServiceRoute
@@ -683,12 +492,9 @@ const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AboutRoute: AboutRoute,
-  AuthRoute: AuthRoute,
   AuthDotmdRoute: AuthDotmdRoute,
   ContactRoute: ContactRoute,
-  FeedDotxmlRoute: FeedDotxmlRoute,
   PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
@@ -698,7 +504,7 @@ const rootRouteChildren: RootRouteChildren = {
     DotwellKnownOauthAuthorizationServerRoute,
   DotwellKnownOauthProtectedResourceRoute:
     DotwellKnownOauthProtectedResourceRoute,
-  BlogSlugRoute: BlogSlugRoute,
+  BlogSplatRoute: BlogSplatRoute,
   IndustriesIndustryRoute: IndustriesIndustryRoute,
   LocationsCityRoute: LocationsCityRoute,
   BlogIndexRoute: BlogIndexRoute,
@@ -707,10 +513,6 @@ const rootRouteChildren: RootRouteChildren = {
   DotwellKnownAgentSkillsIndexDotjsonRoute:
     DotwellKnownAgentSkillsIndexDotjsonRoute,
   DotwellKnownMcpServerCardDotjsonRoute: DotwellKnownMcpServerCardDotjsonRoute,
-  ApiPublicHooksAutoPublishStaleRoute: ApiPublicHooksAutoPublishStaleRoute,
-  ApiPublicHooksGenerateDailyDraftRoute: ApiPublicHooksGenerateDailyDraftRoute,
-  ApiPublicHooksIndexnowSubmitRoute: ApiPublicHooksIndexnowSubmitRoute,
-  ApiPublicOgSlugRoute: ApiPublicOgSlugRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
