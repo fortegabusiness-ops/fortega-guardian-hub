@@ -16,7 +16,6 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 - [Contact](/contact): Request a security consultation or site assessment
 - [Locations](/locations): Service areas and cities across Canada
 - [Industries](/industries): Industry-specific security programs
-- [Blog](/blog): Security insights, threat updates and best practices
 
 ## Services
 
