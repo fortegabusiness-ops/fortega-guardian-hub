@@ -430,6 +430,25 @@ SELF-CHECK before returning (fix any fail first):
   // Pack the publish-ready supplementary material (review notes, JSON-LD, source list,
   // internal-link map) as HTML comments at the end of the markdown so it never renders
   // to readers but remains visible to admins in the editor.
+  // Extract any FAQ array the model produced. Accept several common shapes.
+  const rawFaqs =
+    parsed.faqs ??
+    parsed.faq ??
+    (parsed.json_ld && Array.isArray(parsed.json_ld?.["@graph"])
+      ? parsed.json_ld["@graph"].find((g: any) => g?.["@type"] === "FAQPage")?.mainEntity
+      : null) ??
+    (parsed.json_ld?.["@type"] === "FAQPage" ? parsed.json_ld.mainEntity : null);
+  const faqs =
+    normalizeFaqs(rawFaqs) ??
+    (Array.isArray(rawFaqs)
+      ? normalizeFaqs(
+          rawFaqs.map((it: any) => ({
+            q: it?.name ?? it?.question ?? it?.q,
+            a: it?.acceptedAnswer?.text ?? it?.answer ?? it?.a,
+          })),
+        )
+      : null);
+
   const meta = {
     primary_keyword: parsed.primary_keyword,
     secondary_keywords: parsed.secondary_keywords,
@@ -439,7 +458,6 @@ SELF-CHECK before returning (fix any fail first):
     images: parsed.images,
     internal_links: parsed.internal_links,
     external_sources_to_verify: parsed.external_sources_to_verify,
-    json_ld: parsed.json_ld,
     review_notes: parsed.review_notes,
     hero_image_filename: parsed.hero_image_filename,
     hero_image_alt: parsed.hero_image_alt,
@@ -447,8 +465,10 @@ SELF-CHECK before returning (fix any fail first):
     roadmap_item: chosen ?? null,
   };
 
-  const content_md =
-    `${article}\n\n<!-- FORTEGA_CONTENT_ENGINE_META\n${JSON.stringify(meta, null, 2)}\nFORTEGA_CONTENT_ENGINE_META -->\n`;
+  // Stored body is the CLEANED, human-readable article only — no engine
+  // metadata, no HTML comments, no <script>/JSON-LD blocks, no [VERIFY]
+  // markers. JSON-LD is emitted by the template using post fields only.
+  const content_md = cleanArticleBody(article);
 
   return {
     title,
@@ -458,6 +478,8 @@ SELF-CHECK before returning (fix any fail first):
     seo_title: String(parsed.seo_title ?? title).trim().slice(0, 60),
     seo_description: String(parsed.meta_description ?? "").trim().slice(0, 160),
     topic: String(parsed.category ?? chosen?.cluster ?? "").trim(),
+    faqs,
+    internal_meta: meta,
   };
 }
 
@@ -501,6 +523,8 @@ export async function createAIDraft(): Promise<{ id: string; slug: string }> {
       ai_generated: true,
       auto_publish_at: autoPublishAt,
       hero_image_url: heroImageUrl,
+      faqs: draft.faqs as any,
+      internal_meta: draft.internal_meta as any,
     })
     .select("id,slug")
     .single();
