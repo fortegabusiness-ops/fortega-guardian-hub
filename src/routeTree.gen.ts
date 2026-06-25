@@ -20,9 +20,11 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServicesServiceRouteImport } from './routes/services.$service'
 import { Route as LocationsCityRouteImport } from './routes/locations.$city'
 import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes/[.]well-known.oauth-protected-resource'
 import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
 import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
@@ -85,6 +87,11 @@ const IndustriesIndexRoute = IndustriesIndexRouteImport.update({
   path: '/industries/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesServiceRoute = ServicesServiceRouteImport.update({
   id: '/$service',
   path: '/$service',
@@ -98,6 +105,11 @@ const LocationsCityRoute = LocationsCityRouteImport.update({
 const IndustriesIndustryRoute = IndustriesIndustryRouteImport.update({
   id: '/industries/$industry',
   path: '/industries/$industry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/blog/$',
+  path: '/blog/$',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DotwellKnownOauthProtectedResourceRoute =
@@ -148,9 +160,11 @@ export interface FileRoutesByFullPath {
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
+  '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
   '/services/$service': typeof ServicesServiceRoute
+  '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/services/': typeof ServicesIndexRoute
@@ -169,9 +183,11 @@ export interface FileRoutesByTo {
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
+  '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
   '/services/$service': typeof ServicesServiceRoute
+  '/blog': typeof BlogIndexRoute
   '/industries': typeof IndustriesIndexRoute
   '/locations': typeof LocationsIndexRoute
   '/services': typeof ServicesIndexRoute
@@ -192,9 +208,11 @@ export interface FileRoutesById {
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
+  '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRoute
   '/services/$service': typeof ServicesServiceRoute
+  '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/services/': typeof ServicesIndexRoute
@@ -216,9 +234,11 @@ export interface FileRouteTypes {
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
+    | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
     | '/services/$service'
+    | '/blog/'
     | '/industries/'
     | '/locations/'
     | '/services/'
@@ -237,9 +257,11 @@ export interface FileRouteTypes {
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
+    | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
     | '/services/$service'
+    | '/blog'
     | '/industries'
     | '/locations'
     | '/services'
@@ -259,9 +281,11 @@ export interface FileRouteTypes {
     | '/.well-known/api-catalog'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
+    | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
     | '/services/$service'
+    | '/blog/'
     | '/industries/'
     | '/locations/'
     | '/services/'
@@ -282,8 +306,10 @@ export interface RootRouteChildren {
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
   DotwellKnownOauthAuthorizationServerRoute: typeof DotwellKnownOauthAuthorizationServerRoute
   DotwellKnownOauthProtectedResourceRoute: typeof DotwellKnownOauthProtectedResourceRoute
+  BlogSplatRoute: typeof BlogSplatRoute
   IndustriesIndustryRoute: typeof IndustriesIndustryRoute
   LocationsCityRoute: typeof LocationsCityRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
   LocationsIndexRoute: typeof LocationsIndexRoute
   DotwellKnownAgentSkillsIndexDotjsonRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRoute
@@ -370,6 +396,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndustriesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/$service': {
       id: '/services/$service'
       path: '/$service'
@@ -389,6 +422,13 @@ declare module '@tanstack/react-router' {
       path: '/industries/$industry'
       fullPath: '/industries/$industry'
       preLoaderRoute: typeof IndustriesIndustryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/blog/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.well-known/oauth-protected-resource': {
@@ -464,8 +504,10 @@ const rootRouteChildren: RootRouteChildren = {
     DotwellKnownOauthAuthorizationServerRoute,
   DotwellKnownOauthProtectedResourceRoute:
     DotwellKnownOauthProtectedResourceRoute,
+  BlogSplatRoute: BlogSplatRoute,
   IndustriesIndustryRoute: IndustriesIndustryRoute,
   LocationsCityRoute: LocationsCityRoute,
+  BlogIndexRoute: BlogIndexRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
   LocationsIndexRoute: LocationsIndexRoute,
   DotwellKnownAgentSkillsIndexDotjsonRoute:
