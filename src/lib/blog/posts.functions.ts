@@ -287,6 +287,8 @@ async function generateDraftViaAI(): Promise<{
   seo_title: string;
   seo_description: string;
   topic: string;
+  faqs: { q: string; a: string }[] | null;
+  internal_meta: Record<string, unknown>;
 }> {
   const key = process.env.LOVABLE_API_KEY;
   if (!key) throw new Error("LOVABLE_API_KEY missing");
