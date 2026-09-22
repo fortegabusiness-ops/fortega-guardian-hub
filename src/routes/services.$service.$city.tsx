@@ -179,7 +179,7 @@ function ServiceAreaPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 md:grid-cols-12 md:px-8 md:py-24">
           <div className="md:col-span-7">
             <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Why {city.name} sites need this
+              {pickVariant(WHY_HEADINGS, `${service.slug}:${city.slug}`)(city)}
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               {context && <p>{context}</p>}
@@ -214,7 +214,7 @@ function ServiceAreaPage() {
       <section className="border-b border-border bg-ink">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
           <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            What we deploy in {city.name}
+            {pickVariant(DEPLOY_HEADINGS, `${service.slug}:${city.slug}`, 7)(city)}
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {service.capabilities.map((c) => (
