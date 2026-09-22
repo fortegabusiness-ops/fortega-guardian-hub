@@ -1,25 +1,14 @@
-import { CITY_BY_SLUG, type City } from "./cities";
-import { SERVICE_BY_SLUG, type ServiceDetail } from "./services";
+import { CITIES, CITY_BY_SLUG, type City } from "./cities";
+import { SERVICE_BY_SLUG, SERVICE_SLUGS, type ServiceDetail } from "./services";
 
 /**
- * Curated service + city landing pages. Only combinations listed here are
- * rendered and indexed, so we never create thin pages at scale. The pilot set
- * targets queries the site already receives impressions for in Search Console.
+ * Service + city landing pages. Every service is offered in every city and
+ * territory we list, so the combination set is the full cross-product of
+ * SERVICE_SLUGS x CITIES. Each page is written from real service, city and
+ * province data (licensing, privacy law, local economy, environment).
  */
-export const SERVICE_AREA_COMBOS: { service: string; city: string }[] = [
-  { service: "access", city: "chatham" },
-  { service: "access", city: "guelph" },
-  { service: "access", city: "toronto" },
-  { service: "remote", city: "north-york" },
-  { service: "remote", city: "etobicoke" },
-  { service: "remote", city: "barrie" },
-  { service: "remote", city: "estevan" },
-  { service: "cctv", city: "toronto" },
-  { service: "cctv", city: "mississauga" },
-  { service: "intrusion", city: "sudbury" },
-  { service: "guards", city: "halifax" },
-  { service: "cyber", city: "vancouver" },
-];
+export const SERVICE_AREA_COMBOS: { service: string; city: string }[] =
+  SERVICE_SLUGS.flatMap((service) => CITIES.map((c) => ({ service, city: c.slug })));
 
 export type ServiceArea = { service: ServiceDetail; city: City };
 
@@ -47,15 +36,34 @@ export const SERVICE_AREAS: ServiceArea[] = SERVICE_AREA_COMBOS.map((c) =>
 ).filter((a): a is ServiceArea => Boolean(a));
 
 /** Other service-area pages in the same city. */
-export function areasInCity(citySlug: string, excludeService?: string) {
-  return SERVICE_AREAS.filter(
+export function areasInCity(citySlug: string, excludeService?: string, limit?: number) {
+  const list = SERVICE_AREAS.filter(
     (a) => a.city.slug === citySlug && a.service.slug !== excludeService,
   );
+  return typeof limit === "number" ? list.slice(0, limit) : list;
 }
 
 /** Other cities covered by the same service. */
-export function areasForService(serviceSlug: string, excludeCity?: string) {
-  return SERVICE_AREAS.filter(
+export function areasForService(serviceSlug: string, excludeCity?: string, limit?: number) {
+  const list = SERVICE_AREAS.filter(
     (a) => a.service.slug === serviceSlug && a.city.slug !== excludeCity,
   );
+  return typeof limit === "number" ? list.slice(0, limit) : list;
+}
+
+/** Same service, in cities that share the given city's province. */
+export function areasNearCity(serviceSlug: string, city: City, limit = 12) {
+  const same = SERVICE_AREAS.filter(
+    (a) =>
+      a.service.slug === serviceSlug &&
+      a.city.slug !== city.slug &&
+      a.city.province === city.province,
+  );
+  const rest = SERVICE_AREAS.filter(
+    (a) =>
+      a.service.slug === serviceSlug &&
+      a.city.slug !== city.slug &&
+      a.city.province !== city.province,
+  );
+  return [...same, ...rest].slice(0, limit);
 }

@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, Check, ShieldCheck, MapPin } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
-import { getServiceArea, areasInCity, areasForService } from "@/lib/seo/service-areas";
+import { getServiceArea, areasInCity, areasNearCity } from "@/lib/seo/service-areas";
 import { CITY_CONTEXT, PROVINCE_BY_NAME, nearbyCities } from "@/lib/seo/provinces";
 import type { City } from "@/lib/seo/cities";
 import type { ServiceDetail } from "@/lib/seo/services";
@@ -109,7 +109,7 @@ function ServiceAreaPage() {
   const context = CITY_CONTEXT[city.slug];
   const faqs = localFaqs(service, city);
   const otherHere = areasInCity(city.slug, service.slug);
-  const otherCities = areasForService(service.slug, city.slug);
+  const otherCities = areasNearCity(service.slug, city, 12);
   const neighbours = nearbyCities(city, 6);
 
   return (
