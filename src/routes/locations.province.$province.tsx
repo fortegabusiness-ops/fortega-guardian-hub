@@ -7,6 +7,7 @@ import { SERVICE_AREAS } from "@/lib/seo/service-areas";
 import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
+import { clampDescription } from "@/lib/seo/meta";
 
 export const Route = createFileRoute("/locations/province/$province")({
   loader: ({ params }) => {
@@ -19,7 +20,12 @@ export const Route = createFileRoute("/locations/province/$province")({
     if (!province) return { meta: [{ title: "Province not found — Fortega" }] };
     const url = `${SITE_URL}/locations/province/${province.slug}`;
     const title = `Security Systems in ${province.name} | Fortega`;
-    const description = `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed under ${province.regulator}. Free site assessment from Fortega.`;
+    const full = `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed under ${province.regulator}. Free site assessment.`;
+    const description = clampDescription(
+      full.length <= 155
+        ? full
+        : `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed provincially. Free site assessment from Fortega.`,
+    );
     const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
     return {
       meta: [
