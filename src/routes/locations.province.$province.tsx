@@ -7,6 +7,7 @@ import { SERVICE_AREAS } from "@/lib/seo/service-areas";
 import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
+import { clampDescription } from "@/lib/seo/meta";
 
 export const Route = createFileRoute("/locations/province/$province")({
   loader: ({ params }) => {
