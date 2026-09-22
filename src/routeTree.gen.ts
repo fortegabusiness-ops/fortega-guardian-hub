@@ -11,6 +11,12 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SitemapServicesDotxmlRouteImport } from './routes/sitemap-services[.]xml'
+import { Route as SitemapServiceAreasDotxmlRouteImport } from './routes/sitemap-service-areas[.]xml'
+import { Route as SitemapResourcesDotxmlRouteImport } from './routes/sitemap-resources[.]xml'
+import { Route as SitemapLocationsDotxmlRouteImport } from './routes/sitemap-locations[.]xml'
+import { Route as SitemapFrDotxmlRouteImport } from './routes/sitemap-fr[.]xml'
+import { Route as SitemapCoreDotxmlRouteImport } from './routes/sitemap-core[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -47,6 +53,37 @@ const TermsRoute = TermsRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapServicesDotxmlRoute = SitemapServicesDotxmlRouteImport.update({
+  id: '/sitemap-services.xml',
+  path: '/sitemap-services.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapServiceAreasDotxmlRoute =
+  SitemapServiceAreasDotxmlRouteImport.update({
+    id: '/sitemap-service-areas.xml',
+    path: '/sitemap-service-areas.xml',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SitemapResourcesDotxmlRoute = SitemapResourcesDotxmlRouteImport.update({
+  id: '/sitemap-resources.xml',
+  path: '/sitemap-resources.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapLocationsDotxmlRoute = SitemapLocationsDotxmlRouteImport.update({
+  id: '/sitemap-locations.xml',
+  path: '/sitemap-locations.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapFrDotxmlRoute = SitemapFrDotxmlRouteImport.update({
+  id: '/sitemap-fr.xml',
+  path: '/sitemap-fr.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapCoreDotxmlRoute = SitemapCoreDotxmlRouteImport.update({
+  id: '/sitemap-core.xml',
+  path: '/sitemap-core.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -198,6 +235,12 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
+  '/sitemap-core.xml': typeof SitemapCoreDotxmlRoute
+  '/sitemap-fr.xml': typeof SitemapFrDotxmlRoute
+  '/sitemap-locations.xml': typeof SitemapLocationsDotxmlRoute
+  '/sitemap-resources.xml': typeof SitemapResourcesDotxmlRoute
+  '/sitemap-service-areas.xml': typeof SitemapServiceAreasDotxmlRoute
+  '/sitemap-services.xml': typeof SitemapServicesDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
@@ -228,6 +271,12 @@ export interface FileRoutesByTo {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/privacy': typeof PrivacyRoute
+  '/sitemap-core.xml': typeof SitemapCoreDotxmlRoute
+  '/sitemap-fr.xml': typeof SitemapFrDotxmlRoute
+  '/sitemap-locations.xml': typeof SitemapLocationsDotxmlRoute
+  '/sitemap-resources.xml': typeof SitemapResourcesDotxmlRoute
+  '/sitemap-service-areas.xml': typeof SitemapServiceAreasDotxmlRoute
+  '/sitemap-services.xml': typeof SitemapServicesDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
@@ -259,6 +308,12 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
+  '/sitemap-core.xml': typeof SitemapCoreDotxmlRoute
+  '/sitemap-fr.xml': typeof SitemapFrDotxmlRoute
+  '/sitemap-locations.xml': typeof SitemapLocationsDotxmlRoute
+  '/sitemap-resources.xml': typeof SitemapResourcesDotxmlRoute
+  '/sitemap-service-areas.xml': typeof SitemapServiceAreasDotxmlRoute
+  '/sitemap-services.xml': typeof SitemapServicesDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
@@ -292,6 +347,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/privacy'
     | '/services'
+    | '/sitemap-core.xml'
+    | '/sitemap-fr.xml'
+    | '/sitemap-locations.xml'
+    | '/sitemap-resources.xml'
+    | '/sitemap-service-areas.xml'
+    | '/sitemap-services.xml'
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
@@ -322,6 +383,12 @@ export interface FileRouteTypes {
     | '/auth.md'
     | '/contact'
     | '/privacy'
+    | '/sitemap-core.xml'
+    | '/sitemap-fr.xml'
+    | '/sitemap-locations.xml'
+    | '/sitemap-resources.xml'
+    | '/sitemap-service-areas.xml'
+    | '/sitemap-services.xml'
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
@@ -352,6 +419,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/privacy'
     | '/services'
+    | '/sitemap-core.xml'
+    | '/sitemap-fr.xml'
+    | '/sitemap-locations.xml'
+    | '/sitemap-resources.xml'
+    | '/sitemap-service-areas.xml'
+    | '/sitemap-services.xml'
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
@@ -384,6 +457,12 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRouteWithChildren
+  SitemapCoreDotxmlRoute: typeof SitemapCoreDotxmlRoute
+  SitemapFrDotxmlRoute: typeof SitemapFrDotxmlRoute
+  SitemapLocationsDotxmlRoute: typeof SitemapLocationsDotxmlRoute
+  SitemapResourcesDotxmlRoute: typeof SitemapResourcesDotxmlRoute
+  SitemapServiceAreasDotxmlRoute: typeof SitemapServiceAreasDotxmlRoute
+  SitemapServicesDotxmlRoute: typeof SitemapServicesDotxmlRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
@@ -419,6 +498,48 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-services.xml': {
+      id: '/sitemap-services.xml'
+      path: '/sitemap-services.xml'
+      fullPath: '/sitemap-services.xml'
+      preLoaderRoute: typeof SitemapServicesDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-service-areas.xml': {
+      id: '/sitemap-service-areas.xml'
+      path: '/sitemap-service-areas.xml'
+      fullPath: '/sitemap-service-areas.xml'
+      preLoaderRoute: typeof SitemapServiceAreasDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-resources.xml': {
+      id: '/sitemap-resources.xml'
+      path: '/sitemap-resources.xml'
+      fullPath: '/sitemap-resources.xml'
+      preLoaderRoute: typeof SitemapResourcesDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-locations.xml': {
+      id: '/sitemap-locations.xml'
+      path: '/sitemap-locations.xml'
+      fullPath: '/sitemap-locations.xml'
+      preLoaderRoute: typeof SitemapLocationsDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-fr.xml': {
+      id: '/sitemap-fr.xml'
+      path: '/sitemap-fr.xml'
+      fullPath: '/sitemap-fr.xml'
+      preLoaderRoute: typeof SitemapFrDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-core.xml': {
+      id: '/sitemap-core.xml'
+      path: '/sitemap-core.xml'
+      fullPath: '/sitemap-core.xml'
+      preLoaderRoute: typeof SitemapCoreDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -648,6 +769,12 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRouteWithChildren,
+  SitemapCoreDotxmlRoute: SitemapCoreDotxmlRoute,
+  SitemapFrDotxmlRoute: SitemapFrDotxmlRoute,
+  SitemapLocationsDotxmlRoute: SitemapLocationsDotxmlRoute,
+  SitemapResourcesDotxmlRoute: SitemapResourcesDotxmlRoute,
+  SitemapServiceAreasDotxmlRoute: SitemapServiceAreasDotxmlRoute,
+  SitemapServicesDotxmlRoute: SitemapServicesDotxmlRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   DotwellKnownApiCatalogRoute: DotwellKnownApiCatalogRoute,
