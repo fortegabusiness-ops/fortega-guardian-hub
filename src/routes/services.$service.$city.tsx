@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { isRemovedCity } from "@/lib/seo/cities";
 import { ArrowRight, Check, ShieldCheck, MapPin } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
 import { getServiceArea, areasInCity, areasNearCity } from "@/lib/seo/service-areas";
@@ -69,7 +70,10 @@ function localFaqs(service: ServiceDetail, city: City) {
 export const Route = createFileRoute("/services/$service/$city")({
   loader: ({ params }) => {
     const area = getServiceArea(params.service, params.city);
-    if (!area) throw notFound();
+    if (!area) {
+      if (isRemovedCity(params.city)) throw new Response(null, { status: 410 });
+      throw notFound();
+    }
     return area;
   },
   head: ({ params, loaderData }) => {

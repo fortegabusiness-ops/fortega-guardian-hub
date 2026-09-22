@@ -2,13 +2,17 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
 import { FR_CITY_BY_SLUG, FR_CITIES, FR_SERVICES, FR_FACTS, frFaqs } from "@/lib/seo/fr";
+import { isRemovedCity } from "@/lib/seo/cities";
 import { breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 import { clampDescription, clampTitle } from "@/lib/seo/meta";
 
 export const Route = createFileRoute("/fr/securite/$city")({
   loader: ({ params }) => {
     const city = FR_CITY_BY_SLUG[params.city];
-    if (!city) throw notFound();
+    if (!city) {
+      if (isRemovedCity(params.city)) throw new Response(null, { status: 410 });
+      throw notFound();
+    }
     return { city };
   },
   head: ({ params, loaderData }) => {

@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, Video, KeyRound, Bell, Eye, UserCheck, Lock } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
-import { CITY_BY_SLUG, type City } from "@/lib/seo/cities";
+import { CITY_BY_SLUG, isRemovedCity, type City } from "@/lib/seo/cities";
 import { CITY_CONTEXT, PROVINCE_BY_NAME, nearbyCities } from "@/lib/seo/provinces";
 import { areasInCity } from "@/lib/seo/service-areas";
 import {
@@ -69,7 +69,10 @@ function buildFaqs(city: City) {
 export const Route = createFileRoute("/locations/$city")({
   loader: ({ params }) => {
     const city = CITY_BY_SLUG[params.city];
-    if (!city) throw notFound();
+    if (!city) {
+      if (isRemovedCity(params.city)) throw new Response(null, { status: 410 });
+      throw notFound();
+    }
     return { city };
   },
   head: ({ params, loaderData }) => {
