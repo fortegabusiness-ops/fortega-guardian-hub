@@ -12,6 +12,7 @@ import {
   SITE_URL,
   socialMeta,
 } from "@/lib/seo/schema";
+import { clampDescription, clampTitle } from "@/lib/seo/meta";
 
 const SERVICES = [
   { id: "cctv", icon: Video, name: "CCTV & Video Surveillance", desc: "HD and AI-powered camera systems with cloud video management." },
@@ -79,19 +80,35 @@ export const Route = createFileRoute("/locations/$city")({
     const p = PROVINCE_BY_NAME[city.province];
     const abbr = p?.abbr ?? city.province;
     const url = `${SITE_URL}/locations/${city.slug}`;
-    const title = `Security Systems in ${city.name}, ${abbr} | Fortega`;
+    const title = clampTitle([
+      `Security Systems in ${city.name}, ${abbr} | Fortega`,
+      `Security Systems in ${city.name} | Fortega`,
+      `Security in ${city.name}, ${abbr} | Fortega`,
+    ]);
     const context = CITY_CONTEXT[city.slug];
-    const description = context
-      ? `${context.slice(0, 110)}… CCTV, access control, alarms and 24/7 monitoring in ${city.name} from Fortega.`
-      : `CCTV, access control, alarm monitoring, remote guarding and cyber security in ${city.name}, ${city.province}. Free site assessment from Fortega.`;
+    const description = clampDescription(
+      context
+        ? `${context.replace(/\.$/, "")}. CCTV, access control, alarms and 24/7 monitoring in ${city.name} from Fortega.`
+        : `CCTV, access control, alarm monitoring, remote guarding and cyber security in ${city.name}, ${city.province}. Free site assessment from Fortega.`,
+    );
     const faqs = buildFaqs(city);
+    const isQc = city.province === "Quebec";
     return {
       meta: [
         { title },
         { name: "description", content: description },
         ...socialMeta({ title, description, url, type: "article" }),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [
+        { rel: "canonical", href: url },
+        ...(isQc
+          ? [
+              { rel: "alternate", hrefLang: "en-ca", href: url },
+              { rel: "alternate", hrefLang: "fr-ca", href: `${SITE_URL}/fr/securite/${city.slug}` },
+              { rel: "alternate", hrefLang: "x-default", href: url },
+            ]
+          : []),
+      ],
       scripts: [
         jsonLd(
           breadcrumbSchema([
