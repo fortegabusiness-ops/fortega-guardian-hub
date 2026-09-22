@@ -1130,6 +1130,12 @@ const ALL_CITIES: City[] = [
   }
 ];
 
+const CORE_SET = new Set(CORE_CITY_SLUGS);
+
+/** Cities with their own pages. */
+export const CITIES: City[] = ALL_CITIES.filter((c) => CORE_SET.has(c.slug));
+
+
 export const CITY_BY_SLUG: Record<string, City> = Object.fromEntries(
   CITIES.map((c) => [c.slug, c]),
 );
