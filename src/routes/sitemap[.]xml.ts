@@ -3,6 +3,8 @@ import type {} from "@tanstack/react-start";
 import { CITIES } from "@/lib/seo/cities";
 import { INDUSTRIES } from "@/lib/seo/industries";
 import { SERVICES } from "@/lib/seo/services";
+import { PROVINCES } from "@/lib/seo/provinces";
+import { SERVICE_AREAS } from "@/lib/seo/service-areas";
 
 const BASE_URL = "https://fortega.ca";
 
@@ -28,6 +30,16 @@ export const Route = createFileRoute("/sitemap.xml")({
           })),
           ...SERVICES.map((s) => ({
             path: `/services/${s.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.8",
+          })),
+          ...PROVINCES.map((p) => ({
+            path: `/locations/province/${p.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.8",
+          })),
+          ...SERVICE_AREAS.map((a) => ({
+            path: `/services/${a.service.slug}/${a.city.slug}`,
             changefreq: "monthly" as const,
             priority: "0.8",
           })),

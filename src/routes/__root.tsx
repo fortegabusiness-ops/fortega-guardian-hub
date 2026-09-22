@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fortega — Integrated Security Solutions for Modern Businesses" },
+      { title: "Fortega — Commercial Security Systems in Canada" },
       { name: "description", content: "Fortega delivers advanced electronic security, CCTV, access control, monitoring, automation and cyber security across Canada." },
       { name: "author", content: "Fortega" },
       // OG/Twitter title/description/image are set per-route (leaf routes) to keep social previews page-specific.

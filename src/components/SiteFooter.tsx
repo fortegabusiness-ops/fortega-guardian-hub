@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/fortega-logo-new.png.asset.json";
 import { SERVICES } from "@/lib/seo/services";
+import { PROVINCES } from "@/lib/seo/provinces";
 
 export function SiteFooter() {
   return (
@@ -67,6 +68,27 @@ export function SiteFooter() {
               className="mt-6 inline-flex items-center justify-center rounded-md bg-gradient-to-r from-brand to-brand-glow px-4 py-2.5 text-sm font-semibold text-brand-foreground"
             >
               Request Consultation
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-border pt-8">
+          <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-foreground">
+            Service areas
+          </h4>
+          <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {PROVINCES.map((p) => (
+              <Link
+                key={p.slug}
+                to="/locations/province/$province"
+                params={{ province: p.slug }}
+                className="text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {p.name}
+              </Link>
+            ))}
+            <Link to="/locations" className="font-medium text-brand-glow">
+              All locations
             </Link>
           </div>
         </div>
