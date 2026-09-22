@@ -69,7 +69,10 @@ function provinceFaqs(name: string, licensing: string, privacy: string) {
 function ProvincePage() {
   const { province, cities } = Route.useLoaderData();
   const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
-  const areaCities = cities.slice(0, 12).map((c) => ({
+  const ranked = [...cities].sort(
+    (a, b) => Number(Boolean(CITY_CONTEXT[b.slug])) - Number(Boolean(CITY_CONTEXT[a.slug])),
+  );
+  const areaCities = ranked.slice(0, 12).map((c) => ({
     city: c,
     areas: SERVICE_AREAS.filter((a) => a.city.slug === c.slug),
   })).filter((g) => g.areas.length > 0);
