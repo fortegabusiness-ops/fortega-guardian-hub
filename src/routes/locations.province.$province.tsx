@@ -208,25 +208,31 @@ function ProvincePage() {
         </div>
       </section>
 
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            {province.name} communities we serve
-          </h2>
-          <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {cities.map((c) => (
-              <Link
-                key={c.slug}
-                to="/locations/$city"
-                params={{ city: c.slug }}
-                className="text-sm text-muted-foreground transition-colors hover:text-brand-glow"
-              >
-                {c.name}
-              </Link>
-            ))}
+      {cities.length > 0 && (
+        <section className="border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              {province.name} markets we serve
+            </h2>
+            <p className="mt-3 max-w-2xl text-muted-foreground">
+              We work across {province.name}. These are the markets with a dedicated coverage page —
+              for any other location, contact us and we will confirm what we can deliver on site.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              {cities.map((c) => (
+                <Link
+                  key={c.slug}
+                  to="/locations/$city"
+                  params={{ city: c.slug }}
+                  className="text-sm text-muted-foreground transition-colors hover:text-brand-glow"
+                >
+                  {c.name}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <FAQSection
         eyebrow="FAQ"
