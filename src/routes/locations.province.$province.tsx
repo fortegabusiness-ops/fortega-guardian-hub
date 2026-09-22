@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, MapPin, ShieldCheck } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
-import { PROVINCE_BY_SLUG, citiesInProvince } from "@/lib/seo/provinces";
+import { PROVINCE_BY_SLUG, citiesInProvince, CITY_CONTEXT } from "@/lib/seo/provinces";
 import { SERVICES } from "@/lib/seo/services";
 import { SERVICE_AREAS } from "@/lib/seo/service-areas";
 import {
