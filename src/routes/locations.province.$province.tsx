@@ -20,8 +20,11 @@ export const Route = createFileRoute("/locations/province/$province")({
     if (!province) return { meta: [{ title: "Province not found — Fortega" }] };
     const url = `${SITE_URL}/locations/province/${province.slug}`;
     const title = `Security Systems in ${province.name} | Fortega`;
+    const full = `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed under ${province.regulator}. Free site assessment.`;
     const description = clampDescription(
-      `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed under ${province.regulator}. Free site assessment.`,
+      full.length <= 155
+        ? full
+        : `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed provincially. Free site assessment from Fortega.`,
     );
     const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
     return {
