@@ -1155,6 +1155,15 @@ const CORE_SET = new Set(CORE_CITY_SLUGS);
 /** Cities with their own pages. */
 export const CITIES: City[] = ALL_CITIES.filter((c) => CORE_SET.has(c.slug));
 
+const ALL_CITY_SLUGS = new Set(ALL_CITIES.map((c) => c.slug));
+
+/**
+ * True for cities that previously had pages but were pruned (removed coverage).
+ * These URLs return 410 Gone so search engines drop them quickly.
+ */
+export function isRemovedCity(slug: string): boolean {
+  return ALL_CITY_SLUGS.has(slug) && !CORE_SET.has(slug);
+}
 
 export const CITY_BY_SLUG: Record<string, City> = Object.fromEntries(
   CITIES.map((c) => [c.slug, c]),
