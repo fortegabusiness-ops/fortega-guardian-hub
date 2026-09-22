@@ -1127,6 +1127,26 @@ const ALL_CITIES: City[] = [
     "slug": "whitehorse",
     "name": "Whitehorse",
     "province": "Yukon"
+  },
+  {
+    "slug": "vaughan",
+    "name": "Vaughan",
+    "province": "Ontario"
+  },
+  {
+    "slug": "markham",
+    "name": "Markham",
+    "province": "Ontario"
+  },
+  {
+    "slug": "surrey",
+    "name": "Surrey",
+    "province": "British Columbia"
+  },
+  {
+    "slug": "richmond",
+    "name": "Richmond",
+    "province": "British Columbia"
   }
 ];
 
