@@ -8,10 +8,32 @@ import type { ServiceDetail } from "@/lib/seo/services";
 import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
+import { clampDescription, clampTitle, pickVariant } from "@/lib/seo/meta";
 
 function leadAnswer(service: ServiceDetail, city: City) {
-  return `Fortega designs, installs and supports ${service.name.toLowerCase()} for businesses in ${city.name}, ${city.province}. Local sites are engineered by licensed technicians, backed by our 24/7 Canadian monitoring centre, and documented to the privacy and licensing rules that apply in ${city.province}.`;
+  const p = PROVINCE_BY_NAME[city.province];
+  const s = service.name.toLowerCase();
+  const variants = [
+    `Fortega designs, installs and supports ${s} for businesses in ${city.name}, ${city.province}. Every site is engineered by licensed technicians, backed by our 24/7 Canadian monitoring centre, and documented to the privacy and licensing rules that apply in ${city.province}.`,
+    `Looking for ${s} in ${city.name}? Fortega scopes the system on site, installs it with licensed technicians, and runs it from a 24/7 Canadian monitoring centre — with ${p ? p.regulator : "provincial"} licensing and ${city.province} privacy obligations handled as part of the project.`,
+    `${city.name} businesses use Fortega for ${s} because one team owns the design, the installation, the monitoring and the service afterwards. Systems are specified for ${city.province} conditions and documented for the province's licensing and privacy requirements.`,
+    `Fortega delivers ${s} across ${city.name} and the surrounding ${city.province} region — from a single building to a multi-site rollout under one program, monitored around the clock from Canada and documented to ${city.province} rules.`,
+  ];
+  return pickVariant(variants, `${service.slug}:${city.slug}`);
 }
+
+const WHY_HEADINGS = [
+  (c: City) => `Why ${c.name} sites need this`,
+  (c: City) => `What shapes security design in ${c.name}`,
+  (c: City) => `The ${c.name} context`,
+  (c: City) => `Local conditions in ${c.name}`,
+];
+
+const DEPLOY_HEADINGS = [
+  (c: City) => `What we deploy in ${c.name}`,
+  (c: City) => `What the system includes in ${c.name}`,
+  (c: City) => `Capabilities available to ${c.name} sites`,
+];
 
 function localFaqs(service: ServiceDetail, city: City) {
   const p = PROVINCE_BY_NAME[city.province];
@@ -57,11 +79,18 @@ export const Route = createFileRoute("/services/$service/$city")({
     const p = PROVINCE_BY_NAME[city.province];
     const abbr = p?.abbr ?? city.province;
     const url = `${SITE_URL}/services/${service.slug}/${city.slug}`;
-    const title = `${service.name} in ${city.name}, ${abbr} | Fortega`;
-    const description = `${service.name} for ${city.name}, ${city.province} businesses — designed, installed and monitored by Fortega. Licensed technicians, 24/7 monitoring, free site assessment.`;
+    const title = clampTitle([
+      `${service.name} in ${city.name}, ${abbr} | Fortega`,
+      `${service.shortName} in ${city.name}, ${abbr} | Fortega`,
+      `${service.shortName} in ${city.name} | Fortega`,
+      `${service.shortName} — ${city.name}, ${abbr}`,
+    ]);
+    const description = clampDescription(
+      `${service.shortName} for ${city.name}, ${abbr} businesses — designed, installed and monitored by Fortega. Licensed technicians, 24/7 monitoring, free site assessment.`,
+    );
     return {
       meta: [
-        { title: title.length > 60 ? `${service.shortName} in ${city.name}, ${abbr} | Fortega` : title },
+        { title },
         { name: "description", content: description },
         ...socialMeta({ title, description, url, type: "article" }),
       ],
@@ -150,7 +179,7 @@ function ServiceAreaPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 md:grid-cols-12 md:px-8 md:py-24">
           <div className="md:col-span-7">
             <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Why {city.name} sites need this
+              {pickVariant(WHY_HEADINGS, `${service.slug}:${city.slug}`)(city)}
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               {context && <p>{context}</p>}
@@ -185,7 +214,7 @@ function ServiceAreaPage() {
       <section className="border-b border-border bg-ink">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
           <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            What we deploy in {city.name}
+            {pickVariant(DEPLOY_HEADINGS, `${service.slug}:${city.slug}`, 7)(city)}
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {service.capabilities.map((c) => (

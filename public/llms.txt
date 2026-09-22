@@ -16,6 +16,20 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 - [Contact](/contact): Request a security consultation or site assessment
 - [Locations](/locations): Service areas and cities across Canada
 - [Industries](/industries): Industry-specific security programs
+- [Resources](/resources): Answer-first guides on commercial security costs, cameras, access control, privacy rules and false alarms
+- [Sécurité au Québec](/fr/securite): French (fr-CA) pages for Quebec businesses, including BSP licensing and Law 25 privacy obligations
+
+## Guides (answer-first)
+
+- [Commercial security system cost in Canada](/resources/commercial-security-system-cost-canada)
+- [How many security cameras does my business need](/resources/how-many-security-cameras-does-my-business-need)
+- [Remote guarding vs security guards](/resources/remote-guarding-vs-security-guards)
+- [Choosing a commercial access control system](/resources/choosing-a-commercial-access-control-system)
+- [Integrating access control and CCTV](/resources/integrating-access-control-and-cctv)
+- [CCTV privacy rules in Canada](/resources/cctv-privacy-rules-canada)
+- [How to reduce commercial false alarms](/resources/reduce-false-alarms-commercial)
+- [Commercial vs residential security systems](/resources/commercial-vs-residential-security-systems)
+- [Cyber hardening a security system](/resources/security-system-cyber-hardening)
 
 ## Services
 
