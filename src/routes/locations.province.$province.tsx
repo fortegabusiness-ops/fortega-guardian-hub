@@ -163,6 +163,11 @@ function ProvincePage() {
               <h3 className="font-display text-xl font-semibold text-foreground">
                 City-specific service pages
               </h3>
+              <p className="-mt-4 text-sm text-muted-foreground">
+                Every community we serve in {province.name} has a page for all{" "}
+                {SERVICES.length} services. The largest centres are shown here — open any
+                community below to see its full service list.
+              </p>
               {areaCities.map((g) => (
                 <div key={g.city.slug}>
                   <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-glow">
