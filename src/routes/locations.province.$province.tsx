@@ -69,7 +69,7 @@ function provinceFaqs(name: string, licensing: string, privacy: string) {
 function ProvincePage() {
   const { province, cities } = Route.useLoaderData();
   const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
-  const areas = SERVICE_AREAS.filter((a) => a.city.province === province.name);
+  const areas = SERVICE_AREAS.filter((a) => a.city.province === province.name).slice(0, 40);
 
   return (
     <>
