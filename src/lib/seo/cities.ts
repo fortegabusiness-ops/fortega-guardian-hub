@@ -1,7 +1,33 @@
-// Auto-generated city list for Fortega location landing pages.
+// City list for Fortega location landing pages.
 export type City = { slug: string; name: string; province: string };
 
-export const CITIES: City[] = [
+/**
+ * Cities that get their own location and service-area pages.
+ *
+ * Deliberately limited to the metropolitan markets where Fortega can genuinely
+ * deliver on-site work (installation, service calls, guard coverage). Publishing
+ * a page for every Canadian community would be templated, near-duplicate content
+ * for places we cannot realistically serve — the pattern Google's spam policies
+ * describe as scaled content abuse / doorway pages. Coverage beyond this list is
+ * described honestly on the province pages instead of given its own page.
+ */
+export const CORE_CITY_SLUGS: string[] = [
+  // Greater Toronto & southern Ontario
+  "toronto", "mississauga", "brampton", "vaughan", "markham", "hamilton",
+  "oshawa", "kitchener", "london", "windsor", "barrie", "guelph",
+  // Ottawa
+  "ottawa",
+  // Quebec
+  "montreal", "laval", "gatineau", "quebec-city",
+  // British Columbia
+  "vancouver", "surrey", "burnaby", "richmond", "victoria",
+  // Prairies
+  "calgary", "edmonton", "winnipeg",
+  // Atlantic
+  "halifax",
+];
+
+const ALL_CITIES: City[] = [
   {
     "slug": "banff",
     "name": "Banff",
