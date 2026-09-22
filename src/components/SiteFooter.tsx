@@ -28,6 +28,8 @@ export function SiteFooter() {
                 ["About Us", "/about"],
                 ["Services", "/services"],
                 ["Industries", "/industries"],
+                ["Resources", "/resources"],
+                ["Sécurité au Québec (FR)", "/fr/securite"],
                 ["Contact", "/contact"],
               ].map(([l, t]) => (
                 <li key={t}>
