@@ -2,6 +2,7 @@ import { createStart, createMiddleware } from "@tanstack/react-start";
 
 import { renderErrorPage } from "./lib/error-page";
 import { attachSupabaseAuth } from "@/integrations/supabase/auth-attacher";
+import { isRemovedCity } from "@/lib/seo/cities";
 
 const AGENT_DISCOVERY_LINKS = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
@@ -25,6 +26,27 @@ const agentDiscoveryHeaders = createMiddleware().server(async ({ next, request }
   return response;
 });
 
+/**
+ * Former city pages (pruned service-area coverage) answer 410 Gone so search
+ * engines drop the URLs quickly instead of treating them as soft 404s.
+ */
+const goneMiddleware = createMiddleware().server(async ({ next, request }) => {
+  const url = new URL(request.url);
+  const segments = url.pathname.split("/").filter(Boolean);
+  let citySlug: string | undefined;
+  if (segments[0] === "locations" && segments.length === 2 && segments[1] !== "province") {
+    citySlug = segments[1];
+  } else if (segments[0] === "services" && segments.length === 3) {
+    citySlug = segments[2];
+  } else if (segments[0] === "fr" && segments[1] === "securite" && segments.length === 3) {
+    citySlug = segments[2];
+  }
+  if (citySlug && isRemovedCity(citySlug)) {
+    return new Response(null, { status: 410, statusText: "Gone" });
+  }
+  return next();
+});
+
 const errorMiddleware = createMiddleware().server(async ({ next, request }) => {
   const url = new URL(request.url);
   if (url.pathname.startsWith("/lovable/")) {
@@ -46,5 +68,5 @@ const errorMiddleware = createMiddleware().server(async ({ next, request }) => {
 
 export const startInstance = createStart(() => ({
   functionMiddleware: [attachSupabaseAuth],
-  requestMiddleware: [errorMiddleware, agentDiscoveryHeaders],
+  requestMiddleware: [goneMiddleware, errorMiddleware, agentDiscoveryHeaders],
 }));
