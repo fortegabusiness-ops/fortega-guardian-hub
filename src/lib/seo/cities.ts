@@ -1,7 +1,33 @@
-// Auto-generated city list for Fortega location landing pages.
+// City list for Fortega location landing pages.
 export type City = { slug: string; name: string; province: string };
 
-export const CITIES: City[] = [
+/**
+ * Cities that get their own location and service-area pages.
+ *
+ * Deliberately limited to the metropolitan markets where Fortega can genuinely
+ * deliver on-site work (installation, service calls, guard coverage). Publishing
+ * a page for every Canadian community would be templated, near-duplicate content
+ * for places we cannot realistically serve — the pattern Google's spam policies
+ * describe as scaled content abuse / doorway pages. Coverage beyond this list is
+ * described honestly on the province pages instead of given its own page.
+ */
+export const CORE_CITY_SLUGS: string[] = [
+  // Greater Toronto & southern Ontario
+  "toronto", "mississauga", "brampton", "vaughan", "markham", "hamilton",
+  "oshawa", "kitchener", "london", "windsor", "barrie", "guelph",
+  // Ottawa
+  "ottawa",
+  // Quebec
+  "montreal", "laval", "gatineau", "quebec-city",
+  // British Columbia
+  "vancouver", "surrey", "burnaby", "richmond", "victoria",
+  // Prairies
+  "calgary", "edmonton", "winnipeg",
+  // Atlantic
+  "halifax",
+];
+
+const ALL_CITIES: City[] = [
   {
     "slug": "banff",
     "name": "Banff",
@@ -1101,8 +1127,34 @@ export const CITIES: City[] = [
     "slug": "whitehorse",
     "name": "Whitehorse",
     "province": "Yukon"
+  },
+  {
+    "slug": "vaughan",
+    "name": "Vaughan",
+    "province": "Ontario"
+  },
+  {
+    "slug": "markham",
+    "name": "Markham",
+    "province": "Ontario"
+  },
+  {
+    "slug": "surrey",
+    "name": "Surrey",
+    "province": "British Columbia"
+  },
+  {
+    "slug": "richmond",
+    "name": "Richmond",
+    "province": "British Columbia"
   }
 ];
+
+const CORE_SET = new Set(CORE_CITY_SLUGS);
+
+/** Cities with their own pages. */
+export const CITIES: City[] = ALL_CITIES.filter((c) => CORE_SET.has(c.slug));
+
 
 export const CITY_BY_SLUG: Record<string, City> = Object.fromEntries(
   CITIES.map((c) => [c.slug, c]),

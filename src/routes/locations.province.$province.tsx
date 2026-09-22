@@ -100,9 +100,19 @@ function ProvincePage() {
             Security systems and monitoring across {province.name}
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            Fortega serves {cities.length} {province.name} communities with CCTV, access control,
-            intrusion alarms, remote monitoring, guard services and cyber security — licensed under{" "}
-            {province.regulator} and supported by our 24/7 Canadian monitoring centre.
+            {cities.length > 0 ? (
+              <>
+                Fortega serves {province.name} with CCTV, access control, intrusion alarms, remote
+                monitoring, guard services and cyber security — licensed under {province.regulator}{" "}
+                and supported by our 24/7 Canadian monitoring centre.
+              </>
+            ) : (
+              <>
+                Fortega supports {province.name} sites through remote monitoring, cellular alarm
+                paths and scheduled technician deployments, working to {province.regulator}{" "}
+                requirements and backed by our 24/7 Canadian monitoring centre.
+              </>
+            )}
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-brand to-brand-glow px-6 py-3 text-sm font-semibold text-brand-foreground shadow-[0_8px_30px_-12px_var(--brand-glow)] transition-transform hover:-translate-y-0.5">
@@ -198,25 +208,31 @@ function ProvincePage() {
         </div>
       </section>
 
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            {province.name} communities we serve
-          </h2>
-          <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {cities.map((c) => (
-              <Link
-                key={c.slug}
-                to="/locations/$city"
-                params={{ city: c.slug }}
-                className="text-sm text-muted-foreground transition-colors hover:text-brand-glow"
-              >
-                {c.name}
-              </Link>
-            ))}
+      {cities.length > 0 && (
+        <section className="border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              {province.name} markets we serve
+            </h2>
+            <p className="mt-3 max-w-2xl text-muted-foreground">
+              We work across {province.name}. These are the markets with a dedicated coverage page —
+              for any other location, contact us and we will confirm what we can deliver on site.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              {cities.map((c) => (
+                <Link
+                  key={c.slug}
+                  to="/locations/$city"
+                  params={{ city: c.slug }}
+                  className="text-sm text-muted-foreground transition-colors hover:text-brand-glow"
+                >
+                  {c.name}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <FAQSection
         eyebrow="FAQ"
