@@ -79,11 +79,18 @@ export const Route = createFileRoute("/services/$service/$city")({
     const p = PROVINCE_BY_NAME[city.province];
     const abbr = p?.abbr ?? city.province;
     const url = `${SITE_URL}/services/${service.slug}/${city.slug}`;
-    const title = `${service.name} in ${city.name}, ${abbr} | Fortega`;
-    const description = `${service.name} for ${city.name}, ${city.province} businesses — designed, installed and monitored by Fortega. Licensed technicians, 24/7 monitoring, free site assessment.`;
+    const title = clampTitle([
+      `${service.name} in ${city.name}, ${abbr} | Fortega`,
+      `${service.shortName} in ${city.name}, ${abbr} | Fortega`,
+      `${service.shortName} in ${city.name} | Fortega`,
+      `${service.shortName} — ${city.name}, ${abbr}`,
+    ]);
+    const description = clampDescription(
+      `${service.shortName} for ${city.name}, ${abbr} businesses — designed, installed and monitored by Fortega. Licensed technicians, 24/7 monitoring, free site assessment.`,
+    );
     return {
       meta: [
-        { title: title.length > 60 ? `${service.shortName} in ${city.name}, ${abbr} | Fortega` : title },
+        { title },
         { name: "description", content: description },
         ...socialMeta({ title, description, url, type: "article" }),
       ],
