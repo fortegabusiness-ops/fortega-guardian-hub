@@ -8,6 +8,7 @@ import type { ServiceDetail } from "@/lib/seo/services";
 import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
+import { clampDescription, clampTitle, pickVariant } from "@/lib/seo/meta";
 
 function leadAnswer(service: ServiceDetail, city: City) {
   const p = PROVINCE_BY_NAME[city.province];
