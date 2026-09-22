@@ -10,7 +10,7 @@ export const Route = createFileRoute("/industries/")({
       {
         name: "description",
         content:
-          "Industry-specific security programs from Fortega — commercial real estate, retail, industrial, healthcare, education, government, cannabis, financial services and more.",
+          "Security programs built for each sector Fortega serves: commercial real estate, retail, industrial, healthcare, education, government and finance.",
       },
       ...socialMeta({
         title: "Security Solutions by Industry | Fortega",
