@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CITIES, CITIES_BY_PROVINCE } from "@/lib/seo/cities";
+import { PROVINCE_BY_NAME } from "@/lib/seo/provinces";
 import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/locations/")({
@@ -53,11 +54,34 @@ function LocationsIndex() {
       <section className="border-b border-border bg-surface/30">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
           <div className="grid gap-12">
-            {provinces.map((prov) => (
+            {provinces.map((prov) => {
+              const hub = PROVINCE_BY_NAME[prov];
+              return (
               <div key={prov}>
-                <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
-                  {prov}
-                </h2>
+                <div className="flex flex-wrap items-baseline justify-between gap-3">
+                  <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+                    {hub ? (
+                      <Link
+                        to="/locations/province/$province"
+                        params={{ province: hub.slug }}
+                        className="hover:text-brand-glow"
+                      >
+                        {prov}
+                      </Link>
+                    ) : (
+                      prov
+                    )}
+                  </h2>
+                  {hub && (
+                    <Link
+                      to="/locations/province/$province"
+                      params={{ province: hub.slug }}
+                      className="text-sm font-medium text-brand-glow"
+                    >
+                      {prov} security services →
+                    </Link>
+                  )}
+                </div>
                 <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                   {CITIES_BY_PROVINCE[prov].map((c) => (
                     <Link
@@ -71,7 +95,8 @@ function LocationsIndex() {
                   ))}
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

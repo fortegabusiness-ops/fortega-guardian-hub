@@ -2,6 +2,8 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, Video, KeyRound, Bell, Eye, UserCheck, Lock } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
 import { CITY_BY_SLUG, type City } from "@/lib/seo/cities";
+import { CITY_CONTEXT, PROVINCE_BY_NAME, nearbyCities } from "@/lib/seo/provinces";
+import { areasInCity } from "@/lib/seo/service-areas";
 import {
   breadcrumbSchema,
   faqSchema,
@@ -21,7 +23,8 @@ const SERVICES = [
 ];
 
 function buildFaqs(city: City) {
-  return [
+  const p = PROVINCE_BY_NAME[city.province];
+  const faqs = [
     {
       q: `Does Fortega install security systems in ${city.name}?`,
       a: `Yes. Fortega services ${city.name}, ${city.province} and the surrounding region with CCTV, access control, alarm monitoring, remote guarding and cyber security — from single-site upgrades to multi-location rollouts.`,
@@ -30,19 +33,36 @@ function buildFaqs(city: City) {
       q: `How fast can Fortega respond to alarms in ${city.name}?`,
       a: `Our 24/7 monitoring centre verifies alarms in real time and follows pre-agreed dispatch paths to local authorities or on-site responders in ${city.name}, typically within seconds of an event.`,
     },
+  ];
+  if (p) {
+    faqs.push(
+      {
+        q: `Is Fortega licensed to work in ${city.province}?`,
+        a: p.licensing,
+      },
+      {
+        q: `Which privacy rules apply to cameras and access logs in ${city.name}?`,
+        a: `${p.privacy} Fortega documents purpose, signage, access rights and retention as part of every handover.`,
+      },
+    );
+  }
+  faqs.push(
     {
       q: `Can Fortega secure multiple sites across ${city.province}?`,
       a: `Yes. Fortega standardizes credentials, video platforms and monitoring across portfolios spanning multiple cities in ${city.province} and the rest of Canada — one team, one accountable program.`,
     },
     {
-      q: `Are Fortega's ${city.name} technicians licensed and certified?`,
-      a: `Yes. Our field technicians and consultants serving ${city.name} are licensed, vetted and certified on the platforms we deploy, and follow Canadian electrical, security and life-safety standards.`,
+      q: `What conditions affect equipment choice around ${city.name}?`,
+      a: p
+        ? p.environment
+        : `Canadian temperature extremes and weather exposure shape enclosure ratings, mounting and cabling decisions on every outdoor installation.`,
     },
     {
       q: `What industries does Fortega serve in ${city.name}?`,
-      a: `Commercial real estate, retail, industrial, logistics, healthcare, education, government and multi-family residential clients across ${city.name} and ${city.province}.`,
+      a: `${p ? p.sectors.join(", ") : "Commercial, industrial and institutional"} clients across ${city.name} and the wider ${city.province} region.`,
     },
-  ];
+  );
+  return faqs;
 }
 
 export const Route = createFileRoute("/locations/$city")({
@@ -56,9 +76,14 @@ export const Route = createFileRoute("/locations/$city")({
     if (!city) {
       return { meta: [{ title: "Location not found — Fortega" }] };
     }
+    const p = PROVINCE_BY_NAME[city.province];
+    const abbr = p?.abbr ?? city.province;
     const url = `${SITE_URL}/locations/${city.slug}`;
-    const title = `Security Systems in ${city.name}, ${city.province} | Fortega`;
-    const description = `CCTV, access control, alarm monitoring, remote guarding and cyber security in ${city.name}, ${city.province}. Trusted by Canadian businesses — get a free site assessment from Fortega.`;
+    const title = `Security Systems in ${city.name}, ${abbr} | Fortega`;
+    const context = CITY_CONTEXT[city.slug];
+    const description = context
+      ? `${context.slice(0, 110)}… CCTV, access control, alarms and 24/7 monitoring in ${city.name} from Fortega.`
+      : `CCTV, access control, alarm monitoring, remote guarding and cyber security in ${city.name}, ${city.province}. Free site assessment from Fortega.`;
     const faqs = buildFaqs(city);
     return {
       meta: [
@@ -72,6 +97,7 @@ export const Route = createFileRoute("/locations/$city")({
           breadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "Locations", path: "/locations" },
+            ...(p ? [{ name: p.name, path: `/locations/province/${p.slug}` }] : []),
             { name: city.name, path: `/locations/${city.slug}` },
           ]),
         ),
@@ -116,16 +142,32 @@ export const Route = createFileRoute("/locations/$city")({
 function CityPage() {
   const { city } = Route.useLoaderData();
   const faqs = buildFaqs(city);
+  const province = PROVINCE_BY_NAME[city.province];
+  const context = CITY_CONTEXT[city.slug];
+  const neighbours = nearbyCities(city, 8);
+  const areas = areasInCity(city.slug);
 
   return (
     <>
       <section className="relative isolate overflow-hidden border-b border-border">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,oklch(0.55_0.18_252/0.18),transparent_60%)]" />
         <div className="mx-auto max-w-7xl px-4 py-24 md:px-8 md:py-32">
-          <nav className="mb-6 flex items-center gap-2 text-xs text-muted-foreground">
+          <nav className="mb-6 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
             <Link to="/" className="hover:text-foreground">Home</Link>
             <span>/</span>
             <Link to="/locations" className="hover:text-foreground">Locations</Link>
+            {province && (
+              <>
+                <span>/</span>
+                <Link
+                  to="/locations/province/$province"
+                  params={{ province: province.slug }}
+                  className="hover:text-foreground"
+                >
+                  {province.name}
+                </Link>
+              </>
+            )}
             <span>/</span>
             <span className="text-foreground">{city.name}</span>
           </nav>
@@ -158,6 +200,63 @@ function CityPage() {
       </section>
 
       <section className="border-b border-border">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 md:grid-cols-12 md:px-8 md:py-24">
+          <div className="md:col-span-7">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              Security in {city.name}: what shapes the design
+            </h2>
+            <div className="mt-6 space-y-4 text-muted-foreground">
+              {context && <p>{context}</p>}
+              {province && <p>{province.economy}</p>}
+              {province && <p>{province.environment}</p>}
+              {province && <p>{province.licensing}</p>}
+            </div>
+          </div>
+          <div className="md:col-span-5">
+            <div className="rounded-2xl border border-border bg-surface/40 p-6">
+              <h3 className="font-display text-lg font-semibold text-foreground">
+                {city.name} coverage at a glance
+              </h3>
+              <dl className="mt-4 space-y-4 text-sm">
+                <div>
+                  <dt className="text-muted-foreground">Province</dt>
+                  <dd className="text-foreground">
+                    {province ? (
+                      <Link
+                        to="/locations/province/$province"
+                        params={{ province: province.slug }}
+                        className="hover:text-brand-glow"
+                      >
+                        {city.province} ({province.abbr})
+                      </Link>
+                    ) : (
+                      city.province
+                    )}
+                  </dd>
+                </div>
+                {province && (
+                  <>
+                    <div>
+                      <dt className="text-muted-foreground">Licensing authority</dt>
+                      <dd className="text-foreground">{province.regulator}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-muted-foreground">Sectors we secure</dt>
+                      <dd className="text-foreground">{province.sectors.join(", ")}</dd>
+                    </div>
+                  </>
+                )}
+                <div>
+                  <dt className="text-muted-foreground">Monitoring</dt>
+                  <dd className="text-foreground">24/7 Canadian monitoring centre</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">
           <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Services available in {city.name}
@@ -185,6 +284,25 @@ function CityPage() {
               </Link>
             ))}
           </div>
+          {areas.length > 0 && (
+            <div className="mt-10">
+              <h3 className="font-display text-lg font-semibold text-foreground">
+                Detailed {city.name} service pages
+              </h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {areas.map((a) => (
+                  <Link
+                    key={a.service.slug}
+                    to="/services/$service/$city"
+                    params={{ service: a.service.slug, city: a.city.slug }}
+                    className="rounded-full border border-border bg-background px-4 py-1.5 text-sm text-foreground hover:border-brand-glow/60"
+                  >
+                    {a.service.shortName} in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -197,7 +315,7 @@ function CityPage() {
             {[
               { t: "Local presence, national reach", d: `Service for ${city.name} clients is backed by Fortega's Canadian operations and 24/7 monitoring centre.` },
               { t: "One accountable team", d: "Physical and cyber security from a single vendor — no finger-pointing when something goes wrong." },
-              { t: "Standards-aligned", d: "ULC-listed monitoring practices, Canadian electrical code compliance and modern enterprise-grade platforms." },
+              { t: "Standards-aligned", d: `Canadian electrical code compliance, ${province ? `${province.regulator} licensing` : "provincial licensing"} and modern enterprise-grade platforms.` },
             ].map((b) => (
               <div key={b.t} className="rounded-xl border border-border bg-background p-6">
                 <h3 className="font-display text-lg font-semibold text-foreground">{b.t}</h3>
@@ -214,6 +332,37 @@ function CityPage() {
         sub={`Answers for businesses evaluating Fortega in ${city.name}, ${city.province}.`}
         faqs={faqs}
       />
+
+      {neighbours.length > 0 && (
+        <section className="border-t border-border bg-ink">
+          <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-20">
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+              Also serving nearby {city.province} communities
+            </h2>
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm">
+              {neighbours.map((n) => (
+                <Link
+                  key={n.slug}
+                  to="/locations/$city"
+                  params={{ city: n.slug }}
+                  className="text-muted-foreground hover:text-brand-glow"
+                >
+                  {n.name}
+                </Link>
+              ))}
+              {province && (
+                <Link
+                  to="/locations/province/$province"
+                  params={{ province: province.slug }}
+                  className="font-medium text-brand-glow"
+                >
+                  All {city.province} locations →
+                </Link>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="border-t border-border bg-gradient-to-b from-background to-surface/40">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-28">

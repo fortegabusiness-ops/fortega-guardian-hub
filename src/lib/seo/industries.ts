@@ -221,7 +221,7 @@ export const INDUSTRIES: Industry[] = [
     name: "Healthcare",
     shortName: "Healthcare",
     h1: "Security systems for hospitals, clinics and long-term care",
-    metaTitle: "Healthcare Security Systems Canada — Hospitals & Clinics | Fortega",
+    metaTitle: "Hospital & Clinic Security Systems Canada | Fortega",
     metaDescription:
       "Access control, video surveillance, infant protection, panic systems and cyber security for Canadian healthcare. Quiet, patient-centred installations by Fortega.",
     eyebrow: "Industry",
@@ -319,7 +319,7 @@ export const INDUSTRIES: Industry[] = [
     name: "Government & Public Sector",
     shortName: "Government & public sector",
     h1: "Security and cyber programs for Canadian government clients",
-    metaTitle: "Government & Public Sector Security Solutions Canada | Fortega",
+    metaTitle: "Government Security Solutions Canada | Fortega",
     metaDescription:
       "Federal, provincial and municipal security: access control, video, cleared personnel and cyber security for Canadian government facilities. Delivered by Fortega.",
     eyebrow: "Industry",
@@ -417,7 +417,7 @@ export const INDUSTRIES: Industry[] = [
     name: "Cannabis",
     shortName: "Cannabis",
     h1: "Health Canada–compliant security for licensed cannabis facilities",
-    metaTitle: "Cannabis Security Systems Canada — Health Canada Compliant | Fortega",
+    metaTitle: "Cannabis Retail & Grow Security Canada | Fortega",
     metaDescription:
       "Cultivation, processing and retail cannabis security: cameras, access control, vault monitoring and Health Canada–aligned documentation from Fortega.",
     eyebrow: "Industry",
@@ -711,7 +711,7 @@ export const INDUSTRIES: Industry[] = [
     name: "Data Centers",
     shortName: "Data centers",
     h1: "Data centre security and compliance programs across Canada",
-    metaTitle: "Data Center Security Systems Canada — SOC 2 & ISO Aligned | Fortega",
+    metaTitle: "Data Centre Security Systems Canada | Fortega",
     metaDescription:
       "Access control, video, mantrap, environmental and cyber security for Canadian data centres. SOC 2, ISO 27001 and audit-ready programs from Fortega.",
     eyebrow: "Industry",
@@ -809,7 +809,7 @@ export const INDUSTRIES: Industry[] = [
     name: "Sports & Entertainment Venues",
     shortName: "Sports & entertainment venues",
     h1: "Stadium, arena and event-venue security across Canada",
-    metaTitle: "Sports & Entertainment Venue Security Systems Canada | Fortega",
+    metaTitle: "Venue & Stadium Security Systems Canada | Fortega",
     metaDescription:
       "Crowd, perimeter, ticketing and operations security for Canadian stadiums, arenas, theatres and event venues. Verified monitoring and cyber from Fortega.",
     eyebrow: "Industry",

@@ -4,7 +4,7 @@
 
 Fortega protects people, property and operations through intelligent, integrated systems — combining best-in-class hardware, software and human expertise. We serve corporations, institutions and critical infrastructure operators from coast to coast with a single, accountable team.
 
-Headquartered at 3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1, Fortega delivers end-to-end security programs that span consulting, design, installation, monitoring and ongoing support. Our services include CCTV and video surveillance, intrusion alarms, access control, remote guarding, security guards, smart building automation and cyber security. Every program is tailored to the operational rhythm, threat landscape and compliance requirements of the industries we serve.
+Headquartered at 3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1 (Google Business Profile: https://www.google.com/maps?cid=2304580937278547264), Fortega delivers end-to-end security programs that span consulting, design, installation, monitoring and ongoing support. Our services include CCTV and video surveillance, intrusion alarms, access control, remote guarding, security guards, smart building automation and cyber security. Every program is tailored to the operational rhythm, threat landscape and compliance requirements of the industries we serve.
 
 Fortega is committed to transparency and ethical operations. Our AI usage is limited to operational efficiency and security analytics; we do not train generative AI models on client data. All personal data is handled in accordance with Canadian privacy legislation.
 
@@ -27,6 +27,37 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 - [Security Guard Services](/services/guards): On-site guards, mobile patrol and event security
 - [Smart Building & Automation](/services/smart): Building automation, smart lighting and IoT integration
 - [Cyber Security](/services/cyber): Network defense, threat monitoring, endpoint protection and incident response
+
+## Provinces and territories
+
+- [Alberta](/locations/province/alberta): Security services across Alberta, licensed under the Security Services and Investigators Act
+- [British Columbia](/locations/province/british-columbia): Security services across BC under the Security Services Act
+- [Manitoba](/locations/province/manitoba): Security services across Manitoba
+- [New Brunswick](/locations/province/new-brunswick): Security services across New Brunswick
+- [Newfoundland and Labrador](/locations/province/newfoundland-and-labrador): Security services across Newfoundland and Labrador
+- [Northwest Territories](/locations/province/northwest-territories): Security services across the Northwest Territories
+- [Nova Scotia](/locations/province/nova-scotia): Security services across Nova Scotia
+- [Nunavut](/locations/province/nunavut): Security services across Nunavut
+- [Ontario](/locations/province/ontario): Security services across Ontario, licensed under PSISA
+- [Prince Edward Island](/locations/province/prince-edward-island): Security services across PEI
+- [Quebec](/locations/province/quebec): Security services across Quebec, licensed by the Bureau de la securite privee, Law 25 compliant
+- [Saskatchewan](/locations/province/saskatchewan): Security services across Saskatchewan
+- [Yukon](/locations/province/yukon): Security services across Yukon
+
+## City service pages
+
+- [Access control in Chatham](/services/access/chatham): Access control systems for Chatham, Ontario businesses
+- [Access control in Guelph](/services/access/guelph): Access control systems for Guelph, Ontario businesses
+- [Access control in Toronto](/services/access/toronto): Access control systems for Toronto businesses
+- [Remote monitoring in North York](/services/remote/north-york): 24/7 remote guarding and video monitoring in North York
+- [Remote monitoring in Etobicoke](/services/remote/etobicoke): 24/7 remote guarding and video monitoring in Etobicoke
+- [Remote monitoring in Barrie](/services/remote/barrie): 24/7 remote guarding and video monitoring in Barrie
+- [Remote monitoring in Estevan](/services/remote/estevan): 24/7 remote guarding and video monitoring in Estevan, Saskatchewan
+- [CCTV in Toronto](/services/cctv/toronto): Commercial CCTV and video surveillance in Toronto
+- [CCTV in Mississauga](/services/cctv/mississauga): Commercial CCTV and video surveillance in Mississauga
+- [Intrusion alarms in Sudbury](/services/intrusion/sudbury): Commercial burglar alarm systems in Sudbury
+- [Security guards in Halifax](/services/guards/halifax): Licensed security guards and mobile patrol in Halifax
+- [Cyber security in Vancouver](/services/cyber/vancouver): Cyber security services for Vancouver businesses
 
 ## Industries
 

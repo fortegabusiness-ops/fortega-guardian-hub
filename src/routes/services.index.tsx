@@ -20,10 +20,10 @@ const servicesFaqs = [
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Security Services — CCTV, Access, Monitoring, Cyber | Fortega" },
+      { title: "Security Services for Canadian Business | Fortega" },
       { name: "description", content: "Integrated security services across Canada: consulting, CCTV, alarms, access control, remote monitoring, guards, smart building and cyber security." },
       ...socialMeta({
-        title: "Security Services — CCTV, Access, Monitoring, Cyber | Fortega",
+        title: "Security Services for Canadian Business | Fortega",
         description: "Integrated security services across Canada: consulting, CCTV, alarms, access control, remote monitoring, guards, smart building and cyber security.",
         url: `${SITE_URL}/services`,
       }),

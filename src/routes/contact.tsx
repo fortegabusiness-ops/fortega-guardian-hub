@@ -9,7 +9,7 @@ import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Fortega — Toronto Head Office & Canada-Wide Security" },
+      { title: "Contact Fortega — Toronto Head Office" },
       { name: "description", content: "Contact Fortega at 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1. Request a security consultation, site assessment or 24/7 support across Canada." },
       ...socialMeta({
         title: "Contact Fortega — Toronto Head Office",

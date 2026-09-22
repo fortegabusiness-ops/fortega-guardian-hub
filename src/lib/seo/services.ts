@@ -104,7 +104,7 @@ export const SERVICES: ServiceDetail[] = [
     shortName: "Intrusion alarms",
     iconName: "Bell",
     eyebrow: "Alarm Systems",
-    metaTitle: "Commercial Intrusion & Burglar Alarm Systems Canada | Fortega",
+    metaTitle: "Commercial Burglar Alarm Systems Canada | Fortega",
     metaDescription: "Commercial intrusion detection, panic and environmental alarm systems with 24/7 ULC-grade monitoring across Canada. Designed and supported by Fortega.",
     h1: "Commercial intrusion and burglar alarm systems with verified response",
     tagline: "Reliable intrusion detection for commercial and industrial environments.",

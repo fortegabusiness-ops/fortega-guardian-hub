@@ -1,5 +1,7 @@
 const SITE_URL = "https://fortega.ca";
 const LOGO_URL = "https://fortega.ca/favicon.ico";
+/** Google Business Profile listing for Fortega Inc. */
+const GOOGLE_MAPS_URL = "https://www.google.com/maps?cid=2304580937278547264";
 const OG_IMAGE_URL = `${SITE_URL}/__l5e/assets-v1/a45ab0c4-bdca-405e-a26d-d24869130bfc/og-default.jpg`;
 
 const POSTAL_ADDRESS = {
@@ -27,6 +29,8 @@ export const organizationSchema = {
   address: POSTAL_ADDRESS,
   areaServed: { "@type": "Country", name: "Canada" },
   slogan: "Security · Innovation · Strength",
+  sameAs: [GOOGLE_MAPS_URL],
+  hasMap: GOOGLE_MAPS_URL,
 };
 
 export const websiteSchema = {
@@ -51,6 +55,8 @@ export const localBusinessSchema = {
   email: "info@fortega.ca",
   priceRange: "$$",
   address: POSTAL_ADDRESS,
+  sameAs: [GOOGLE_MAPS_URL],
+  hasMap: GOOGLE_MAPS_URL,
   areaServed: [
     { "@type": "Country", name: "Canada" },
     { "@type": "AdministrativeArea", name: "Ontario" },
