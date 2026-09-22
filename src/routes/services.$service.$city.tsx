@@ -10,8 +10,29 @@ import {
 } from "@/lib/seo/schema";
 
 function leadAnswer(service: ServiceDetail, city: City) {
-  return `Fortega designs, installs and supports ${service.name.toLowerCase()} for businesses in ${city.name}, ${city.province}. Local sites are engineered by licensed technicians, backed by our 24/7 Canadian monitoring centre, and documented to the privacy and licensing rules that apply in ${city.province}.`;
+  const p = PROVINCE_BY_NAME[city.province];
+  const s = service.name.toLowerCase();
+  const variants = [
+    `Fortega designs, installs and supports ${s} for businesses in ${city.name}, ${city.province}. Every site is engineered by licensed technicians, backed by our 24/7 Canadian monitoring centre, and documented to the privacy and licensing rules that apply in ${city.province}.`,
+    `Looking for ${s} in ${city.name}? Fortega scopes the system on site, installs it with licensed technicians, and runs it from a 24/7 Canadian monitoring centre — with ${p ? p.regulator : "provincial"} licensing and ${city.province} privacy obligations handled as part of the project.`,
+    `${city.name} businesses use Fortega for ${s} because one team owns the design, the installation, the monitoring and the service afterwards. Systems are specified for ${city.province} conditions and documented for the province's licensing and privacy requirements.`,
+    `Fortega delivers ${s} across ${city.name} and the surrounding ${city.province} region — from a single building to a multi-site rollout under one program, monitored around the clock from Canada and documented to ${city.province} rules.`,
+  ];
+  return pickVariant(variants, `${service.slug}:${city.slug}`);
 }
+
+const WHY_HEADINGS = [
+  (c: City) => `Why ${c.name} sites need this`,
+  (c: City) => `What shapes security design in ${c.name}`,
+  (c: City) => `The ${c.name} context`,
+  (c: City) => `Local conditions in ${c.name}`,
+];
+
+const DEPLOY_HEADINGS = [
+  (c: City) => `What we deploy in ${c.name}`,
+  (c: City) => `What the system includes in ${c.name}`,
+  (c: City) => `Capabilities available to ${c.name} sites`,
+];
 
 function localFaqs(service: ServiceDetail, city: City) {
   const p = PROVINCE_BY_NAME[city.province];

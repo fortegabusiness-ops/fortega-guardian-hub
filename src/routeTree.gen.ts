@@ -31,8 +31,10 @@ import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes
 import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
 import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
 import { Route as ServicesServiceIndexRouteImport } from './routes/services.$service.index'
+import { Route as FrSecuriteIndexRouteImport } from './routes/fr.securite.index'
 import { Route as ServicesServiceCityRouteImport } from './routes/services.$service.$city'
 import { Route as LocationsProvinceProvinceRouteImport } from './routes/locations.province.$province'
+import { Route as FrSecuriteCityRouteImport } from './routes/fr.securite.$city'
 import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[.]well-known.mcp.server-card[.]json'
 import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './routes/[.]well-known.agent-skills.index[.]json'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
@@ -149,6 +151,11 @@ const ServicesServiceIndexRoute = ServicesServiceIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ServicesServiceRoute,
 } as any)
+const FrSecuriteIndexRoute = FrSecuriteIndexRouteImport.update({
+  id: '/fr/securite/',
+  path: '/fr/securite/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesServiceCityRoute = ServicesServiceCityRouteImport.update({
   id: '/$city',
   path: '/$city',
@@ -160,6 +167,11 @@ const LocationsProvinceProvinceRoute =
     path: '/locations/province/$province',
     getParentRoute: () => rootRouteImport,
   } as any)
+const FrSecuriteCityRoute = FrSecuriteCityRouteImport.update({
+  id: '/fr/securite/$city',
+  path: '/fr/securite/$city',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DotwellKnownMcpServerCardDotjsonRoute =
   DotwellKnownMcpServerCardDotjsonRouteImport.update({
     id: '/.well-known/mcp/server-card.json',
@@ -203,8 +215,10 @@ export interface FileRoutesByFullPath {
   '/services/': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
+  '/fr/securite/$city': typeof FrSecuriteCityRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
+  '/fr/securite/': typeof FrSecuriteIndexRoute
   '/services/$service/': typeof ServicesServiceIndexRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
@@ -230,8 +244,10 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
+  '/fr/securite/$city': typeof FrSecuriteCityRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
+  '/fr/securite': typeof FrSecuriteIndexRoute
   '/services/$service': typeof ServicesServiceIndexRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
@@ -260,8 +276,10 @@ export interface FileRoutesById {
   '/services/': typeof ServicesIndexRoute
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
+  '/fr/securite/$city': typeof FrSecuriteCityRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
+  '/fr/securite/': typeof FrSecuriteIndexRoute
   '/services/$service/': typeof ServicesServiceIndexRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
@@ -291,8 +309,10 @@ export interface FileRouteTypes {
     | '/services/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
+    | '/fr/securite/$city'
     | '/locations/province/$province'
     | '/services/$service/$city'
+    | '/fr/securite/'
     | '/services/$service/'
     | '/lovable/email/queue/process'
   fileRoutesByTo: FileRoutesByTo
@@ -318,8 +338,10 @@ export interface FileRouteTypes {
     | '/services'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
+    | '/fr/securite/$city'
     | '/locations/province/$province'
     | '/services/$service/$city'
+    | '/fr/securite'
     | '/services/$service'
     | '/lovable/email/queue/process'
   id:
@@ -347,8 +369,10 @@ export interface FileRouteTypes {
     | '/services/'
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
+    | '/fr/securite/$city'
     | '/locations/province/$province'
     | '/services/$service/$city'
+    | '/fr/securite/'
     | '/services/$service/'
     | '/lovable/email/queue/process'
   fileRoutesById: FileRoutesById
@@ -375,7 +399,9 @@ export interface RootRouteChildren {
   ResourcesIndexRoute: typeof ResourcesIndexRoute
   DotwellKnownAgentSkillsIndexDotjsonRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   DotwellKnownMcpServerCardDotjsonRoute: typeof DotwellKnownMcpServerCardDotjsonRoute
+  FrSecuriteCityRoute: typeof FrSecuriteCityRoute
   LocationsProvinceProvinceRoute: typeof LocationsProvinceProvinceRoute
+  FrSecuriteIndexRoute: typeof FrSecuriteIndexRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
@@ -535,6 +561,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesServiceIndexRouteImport
       parentRoute: typeof ServicesServiceRoute
     }
+    '/fr/securite/': {
+      id: '/fr/securite/'
+      path: '/fr/securite'
+      fullPath: '/fr/securite/'
+      preLoaderRoute: typeof FrSecuriteIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/$service/$city': {
       id: '/services/$service/$city'
       path: '/$city'
@@ -547,6 +580,13 @@ declare module '@tanstack/react-router' {
       path: '/locations/province/$province'
       fullPath: '/locations/province/$province'
       preLoaderRoute: typeof LocationsProvinceProvinceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fr/securite/$city': {
+      id: '/fr/securite/$city'
+      path: '/fr/securite/$city'
+      fullPath: '/fr/securite/$city'
+      preLoaderRoute: typeof FrSecuriteCityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.well-known/mcp/server-card.json': {
@@ -626,7 +666,9 @@ const rootRouteChildren: RootRouteChildren = {
   DotwellKnownAgentSkillsIndexDotjsonRoute:
     DotwellKnownAgentSkillsIndexDotjsonRoute,
   DotwellKnownMcpServerCardDotjsonRoute: DotwellKnownMcpServerCardDotjsonRoute,
+  FrSecuriteCityRoute: FrSecuriteCityRoute,
   LocationsProvinceProvinceRoute: LocationsProvinceProvinceRoute,
+  FrSecuriteIndexRoute: FrSecuriteIndexRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
