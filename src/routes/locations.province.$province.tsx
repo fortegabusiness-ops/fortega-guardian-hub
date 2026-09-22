@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, MapPin, ShieldCheck } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
-import { PROVINCE_BY_SLUG, citiesInProvince } from "@/lib/seo/provinces";
+import { PROVINCE_BY_SLUG, citiesInProvince, rankedCities } from "@/lib/seo/provinces";
 import { SERVICES } from "@/lib/seo/services";
 import { SERVICE_AREAS } from "@/lib/seo/service-areas";
 import {
@@ -69,7 +69,11 @@ function provinceFaqs(name: string, licensing: string, privacy: string) {
 function ProvincePage() {
   const { province, cities } = Route.useLoaderData();
   const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
-  const areas = SERVICE_AREAS.filter((a) => a.city.province === province.name).slice(0, 40);
+  const ranked = rankedCities(cities);
+  const areaCities = ranked.slice(0, 12).map((c) => ({
+    city: c,
+    areas: SERVICE_AREAS.filter((a) => a.city.slug === c.slug),
+  })).filter((g) => g.areas.length > 0);
 
   return (
     <>
@@ -154,23 +158,30 @@ function ProvincePage() {
               </Link>
             ))}
           </div>
-          {areas.length > 0 && (
-            <div className="mt-12">
+          {areaCities.length > 0 && (
+            <div className="mt-12 space-y-8">
               <h3 className="font-display text-xl font-semibold text-foreground">
                 City-specific service pages
               </h3>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {areas.map((a) => (
-                  <Link
-                    key={`${a.service.slug}-${a.city.slug}`}
-                    to="/services/$service/$city"
-                    params={{ service: a.service.slug, city: a.city.slug }}
-                    className="rounded-full border border-border bg-background px-4 py-1.5 text-sm text-foreground hover:border-brand-glow/60"
-                  >
-                    {a.service.shortName} in {a.city.name}
-                  </Link>
-                ))}
-              </div>
+              {areaCities.map((g) => (
+                <div key={g.city.slug}>
+                  <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-glow">
+                    {g.city.name}
+                  </h4>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {g.areas.map((a) => (
+                      <Link
+                        key={`${a.service.slug}-${a.city.slug}`}
+                        to="/services/$service/$city"
+                        params={{ service: a.service.slug, city: a.city.slug }}
+                        className="rounded-full border border-border bg-background px-4 py-1.5 text-sm text-foreground hover:border-brand-glow/60"
+                      >
+                        {a.service.shortName}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>
