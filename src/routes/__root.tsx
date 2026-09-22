@@ -81,8 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fortega — Commercial Security Systems in Canada" },
-      { name: "description", content: "Fortega delivers advanced electronic security, CCTV, access control, monitoring, automation and cyber security across Canada." },
+      { title: "Canadian Security Systems for Homes & Businesses | Fortega" },
+      { name: "description", content: "Protect your home or business with CCTV, access control, alarms, 24/7 monitoring and cyber security from Fortega. Free assessment: 1-888-869-1679." },
       { name: "author", content: "Fortega" },
       // OG/Twitter title/description/image are set per-route (leaf routes) to keep social previews page-specific.
       // Only the og:site_name and og:type defaults live here.
