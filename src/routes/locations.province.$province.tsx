@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, MapPin, ShieldCheck } from "lucide-react";
 import { FAQSection } from "@/components/FAQSection";
-import { PROVINCE_BY_SLUG, citiesInProvince, CITY_CONTEXT } from "@/lib/seo/provinces";
+import { PROVINCE_BY_SLUG, citiesInProvince, rankedCities } from "@/lib/seo/provinces";
 import { SERVICES } from "@/lib/seo/services";
 import { SERVICE_AREAS } from "@/lib/seo/service-areas";
 import {
@@ -69,9 +69,7 @@ function provinceFaqs(name: string, licensing: string, privacy: string) {
 function ProvincePage() {
   const { province, cities } = Route.useLoaderData();
   const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
-  const ranked = [...cities].sort(
-    (a, b) => Number(Boolean(CITY_CONTEXT[b.slug])) - Number(Boolean(CITY_CONTEXT[a.slug])),
-  );
+  const ranked = rankedCities(cities);
   const areaCities = ranked.slice(0, 12).map((c) => ({
     city: c,
     areas: SERVICE_AREAS.filter((a) => a.city.slug === c.slug),

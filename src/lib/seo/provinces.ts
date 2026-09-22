@@ -395,3 +395,31 @@ export function citiesInProvince(slug: string): City[] {
 }
 
 export const TOTAL_CITIES = CITIES.length;
+
+/** Largest / highest-demand city per region, used to order city link lists. */
+export const MAJOR_CITY_SLUGS: string[] = [
+  "toronto", "mississauga", "brampton", "hamilton", "ottawa", "london", "markham",
+  "vaughan", "kitchener", "windsor", "oshawa", "barrie", "guelph", "north-york",
+  "etobicoke", "scarborough", "sudbury", "kingston", "thunder-bay",
+  "montreal", "quebec-city", "laval", "gatineau", "sherbrooke", "trois-rivieres",
+  "vancouver", "surrey", "burnaby", "richmond", "victoria", "kelowna", "abbotsford", "kamloops", "nanaimo",
+  "calgary", "edmonton", "red-deer", "lethbridge", "fort-mcmurray",
+  "winnipeg", "brandon", "saskatoon", "regina", "halifax", "dartmouth", "sydney",
+  "moncton", "saint-john", "fredericton", "charlottetown", "st-johns",
+  "whitehorse", "yellowknife", "iqaluit",
+];
+
+const MAJOR_RANK = new Map(MAJOR_CITY_SLUGS.map((s, i) => [s, i]));
+
+/** Cities in a province, most prominent first. */
+export function rankedCities(cities: City[]): City[] {
+  return [...cities].sort((a, b) => {
+    const ra = MAJOR_RANK.get(a.slug) ?? 999;
+    const rb = MAJOR_RANK.get(b.slug) ?? 999;
+    if (ra !== rb) return ra - rb;
+    const ca = CITY_CONTEXT[a.slug] ? 0 : 1;
+    const cb = CITY_CONTEXT[b.slug] ? 0 : 1;
+    if (ca !== cb) return ca - cb;
+    return a.name.localeCompare(b.name);
+  });
+}
