@@ -22,11 +22,11 @@ const homeFaqs = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Commercial Security Systems Canada | Fortega" },
-      { name: "description", content: "CCTV, access control, alarms, 24/7 monitoring and cyber security for Canadian businesses. Free site assessment — call 1-888-869-1679." },
+      { title: "Canadian Security Systems for Homes & Businesses | Fortega" },
+      { name: "description", content: "Protect your home or business with CCTV, access control, alarms, 24/7 monitoring and cyber security from Fortega. Free assessment: 1-888-869-1679." },
       ...socialMeta({
-        title: "Commercial Security Systems Canada | Fortega",
-        description: "CCTV, access control, alarms, 24/7 monitoring and cyber security for Canadian businesses. Free site assessment — call 1-888-869-1679.",
+        title: "Canadian Security Systems for Homes & Businesses | Fortega",
+        description: "Protect your home or business with CCTV, access control, alarms, 24/7 monitoring and cyber security from Fortega. Free assessment: 1-888-869-1679.",
         url: `${SITE_URL}/`,
       }),
     ],
