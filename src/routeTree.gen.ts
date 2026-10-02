@@ -9,90 +9,55 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as AuthDotmdRouteImport } from './routes/auth[.]md'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as ServicesRouteImport } from './routes/services'
-import { Route as SitemapCoreDotxmlRouteImport } from './routes/sitemap-core[.]xml'
-import { Route as SitemapFrDotxmlRouteImport } from './routes/sitemap-fr[.]xml'
-import { Route as SitemapLocationsDotxmlRouteImport } from './routes/sitemap-locations[.]xml'
-import { Route as SitemapResourcesDotxmlRouteImport } from './routes/sitemap-resources[.]xml'
-import { Route as SitemapServiceAreasDotxmlRouteImport } from './routes/sitemap-service-areas[.]xml'
-import { Route as SitemapServicesDotxmlRouteImport } from './routes/sitemap-services[.]xml'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
-import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
-import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes/[.]well-known.oauth-protected-resource'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as BlogSplatRouteImport } from './routes/blog.$'
-import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
-import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
-import { Route as LocationsIndexRouteImport } from './routes/locations.index'
-import { Route as LocationsCityRouteImport } from './routes/locations.$city'
-import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
-import { Route as ResourcesSlugRouteImport } from './routes/resources.$slug'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SitemapServicesDotxmlRouteImport } from './routes/sitemap-services[.]xml'
+import { Route as SitemapServiceAreasDotxmlRouteImport } from './routes/sitemap-service-areas[.]xml'
+import { Route as SitemapResourcesDotxmlRouteImport } from './routes/sitemap-resources[.]xml'
+import { Route as SitemapLocationsDotxmlRouteImport } from './routes/sitemap-locations[.]xml'
+import { Route as SitemapFrDotxmlRouteImport } from './routes/sitemap-fr[.]xml'
+import { Route as SitemapCoreDotxmlRouteImport } from './routes/sitemap-core[.]xml'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AuthDotmdRouteImport } from './routes/auth[.]md'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
+import { Route as LocationsIndexRouteImport } from './routes/locations.index'
+import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServicesServiceRouteImport } from './routes/services.$service'
-import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './routes/[.]well-known.agent-skills.index[.]json'
-import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[.]well-known.mcp.server-card[.]json'
-import { Route as FrSecuriteIndexRouteImport } from './routes/fr.securite.index'
-import { Route as FrSecuriteCityRouteImport } from './routes/fr.securite.$city'
-import { Route as LocationsProvinceProvinceRouteImport } from './routes/locations.province.$province'
+import { Route as ResourcesSlugRouteImport } from './routes/resources.$slug'
+import { Route as LocationsCityRouteImport } from './routes/locations.$city'
+import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
+import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes/[.]well-known.oauth-protected-resource'
+import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
+import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
 import { Route as ServicesServiceIndexRouteImport } from './routes/services.$service.index'
+import { Route as FrSecuriteIndexRouteImport } from './routes/fr.securite.index'
 import { Route as ServicesServiceCityRouteImport } from './routes/services.$service.$city'
+import { Route as LocationsProvinceProvinceRouteImport } from './routes/locations.province.$province'
+import { Route as FrSecuriteCityRouteImport } from './routes/fr.securite.$city'
+import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[.]well-known.mcp.server-card[.]json'
+import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './routes/[.]well-known.agent-skills.index[.]json'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthDotmdRoute = AuthDotmdRouteImport.update({
-  id: '/auth.md',
-  path: '/auth.md',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyRoute = PrivacyRouteImport.update({
-  id: '/privacy',
-  path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServicesRoute = ServicesRouteImport.update({
-  id: '/services',
-  path: '/services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapCoreDotxmlRoute = SitemapCoreDotxmlRouteImport.update({
-  id: '/sitemap-core.xml',
-  path: '/sitemap-core.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapFrDotxmlRoute = SitemapFrDotxmlRouteImport.update({
-  id: '/sitemap-fr.xml',
-  path: '/sitemap-fr.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapLocationsDotxmlRoute = SitemapLocationsDotxmlRouteImport.update({
-  id: '/sitemap-locations.xml',
-  path: '/sitemap-locations.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapResourcesDotxmlRoute = SitemapResourcesDotxmlRouteImport.update({
-  id: '/sitemap-resources.xml',
-  path: '/sitemap-resources.xml',
+const SitemapServicesDotxmlRoute = SitemapServicesDotxmlRouteImport.update({
+  id: '/sitemap-services.xml',
+  path: '/sitemap-services.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapServiceAreasDotxmlRoute =
@@ -101,76 +66,54 @@ const SitemapServiceAreasDotxmlRoute =
     path: '/sitemap-service-areas.xml',
     getParentRoute: () => rootRouteImport,
   } as any)
-const SitemapServicesDotxmlRoute = SitemapServicesDotxmlRouteImport.update({
-  id: '/sitemap-services.xml',
-  path: '/sitemap-services.xml',
+const SitemapResourcesDotxmlRoute = SitemapResourcesDotxmlRouteImport.update({
+  id: '/sitemap-resources.xml',
+  path: '/sitemap-resources.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
+const SitemapLocationsDotxmlRoute = SitemapLocationsDotxmlRouteImport.update({
+  id: '/sitemap-locations.xml',
+  path: '/sitemap-locations.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
+const SitemapFrDotxmlRoute = SitemapFrDotxmlRouteImport.update({
+  id: '/sitemap-fr.xml',
+  path: '/sitemap-fr.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DotwellKnownApiCatalogRoute = DotwellKnownApiCatalogRouteImport.update({
-  id: '/.well-known/api-catalog',
-  path: '/.well-known/api-catalog',
+const SitemapCoreDotxmlRoute = SitemapCoreDotxmlRouteImport.update({
+  id: '/sitemap-core.xml',
+  path: '/sitemap-core.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DotwellKnownOauthAuthorizationServerRoute =
-  DotwellKnownOauthAuthorizationServerRouteImport.update({
-    id: '/.well-known/oauth-authorization-server',
-    path: '/.well-known/oauth-authorization-server',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const DotwellKnownOauthProtectedResourceRoute =
-  DotwellKnownOauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogSplatRoute = BlogSplatRouteImport.update({
-  id: '/blog/$',
-  path: '/blog/$',
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndustriesIndexRoute = IndustriesIndexRouteImport.update({
-  id: '/industries/',
-  path: '/industries/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndustriesIndustryRoute = IndustriesIndustryRouteImport.update({
-  id: '/industries/$industry',
-  path: '/industries/$industry',
+const AuthDotmdRoute = AuthDotmdRouteImport.update({
+  id: '/auth.md',
+  path: '/auth.md',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LocationsIndexRoute = LocationsIndexRouteImport.update({
-  id: '/locations/',
-  path: '/locations/',
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LocationsCityRoute = LocationsCityRouteImport.update({
-  id: '/locations/$city',
-  path: '/locations/$city',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
-  id: '/resources/',
-  path: '/resources/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResourcesSlugRoute = ResourcesSlugRouteImport.update({
-  id: '/resources/$slug',
-  path: '/resources/$slug',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesIndexRoute = ServicesIndexRouteImport.update({
@@ -178,32 +121,82 @@ const ServicesIndexRoute = ServicesIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ServicesRoute,
 } as any)
+const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
+  id: '/resources/',
+  path: '/resources/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocationsIndexRoute = LocationsIndexRouteImport.update({
+  id: '/locations/',
+  path: '/locations/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndustriesIndexRoute = IndustriesIndexRouteImport.update({
+  id: '/industries/',
+  path: '/industries/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesServiceRoute = ServicesServiceRouteImport.update({
   id: '/$service',
   path: '/$service',
   getParentRoute: () => ServicesRoute,
 } as any)
-const DotwellKnownAgentSkillsIndexDotjsonRoute =
-  DotwellKnownAgentSkillsIndexDotjsonRouteImport.update({
-    id: '/.well-known/agent-skills/index.json',
-    path: '/.well-known/agent-skills/index.json',
+const ResourcesSlugRoute = ResourcesSlugRouteImport.update({
+  id: '/resources/$slug',
+  path: '/resources/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocationsCityRoute = LocationsCityRouteImport.update({
+  id: '/locations/$city',
+  path: '/locations/$city',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndustriesIndustryRoute = IndustriesIndustryRouteImport.update({
+  id: '/industries/$industry',
+  path: '/industries/$industry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/blog/$',
+  path: '/blog/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DotwellKnownOauthProtectedResourceRoute =
+  DotwellKnownOauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
   } as any)
-const DotwellKnownMcpServerCardDotjsonRoute =
-  DotwellKnownMcpServerCardDotjsonRouteImport.update({
-    id: '/.well-known/mcp/server-card.json',
-    path: '/.well-known/mcp/server-card.json',
+const DotwellKnownOauthAuthorizationServerRoute =
+  DotwellKnownOauthAuthorizationServerRouteImport.update({
+    id: '/.well-known/oauth-authorization-server',
+    path: '/.well-known/oauth-authorization-server',
     getParentRoute: () => rootRouteImport,
   } as any)
+const DotwellKnownApiCatalogRoute = DotwellKnownApiCatalogRouteImport.update({
+  id: '/.well-known/api-catalog',
+  path: '/.well-known/api-catalog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesServiceIndexRoute = ServicesServiceIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ServicesServiceRoute,
+} as any)
 const FrSecuriteIndexRoute = FrSecuriteIndexRouteImport.update({
   id: '/fr/securite/',
   path: '/fr/securite/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FrSecuriteCityRoute = FrSecuriteCityRouteImport.update({
-  id: '/fr/securite/$city',
-  path: '/fr/securite/$city',
-  getParentRoute: () => rootRouteImport,
+const ServicesServiceCityRoute = ServicesServiceCityRouteImport.update({
+  id: '/$city',
+  path: '/$city',
+  getParentRoute: () => ServicesServiceRoute,
 } as any)
 const LocationsProvinceProvinceRoute =
   LocationsProvinceProvinceRouteImport.update({
@@ -211,16 +204,23 @@ const LocationsProvinceProvinceRoute =
     path: '/locations/province/$province',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ServicesServiceIndexRoute = ServicesServiceIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => ServicesServiceRoute,
+const FrSecuriteCityRoute = FrSecuriteCityRouteImport.update({
+  id: '/fr/securite/$city',
+  path: '/fr/securite/$city',
+  getParentRoute: () => rootRouteImport,
 } as any)
-const ServicesServiceCityRoute = ServicesServiceCityRouteImport.update({
-  id: '/$city',
-  path: '/$city',
-  getParentRoute: () => ServicesServiceRoute,
-} as any)
+const DotwellKnownMcpServerCardDotjsonRoute =
+  DotwellKnownMcpServerCardDotjsonRouteImport.update({
+    id: '/.well-known/mcp/server-card.json',
+    path: '/.well-known/mcp/server-card.json',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DotwellKnownAgentSkillsIndexDotjsonRoute =
+  DotwellKnownAgentSkillsIndexDotjsonRouteImport.update({
+    id: '/.well-known/agent-skills/index.json',
+    path: '/.well-known/agent-skills/index.json',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LovableEmailQueueProcessRoute =
   LovableEmailQueueProcessRouteImport.update({
     id: '/lovable/email/queue/process',
@@ -486,88 +486,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auth.md': {
-      id: '/auth.md'
-      path: '/auth.md'
-      fullPath: '/auth.md'
-      preLoaderRoute: typeof AuthDotmdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/services': {
-      id: '/services'
-      path: '/services'
-      fullPath: '/services'
-      preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap-core.xml': {
-      id: '/sitemap-core.xml'
-      path: '/sitemap-core.xml'
-      fullPath: '/sitemap-core.xml'
-      preLoaderRoute: typeof SitemapCoreDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap-fr.xml': {
-      id: '/sitemap-fr.xml'
-      path: '/sitemap-fr.xml'
-      fullPath: '/sitemap-fr.xml'
-      preLoaderRoute: typeof SitemapFrDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap-locations.xml': {
-      id: '/sitemap-locations.xml'
-      path: '/sitemap-locations.xml'
-      fullPath: '/sitemap-locations.xml'
-      preLoaderRoute: typeof SitemapLocationsDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap-resources.xml': {
-      id: '/sitemap-resources.xml'
-      path: '/sitemap-resources.xml'
-      fullPath: '/sitemap-resources.xml'
-      preLoaderRoute: typeof SitemapResourcesDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap-service-areas.xml': {
-      id: '/sitemap-service-areas.xml'
-      path: '/sitemap-service-areas.xml'
-      fullPath: '/sitemap-service-areas.xml'
-      preLoaderRoute: typeof SitemapServiceAreasDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap-services.xml': {
-      id: '/sitemap-services.xml'
-      path: '/sitemap-services.xml'
-      fullPath: '/sitemap-services.xml'
-      preLoaderRoute: typeof SitemapServicesDotxmlRouteImport
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -577,88 +500,88 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
+    '/sitemap-services.xml': {
+      id: '/sitemap-services.xml'
+      path: '/sitemap-services.xml'
+      fullPath: '/sitemap-services.xml'
+      preLoaderRoute: typeof SitemapServicesDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/api-catalog': {
-      id: '/.well-known/api-catalog'
-      path: '/.well-known/api-catalog'
-      fullPath: '/.well-known/api-catalog'
-      preLoaderRoute: typeof DotwellKnownApiCatalogRouteImport
+    '/sitemap-service-areas.xml': {
+      id: '/sitemap-service-areas.xml'
+      path: '/sitemap-service-areas.xml'
+      fullPath: '/sitemap-service-areas.xml'
+      preLoaderRoute: typeof SitemapServiceAreasDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-authorization-server': {
-      id: '/.well-known/oauth-authorization-server'
-      path: '/.well-known/oauth-authorization-server'
-      fullPath: '/.well-known/oauth-authorization-server'
-      preLoaderRoute: typeof DotwellKnownOauthAuthorizationServerRouteImport
+    '/sitemap-resources.xml': {
+      id: '/sitemap-resources.xml'
+      path: '/sitemap-resources.xml'
+      fullPath: '/sitemap-resources.xml'
+      preLoaderRoute: typeof SitemapResourcesDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof DotwellKnownOauthProtectedResourceRouteImport
+    '/sitemap-locations.xml': {
+      id: '/sitemap-locations.xml'
+      path: '/sitemap-locations.xml'
+      fullPath: '/sitemap-locations.xml'
+      preLoaderRoute: typeof SitemapLocationsDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
+    '/sitemap-fr.xml': {
+      id: '/sitemap-fr.xml'
+      path: '/sitemap-fr.xml'
+      fullPath: '/sitemap-fr.xml'
+      preLoaderRoute: typeof SitemapFrDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$': {
-      id: '/blog/$'
-      path: '/blog/$'
-      fullPath: '/blog/$'
-      preLoaderRoute: typeof BlogSplatRouteImport
+    '/sitemap-core.xml': {
+      id: '/sitemap-core.xml'
+      path: '/sitemap-core.xml'
+      fullPath: '/sitemap-core.xml'
+      preLoaderRoute: typeof SitemapCoreDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/industries/': {
-      id: '/industries/'
-      path: '/industries'
-      fullPath: '/industries/'
-      preLoaderRoute: typeof IndustriesIndexRouteImport
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/industries/$industry': {
-      id: '/industries/$industry'
-      path: '/industries/$industry'
-      fullPath: '/industries/$industry'
-      preLoaderRoute: typeof IndustriesIndustryRouteImport
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/locations/': {
-      id: '/locations/'
-      path: '/locations'
-      fullPath: '/locations/'
-      preLoaderRoute: typeof LocationsIndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/locations/$city': {
-      id: '/locations/$city'
-      path: '/locations/$city'
-      fullPath: '/locations/$city'
-      preLoaderRoute: typeof LocationsCityRouteImport
+    '/auth.md': {
+      id: '/auth.md'
+      path: '/auth.md'
+      fullPath: '/auth.md'
+      preLoaderRoute: typeof AuthDotmdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/resources/': {
-      id: '/resources/'
-      path: '/resources'
-      fullPath: '/resources/'
-      preLoaderRoute: typeof ResourcesIndexRouteImport
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/resources/$slug': {
-      id: '/resources/$slug'
-      path: '/resources/$slug'
-      fullPath: '/resources/$slug'
-      preLoaderRoute: typeof ResourcesSlugRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services/': {
@@ -668,6 +591,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesIndexRouteImport
       parentRoute: typeof ServicesRoute
     }
+    '/resources/': {
+      id: '/resources/'
+      path: '/resources'
+      fullPath: '/resources/'
+      preLoaderRoute: typeof ResourcesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/locations/': {
+      id: '/locations/'
+      path: '/locations'
+      fullPath: '/locations/'
+      preLoaderRoute: typeof LocationsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/industries/': {
+      id: '/industries/'
+      path: '/industries'
+      fullPath: '/industries/'
+      preLoaderRoute: typeof IndustriesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/$service': {
       id: '/services/$service'
       path: '/$service'
@@ -675,39 +626,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesServiceRouteImport
       parentRoute: typeof ServicesRoute
     }
-    '/.well-known/agent-skills/index.json': {
-      id: '/.well-known/agent-skills/index.json'
-      path: '/.well-known/agent-skills/index.json'
-      fullPath: '/.well-known/agent-skills/index.json'
-      preLoaderRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRouteImport
+    '/resources/$slug': {
+      id: '/resources/$slug'
+      path: '/resources/$slug'
+      fullPath: '/resources/$slug'
+      preLoaderRoute: typeof ResourcesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/mcp/server-card.json': {
-      id: '/.well-known/mcp/server-card.json'
-      path: '/.well-known/mcp/server-card.json'
-      fullPath: '/.well-known/mcp/server-card.json'
-      preLoaderRoute: typeof DotwellKnownMcpServerCardDotjsonRouteImport
+    '/locations/$city': {
+      id: '/locations/$city'
+      path: '/locations/$city'
+      fullPath: '/locations/$city'
+      preLoaderRoute: typeof LocationsCityRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fr/securite/': {
-      id: '/fr/securite/'
-      path: '/fr/securite'
-      fullPath: '/fr/securite/'
-      preLoaderRoute: typeof FrSecuriteIndexRouteImport
+    '/industries/$industry': {
+      id: '/industries/$industry'
+      path: '/industries/$industry'
+      fullPath: '/industries/$industry'
+      preLoaderRoute: typeof IndustriesIndustryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fr/securite/$city': {
-      id: '/fr/securite/$city'
-      path: '/fr/securite/$city'
-      fullPath: '/fr/securite/$city'
-      preLoaderRoute: typeof FrSecuriteCityRouteImport
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/blog/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/locations/province/$province': {
-      id: '/locations/province/$province'
-      path: '/locations/province/$province'
-      fullPath: '/locations/province/$province'
-      preLoaderRoute: typeof LocationsProvinceProvinceRouteImport
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof DotwellKnownOauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/oauth-authorization-server': {
+      id: '/.well-known/oauth-authorization-server'
+      path: '/.well-known/oauth-authorization-server'
+      fullPath: '/.well-known/oauth-authorization-server'
+      preLoaderRoute: typeof DotwellKnownOauthAuthorizationServerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/api-catalog': {
+      id: '/.well-known/api-catalog'
+      path: '/.well-known/api-catalog'
+      fullPath: '/.well-known/api-catalog'
+      preLoaderRoute: typeof DotwellKnownApiCatalogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services/$service/': {
@@ -717,12 +682,47 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesServiceIndexRouteImport
       parentRoute: typeof ServicesServiceRoute
     }
+    '/fr/securite/': {
+      id: '/fr/securite/'
+      path: '/fr/securite'
+      fullPath: '/fr/securite/'
+      preLoaderRoute: typeof FrSecuriteIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/$service/$city': {
       id: '/services/$service/$city'
       path: '/$city'
       fullPath: '/services/$service/$city'
       preLoaderRoute: typeof ServicesServiceCityRouteImport
       parentRoute: typeof ServicesServiceRoute
+    }
+    '/locations/province/$province': {
+      id: '/locations/province/$province'
+      path: '/locations/province/$province'
+      fullPath: '/locations/province/$province'
+      preLoaderRoute: typeof LocationsProvinceProvinceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fr/securite/$city': {
+      id: '/fr/securite/$city'
+      path: '/fr/securite/$city'
+      fullPath: '/fr/securite/$city'
+      preLoaderRoute: typeof FrSecuriteCityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/mcp/server-card.json': {
+      id: '/.well-known/mcp/server-card.json'
+      path: '/.well-known/mcp/server-card.json'
+      fullPath: '/.well-known/mcp/server-card.json'
+      preLoaderRoute: typeof DotwellKnownMcpServerCardDotjsonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/agent-skills/index.json': {
+      id: '/.well-known/agent-skills/index.json'
+      path: '/.well-known/agent-skills/index.json'
+      fullPath: '/.well-known/agent-skills/index.json'
+      preLoaderRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/lovable/email/queue/process': {
       id: '/lovable/email/queue/process'
