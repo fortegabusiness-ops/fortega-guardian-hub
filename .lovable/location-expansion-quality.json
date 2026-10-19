@@ -10,6 +10,8 @@
     "exactNameSwaps": 0,
     "maxJaccard": 0,
     "maxContainment": 0,
+    "maxTokenJaccard": 0.20930232558139536,
+    "maxTrigramJaccard": 0.008771929824561403,
     "unresearchedTargets": 1776
   },
   "comparisons": [
