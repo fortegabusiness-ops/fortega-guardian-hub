@@ -18,6 +18,8 @@ Installation may require travelling technicians or involve a local partner where
 **Contact action:** Request a Dawson City assessment → `/contact`.
 
 ### Plan the installation around your actual site
+The Dawson destination site's [weather information](https://dawsoncity.ca/discover-dawson/weather/) describes a subarctic climate. For exterior equipment, confirm the operating conditions at each proposed position and select equipment against manufacturer ratings. Its [travel information](https://dawsoncity.ca/plan-your-trip/getting-here/) distinguishes the Klondike Highway from seasonal Top of the World Highway access. If technicians travel, planning should use the route actually required—not assume all routes are available year-round.
+
 Start with the building, not a standard equipment list. Identify proposed camera positions, exposed entrances, cable routes and areas where power or a network connection still needs to be provided. If work involves external mounting or changes to the building, establish which permissions apply before specifying equipment or scheduling installation.
 
 Outdoor equipment should be selected using the site's expected operating conditions and manufacturer ratings. A regional climate description alone does not establish the temperature, exposure or lighting at every mounting position.
@@ -64,6 +66,8 @@ Where a property includes an office, workshop, storage area or outdoor yard, ass
 For a camera upgrade, distinguish general observation from the detail needed to review an incident. For door access, identify who should enter each area and when. For alarms, distinguish intrusion events from other conditions you want the system to report.
 
 ### Review what can be reused
+For projects involving construction or alterations, the District of Chetwynd's [building inspection information](https://www.gochetwynd.com/municipal-office/departments/protective-services/building-inspection/) is a starting point for checking permit and inspection requirements. For a new development or changed use, also consult its [zoning guidance](https://www.gochetwynd.com/municipal-office/departments/planning-and-development/ocp-zoning/). These are scope-dependent checks, not a claim that every camera upgrade needs a building permit.
+
 Provide the model numbers of existing equipment if available, the approximate locations of cameras and alarm devices, and an outline of current cable and network arrangements. Compatibility must be checked; an assessment should not assume that every existing device can be retained or that replacement is always required.
 
 If the scope affects electrical work or building alterations, confirm the applicable permits and qualified-trade requirements before installation. Provincial information is guidance, not evidence of a particular Fortega licence or a confirmed local partner.
@@ -108,6 +112,8 @@ Establish whether recordings need to be accessed on-site, remotely or both. Conf
 If continuity during a connection interruption is a requirement, discuss local recording and how access, alerts and monitoring would behave during that interruption. Product capabilities and configuration must be checked; no system is assumed to remain fully functional during every outage.
 
 ### Plan maintenance alongside installation
+For work involving construction or alterations, consult the [provincial registry of Happy Valley-Goose Bay's municipal plan and development regulations](https://www.gov.nl.ca/mca/registry/community/happy-valley-goose-bay/) and confirm the scope with the Town. When installation needs roadside vehicle staging in winter, check the Town's [snow-clearing and parking notice](https://townhvgb.com/reminder-about-traffic-regulations-snow-clearing-policies/). These checks depend on the property and work involved; they are not universal security-installation requirements.
+
 Identify who can provide safe site access, how faults will be reported and which tasks may require an on-site visit. Some remote projects require travelling technicians; local partnerships may be an option where available. Neither a local team nor a maintenance response time is promised for this community.
 
 For exterior devices, assess each location's exposure, mounting and cable route. Any permissions for building changes should be confirmed before work is scheduled.

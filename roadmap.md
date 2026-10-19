@@ -4,8 +4,8 @@
 - [ ] Compare Google Analytics traffic before/after September 22; blocked on a Google Analytics report export or screenshots.
 
 ## Truthful location-page pilot
-- [ ] Audit former pages and prepare sourced briefs for Dawson City, Chetwynd and Goose Bay.
-- [ ] Prepare three confidential-customer-safe city drafts and proposed page list for user review.
+- [x] Audit former pages and prepare sourced briefs for Dawson City, Chetwynd and Goose Bay.
+- [x] Prepare three confidential-customer-safe city drafts and proposed page list for user review.
 - [ ] Restore reviewed pages and verify addresses, contact flow, links and sitemaps — blocked on approval of the drafts and page list.
 - [ ] Publish and measure the pilot — blocked on explicit publishing instruction and subsequent observation data.
 
