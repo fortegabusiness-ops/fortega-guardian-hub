@@ -1,12 +1,16 @@
 # Fortega SEO roadmap
 
 ## Approved full location expansion
-- [ ] Remove public licensing claims and unverified credential/response assurances; preserve truthful service enquiry wording.
-- [ ] Research Canadian search terms for all eight services and map 225 communities / 1,800 draft targets.
-- [ ] Prepare sourced city/service drafts and compare substantive differences; flag unresearched or overlapping combinations rather than auto-restore them.
-- [ ] Implement reviewed content, verify page metadata, answers, source attribution, links, sitemap and deleted-URL handling.
+- [x] Remove public licensing claims; replace location response guarantees and guarding delivery assurances with project-specific enquiry wording.
+- [x] Research Canadian search terms for all eight services and map 225 communities / 1,800 draft targets.
+- [x] Prepare 24 first-batch service drafts for the three pilot towns; compare 15 local-content bodies and explicitly flag the nine without sufficient local/delivery evidence.
+- [x] Verify all 24 noindex review addresses and all 298 existing sitemap pages for required metadata; test deleted addresses, sitemap isolation and assessment links. No enquiry was submitted.
+- [ ] Research and write remaining 1,776 target drafts; no restoration without substantive evidence and review. The target inventory is not completed page content.
+- [ ] Confirm delivery eligibility for regulated services with an appropriate qualified adviser/provider; Fortega states it has no licences. Guard delivery remains blocked, not concealed by removing licence wording.
+- [ ] Review the 24 first-batch drafts before promoting any to production service-city addresses; nine require additional evidence or consolidation.
+- [ ] Audit broader existing non-licensing claims, including ULC status, clearances, training and service performance, against supplied evidence before asserting a full factual-content clearance.
 - [ ] Publish expansion — blocked on separate explicit publishing instruction.
-- [ ] Complete full backup — website source archive saved; database export, storage files and three external image originals remain outside archive.
+- [ ] Complete full backup — blocked on database export, storage download and three externally hosted image originals; website source archive is already saved.
 
 ## Awaiting report access
 - [ ] Compare Google Analytics traffic before/after September 22; blocked on a Google Analytics report export or screenshots.

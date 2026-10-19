@@ -1,10 +1,8 @@
 /**
  * French (fr-CA) pages for the Quebec market.
  *
- * Quebec-specific facts used here come from the same province data layer as the
- * English pages: private security is licensed by the Bureau de la sécurité
- * privée (BSP), and personal information — including video and access logs —
- * falls under Quebec's private-sector privacy regime as modernised by Law 25.
+ * Quebec-specific privacy context is general planning guidance, not evidence
+ * of Fortega credentials, local delivery or site-specific legal compliance.
  */
 import { CITIES, type City } from "./cities";
 
