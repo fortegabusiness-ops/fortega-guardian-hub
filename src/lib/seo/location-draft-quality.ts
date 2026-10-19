@@ -22,10 +22,18 @@ export function compareSubstance(a: QualityDocument, b: QualityDocument) {
   const l = shingles(left), r = shingles(right);
   const overlap = [...l].filter((word) => r.has(word)).length;
   const union = l.size + r.size - overlap;
+  const lt = new Set(left), rt = new Set(right);
+  const tokenOverlap = [...lt].filter((word) => rt.has(word)).length;
+  const tokenUnion = lt.size + rt.size - tokenOverlap;
+  const l3 = shingles(left, 3), r3 = shingles(right, 3);
+  const overlap3 = [...l3].filter((word) => r3.has(word)).length;
+  const union3 = l3.size + r3.size - overlap3;
   return {
     exactNameSwap: left.join(" ") === right.join(" "),
     jaccard: union ? overlap / union : 1,
     containment: Math.min(l.size, r.size) ? overlap / Math.min(l.size, r.size) : 1,
+    tokenJaccard: tokenUnion ? tokenOverlap / tokenUnion : 1,
+    trigramJaccard: union3 ? overlap3 / union3 : 1,
   };
 }
 
