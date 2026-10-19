@@ -8,6 +8,7 @@ import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
 import { clampDescription } from "@/lib/seo/meta";
+import { CORE_CITY_SLUGS } from "@/lib/seo/cities";
 
 export const Route = createFileRoute("/locations/province/$province")({
   loader: ({ params }) => {
@@ -100,7 +101,7 @@ function ProvincePage() {
             Security systems and monitoring across {province.name}
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            {cities.length > 0 ? (
+            {cities.some((city) => CORE_CITY_SLUGS.includes(city.slug)) ? (
               <>
                 Fortega serves {province.name} with CCTV, access control, intrusion alarms, remote
                 monitoring, guard services and cyber security — licensed under {province.regulator}{" "}
@@ -108,9 +109,9 @@ function ProvincePage() {
               </>
             ) : (
               <>
-                Fortega supports {province.name} sites through remote monitoring, cellular alarm
-                paths and scheduled technician deployments, working to {province.regulator}{" "}
-                requirements and backed by our 24/7 Canadian monitoring centre.
+                Fortega can begin a remote assessment using drawings, layouts and project
+                details. Service availability, any required licensing, technician travel and
+                local partnership arrangements in {province.name} must be confirmed for your project.
               </>
             )}
           </p>
