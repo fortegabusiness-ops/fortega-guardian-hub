@@ -40,6 +40,7 @@ import { Route as DotwellKnownAgentSkillsIndexDotjsonRouteImport } from './route
 import { Route as DotwellKnownMcpServerCardDotjsonRouteImport } from './routes/[.]well-known.mcp.server-card[.]json'
 import { Route as FrSecuriteIndexRouteImport } from './routes/fr.securite.index'
 import { Route as FrSecuriteCityRouteImport } from './routes/fr.securite.$city'
+import { Route as LocationReviewCityServiceRouteImport } from './routes/location-review.$city.$service'
 import { Route as LocationsProvinceProvinceRouteImport } from './routes/locations.province.$province'
 import { Route as ServicesServiceIndexRouteImport } from './routes/services.$service.index'
 import { Route as ServicesServiceCityRouteImport } from './routes/services.$service.$city'
@@ -205,6 +206,12 @@ const FrSecuriteCityRoute = FrSecuriteCityRouteImport.update({
   path: '/fr/securite/$city',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LocationReviewCityServiceRoute =
+  LocationReviewCityServiceRouteImport.update({
+    id: '/location-review/$city/$service',
+    path: '/location-review/$city/$service',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LocationsProvinceProvinceRoute =
   LocationsProvinceProvinceRouteImport.update({
     id: '/locations/province/$province',
@@ -259,6 +266,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/fr/securite/$city': typeof FrSecuriteCityRoute
+  '/location-review/$city/$service': typeof LocationReviewCityServiceRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
   '/fr/securite/': typeof FrSecuriteIndexRoute
@@ -294,6 +302,7 @@ export interface FileRoutesByTo {
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/fr/securite/$city': typeof FrSecuriteCityRoute
+  '/location-review/$city/$service': typeof LocationReviewCityServiceRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
   '/fr/securite': typeof FrSecuriteIndexRoute
@@ -332,6 +341,7 @@ export interface FileRoutesById {
   '/.well-known/agent-skills/index.json': typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/fr/securite/$city': typeof FrSecuriteCityRoute
+  '/location-review/$city/$service': typeof LocationReviewCityServiceRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
   '/fr/securite/': typeof FrSecuriteIndexRoute
@@ -371,6 +381,7 @@ export interface FileRouteTypes {
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
     | '/fr/securite/$city'
+    | '/location-review/$city/$service'
     | '/locations/province/$province'
     | '/services/$service/$city'
     | '/fr/securite/'
@@ -406,6 +417,7 @@ export interface FileRouteTypes {
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
     | '/fr/securite/$city'
+    | '/location-review/$city/$service'
     | '/locations/province/$province'
     | '/services/$service/$city'
     | '/fr/securite'
@@ -443,6 +455,7 @@ export interface FileRouteTypes {
     | '/.well-known/agent-skills/index.json'
     | '/.well-known/mcp/server-card.json'
     | '/fr/securite/$city'
+    | '/location-review/$city/$service'
     | '/locations/province/$province'
     | '/services/$service/$city'
     | '/fr/securite/'
@@ -479,6 +492,7 @@ export interface RootRouteChildren {
   DotwellKnownAgentSkillsIndexDotjsonRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRoute
   DotwellKnownMcpServerCardDotjsonRoute: typeof DotwellKnownMcpServerCardDotjsonRoute
   FrSecuriteCityRoute: typeof FrSecuriteCityRoute
+  LocationReviewCityServiceRoute: typeof LocationReviewCityServiceRoute
   LocationsProvinceProvinceRoute: typeof LocationsProvinceProvinceRoute
   FrSecuriteIndexRoute: typeof FrSecuriteIndexRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
@@ -703,6 +717,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrSecuriteCityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/location-review/$city/$service': {
+      id: '/location-review/$city/$service'
+      path: '/location-review/$city/$service'
+      fullPath: '/location-review/$city/$service'
+      preLoaderRoute: typeof LocationReviewCityServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations/province/$province': {
       id: '/locations/province/$province'
       path: '/locations/province/$province'
@@ -794,6 +815,7 @@ const rootRouteChildren: RootRouteChildren = {
     DotwellKnownAgentSkillsIndexDotjsonRoute,
   DotwellKnownMcpServerCardDotjsonRoute: DotwellKnownMcpServerCardDotjsonRoute,
   FrSecuriteCityRoute: FrSecuriteCityRoute,
+  LocationReviewCityServiceRoute: LocationReviewCityServiceRoute,
   LocationsProvinceProvinceRoute: LocationsProvinceProvinceRoute,
   FrSecuriteIndexRoute: FrSecuriteIndexRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
