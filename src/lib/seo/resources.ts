@@ -45,14 +45,14 @@ export const GUIDES: Guide[] = [
           "Openings: every controlled door needs a reader, a controller port, a lock or strike, request-to-exit hardware and, often, an electrician.",
           "Cabling conditions: open ceilings and existing conduit are cheap; finished drywall, concrete, heritage buildings and outdoor runs are not.",
           "Camera count and retention: 30 days of 4K on 40 cameras is a very different storage bill than 14 days of 1080p on 12.",
-          "Recurring services: monitoring, cloud video licensing, remote guarding hours, maintenance and software subscriptions.",
+          "Recurring services: monitoring, cloud video subscriptions, remote guarding hours, maintenance and software subscriptions.",
         ],
       },
       {
         heading: "One-time versus monthly",
         body: [
-          "Treat the two budgets separately. The one-time budget covers design, hardware, cabling, installation, configuration, commissioning and training. The monthly budget covers alarm monitoring, cloud video or access licences, remote guarding if used, and a service agreement.",
-          "A cheap installation with expensive proprietary licensing can cost more over five years than a higher install price on open hardware. Ask any vendor for a five-year total, not just the install number.",
+          "Treat the two budgets separately. The one-time budget covers design, hardware, cabling, installation, configuration, commissioning and training. The monthly budget covers alarm monitoring, cloud video or access subscriptions, remote guarding if used, and a service agreement.",
+          "A cheap installation with expensive proprietary subscriptions can cost more over five years than a higher install price on open hardware. Ask any vendor for a five-year total, not just the install number.",
         ],
       },
       {
@@ -64,7 +64,7 @@ export const GUIDES: Guide[] = [
           "Same camera count, same resolution, same retention days.",
           "Same number of controlled doors and the same lock hardware type.",
           "Cabling included or excluded — and who pays if the walls surprise everyone.",
-          "Who owns the recordings, the licences and the account when the contract ends.",
+          "Who owns the recordings, software access rights and the account when the contract ends.",
           "Contract length, escalation clauses and what happens after a monitoring contract expires.",
           "Response time and service levels in writing, not implied.",
         ],
@@ -208,8 +208,8 @@ export const GUIDES: Guide[] = [
         a: "Yes, with the right design: infrared or thermal cameras, adequate lighting, and analytics tuned for the site. Snow, rain and headlights all cause nuisance alerts if the system is not tuned for the local conditions.",
       },
       {
-        q: "Do security guards need a licence in Canada?",
-        a: "Yes. Guard licensing is provincial — each province or territory licenses individual guards and the agencies that employ them, with its own training and renewal rules. Always confirm both the agency licence and individual licences.",
+        q: "Does a monitoring service guarantee an on-site response?",
+        a: "No. Video verification and remote escalation are different from physical attendance. Confirm who can attend, their responsibilities and the agreed delivery arrangements separately before accepting a proposal.",
       },
     ],
     related: ["commercial-security-system-cost-canada", "reduce-false-alarms-commercial", "commercial-vs-residential-security-systems"],
@@ -322,7 +322,7 @@ export const GUIDES: Guide[] = [
       },
       {
         q: "Is integration worth it for a single small site?",
-        a: "Often yes, because the same investigation benefit applies. The question is cost: if the integration requires an expensive licence tier, a small site may get most of the value from tight time sync and matching camera coverage at each controlled door.",
+        a: "Often yes, because the same investigation benefit applies. The question is cost: if the integration requires an expensive subscription tier, a small site may get most of the value from tight time sync and matching camera coverage at each controlled door.",
       },
     ],
     related: ["choosing-a-commercial-access-control-system", "how-many-security-cameras-does-my-business-need", "security-system-cyber-hardening"],
@@ -494,7 +494,7 @@ export const GUIDES: Guide[] = [
       },
       {
         q: "Is a commercial system much more expensive?",
-        a: "Per camera it can be comparable; the difference is in cabling, storage, licensing and service. You are largely paying for reliability, retention and accountability rather than for the camera itself.",
+        a: "Per camera it can be comparable; the difference is in cabling, storage, software subscriptions and service. You are largely paying for reliability, retention and accountability rather than for the camera itself.",
       },
     ],
     related: ["commercial-security-system-cost-canada", "how-many-security-cameras-does-my-business-need", "choosing-a-commercial-access-control-system"],

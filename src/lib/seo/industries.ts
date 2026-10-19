@@ -187,12 +187,12 @@ export const INDUSTRIES: Industry[] = [
     ],
     approachHeading: "Fortega's logistics security model",
     approach: [
-      "We design around the flow of freight: gatehouse to yard to dock to rack to outbound. Each transition gets the right control — license-plate recognition at gates, dock-door cameras tied to bay numbers, RFID or PIN at pedestrian doors, analytics watching pedestrian-equipment interactions on the floor.",
+      "We design around the flow of freight: gatehouse to yard to dock to rack to outbound. Each transition gets the right control — vehicle-plate recognition at gates, dock-door cameras tied to bay numbers, RFID or PIN at pedestrian doors, analytics watching pedestrian-equipment interactions on the floor.",
       "Camera footage is searchable by trailer number, BOL or driver ID through integration with yard-management and transportation-management systems, so investigations take minutes not days.",
       "Our 24/7 monitoring centre handles gate intrusion, dock-door props, after-hours yard activity and panic alarms with verified dispatch — including voice-down challenge over loudspeakers when an intruder is detected in the yard.",
     ],
     solutions: [
-      { title: "Yard & gate security", desc: "License-plate recognition, vehicle barriers and long-range camera coverage of the full yard." },
+      { title: "Yard & gate security", desc: "Vehicle-plate recognition, vehicle barriers and long-range camera coverage of the full yard." },
       { title: "Dock-door surveillance", desc: "Per-bay cameras tied to dock-door sensors and WMS events for incident reconstruction." },
       { title: "Driver & visitor management", desc: "Pre-arrival booking, ID verification and self-service kiosks for drivers." },
       { title: "Racking & high-value cages", desc: "Cage access control, motion-activated cameras and seal-break detection." },
@@ -327,7 +327,7 @@ export const INDUSTRIES: Industry[] = [
       "Government facilities operate under public scrutiny, fixed budgets and security obligations that span everything from front-counter safety to classified-data protection. Fortega delivers integrated programs for federal, provincial and municipal clients across Canada with disciplined documentation, accountable delivery and the discretion the sector expects.",
     threatHeading: "Threats facing public-sector clients",
     threats: [
-      "Front-counter aggression toward public-facing employees is rising across municipal services, social assistance, courts and licensing offices. Duress and verified response are now baseline expectations.",
+      "Public-facing employees in municipal services, social assistance and courts may need duress procedures, video evidence and a defined escalation plan. Assess the actual duties and site risks before choosing controls.",
       "Critical infrastructure — water, wastewater, transit, public works — increasingly faces cyber attack from both criminal and state-linked actors. Many sites still rely on flat networks and unsupported control systems.",
       "Records, evidence and chain-of-custody requirements demand tamper-evident video and access logs that hold up in court and in freedom-of-information disclosures.",
       "Procurement timelines and vendor scrutiny mean a security partner must produce documentation, references and compliance evidence as a matter of course — not as a one-off ask.",
@@ -416,13 +416,13 @@ export const INDUSTRIES: Industry[] = [
     slug: "cannabis",
     name: "Cannabis",
     shortName: "Cannabis",
-    h1: "Health Canada–compliant security for licensed cannabis facilities",
+    h1: "Security planning for cannabis cultivation, processing and retail",
     metaTitle: "Cannabis Retail & Grow Security Canada | Fortega",
     metaDescription:
       "Cultivation, processing and retail cannabis security: cameras, access control, vault monitoring and Health Canada–aligned documentation from Fortega.",
     eyebrow: "Industry",
     intro:
-      "Cannabis licence holders operate under one of the most prescriptive physical-security regimes in Canada. Cultivation, processing, distribution and retail each face specific obligations under the Cannabis Act and Cannabis Regulations. Fortega designs compliant systems for licence holders across Canada — and produces the documentation Health Canada and provincial regulators actually want to see.",
+      "Cannabis cultivation, processing, distribution and retail have different physical-security requirements. Start with the property's activities and applicable rules before planning cameras, door access and alarms. Fortega can assess project requirements; project eligibility, delivery arrangements and documentation must be confirmed rather than assumed.",
     threatHeading: "The cannabis security landscape",
     threats: [
       "Diversion is the single largest regulator concern. Every gram leaving a site must be accounted for, and security systems exist primarily to make diversion detectable.",
@@ -441,7 +441,7 @@ export const INDUSTRIES: Industry[] = [
       { title: "Vault & restricted-access control", desc: "Two-person rule support, audit trails and time-locked storage." },
       { title: "Seed-to-sale integration", desc: "Access and video events tied to inventory and destruction records." },
       { title: "Retail entrance & age control", desc: "Vestibule controls, ID verification and panic systems aligned with provincial rules." },
-      { title: "Cyber security for licence holders", desc: "Network segmentation and protection for seed-to-sale, GACP and corporate systems." },
+      { title: "Cyber security for cannabis operations", desc: "Network segmentation and protection for seed-to-sale, GACP and corporate systems." },
       { title: "24/7 verified monitoring", desc: "Canadian monitoring centre with cannabis-trained operators and regulator-aligned retention." },
     ],
     complianceHeading: "Health Canada and provincial regulators",
@@ -449,7 +449,7 @@ export const INDUSTRIES: Industry[] = [
       "Fortega designs against the Cannabis Regulations Part 4 (Physical Security), Health Canada Directives, and the retail security frameworks of AGCO, AGLC, BCCS, SAQ and other provincial bodies.",
       "Documentation deliverables — coverage maps, retention proofs, access policies, monitoring procedures and incident logs — are produced as part of every project so audits and renewals are routine.",
     ],
-    whyHeading: "Why licence holders choose Fortega",
+    whyHeading: "Planning a coordinated security project",
     why: [
       "We've designed against cannabis regulation since legalization and stay current as Health Canada and provincial bodies update their expectations.",
       "One accountable team for design, install, monitoring and cyber — so a single vendor stands behind the program when an inspector arrives.",
@@ -628,12 +628,12 @@ export const INDUSTRIES: Industry[] = [
     ],
     approachHeading: "Fortega's dealership approach",
     approach: [
-      "We design around four zones — lot, showroom, parts and service — each with the right combination of cameras, access control and alarming. Lot coverage prioritises perimeter, exit lanes and license-plate capture; showroom protects fob storage and signage; service and parts get tighter access and POS-integrated video.",
+      "We design around four zones — lot, showroom, parts and service — each with the right combination of cameras, access control and alarming. Lot coverage prioritises perimeter, exit lanes and vehicle-plate capture; showroom protects fob storage and signage; service and parts get tighter access and POS-integrated video.",
       "Analytics flag after-hours movement on the lot, line-crossing into restricted areas and unusual vehicle activity. Our 24/7 monitoring centre verifies and challenges intruders over voice-down speakers before dispatching mobile patrol or police.",
       "Networks are segmented so DMS, CRM, payment and camera traffic don't share a flat VLAN — a common gap that exposes dealerships to ransomware and payment-data loss.",
     ],
     solutions: [
-      { title: "Lot video & LPR", desc: "Perimeter cameras, license-plate recognition on exit lanes and after-hours analytics." },
+      { title: "Lot video & LPR", desc: "Perimeter cameras, vehicle-plate recognition on exit lanes and after-hours analytics." },
       { title: "Showroom & key control", desc: "Fob storage cabinets, RFID key tracking and audited issue/return." },
       { title: "Parts-department video & access", desc: "Counter, receiving and storage coverage integrated with DMS where supported." },
       { title: "Service-bay coverage", desc: "Evidentiary video over every bay and customer-vehicle staging area." },
