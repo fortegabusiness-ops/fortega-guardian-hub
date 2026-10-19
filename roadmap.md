@@ -1,11 +1,13 @@
 # Fortega SEO roadmap
 
 ## Approved full location expansion
+- [x] October 19 continuation: created all 1,800 review addresses and searchable review directory; checked every address, deleted-URL isolation and 12 safeguards. Nothing published or restored.
 - [x] Remove public licensing claims; replace location response guarantees and guarding delivery assurances with project-specific enquiry wording.
 - [x] Research Canadian search terms for all eight services and map 225 communities / 1,800 draft targets.
 - [x] Prepare 24 first-batch service drafts for the three pilot towns; compare 15 local-content bodies and explicitly flag the nine without sufficient local/delivery evidence.
 - [x] Verify all 24 noindex review addresses and all 298 existing sitemap pages for required metadata; test deleted addresses, sitemap isolation and assessment links. No enquiry was submitted.
-- [ ] Research and write remaining 1,776 target drafts; no restoration without substantive evidence and review. The target inventory is not completed page content.
+- [ ] Finish substantive city-service research and rewriting: 1,785 drafts lack service-specific local evidence and eight shared-body groups are flagged. Public geographic source rate-limited bulk retrieval; ten attributed place excerpts saved, not counted as unique service content. All drafts exist but are not publication-ready.
+- [ ] Additional Google keyword evidence: Ads connection returned no accessible accounts; Keyword Planner requires account access. Trends supplied no readable comparison data. Canadian Semrush comparison refreshed instead; no Google figures invented.
 - [ ] Confirm delivery eligibility for regulated services with an appropriate qualified adviser/provider; Fortega states it has no licences. Guard delivery remains blocked, not concealed by removing licence wording.
 - [ ] Review the 24 first-batch drafts before promoting any to production service-city addresses; nine require additional evidence or consolidation.
 - [ ] Audit broader existing non-licensing claims, including ULC status, clearances, training and service performance, against supplied evidence before asserting a full factual-content clearance.

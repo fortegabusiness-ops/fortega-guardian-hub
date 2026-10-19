@@ -1,4 +1,5 @@
-import { LOCATION_PILOTS } from "./location-pilots";
+import { REVIEW_CITY_INVENTORY } from "./cities";
+import geographicReferences from "./location-geographic-references.json";
 import { SERVICE_BY_SLUG, SERVICE_SLUGS } from "./services";
 import { SERVICE_KEYWORDS } from "./service-keywords";
 import { clampDescription, clampTitle } from "./meta";
@@ -86,19 +87,20 @@ const LOCAL_PLANS: Record<string, Partial<Record<string, LocalPlan>>> = {
 };
 
 export function getLocationServiceDraft(citySlug: string, serviceSlug: string) {
-  const city = LOCATION_PILOTS.find((c) => c.slug === citySlug);
+  const city = REVIEW_CITY_INVENTORY.find((c) => c.slug === citySlug);
   const service = SERVICE_BY_SLUG[serviceSlug];
   const plan = SERVICE_PLANS[serviceSlug];
   const keywords = SERVICE_KEYWORDS[serviceSlug as keyof typeof SERVICE_KEYWORDS];
   if (!city || !service || !plan || !keywords) return undefined;
   const local = LOCAL_PLANS[citySlug]?.[serviceSlug];
+  const geography = (geographicReferences as Record<string, { sourceTitle: string; sourceUrl: string; excerpt: string; reviewed: string }>)[citySlug];
   const status = serviceSlug === "guards" ? "delivery-blocked" : local ? "needs-review" : "insufficient-local-evidence";
   const title = clampTitle([`${keywords.primary} — ${city.name} | Fortega`, `${service.shortName} planning — ${city.name} | Fortega`]);
   const description = clampDescription(`Plan ${keywords.primary} for ${city.name}. Review equipment and site needs with Fortega; delivery arrangements require confirmation.`);
-  return { city, service, plan, keywords, local, status, title, description, updated: "2026-10-19", approved: false as const };
+  return { city, service, plan, keywords, local, geography, status, title, description, updated: "2026-10-19", approved: false as const };
 }
 
-export const LOCATION_SERVICE_DRAFTS = LOCATION_PILOTS.flatMap((city) => SERVICE_SLUGS.flatMap((service) => {
+export const LOCATION_SERVICE_DRAFTS = REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.flatMap((service) => {
   const draft = getLocationServiceDraft(city.slug, service);
   return draft ? [draft] : [];
 }));

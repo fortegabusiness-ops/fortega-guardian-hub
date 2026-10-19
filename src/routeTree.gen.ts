@@ -30,6 +30,7 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
+import { Route as LocationReviewIndexRouteImport } from './routes/location-review.index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as LocationsCityRouteImport } from './routes/locations.$city'
 import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
@@ -154,6 +155,11 @@ const IndustriesIndustryRoute = IndustriesIndustryRouteImport.update({
   path: '/industries/$industry',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LocationReviewIndexRoute = LocationReviewIndexRouteImport.update({
+  id: '/location-review/',
+  path: '/location-review/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocationsIndexRoute = LocationsIndexRouteImport.update({
   id: '/locations/',
   path: '/locations/',
@@ -260,6 +266,7 @@ export interface FileRoutesByFullPath {
   '/services/$service': typeof ServicesServiceRouteWithChildren
   '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
+  '/location-review/': typeof LocationReviewIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/resources/': typeof ResourcesIndexRoute
   '/services/': typeof ServicesIndexRoute
@@ -296,6 +303,7 @@ export interface FileRoutesByTo {
   '/resources/$slug': typeof ResourcesSlugRoute
   '/blog': typeof BlogIndexRoute
   '/industries': typeof IndustriesIndexRoute
+  '/location-review': typeof LocationReviewIndexRoute
   '/locations': typeof LocationsIndexRoute
   '/resources': typeof ResourcesIndexRoute
   '/services': typeof ServicesIndexRoute
@@ -335,6 +343,7 @@ export interface FileRoutesById {
   '/services/$service': typeof ServicesServiceRouteWithChildren
   '/blog/': typeof BlogIndexRoute
   '/industries/': typeof IndustriesIndexRoute
+  '/location-review/': typeof LocationReviewIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/resources/': typeof ResourcesIndexRoute
   '/services/': typeof ServicesIndexRoute
@@ -375,6 +384,7 @@ export interface FileRouteTypes {
     | '/services/$service'
     | '/blog/'
     | '/industries/'
+    | '/location-review/'
     | '/locations/'
     | '/resources/'
     | '/services/'
@@ -411,6 +421,7 @@ export interface FileRouteTypes {
     | '/resources/$slug'
     | '/blog'
     | '/industries'
+    | '/location-review'
     | '/locations'
     | '/resources'
     | '/services'
@@ -449,6 +460,7 @@ export interface FileRouteTypes {
     | '/services/$service'
     | '/blog/'
     | '/industries/'
+    | '/location-review/'
     | '/locations/'
     | '/resources/'
     | '/services/'
@@ -487,6 +499,7 @@ export interface RootRouteChildren {
   ResourcesSlugRoute: typeof ResourcesSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
+  LocationReviewIndexRoute: typeof LocationReviewIndexRoute
   LocationsIndexRoute: typeof LocationsIndexRoute
   ResourcesIndexRoute: typeof ResourcesIndexRoute
   DotwellKnownAgentSkillsIndexDotjsonRoute: typeof DotwellKnownAgentSkillsIndexDotjsonRoute
@@ -645,6 +658,13 @@ declare module '@tanstack/react-router' {
       path: '/industries/$industry'
       fullPath: '/industries/$industry'
       preLoaderRoute: typeof IndustriesIndustryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/location-review/': {
+      id: '/location-review/'
+      path: '/location-review'
+      fullPath: '/location-review/'
+      preLoaderRoute: typeof LocationReviewIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/locations/': {
@@ -809,6 +829,7 @@ const rootRouteChildren: RootRouteChildren = {
   ResourcesSlugRoute: ResourcesSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
+  LocationReviewIndexRoute: LocationReviewIndexRoute,
   LocationsIndexRoute: LocationsIndexRoute,
   ResourcesIndexRoute: ResourcesIndexRoute,
   DotwellKnownAgentSkillsIndexDotjsonRoute:
