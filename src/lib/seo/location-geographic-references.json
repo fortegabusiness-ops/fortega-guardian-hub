@@ -1,0 +1,62 @@
+{
+  "banff": {
+    "sourceTitle": "Banff, Alberta",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Banff,_Alberta",
+    "excerpt": "Banff is a resort town in Banff National Park, Alberta, Canada, in Alberta's Rockies along the Trans-Canada Highway, 126 km (78 mi) west of Calgary, 58 km (36 mi) east of Lake Louise, and 1,400 to 1,630 m (4,590 to 5,350 ft) above sea level.",
+    "reviewed": "2026-10-19"
+  },
+  "brooks": {
+    "sourceTitle": "Brooks, Alberta",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Brooks,_Alberta",
+    "excerpt": "Brooks is a city in southeast Alberta, Canada in the County of Newell. It is on Highway 1 (Trans-Canada Highway) and the Canadian Pacific Kansas City railway, approximately 186 km (116 mi) southeast of Calgary, and 110 km (68 mi) northwest of Medicine Hat. The city has an elevation of 760 m (2,490 ft).",
+    "reviewed": "2026-10-19"
+  },
+  "calgary": {
+    "sourceTitle": "Calgary",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Calgary",
+    "excerpt": "Calgary is the largest city in the Canadian province of Alberta. As of 2021, the city proper had a population of 1,306,784 and a metropolitan population of 1,481,806, making Calgary the third-largest city and the fifth-largest metropolitan area in Canada.",
+    "reviewed": "2026-10-19"
+  },
+  "edmonton": {
+    "sourceTitle": "Edmonton",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Edmonton",
+    "excerpt": "Edmonton (  ED-mən-tən) is the capital city of the Canadian province of Alberta. It is situated on the North Saskatchewan River and is the centre of the Edmonton Metropolitan Region, which is surrounded by Alberta's central region. Located about 290 kilometres (180 mi) north of Calgary, the city anchors the northern end of what Statistics Canada defines as the \"Calgary–Edmonton Corridor\".",
+    "reviewed": "2026-10-19"
+  },
+  "fort-mcmurray": {
+    "sourceTitle": "Fort McMurray",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Fort_McMurray",
+    "excerpt": "Fort McMurray ( mək-MURR-ee) is an urban service area in the Regional Municipality of Wood Buffalo in Alberta, Canada. It is located in northeast Alberta, in the middle of the Athabasca oil sands, surrounded by boreal forest. It has played a significant role in the development of the national petroleum industry. The 2016 Fort McMurray wildfire led to the evacuation of its residents and caused widespread damage.",
+    "reviewed": "2026-10-19"
+  },
+  "grande-prairie": {
+    "sourceTitle": "Grande Prairie",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Grande_Prairie",
+    "excerpt": "Grande Prairie is a city in northwestern Alberta, Canada, within the southern portion of an area known as Peace River Country. It is located at the intersection of Highway 43 (part of the CANAMEX Corridor) and Highway 40 (the Bighorn Highway), approximately 456 kilometres (283 mi) northwest of the provincial capital, Edmonton. The city is surrounded by the County of Grande Prairie No. 1.",
+    "reviewed": "2026-10-19"
+  },
+  "jasper": {
+    "sourceTitle": "Jasper, Alberta",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jasper,_Alberta",
+    "excerpt": "Jasper is a specialized municipality and townsite in western Alberta within the Canadian Rockies. The townsite is in the Athabasca River valley and is the commercial centre of Jasper National Park.",
+    "reviewed": "2026-10-19"
+  },
+  "lake-louise": {
+    "sourceTitle": "Lake Louise, Alberta",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Louise,_Alberta",
+    "excerpt": "Lake Louise is an unincorporated community within Banff National Park in Alberta, Canada. Named after Princess Louise, Duchess of Argyll, it lies in the Rocky Mountains on the Bow River, 3 km (1.9 mi) northeast of the lake that shares its name. Initially settled in 1884 as an outpost for the Canadian Pacific Railway, Lake Louise sits at an elevation of 1,600 m (5,200 ft), and is Canada's highest community.",
+    "reviewed": "2026-10-19"
+  },
+  "lethbridge": {
+    "sourceTitle": "Lethbridge",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Lethbridge",
+    "excerpt": "Lethbridge ( LETH-brij) is a city in the province of Alberta, Canada. With a population of 106,550 in the 2023 municipal census, Lethbridge became the fourth Alberta city to surpass 100,000 people. The nearby Canadian Rocky Mountains contribute to the city's warm summers, mild winters, and windy climate. Lethbridge lies approximately 215 km (134 mi) southeast of Calgary on the Oldman River, 169 km (105 mi) west of Medicine Hat, and 105 km (65 mi) northwest of the Canada–United States border at the Sweetgrass–Coutts Border Crossing.",
+    "reviewed": "2026-10-19"
+  },
+  "red-deer": {
+    "sourceTitle": "Red Deer, Alberta",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Red_Deer,_Alberta",
+    "excerpt": "Red Deer is a city in Alberta, Canada, located alongside the Red Deer River, midway on the Calgary–Edmonton Corridor. Red Deer is Alberta's third-largest city, after Calgary and Edmonton, with a slightly higher population than Lethbridge.",
+    "reviewed": "2026-10-19"
+  }
+}
