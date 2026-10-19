@@ -64,7 +64,7 @@ export const Route = createFileRoute("/services/$service/")({
   errorComponent: ({ error, reset }) => (
     <div className="mx-auto max-w-3xl px-4 py-32 text-center">
       <h1 className="font-display text-3xl font-bold text-foreground">Something went wrong</h1>
-      <p className="mt-4 text-muted-foreground">{error.message}</p>
+      <p className="mt-4 text-muted-foreground">{error instanceof Error ? error.message : "An unexpected error occurred."}</p>
       <button onClick={reset} className="mt-8 inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium text-foreground hover:border-brand-glow/60">
         Try again
       </button>
