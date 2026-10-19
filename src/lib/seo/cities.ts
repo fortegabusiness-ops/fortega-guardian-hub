@@ -1153,6 +1153,12 @@ const ALL_CITIES: City[] = [
 
 const CORE_SET = new Set(CORE_CITY_SLUGS);
 
+/** Research inventory only; never use this list to grant public URL eligibility. */
+export const REVIEW_CITY_INVENTORY: City[] = [...new Map(
+  [...ALL_CITIES, ...LOCATION_PILOTS.map(({ slug, name, province }) => ({ slug, name, province }))]
+    .map((city) => [city.slug, city]),
+).values()];
+
 /** Cities with their own pages. */
 export const CITIES: City[] = [
   ...ALL_CITIES.filter((c) => CORE_SET.has(c.slug)),
