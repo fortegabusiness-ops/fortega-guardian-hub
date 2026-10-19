@@ -6,7 +6,7 @@
 ## Truthful location-page pilot
 - [x] Audit former pages and prepare sourced briefs for Dawson City, Chetwynd and Goose Bay.
 - [x] Prepare three confidential-customer-safe city drafts and proposed page list for user review.
-- [ ] Restore reviewed pages and verify addresses, contact flow, links and sitemaps — blocked on approval of the drafts and page list.
+- [x] Implement three approved town pages in preview; verify city/service eligibility, metadata, sitemap inclusion, desktop/mobile display and assessment links to the contact form. No test enquiry was sent; email receipt is unverified.
 - [ ] Publish and measure the pilot — blocked on explicit publishing instruction and subsequent observation data.
 
 ## Done
