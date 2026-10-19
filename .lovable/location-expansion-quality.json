@@ -1,0 +1,154 @@
+{
+  "method": "City/province names and URLs normalized; five-word shingle Jaccard and containment. Local body only: standard service answer, checklist, navigation and delivery copy excluded. Flags are review signals, not search-engine policy thresholds.",
+  "checks": {
+    "cities": 225,
+    "provinces": 13,
+    "targets": 1800,
+    "reviewDrafts": 24,
+    "localBodies": 15,
+    "pairComparisons": 15,
+    "exactNameSwaps": 0,
+    "maxJaccard": 0,
+    "maxContainment": 0,
+    "maxTokenJaccard": 0.20930232558139536,
+    "maxTrigramJaccard": 0.008771929824561403,
+    "unresearchedTargets": 1776
+  },
+  "comparisons": [
+    {
+      "a": "dawson/cctv",
+      "b": "chetwynd/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.11363636363636363,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/cctv",
+      "b": "happy-valley-goose-bay/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12087912087912088,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "chetwynd/cctv",
+      "b": "happy-valley-goose-bay/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.20512820512820512,
+      "trigramJaccard": 0.008771929824561403
+    },
+    {
+      "a": "dawson/intrusion",
+      "b": "chetwynd/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.14285714285714285,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/intrusion",
+      "b": "happy-valley-goose-bay/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1797752808988764,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "chetwynd/intrusion",
+      "b": "happy-valley-goose-bay/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.11702127659574468,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/access",
+      "b": "chetwynd/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1797752808988764,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/access",
+      "b": "happy-valley-goose-bay/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.20930232558139536,
+      "trigramJaccard": 0.008547008547008548
+    },
+    {
+      "a": "chetwynd/access",
+      "b": "happy-valley-goose-bay/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.17204301075268819,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/remote",
+      "b": "chetwynd/remote",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12222222222222222,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/remote",
+      "b": "happy-valley-goose-bay/remote",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1875,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "chetwynd/remote",
+      "b": "happy-valley-goose-bay/remote",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.08695652173913043,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/smart",
+      "b": "chetwynd/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12222222222222222,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "dawson/smart",
+      "b": "happy-valley-goose-bay/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.10869565217391304,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "chetwynd/smart",
+      "b": "happy-valley-goose-bay/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.17045454545454544,
+      "trigramJaccard": 0
+    }
+  ]
+}

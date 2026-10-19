@@ -13,11 +13,11 @@ export interface SitemapEntry {
  */
 export const CONTENT_UPDATED = {
   core: "2026-02-18",
-  services: "2026-02-18",
-  locations: "2026-02-18",
-  serviceAreas: "2026-02-18",
-  resources: "2026-02-18",
-  fr: "2026-02-18",
+  services: "2026-10-19",
+  locations: "2026-10-19",
+  serviceAreas: "2026-10-19",
+  resources: "2026-10-19",
+  fr: "2026-10-19",
 } as const;
 
 export function sitemapXml(entries: SitemapEntry[]): Response {

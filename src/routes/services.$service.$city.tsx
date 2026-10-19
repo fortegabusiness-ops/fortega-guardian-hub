@@ -11,13 +11,12 @@ import {
 import { clampDescription, clampTitle, pickVariant } from "@/lib/seo/meta";
 
 function leadAnswer(service: ServiceDetail, city: City) {
-  const p = PROVINCE_BY_NAME[city.province];
   const s = service.name.toLowerCase();
   const variants = [
-    `Fortega designs, installs and supports ${s} for businesses in ${city.name}, ${city.province}. Every site is engineered by licensed technicians, backed by our 24/7 Canadian monitoring centre, and documented to the privacy and licensing rules that apply in ${city.province}.`,
-    `Looking for ${s} in ${city.name}? Fortega scopes the system on site, installs it with licensed technicians, and runs it from a 24/7 Canadian monitoring centre — with ${p ? p.regulator : "provincial"} licensing and ${city.province} privacy obligations handled as part of the project.`,
-    `${city.name} businesses use Fortega for ${s} because one team owns the design, the installation, the monitoring and the service afterwards. Systems are specified for ${city.province} conditions and documented for the province's licensing and privacy requirements.`,
-    `Fortega delivers ${s} across ${city.name} and the surrounding ${city.province} region — from a single building to a multi-site rollout under one program, monitored around the clock from Canada and documented to ${city.province} rules.`,
+    `Fortega designs, installs and supports ${s} for businesses in ${city.name}, ${city.province}. An initial assessment can use drawings, layouts and building details. Installation arrangements and service availability are confirmed for the project.`,
+    `Looking for ${s} in ${city.name}? Fortega can review your drawings, existing equipment and operational needs remotely before confirming installation, monitoring and support arrangements.`,
+    `Discuss ${s} for your ${city.name} property with Fortega. Assessment considers equipment, power, connectivity and support needs; local delivery arrangements are not assumed.`,
+    `Planning ${s} in ${city.name}? Start with a non-sensitive project summary. Fortega can assess requirements remotely, with any site visit and ongoing support confirmed before a proposal.`,
   ];
   return pickVariant(variants, `${service.slug}:${city.slug}`);
 }
@@ -40,7 +39,7 @@ function localFaqs(service: ServiceDetail, city: City) {
   const faqs = [
     {
       q: `Does Fortega install ${service.shortName.toLowerCase()} in ${city.name}?`,
-      a: `Yes. Fortega delivers ${service.name.toLowerCase()} across ${city.name} and the surrounding ${city.province} region, from single-site installs to multi-location rollouts under one program.`,
+      a: `Contact Fortega to assess ${service.name.toLowerCase()} for your ${city.name} property. Drawings and building details can support an initial review; availability and installation arrangements need project-specific confirmation.`,
     },
     {
       q: `What does ${service.shortName.toLowerCase()} cost in ${city.name}?`,
@@ -50,10 +49,6 @@ function localFaqs(service: ServiceDetail, city: City) {
   if (p) {
     faqs.push(
       {
-        q: `Is Fortega licensed to work in ${city.province}?`,
-        a: `Yes. ${p.licensing}`,
-      },
-      {
         q: `How is our security data handled in ${city.province}?`,
         a: `${p.privacy} Fortega documents purpose, signage, access and retention as part of every handover package.`,
       },
@@ -61,7 +56,7 @@ function localFaqs(service: ServiceDetail, city: City) {
   }
   faqs.push({
     q: `How quickly can Fortega respond to an alarm in ${city.name}?`,
-    a: `Our monitoring centre verifies events in real time and follows the dispatch path agreed with you — local authorities, your on-call staff, or guard response — typically within seconds of the event being received.`,
+    a: `Monitoring suitability, verification, escalation contacts and any on-site response arrangements are agreed for the project. A monitoring event is not a guarantee of technician, guard or emergency-service attendance time.`,
   });
   return faqs;
 }
@@ -86,7 +81,7 @@ export const Route = createFileRoute("/services/$service/$city")({
       `${service.shortName} — ${city.name}, ${abbr}`,
     ]);
     const description = clampDescription(
-      `${service.shortName} for ${city.name}, ${abbr} businesses — designed, installed and monitored by Fortega. Licensed technicians, 24/7 monitoring, free site assessment.`,
+      `Explore ${service.shortName.toLowerCase()} for ${city.name}, ${abbr}. Review site needs with Fortega; confirm installation and support after assessment.`,
     );
     return {
       meta: [
@@ -203,7 +198,7 @@ function ServiceAreaPage() {
               </ul>
               {province && (
                 <p className="mt-5 border-t border-border pt-4 text-xs text-muted-foreground">
-                  Licensing authority in {city.province}: {province.regulator}.
+                  Installation, support and equipment suitability are confirmed after assessment.
                 </p>
               )}
             </div>
@@ -235,10 +230,9 @@ function ServiceAreaPage() {
                 Compliance
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                Licensing and privacy in {city.province}
+                Privacy and project planning in {city.province}
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground">
-                <p>{province.licensing}</p>
                 <p>{province.privacy}</p>
               </div>
             </div>

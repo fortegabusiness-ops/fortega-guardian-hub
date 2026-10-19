@@ -13,7 +13,7 @@ const DESCRIPTION = clampDescription(
 export const Route = createFileRoute("/fr/securite/")({
   head: () => ({
     meta: [
-      { title: "Sécurité pour entreprises au Québec | Fortega" },
+      { title: TITLE },
       { name: "description", content: DESCRIPTION },
       { name: "language", content: "fr-CA" },
       ...socialMeta({ title: TITLE, description: DESCRIPTION, url: URL, type: "website" }),
@@ -91,9 +91,9 @@ function FrIndex() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 md:grid-cols-2 md:px-8">
           <div>
             <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              Permis et encadrement
+              Évaluation et organisation du projet
             </h2>
-            <p className="mt-4 text-muted-foreground">{FR_FACTS.licensing}</p>
+            <p className="mt-4 text-muted-foreground">Une évaluation peut commencer à distance avec des plans et des renseignements sur le bâtiment. La disponibilité des services et les modalités de réalisation sont confirmées pour chaque projet.</p>
           </div>
           <div>
             <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">

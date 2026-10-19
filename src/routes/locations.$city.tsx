@@ -21,7 +21,7 @@ const SERVICES = [
   { id: "access", icon: KeyRound, name: "Access Control", desc: "Card, mobile and biometric access for single and multi-site portfolios." },
   { id: "intrusion", icon: Bell, name: "Intrusion & Alarm Systems", desc: "Commercial alarms with environmental and panic monitoring." },
   { id: "remote", icon: Eye, name: "Remote Guarding & 24/7 Monitoring", desc: "Live operators, virtual patrols and verified alarm response." },
-  { id: "guards", icon: UserCheck, name: "Security Guard Services", desc: "Licensed on-site guards, mobile patrol and event security." },
+  { id: "guards", icon: UserCheck, name: "Security Guard Services", desc: "Discuss on-site presence, patrol and event requirements; arrangements require confirmation." },
   { id: "cyber", icon: Lock, name: "Cyber Security", desc: "Network defense, endpoint protection and incident response." },
 ];
 
@@ -34,15 +34,11 @@ function buildFaqs(city: City) {
     },
     {
       q: `How fast can Fortega respond to alarms in ${city.name}?`,
-      a: `Our 24/7 monitoring centre verifies alarms in real time and follows pre-agreed dispatch paths to local authorities or on-site responders in ${city.name}, typically within seconds of an event.`,
+      a: `Verification and escalation arrangements are agreed for the property. No monitoring, guard, technician or emergency-service response time in ${city.name} is guaranteed by this page.`,
     },
   ];
   if (p) {
     faqs.push(
-      {
-        q: `Is Fortega licensed to work in ${city.province}?`,
-        a: p.licensing,
-      },
       {
         q: `Which privacy rules apply to cameras and access logs in ${city.name}?`,
         a: `${p.privacy} Fortega documents purpose, signage, access rights and retention as part of every handover.`,
@@ -243,7 +239,6 @@ function CityPage() {
               {context && <p>{context}</p>}
               {province && <p>{province.economy}</p>}
               {province && <p>{province.environment}</p>}
-              {province && <p>{province.licensing}</p>}
             </div>
           </div>
           <div className="md:col-span-5">
@@ -271,10 +266,6 @@ function CityPage() {
                 {province && (
                   <>
                     <div>
-                      <dt className="text-muted-foreground">Licensing authority</dt>
-                      <dd className="text-foreground">{province.regulator}</dd>
-                    </div>
-                    <div>
                       <dt className="text-muted-foreground">Sectors we secure</dt>
                       <dd className="text-foreground">{province.sectors.join(", ")}</dd>
                     </div>
@@ -296,8 +287,8 @@ function CityPage() {
             Services available in {city.name}
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Every Fortega service is delivered in {city.name}, {city.province} by licensed
-            technicians and supported by our 24/7 Canadian monitoring centre.
+            Discuss the service your {city.name} property needs. Availability, installation
+            arrangements and ongoing support are confirmed after assessment.
           </p>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s) => (
@@ -347,9 +338,9 @@ function CityPage() {
           </h2>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {[
-              { t: "Local presence, national reach", d: `Service for ${city.name} clients is backed by Fortega's Canadian operations and 24/7 monitoring centre.` },
+              { t: "Remote assessment, planned delivery", d: `Start with drawings and building information for your ${city.name} project. Any travelling technician or local partner arrangement is confirmed individually.` },
               { t: "One accountable team", d: "Physical and cyber security from a single vendor — no finger-pointing when something goes wrong." },
-              { t: "Standards-aligned", d: `Canadian electrical code compliance, ${province ? `${province.regulator} licensing` : "provincial licensing"} and modern enterprise-grade platforms.` },
+              { t: "Site-specific planning", d: "Check equipment ratings, power, connectivity, privacy and building requirements before agreeing the project scope." },
             ].map((b) => (
               <div key={b.t} className="rounded-xl border border-border bg-background p-6">
                 <h3 className="font-display text-lg font-semibold text-foreground">{b.t}</h3>

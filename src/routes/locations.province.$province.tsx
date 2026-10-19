@@ -20,14 +20,14 @@ export const Route = createFileRoute("/locations/province/$province")({
     const province = loaderData?.province ?? PROVINCE_BY_SLUG[params.province];
     if (!province) return { meta: [{ title: "Province not found — Fortega" }] };
     const url = `${SITE_URL}/locations/province/${province.slug}`;
-    const title = `Security Systems in ${province.name} | Fortega`;
-    const full = `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed under ${province.regulator}. Free site assessment.`;
+    const title = province.name.length > 30 ? `Security Systems in ${province.abbr} | Fortega` : `Security Systems in ${province.name} | Fortega`;
+    const full = `Plan CCTV, access control, alarms and cyber security in ${province.name}. Remote assessment; project availability confirmed by Fortega.`;
     const description = clampDescription(
       full.length <= 155
         ? full
-        : `CCTV, access control, alarms, monitoring and cyber security across ${province.name}. Licensed provincially. Free site assessment from Fortega.`,
+        : `Plan security systems in ${province.name} with Fortega. Review drawings and site details remotely; confirm installation and support after assessment.`,
     );
-    const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
+    const faqs = provinceFaqs(province.name, province.privacy);
     return {
       meta: [
         { title: title.length > 60 ? `Security Systems in ${province.abbr} | Fortega` : title },
@@ -58,9 +58,8 @@ export const Route = createFileRoute("/locations/province/$province")({
   component: ProvincePage,
 });
 
-function provinceFaqs(name: string, licensing: string, privacy: string) {
+function provinceFaqs(name: string, privacy: string) {
   return [
-    { q: `Is Fortega licensed to provide security services in ${name}?`, a: licensing },
     { q: `What privacy rules apply to our cameras and access logs in ${name}?`, a: privacy },
     {
       q: `Can Fortega cover multiple sites across ${name}?`,
@@ -75,7 +74,7 @@ function provinceFaqs(name: string, licensing: string, privacy: string) {
 
 function ProvincePage() {
   const { province, cities } = Route.useLoaderData();
-  const faqs = provinceFaqs(province.name, province.licensing, province.privacy);
+  const faqs = provinceFaqs(province.name, province.privacy);
   const ranked = rankedCities(cities);
   const areaCities = ranked.slice(0, 12).map((c) => ({
     city: c,
@@ -104,13 +103,13 @@ function ProvincePage() {
             {cities.some((city) => CORE_CITY_SLUGS.includes(city.slug)) ? (
               <>
                 Fortega serves {province.name} with CCTV, access control, intrusion alarms, remote
-                monitoring, guard services and cyber security — licensed under {province.regulator}{" "}
-                and supported by our 24/7 Canadian monitoring centre.
+                monitoring and cyber security. Service availability, installation and support
+                arrangements are confirmed for each project.
               </>
             ) : (
               <>
                 Fortega can begin a remote assessment using drawings, layouts and project
-                details. Service availability, any required licensing, technician travel and
+                details. Service availability, technician travel and
                 local partnership arrangements in {province.name} must be confirmed for your project.
               </>
             )}
@@ -135,7 +134,6 @@ function ProvincePage() {
             <div className="mt-6 space-y-4 text-muted-foreground">
               <p>{province.economy}</p>
               <p>{province.environment}</p>
-              <p>{province.licensing}</p>
               <p>{province.privacy}</p>
             </div>
           </div>
@@ -160,7 +158,7 @@ function ProvincePage() {
       <section className="border-b border-border bg-ink">
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
           <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Services available across {province.name}
+            Services to discuss for {province.name}
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((s) => (
@@ -238,7 +236,7 @@ function ProvincePage() {
       <FAQSection
         eyebrow="FAQ"
         title={`Security services in ${province.name} — common questions`}
-        sub={`Licensing, privacy and coverage answers for ${province.name} businesses.`}
+        sub={`Assessment, privacy and project planning for ${province.name} businesses.`}
         faqs={faqs}
       />
 

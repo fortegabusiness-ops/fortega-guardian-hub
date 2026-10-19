@@ -260,7 +260,7 @@ function ServiceDetailPage() {
               {service.shortName} by city
             </h2>
             <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-              Local pages covering licensing, conditions and coverage in each market.
+              Location pages covering site planning, equipment needs and project assessment.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {cityPages.map((a) => (
