@@ -2,7 +2,7 @@ import { createStart, createMiddleware } from "@tanstack/react-start";
 
 import { renderErrorPage } from "./lib/error-page";
 import { attachSupabaseAuth } from "@/integrations/supabase/auth-attacher";
-import { isRemovedCity } from "@/lib/seo/cities";
+import { isLocationGone } from "@/lib/seo/location-eligibility";
 
 const AGENT_DISCOVERY_LINKS = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
@@ -32,16 +32,7 @@ const agentDiscoveryHeaders = createMiddleware().server(async ({ next, request }
  */
 const goneMiddleware = createMiddleware().server(async ({ next, request }) => {
   const url = new URL(request.url);
-  const segments = url.pathname.split("/").filter(Boolean);
-  let citySlug: string | undefined;
-  if (segments[0] === "locations" && segments.length === 2 && segments[1] !== "province") {
-    citySlug = segments[1];
-  } else if (segments[0] === "services" && segments.length === 3) {
-    citySlug = segments[2];
-  } else if (segments[0] === "fr" && segments[1] === "securite" && segments.length === 3) {
-    citySlug = segments[2];
-  }
-  if (citySlug && isRemovedCity(citySlug)) {
+  if (isLocationGone(url.pathname)) {
     return new Response(null, { status: 410, statusText: "Gone" });
   }
   return next();

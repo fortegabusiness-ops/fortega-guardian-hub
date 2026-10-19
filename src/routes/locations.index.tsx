@@ -9,11 +9,11 @@ export const Route = createFileRoute("/locations/")({
       { title: "Security Services Across Canada — Locations | Fortega" },
       {
         name: "description",
-        content: `Fortega delivers CCTV, access control, alarm monitoring and cyber security across ${CITIES.length}+ Canadian cities. Find your local service area.`,
+        content: "Explore Fortega location pages and remote security assessments. Service availability and installation arrangements are confirmed for each project.",
       },
       ...socialMeta({
-        title: "Fortega Service Locations Across Canada",
-        description: "Integrated security solutions in every province and territory across Canada.",
+        title: "Security Services Across Canada — Locations | Fortega",
+        description: "Explore Fortega location pages and remote security assessments. Service availability and installation arrangements are confirmed for each project.",
         url: `${SITE_URL}/locations`,
       }),
     ],
@@ -44,9 +44,9 @@ function LocationsIndex() {
             Security services across Canada.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            Fortega designs, installs and monitors security systems in {CITIES.length}+ Canadian
-            cities — from national rollouts to single-site upgrades. Find your local service area
-            below.
+            Explore security planning and coverage information for {CITIES.length} Canadian
+            communities. Assessments can begin remotely using drawings and project details;
+            service availability and installation arrangements are confirmed for each project.
           </p>
         </div>
       </section>

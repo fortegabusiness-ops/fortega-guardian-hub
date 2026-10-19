@@ -8,6 +8,7 @@ import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
 import { clampDescription } from "@/lib/seo/meta";
+import { CORE_CITY_SLUGS } from "@/lib/seo/cities";
 
 export const Route = createFileRoute("/locations/province/$province")({
   loader: ({ params }) => {
@@ -100,7 +101,7 @@ function ProvincePage() {
             Security systems and monitoring across {province.name}
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
-            {cities.length > 0 ? (
+            {cities.some((city) => CORE_CITY_SLUGS.includes(city.slug)) ? (
               <>
                 Fortega serves {province.name} with CCTV, access control, intrusion alarms, remote
                 monitoring, guard services and cyber security — licensed under {province.regulator}{" "}
@@ -108,9 +109,9 @@ function ProvincePage() {
               </>
             ) : (
               <>
-                Fortega supports {province.name} sites through remote monitoring, cellular alarm
-                paths and scheduled technician deployments, working to {province.regulator}{" "}
-                requirements and backed by our 24/7 Canadian monitoring centre.
+                Fortega can begin a remote assessment using drawings, layouts and project
+                details. Service availability, any required licensing, technician travel and
+                local partnership arrangements in {province.name} must be confirmed for your project.
               </>
             )}
           </p>
@@ -180,9 +181,9 @@ function ProvincePage() {
                 City-specific service pages
               </h3>
               <p className="-mt-4 text-sm text-muted-foreground">
-                Every community we serve in {province.name} has a page for all{" "}
-                {SERVICES.length} services. The largest centres are shown here — open any
-                community below to see its full service list.
+              Selected existing service pages are shown below. A community assessment page
+              does not establish that every service is available there; availability and
+              installation arrangements must be confirmed for the project.
               </p>
               {areaCities.map((g) => (
                 <div key={g.city.slug}>
@@ -212,11 +213,11 @@ function ProvincePage() {
         <section className="border-b border-border">
           <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 md:py-24">
             <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              {province.name} markets we serve
+              {province.name} location and assessment pages
             </h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
-              We work across {province.name}. These are the markets with a dedicated coverage page —
-              for any other location, contact us and we will confirm what we can deliver on site.
+              These communities have dedicated location or assessment pages. Contact us to
+              confirm service availability, installation arrangements and support for your site.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {cities.map((c) => (
