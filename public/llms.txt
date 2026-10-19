@@ -17,7 +17,7 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 - [Locations](/locations): Service areas and cities across Canada
 - [Industries](/industries): Industry-specific security programs
 - [Resources](/resources): Answer-first guides on commercial security costs, cameras, access control, privacy rules and false alarms
-- [Sécurité au Québec](/fr/securite): French (fr-CA) pages for Quebec businesses, including BSP licensing and Law 25 privacy obligations
+- [Sécurité au Québec](/fr/securite): French (fr-CA) pages for Quebec businesses, including project assessment and privacy considerations
 
 ## Guides (answer-first)
 
@@ -44,17 +44,17 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 
 ## Provinces and territories
 
-- [Alberta](/locations/province/alberta): Security services across Alberta, licensed under the Security Services and Investigators Act
-- [British Columbia](/locations/province/british-columbia): Security services across BC under the Security Services Act
+- [Alberta](/locations/province/alberta): Security services across Alberta; project availability confirmed after assessment
+- [British Columbia](/locations/province/british-columbia): Security project assessment in BC; delivery arrangements confirmed individually
 - [Manitoba](/locations/province/manitoba): Security services across Manitoba
 - [New Brunswick](/locations/province/new-brunswick): Security services across New Brunswick
 - [Newfoundland and Labrador](/locations/province/newfoundland-and-labrador): Security services across Newfoundland and Labrador
 - [Northwest Territories](/locations/province/northwest-territories): Security services across the Northwest Territories
 - [Nova Scotia](/locations/province/nova-scotia): Security services across Nova Scotia
 - [Nunavut](/locations/province/nunavut): Security services across Nunavut
-- [Ontario](/locations/province/ontario): Security services across Ontario, licensed under PSISA
+- [Ontario](/locations/province/ontario): Security services across Ontario; project availability confirmed after assessment
 - [Prince Edward Island](/locations/province/prince-edward-island): Security services across PEI
-- [Quebec](/locations/province/quebec): Security services across Quebec, licensed by the Bureau de la securite privee, Law 25 compliant
+- [Quebec](/locations/province/quebec): Security services across Quebec; project assessment and privacy planning
 - [Saskatchewan](/locations/province/saskatchewan): Security services across Saskatchewan
 - [Yukon](/locations/province/yukon): Security services across Yukon
 
@@ -70,7 +70,7 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 - [CCTV in Toronto](/services/cctv/toronto): Commercial CCTV and video surveillance in Toronto
 - [CCTV in Mississauga](/services/cctv/mississauga): Commercial CCTV and video surveillance in Mississauga
 - [Intrusion alarms in Sudbury](/services/intrusion/sudbury): Commercial burglar alarm systems in Sudbury
-- [Security guards in Halifax](/services/guards/halifax): Licensed security guards and mobile patrol in Halifax
+- [Security guards in Halifax](/services/guards/halifax): On-site presence and patrol planning; delivery arrangements require confirmation
 - [Cyber security in Vancouver](/services/cyber/vancouver): Cyber security services for Vancouver businesses
 
 ## Industries
@@ -93,5 +93,5 @@ Fortega is committed to transparency and ethical operations. Our AI usage is lim
 - [Data Centers](/industries/data-centers): Layered physical security for colocation and cloud facilities
 - [Transportation & Transit](/industries/transportation-transit): Fare-evasion deterrence, platform safety and depot security
 - [Sports & Entertainment](/industries/sports-entertainment): Crowd management, venue access and athlete protection
-- [Cannabis](/industries/cannabis): Compliance-first security for licensed producers and retailers
+- [Cannabis](/industries/cannabis): Security planning for cultivation, processing and retail properties
 - [Multi-Family Residential](/industries/multi-family-residential): Resident safety, amenity protection and package theft prevention

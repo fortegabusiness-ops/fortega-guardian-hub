@@ -77,7 +77,7 @@ export const LOCATION_PILOTS = [
         "paragraphs": [
           "For projects involving construction or alterations, the District of Chetwynd's [building inspection information](https://www.gochetwynd.com/municipal-office/departments/protective-services/building-inspection/) is a starting point for checking permit and inspection requirements. For a new development or changed use, also consult its [zoning guidance](https://www.gochetwynd.com/municipal-office/departments/planning-and-development/ocp-zoning/). These are scope-dependent checks, not a claim that every camera upgrade needs a building permit.",
           "Provide the model numbers of existing equipment if available, the approximate locations of cameras and alarm devices, and an outline of current cable and network arrangements. Compatibility must be checked; an assessment should not assume that every existing device can be retained or that replacement is always required.",
-          "If the scope affects electrical work or building alterations, confirm the applicable permits and qualified-trade requirements before installation. Provincial information is guidance, not evidence of a particular Fortega licence or a confirmed local partner."
+          "If the scope affects electrical work or building alterations, confirm the applicable permits and qualified-trade requirements before installation. Public planning information is guidance, not confirmation of project approval or a local delivery partner."
         ]
       },
       {

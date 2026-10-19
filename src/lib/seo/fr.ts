@@ -40,7 +40,7 @@ export const FR_SERVICES: FrService[] = [
   {
     slug: "guards",
     name: "Agents de sécurité",
-    desc: "Gardiens sur place, patrouilles mobiles et sécurité d'événements, titulaires d'un permis du BSP.",
+    desc: "Évaluation des besoins de présence sur place, de patrouilles et de sécurité événementielle; modalités à confirmer.",
   },
   {
     slug: "smart",
@@ -60,8 +60,6 @@ export const FR_SERVICES: FrService[] = [
 ];
 
 export const FR_FACTS = {
-  licensing:
-    "Au Québec, la sécurité privée est encadrée par le Bureau de la sécurité privée (BSP) : l'agence et chaque agent doivent détenir un permis valide. Fortega travaille avec du personnel licencié et documente les permis applicables à chaque projet.",
   privacy:
     "Les images de vidéosurveillance et les journaux d'accès constituent des renseignements personnels. Le régime québécois, modernisé par la Loi 25, impose des obligations strictes de transparence, de consentement, de gouvernance et de déclaration des incidents — y compris une évaluation avant tout transfert de données hors Québec.",
   economy:
@@ -75,10 +73,6 @@ export function frFaqs(city: City) {
     {
       q: `Fortega installe-t-elle des systèmes de sécurité à ${city.name} ?`,
       a: `Oui. Fortega conçoit, installe et entretient la vidéosurveillance, le contrôle d'accès, les systèmes d'alarme, la télésurveillance et la cybersécurité pour les entreprises de ${city.name} et de la région, d'un seul site jusqu'à un parc de plusieurs bâtiments.`,
-    },
-    {
-      q: `Fortega détient-elle un permis pour travailler au Québec ?`,
-      a: FR_FACTS.licensing,
     },
     {
       q: `Quelles règles de confidentialité s'appliquent aux caméras à ${city.name} ?`,

@@ -7,10 +7,6 @@ export type Province = {
   name: string;
   /** Two-letter postal abbreviation */
   abbr: string;
-  /** Who licenses private security work in this jurisdiction */
-  regulator: string;
-  /** One sentence on the licensing regime Fortega works under */
-  licensing: string;
   /** Which privacy law governs commercial video/access data here */
   privacy: string;
   /** Economic and operating context that shapes security requirements */
@@ -26,9 +22,6 @@ export const PROVINCES: Province[] = [
     slug: "alberta",
     name: "Alberta",
     abbr: "AB",
-    regulator: "Alberta Justice (Security Services and Investigators Act)",
-    licensing:
-      "Security guard and alarm work in Alberta is licensed under the Security Services and Investigators Act, and Fortega's guard and patrol personnel operate under that framework.",
     privacy:
       "Commercial video and access-control records in Alberta fall under the provincial Personal Information Protection Act (PIPA), which sets its own notice and retention expectations rather than PIPEDA.",
     economy:
@@ -41,9 +34,6 @@ export const PROVINCES: Province[] = [
     slug: "british-columbia",
     name: "British Columbia",
     abbr: "BC",
-    regulator: "BC Ministry of Public Safety (Security Services Act)",
-    licensing:
-      "British Columbia licenses security consultants, guards and alarm installers under the Security Services Act, and Fortega works within those licence classes on BC projects.",
     privacy:
       "BC has its own Personal Information Protection Act (PIPA), so surveillance notice, access requests and retention rules are governed provincially rather than by PIPEDA.",
     economy:
@@ -56,9 +46,6 @@ export const PROVINCES: Province[] = [
     slug: "manitoba",
     name: "Manitoba",
     abbr: "MB",
-    regulator: "Manitoba Justice (Private Investigators and Security Guards Act)",
-    licensing:
-      "Manitoba regulates guard and investigative services under the Private Investigators and Security Guards Act, and Fortega's field personnel are licensed accordingly.",
     privacy:
       "Commercial surveillance in Manitoba is governed federally by PIPEDA, so notice, purpose limitation and reasonable retention apply to every camera and access log.",
     economy:
@@ -71,9 +58,6 @@ export const PROVINCES: Province[] = [
     slug: "new-brunswick",
     name: "New Brunswick",
     abbr: "NB",
-    regulator: "New Brunswick Department of Justice and Public Safety",
-    licensing:
-      "New Brunswick licenses private security services provincially, and Fortega's guard and technical teams operate under those requirements.",
     privacy:
       "Private-sector video and access data in New Brunswick is governed by PIPEDA, requiring documented purpose, signage and defensible retention limits.",
     economy:
@@ -86,9 +70,6 @@ export const PROVINCES: Province[] = [
     slug: "newfoundland-and-labrador",
     name: "Newfoundland and Labrador",
     abbr: "NL",
-    regulator: "Newfoundland and Labrador Department of Justice and Public Safety",
-    licensing:
-      "Private security work in Newfoundland and Labrador is licensed provincially, and Fortega deploys licensed personnel and certified technicians on every engagement.",
     privacy:
       "PIPEDA governs commercial surveillance and access records here, so retention windows and disclosure handling need to be documented before go-live.",
     economy:
@@ -101,9 +82,6 @@ export const PROVINCES: Province[] = [
     slug: "northwest-territories",
     name: "Northwest Territories",
     abbr: "NT",
-    regulator: "Northwest Territories Department of Justice",
-    licensing:
-      "Security services in the Northwest Territories are licensed territorially, and Fortega coordinates licensed personnel and certified installers for northern deployments.",
     privacy:
       "PIPEDA applies to commercial surveillance in the territory, alongside any contractual obligations imposed by government or Indigenous partners.",
     economy:
@@ -116,9 +94,6 @@ export const PROVINCES: Province[] = [
     slug: "nova-scotia",
     name: "Nova Scotia",
     abbr: "NS",
-    regulator: "Nova Scotia Department of Justice (Private Investigators and Private Guards Act)",
-    licensing:
-      "Nova Scotia licenses guards and private security providers under the Private Investigators and Private Guards Act, which governs Fortega's on-site personnel.",
     privacy:
       "Commercial video and access logs in Nova Scotia fall under PIPEDA, requiring clear signage, defined purpose and a documented retention policy.",
     economy:
@@ -131,9 +106,6 @@ export const PROVINCES: Province[] = [
     slug: "nunavut",
     name: "Nunavut",
     abbr: "NU",
-    regulator: "Government of Nunavut Department of Justice",
-    licensing:
-      "Security work in Nunavut is arranged under territorial requirements, with Fortega mobilising licensed personnel and certified technicians for scheduled deployments.",
     privacy:
       "PIPEDA governs commercial surveillance data, alongside government and Inuit organisation contract terms that often add their own handling rules.",
     economy:
@@ -146,9 +118,6 @@ export const PROVINCES: Province[] = [
     slug: "ontario",
     name: "Ontario",
     abbr: "ON",
-    regulator: "Ontario Ministry of the Solicitor General (PSISA)",
-    licensing:
-      "Ontario guards and security agencies are licensed under the Private Security and Investigative Services Act (PSISA), which governs training, conduct and uniform requirements for Fortega personnel.",
     privacy:
       "Commercial video and access-control records in Ontario are governed by PIPEDA, so purpose, signage and retention must be documented and defensible.",
     economy:
@@ -161,9 +130,6 @@ export const PROVINCES: Province[] = [
     slug: "prince-edward-island",
     name: "Prince Edward Island",
     abbr: "PE",
-    regulator: "PEI Department of Justice and Public Safety",
-    licensing:
-      "Private security providers on Prince Edward Island are licensed provincially, and Fortega supplies licensed guards and certified technical staff for Island work.",
     privacy:
       "PIPEDA governs commercial surveillance and access data on PEI, including notice obligations and retention limits.",
     economy:
@@ -176,9 +142,6 @@ export const PROVINCES: Province[] = [
     slug: "quebec",
     name: "Quebec",
     abbr: "QC",
-    regulator: "Bureau de la sécurité privée (BSP)",
-    licensing:
-      "Quebec private security is licensed by the Bureau de la sécurité privée, and agency plus individual guard licences are mandatory for any on-site security work.",
     privacy:
       "Quebec applies its own private-sector privacy regime, modernised by Law 25, which sets stricter consent, breach-reporting and governance duties for video and access data than PIPEDA.",
     economy:
@@ -191,9 +154,6 @@ export const PROVINCES: Province[] = [
     slug: "saskatchewan",
     name: "Saskatchewan",
     abbr: "SK",
-    regulator: "Saskatchewan Ministry of Justice (Private Investigators and Security Guards Act)",
-    licensing:
-      "Saskatchewan licenses security guards and agencies under the Private Investigators and Security Guards Act, which governs Fortega's field personnel in the province.",
     privacy:
       "Commercial surveillance data in Saskatchewan falls under PIPEDA, requiring documented purpose, signage and retention discipline.",
     economy:
@@ -206,9 +166,6 @@ export const PROVINCES: Province[] = [
     slug: "yukon",
     name: "Yukon",
     abbr: "YT",
-    regulator: "Yukon Department of Community Services",
-    licensing:
-      "Security services in Yukon are licensed territorially, and Fortega mobilises licensed personnel and certified technicians for territorial projects.",
     privacy:
       "PIPEDA governs private-sector video and access records in Yukon, alongside any additional terms in government contracts.",
     economy:
@@ -337,7 +294,7 @@ export const CITY_CONTEXT: Record<string, string> = {
   montreal: "Quebec's largest commercial market, with aerospace and manufacturing plants, logistics corridors and dense office and institutional real estate — all under Quebec's Law 25 privacy regime.",
   "quebec-city": "The provincial capital, with government, tourism and institutional facilities where French-language signage and Law 25 compliance are part of every deployment.",
   laval: "A large Montreal-area city combining industrial parks, retail centres and institutional campuses across a wide suburban footprint.",
-  gatineau: "Sits opposite Ottawa, serving government-adjacent offices and commercial operations under Quebec's provincial privacy and licensing regime.",
+  gatineau: "Sits opposite Ottawa, serving government-adjacent offices and commercial operations under Quebec's provincial privacy regime.",
   vancouver: "A Pacific port and technology centre with dense office towers, multi-residential developments and marine logistics, all under BC's own PIPA privacy law.",
   surrey: "One of BC's fastest-growing cities, with industrial parks, commercial corridors and large residential developments requiring scalable multi-site coverage.",
   burnaby: "A Metro Vancouver centre for technology, film production and light industry, where IP infrastructure and asset protection dominate the requirements.",

@@ -100,7 +100,7 @@ function FrCityPage() {
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
             Fortega conçoit, installe et surveille la vidéosurveillance, le contrôle d'accès, les
             alarmes et la cybersécurité pour les entreprises de {city.name}, au Québec — avec du
-            personnel licencié et un centre de surveillance canadien ouvert 24 h sur 24.
+            des modalités d’installation, de surveillance et de soutien à confirmer pour le projet.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
@@ -147,9 +147,8 @@ function FrCityPage() {
           </div>
           <div>
             <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              Permis, Loi 25 et conformité
+              Confidentialité et planification du projet
             </h2>
-            <p className="mt-4 text-muted-foreground">{FR_FACTS.licensing}</p>
             <p className="mt-4 text-muted-foreground">{FR_FACTS.privacy}</p>
           </div>
         </div>

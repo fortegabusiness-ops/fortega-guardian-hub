@@ -150,8 +150,8 @@ function IndustryPage() {
             Solutions for {industry.shortName.toLowerCase()}
           </h2>
           <p className="mt-4 max-w-3xl text-muted-foreground">
-            Every Fortega service is delivered by licensed Canadian technicians and backed by our
-            24/7 monitoring centre.
+            Start with your property, equipment and operational requirements. Installation,
+            monitoring and ongoing support arrangements are confirmed for the project.
           </p>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {industry.solutions.map((s) => (
