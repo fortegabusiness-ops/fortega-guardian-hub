@@ -1,5 +1,8 @@
 # Fortega SEO roadmap
 
+## Awaiting report access
+- [ ] Compare Google Analytics traffic before/after September 22; blocked on a Google Analytics report export or screenshots.
+
 ## Done
 - [x] 2. Strengthened city pages (province data layer, local context for 122 cities, nearby links, local FAQs)
 - [x] 3. Service + city landing pages — 12 curated pilot pages at /services/{service}/{city}
