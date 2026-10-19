@@ -1,6 +1,7 @@
 # Fortega SEO roadmap
 
 ## Approved full location expansion
+- [ ] October 19 continuation: create remaining city-service review pages, research local sources and check Google Ads/Trends keyword evidence before creation; leave publication and production eligibility unchanged.
 - [x] Remove public licensing claims; replace location response guarantees and guarding delivery assurances with project-specific enquiry wording.
 - [x] Research Canadian search terms for all eight services and map 225 communities / 1,800 draft targets.
 - [x] Prepare 24 first-batch service drafts for the three pilot towns; compare 15 local-content bodies and explicitly flag the nine without sufficient local/delivery evidence.
