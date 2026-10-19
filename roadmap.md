@@ -3,6 +3,12 @@
 ## Awaiting report access
 - [ ] Compare Google Analytics traffic before/after September 22; blocked on a Google Analytics report export or screenshots.
 
+## Truthful location-page pilot
+- [x] Audit former pages and prepare sourced briefs for Dawson City, Chetwynd and Goose Bay.
+- [x] Prepare three confidential-customer-safe city drafts and proposed page list for user review.
+- [ ] Restore reviewed pages and verify addresses, contact flow, links and sitemaps — blocked on approval of the drafts and page list.
+- [ ] Publish and measure the pilot — blocked on explicit publishing instruction and subsequent observation data.
+
 ## Done
 - [x] 2. Strengthened city pages (province data layer, local context for 122 cities, nearby links, local FAQs)
 - [x] 3. Service + city landing pages — 12 curated pilot pages at /services/{service}/{city}
