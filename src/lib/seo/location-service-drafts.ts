@@ -1,4 +1,3 @@
-import { LOCATION_PILOTS } from "./location-pilots";
 import { REVIEW_CITY_INVENTORY } from "./cities";
 import geographicReferences from "./location-geographic-references.json";
 import { SERVICE_BY_SLUG, SERVICE_SLUGS } from "./services";

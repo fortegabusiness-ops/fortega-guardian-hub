@@ -6,3 +6,4 @@
 - Keep service-city review pages under a separate noindex review route; review data cannot grant production URL eligibility or sitemap inclusion.
 - Treat normalized text similarity as a review signal, never a guarantee against spam classification; exclude shared service and delivery copy from local-substance comparisons.
 - Run the standalone location-inventory and lexical-difference audit with `bun scripts/audit-location-expansion.ts` from the project root; it writes review reports only and cannot restore pages.
+- Review drafts use a separate historical-city inventory and attributed reference records; missing local evidence stays explicitly flagged, and full-body duplicate grouping must accompany local-only similarity scores.
