@@ -5,7 +5,7 @@ import { SERVICE_SLUGS } from '../src/lib/seo/services';
 import { SERVICE_KEYWORDS } from '../src/lib/seo/service-keywords';
 import { LOCATION_SERVICE_DRAFTS } from '../src/lib/seo/location-service-drafts';
 import { compareDrafts } from '../src/lib/seo/location-draft-quality';
-const source = readFileSync('../src/lib/seo/cities.ts','utf8');
+const source = readFileSync(new URL('../src/lib/seo/cities.ts', import.meta.url),'utf8');
 const start = source.indexOf('const ALL_CITIES: City[] = ') + 'const ALL_CITIES: City[] = '.length;
 const end = source.indexOf('\n];', start) + 2;
 const historical = JSON.parse(source.slice(start,end));
