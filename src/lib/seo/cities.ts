@@ -1,3 +1,4 @@
+import { LOCATION_PILOTS } from "./location-pilots";
 // City list for Fortega location landing pages.
 export type City = { slug: string; name: string; province: string };
 
@@ -1153,7 +1154,10 @@ const ALL_CITIES: City[] = [
 const CORE_SET = new Set(CORE_CITY_SLUGS);
 
 /** Cities with their own pages. */
-export const CITIES: City[] = ALL_CITIES.filter((c) => CORE_SET.has(c.slug));
+export const CITIES: City[] = [
+  ...ALL_CITIES.filter((c) => CORE_SET.has(c.slug)),
+  ...LOCATION_PILOTS.map(({ slug, name, province }) => ({ slug, name, province })),
+];
 
 const ALL_CITY_SLUGS = new Set(ALL_CITIES.map((c) => c.slug));
 

@@ -13,6 +13,8 @@ import {
   socialMeta,
 } from "@/lib/seo/schema";
 import { clampDescription, clampTitle } from "@/lib/seo/meta";
+import { getLocationPilot } from "@/lib/seo/location-pilots";
+import { LocationAssessmentPage } from "@/components/LocationAssessmentPage";
 
 const SERVICES = [
   { id: "cctv", icon: Video, name: "CCTV & Video Surveillance", desc: "HD and AI-powered camera systems with cloud video management." },
@@ -80,6 +82,19 @@ export const Route = createFileRoute("/locations/$city")({
     const p = PROVINCE_BY_NAME[city.province];
     const abbr = p?.abbr ?? city.province;
     const url = `${SITE_URL}/locations/${city.slug}`;
+    const pilot = getLocationPilot(city.slug);
+    if (pilot) return {
+      meta: [
+        { title: pilot.title },
+        { name: "description", content: pilot.description },
+        ...socialMeta({ title: pilot.title, description: pilot.description, url, type: "article" }).filter((tag) => !("property" in tag && tag.property?.startsWith("og:image")) && !("name" in tag && tag.name === "twitter:image")),
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        jsonLd(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Locations", path: "/locations" }, { name: pilot.name, path: `/locations/${pilot.slug}` }])),
+        jsonLd({ "@context": "https://schema.org", "@type": "WebPage", "@id": `${url}#webpage`, url, name: pilot.title, description: pilot.description, dateModified: pilot.updated, about: { "@id": `${SITE_URL}/#organization` } }),
+      ],
+    };
     const title = clampTitle([
       `Security Systems in ${city.name}, ${abbr} | Fortega`,
       `Security Systems in ${city.name} | Fortega`,
@@ -163,6 +178,8 @@ function CityPage() {
   const context = CITY_CONTEXT[city.slug];
   const neighbours = nearbyCities(city, 8);
   const areas = areasInCity(city.slug);
+  const pilot = getLocationPilot(city.slug);
+  if (pilot) return <LocationAssessmentPage pilot={pilot} />;
 
   return (
     <>

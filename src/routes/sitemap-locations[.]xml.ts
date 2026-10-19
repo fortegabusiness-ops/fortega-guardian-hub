@@ -3,6 +3,7 @@ import type {} from "@tanstack/react-start";
 import { CONTENT_UPDATED, sitemapXml } from "@/lib/seo/sitemap";
 import { CITIES } from "@/lib/seo/cities";
 import { PROVINCES } from "@/lib/seo/provinces";
+import { getLocationPilot } from "@/lib/seo/location-pilots";
 
 const lastmod = CONTENT_UPDATED.locations;
 
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/sitemap-locations.xml")({
             path: `/locations/${c.slug}`,
             changefreq: "monthly",
             priority: "0.7",
-            lastmod,
+            lastmod: getLocationPilot(c.slug)?.updated ?? lastmod,
           })),
         ]),
     },

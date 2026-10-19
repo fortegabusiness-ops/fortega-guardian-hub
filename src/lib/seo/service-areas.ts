@@ -1,14 +1,12 @@
-import { CITIES, CITY_BY_SLUG, type City } from "./cities";
+import { CITIES, CITY_BY_SLUG, CORE_CITY_SLUGS, type City } from "./cities";
 import { SERVICE_BY_SLUG, SERVICE_SLUGS, type ServiceDetail } from "./services";
 
 /**
- * Service + city landing pages. Every service is offered in every city and
- * territory we list, so the combination set is the full cross-product of
- * SERVICE_SLUGS x CITIES. Each page is written from real service, city and
- * province data (licensing, privacy law, local economy, environment).
+ * Preserve existing core-market service pages independently of city-only
+ * assessment pages. City-page eligibility is not proof of service availability.
  */
 export const SERVICE_AREA_COMBOS: { service: string; city: string }[] =
-  SERVICE_SLUGS.flatMap((service) => CITIES.map((c) => ({ service, city: c.slug })));
+  SERVICE_SLUGS.flatMap((service) => CITIES.filter((c) => CORE_CITY_SLUGS.includes(c.slug)).map((c) => ({ service, city: c.slug })));
 
 export type ServiceArea = { service: ServiceDetail; city: City };
 
