@@ -1,0 +1,1905 @@
+{
+  "reviewedAt": "2026-10-20",
+  "purpose": "Research-only deepening for eight priority towns; no project edits or publication approval.",
+  "inputsRead": [
+    "/dev-server/.lovable/local-content-research/full-research-2026-10-20.json",
+    "/dev-server/src/lib/seo/location-service-drafts.ts",
+    "/dev-server/src/lib/seo/municipal-service-plans.ts",
+    "/dev-server/src/lib/seo/jurisdiction-planning-records.json",
+    "/dev-server/src/lib/seo/jurisdiction-service-planning.ts"
+  ],
+  "methodology": [
+    "Official sources searched first; participant/secondary examples explicitly distinguished.",
+    "Exact fetched excerpts are whitespace-normalized substrings of saved full text; search discoveries with fetch failures are separate unverified leads.",
+    "No drain CCTV, environmental webcams, SCADA, generic emergencies, city-name substitutions, crime stereotypes or inferred delivery coverage used.",
+    "Shared cross-town queries and broad searches recorded honestly; not eight exhaustive bespoke search campaigns per town.",
+    "No new finding establishes a whole publication-ready page or private regulated-service eligibility."
+  ],
+  "cities": [
+    {
+      "slug": "dawson",
+      "name": "Dawson City",
+      "searches": [
+        {
+          "query": "Dawson City buildings security cameras access control energy retrofit heritage alarm",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:cityofdawson.ca security cameras alarm access control heritage buildings",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Dawson Chetwynd \"cybersecurity\"",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No fetched direct local CCTV/camera-governance evidence for this community; preparedness, building and transport context is insufficient.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No fetched direct evidence for electronic access control or security-door release requirements; general building/development guidance does not establish device-specific obligations.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No fetched intrusion-specific evidence; fire alarms, unspecified alarm contacts and process alarms are not automatically burglar alarms.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No fetched direct service-specific remote monitoring evidence; public emergency alerts and transport access do not establish alarm-monitoring arrangements.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No fetched building-automation/control-specific evidence adequate for a differentiated planning paragraph; climate, general energy policy or building permits alone are insufficient.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No fetched direct security/controls assessment or consulting scope sufficient to support this topic; general preparedness context alone is insufficient.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No fetched directly relevant local cyber record; climate, remoteness, transport and CCTV do not establish cyber threats.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "sourceUrl": "https://cityofdawson.ca/Home/DownloadDocument?docId=0465ed39-d9df-4422-a943-4903799a0fb7",
+          "heading": "Post-fire site protection, not routine patrol requirements",
+          "body": "Dawson\u2019s published Fire Protection and Life Safety Bylaw addresses securing premises damaged by fire when requested by an Officer. Its listed options include boarding, fencing and twenty-four-hour security services; this is a conditional incident-management provision, not a requirement for every business to employ guards. For a post-fire planning enquiry, ask who has authority over the scene, what protection the Officer approves, which areas remain unsafe and how responsibility passes back to the owner. Record site boundaries, authorized entry, shift handover and escalation contacts. Confirm current directions with the City rather than treating a historical bylaw copy as site-specific authorization.",
+          "researcherStatus": "supported",
+          "evidenceDecision": "usable-candidate",
+          "independentReviewReason": "Explicit licensed 24-hour security option for Officer-directed post-fire protection; paragraph preserves that conditional, historical scope.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "dawson-heritage",
+        "dawson-retrofit"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "dawson-heritage"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "access": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "dawson-heritage"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "intrusion": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "gap-context-only",
+          "evidenceIds": [
+            "dawson-retrofit"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Mechanical retrofit does not establish building automation or controls.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "dawson-heritage"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "guards": {
+          "decision": "existing-candidate-retained",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "Existing master candidate retained, not counted as new evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    },
+    {
+      "slug": "chetwynd",
+      "name": "Chetwynd",
+      "searches": [
+        {
+          "query": "Chetwynd recreation centre security cameras access control building energy",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:gochetwynd.com \"security\" \"energy\" building access",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Dawson Chetwynd \"cybersecurity\"",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No fetched, directly relevant official evidence established camera purpose, placement, retention and authorized recording access for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No fetched, directly relevant official evidence established electronic entry hardware, credential administration and safe release/egress for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "sourceUrl": "https://www.gochetwynd.com/wp-content/uploads/2021/05/False-Alarm-Bylaw-No.-1135-2021.pdf",
+          "heading": "Distinguish alarm activation from evidence of an emergency",
+          "body": "Chetwynd\u2019s False Alarm Bylaw No. 1135, 2021 regulates fire and security alarm systems and describes activation broadly, including audible signals, visual displays, monitoring alerts and dispatch. For an intrusion project, identify which outputs the panel produces and how each reaches the responsible person before changing programming. Review accidental activations alongside equipment faults and arrange testing so it does not unnecessarily trigger emergency attendance. The document supplies a District regulatory context, not a guarantee of response or a requirement for every premises to buy the same equipment. Confirm amendments and the applicable alarm category before using the bylaw in a final operating procedure.",
+          "reason": "Direct fetched official text supports this limited planning context, not service coverage or approval.",
+          "researcherStatus": "supported",
+          "evidenceDecision": "usable-candidate",
+          "independentReviewReason": "Excerpt establishes District fire/security regulation but cuts off the activation definition before the claimed outputs. Independently fetched full section 2 confirms audible siren/bell/buzzer, visual display, monitoring-service alert and police/fire dispatch. Full text also addresses false alarms and testing. Usable only for applicable alarm-category research, not a remote-video requirement, identical equipment mandate or attendance guarantee.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No fetched, directly relevant official evidence established off-site security monitoring, verification and escalation responsibilities for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No fetched, directly relevant official evidence established building automation sequences, controls integration or commissioning for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No fetched, directly relevant official evidence established site-specific security assessment, CPTED or security-design review for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No fetched, directly relevant official evidence established local cybersecurity controls, incident procedures or directly scoped cyber guidance for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No fetched, directly relevant official evidence established security staffing, patrol posts, event security responsibilities or guard deployment for this community in the searches recorded; this is a research gap, not a finding that no policy exists.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "chetwynd-track"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "chetwynd-track"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "access": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "intrusion": {
+          "decision": "existing-candidate-retained",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "Existing master candidate retained, not counted as new evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "guards": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    },
+    {
+      "slug": "happy-valley-goose-bay",
+      "name": "Happy Valley-Goose Bay",
+      "searches": [
+        {
+          "query": "Happy Valley Goose Bay security cameras businesses surveillance town facilities",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "\"Happy Valley-Goose Bay\" \"security\" \"patrol\" site:townhvgb.com",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:townhvgb.com \"access control\" OR \"building automation\" OR \"cybersecurity\" OR \"alarm\"",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No verified direct local CCTV or privacy operating facts established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No verified direct local electronic entry or access-control facts established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No verified a verified local intrusion alarm contact or false-alarm process established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No verified direct local remote monitoring or alarm escalation facts established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No verified a local building automation or energy-control program, not general climate ambitions established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No verified substantive local alteration, heritage or preparedness instructions relevant to planning established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No verified a local cyber plan or practical local cyber guidance, not provincial background established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No verified direct local guarding or staffed security operating facts, not ordinary police services established for Happy Valley-Goose Bay in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "hvgb-video"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        },
+        "access": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "intrusion": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "hvgb-video"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        },
+        "guards": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "hvgb-patrol"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        }
+      }
+    },
+    {
+      "slug": "banff",
+      "name": "Banff",
+      "searches": [
+        {
+          "query": "Banff town security cameras buildings energy building automation access control",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site.banff.ca \"security\" \"camera\" surveillance policy",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Banff Gander Yarmouth Estevan \"false alarm\" bylaw",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No direct official cctv evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No direct official access evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No direct official intrusion evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No direct official remote evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No direct official smart evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No direct official consulting evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No direct official cyber evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No direct official guards evidence was verified for Banff in the recorded searches. The candidate source could not be verified as relevant fetched text. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "banff-project"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "banff-project"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "access": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "banff-project"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "intrusion": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "banff-alarm"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "cyber": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "banff-cyber"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        },
+        "consulting": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "guards": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    },
+    {
+      "slug": "gander",
+      "name": "Gander",
+      "searches": [
+        {
+          "query": "Gander town security cameras building access energy retrofit",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Gander \"security\" \"cameras\" town",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:gander.ca \"security\" \"access\" \"cyber\"",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Banff Gander Yarmouth Estevan \"false alarm\" bylaw",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No verified direct local CCTV or privacy operating facts established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No verified direct local electronic entry or access-control facts established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No verified a verified local intrusion alarm contact or false-alarm process established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No verified direct local remote monitoring or alarm escalation facts established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No verified a local building automation or energy-control program, not general climate ambitions established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No verified substantive local alteration, heritage or preparedness instructions relevant to planning established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No verified a local cyber plan or practical local cyber guidance, not provincial background established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No verified direct local guarding or staffed security operating facts, not ordinary police services established for Gander in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "gander-energy",
+        "gander-contract"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "access": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "intrusion": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "gander-energy",
+            "gander-contract"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "guards": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    },
+    {
+      "slug": "dalhousie",
+      "name": "Dalhousie",
+      "searches": [
+        {
+          "query": "Dalhousie New Brunswick town security cameras arena energy building",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site.heronbaynb.ca Dalhousie security cameras alarm buildings",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:heron-bay.ca cameras surveillance s\u00e9curit\u00e9 Dalhousie",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No verified direct local CCTV or privacy operating facts established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No verified direct local electronic entry or access-control facts established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No verified a verified local intrusion alarm contact or false-alarm process established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No verified direct local remote monitoring or alarm escalation facts established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No verified a local building automation or energy-control program, not general climate ambitions established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No verified substantive local alteration, heritage or preparedness instructions relevant to planning established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No verified a local cyber plan or practical local cyber guidance, not provincial background established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No verified direct local guarding or staffed security operating facts, not ordinary police services established for Dalhousie in the official-source search and fetched material reviewed. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "dalhousie-cctv"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "needs-primary-source-review",
+          "evidenceIds": [
+            "dalhousie-cctv"
+          ],
+          "blockedLeadIds": [],
+          "reason": "Fetched secondary correctional tender example; obtain official provincial specification before use.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "access": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "intrusion": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "guards": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    },
+    {
+      "slug": "yarmouth",
+      "name": "Yarmouth",
+      "searches": [
+        {
+          "query": "Yarmouth town security cameras video surveillance buildings energy controls",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site.townofyarmouth.ca surveillance cameras security energy controls",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:townofyarmouth.ca \"alarm\" OR \"cybersecurity\" OR \"access control\" OR \"security patrol\"",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Banff Gander Yarmouth Estevan \"false alarm\" bylaw",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "reason": "No verified direct local CCTV or privacy operating facts established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No verified direct local electronic entry or access-control facts established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No verified a verified local intrusion alarm contact or false-alarm process established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No verified direct local remote monitoring or alarm escalation facts established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No verified a local building automation or energy-control program, not general climate ambitions established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No verified substantive local alteration, heritage or preparedness instructions relevant to planning established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No verified a local cyber plan or practical local cyber guidance, not provincial background established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No verified direct local guarding or staffed security operating facts, not ordinary police services established for Yarmouth in the official-source search and fetched material reviewed. One or more official pages could not be substantively fetched; discovery snippets were not treated as evidence. General permitting, provincial background, institutional examples and unrelated emergency services do not establish this service\u2019s direct local facts.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "yarmouth-terminal-retry"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "new-scoped-candidate",
+          "evidenceIds": [
+            "yarmouth-terminal-retry"
+          ],
+          "blockedLeadIds": [
+            "yarmouth-light"
+          ],
+          "reason": "Fetched local evidence supports only the named property/process and planning relevance recorded in evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "access": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "intrusion": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "smart": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "yarmouth-light"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "guards": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    },
+    {
+      "slug": "estevan",
+      "name": "Estevan",
+      "searches": [
+        {
+          "query": "Estevan city security cameras access control facilities energy cyber",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "site:estevan.ca \"access control\" OR \"building automation\" OR \"cybersecurity\" OR \"security guards\"",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        },
+        {
+          "query": "Banff Gander Yarmouth Estevan \"false alarm\" bylaw",
+          "method": "websearch.web_search",
+          "date": "2026-10-20",
+          "purpose": "Target local building/security conditions across eight services; not exhaustive search."
+        }
+      ],
+      "baselineServices": {
+        "cctv": {
+          "sourceUrl": "https://estevan.ca/wp-content/uploads/2024/07/2024-86-VIDEO-SURVEILLANCE-CAMERA-POLICY-JUNE-2024.pdf",
+          "heading": "Control access to recordings",
+          "body": "Estevan\u2019s 2024 surveillance policy addresses City premises, excludes Police Services, and says recording equipment must be in a controlled-access area accessible only to authorized persons. For a Estevan project, document recorder-room access, authorized footage reviewers and third-party handling arrangements alongside the proposed camera coverage. Source scope: City premises surveillance policy excluding Police Services. These are project-discovery recommendations, not claims that the cited institution\u2019s procedures govern unrelated properties. Confirm the current document, responsible authority and site-specific requirements before implementation; the record does not establish a supplier relationship, present system condition or a guaranteed outcome.",
+          "reason": "Direct official local evidence supports the narrowly scoped planning discussion; fetched text preserved in sources and /tmp/prairies-evidence.",
+          "researcherStatus": "supported",
+          "evidenceDecision": "usable-candidate",
+          "independentReviewReason": "Controlled recorder access is directly camera-specific; City-premises and Police Services exclusion retained.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "access": {
+          "reason": "No direct official access evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "intrusion": {
+          "reason": "No direct official intrusion evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "remote": {
+          "reason": "No direct official remote evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "smart": {
+          "reason": "No direct official smart evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "consulting": {
+          "reason": "No direct official consulting evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "cyber": {
+          "reason": "No direct official cyber evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research"
+        },
+        "guards": {
+          "reason": "No direct official guards evidence was verified for Estevan in the recorded searches. The retrieved material concerns City premises surveillance policy excluding Police Services. This is a research gap, not evidence that the service is unnecessary or unavailable.",
+          "researcherStatus": "gap",
+          "evidenceDecision": "no-service-specific-evidence-found",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+        }
+      },
+      "newEvidenceIds": [
+        "estevan-policy"
+      ],
+      "perServiceDecisions": {
+        "cctv": {
+          "decision": "needs-source-retrieval",
+          "evidenceIds": [],
+          "blockedLeadIds": [
+            "estevan-registry"
+          ],
+          "reason": "Promising official discovery text, but direct retrieval failed; not promoted to usable evidence.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Retrieve identified official source and review full scope."
+        },
+        "access": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "intrusion": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "remote": {
+          "decision": "gap-context-only",
+          "evidenceIds": [
+            "estevan-policy"
+          ],
+          "blockedLeadIds": [
+            "estevan-registry"
+          ],
+          "reason": "Live feed of public areas is not evidence of off-site remote monitoring or alarm escalation.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source."
+        },
+        "smart": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "cyber": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "consulting": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "not-established-by-research",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        },
+        "guards": {
+          "decision": "gap",
+          "evidenceIds": [],
+          "blockedLeadIds": [],
+          "reason": "No newly fetched service-specific local facts sufficient for a substantive planning note; existing general permits, weather and emergencies do not close this service gap.",
+          "publicationReady": false,
+          "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility",
+          "remainingBlocker": "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate."
+        }
+      }
+    }
+  ],
+  "attributedFetchedEvidence": [
+    {
+      "id": "dawson-heritage",
+      "city": "dawson",
+      "url": "https://cityofdawson.ca/p/historic-resources-permits",
+      "httpStatus": 200,
+      "finalUrl": "https://cityofdawson.ca/p/historic-resources-permits",
+      "textPath": "/tmp/priority-evidence/dawson-heritage.txt",
+      "textLength": 2836,
+      "fetched": true,
+      "title": "Historic Resources Permits",
+      "issuer": "City of Dawson",
+      "cityScope": "Listed Municipal Historic Sites, Heritage Inventory sites and Historic Townsite; different triggers apply.",
+      "serviceScope": [
+        "cctv",
+        "access",
+        "consulting"
+      ],
+      "exactExcerpt": "A historic resources permit is required for any proposed exterior alterations and/or alterations of a character defining element of a Municipal Historic Site.",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Undated municipal page fetched in this research pass.",
+      "proposedSubstantivePlanningRelevance": "For a camera mount, cable penetration or entrance alteration on a designated site, identify designation and affected character-defining elements before fixing mounting routes and hardware.",
+      "caveats": "Not a permit requirement for every camera or reader in Dawson; obtain parcel-specific review. This supports heritage-sensitive physical installation planning, not camera operations or electronic egress approval.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "dawson-retrofit",
+      "city": "dawson",
+      "url": "https://bsceng.ca/portfolio/old-territorial-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://bsceng.ca/portfolio/old-territorial-administration/",
+      "textPath": "/tmp/priority-evidence/dawson-retrofit.txt",
+      "textLength": 1857,
+      "fetched": true,
+      "title": "Old Territorial Administration",
+      "issuer": "Building Systems Consulting, project participant",
+      "cityScope": "Named Government of Yukon heritage building in Dawson City.",
+      "serviceScope": [
+        "smart"
+      ],
+      "exactExcerpt": "the modification included a complete retrofit to the building\u2019s aging heating and ventilation systems, replacement of the existing fire protection systems, retrofit of mechanical cooling in key areas, and upgrades to the facility plumbing.",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Page lists completion 2024\u20132026; not independently confirmed complete.",
+      "proposedSubstantivePlanningRelevance": "Use the documented phased heritage mechanical retrofit to ask for existing HVAC inventory, protected fabric and phased commissioning constraints.",
+      "caveats": "Participant account, not official owner confirmation; no controller specification or BAS implementation established. Context only: smart-service gap remains.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "chetwynd-track",
+      "city": "chetwynd",
+      "url": "https://www.gochetwynd.com/residents/recreation-centre/running-walking-track/",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gochetwynd.com/residents/recreation-centre/running-walking-track/",
+      "textPath": "/tmp/priority-evidence/chetwynd-track.txt",
+      "textLength": 1151,
+      "fetched": true,
+      "title": "Running/Walking Track",
+      "issuer": "District of Chetwynd",
+      "cityScope": "Upper concourse/mezzanine of Chetwynd & District Rec Centre.",
+      "serviceScope": [
+        "cctv"
+      ],
+      "exactExcerpt": "This area is monitored by cameras and staff",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Undated page; age/supervision guidelines explicitly trial-based.",
+      "proposedSubstantivePlanningRelevance": "Separate camera observation from staff intervention and sign-in in a recreation-space assessment; identify actual shared circulation and privacy exclusions.",
+      "caveats": "Facility example only; no retention, camera model, off-site monitoring or 24/7 operator proven. Do not upgrade remote-video service on this wording.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "banff-project",
+      "city": "banff",
+      "url": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+      "httpStatus": 200,
+      "finalUrl": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+      "textPath": "/tmp/priority-evidence/banff-project.txt",
+      "textLength": 1331,
+      "fetched": true,
+      "title": "Husky C-Store, Gas Bar and A&W Banff",
+      "issuer": "PM Electric, installation participant",
+      "cityScope": "Named Banff fuel/convenience/restaurant rebuild for Husky.",
+      "serviceScope": [
+        "cctv",
+        "access"
+      ],
+      "exactExcerpt": "we integrated state-of-the-art security features such as high-definition surveillance cameras and access control systems",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Fetched page undated; search index labels project 2019, which is not relied on as confirmed body text.",
+      "proposedSubstantivePlanningRelevance": "Scope forecourt/retail views separately from controlled staff openings and coordinate security cabling with power-distribution rebuilds.",
+      "caveats": "Contractor self-report, not owner verification; promotional performance language is not adopted. No models, current condition, integration protocol or hazardous-location design requirement established.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "gander-energy",
+      "city": "gander",
+      "url": "https://info.gmf-fmv.ca/projectdetails?id=fcfb186d-17dd-ec11-bb3c-0022486da190",
+      "httpStatus": 200,
+      "finalUrl": "https://info.gmf-fmv.ca/en-US/projectdetails/?id=fcfb186d-17dd-ec11-bb3c-0022486da190",
+      "textPath": "/tmp/priority-evidence/gander-energy.txt",
+      "textLength": 3722,
+      "fetched": true,
+      "title": "Energy efficiency and renewable energy for municipal buildings in Gander",
+      "issuer": "Federation of Canadian Municipalities Green Municipal Fund",
+      "cityScope": "Town of Gander municipal building feasibility study; community centre automation measure.",
+      "serviceScope": [
+        "smart"
+      ],
+      "exactExcerpt": "central automation system at the community centre",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Project 16612; timeline 2019\u20132020; feasibility study.",
+      "proposedSubstantivePlanningRelevance": "In a municipal recreation-building retrofit, assess HVAC integration and current controls before proposing schedules, sequences and acceptance measurements.",
+      "caveats": "2019\u20132020 feasibility study, not installation confirmation. Fully disbursed funding does not prove every proposed measure built. Predicted savings are not achieved results or commercial rebates.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "gander-contract",
+      "city": "gander",
+      "url": "https://www.gandercanada.com/media/fwdjgfti/04-15-20-special.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gander.ca/media/fwdjgfti/04-15-20-special.pdf",
+      "textPath": "/tmp/priority-evidence/gander-contract.txt",
+      "textLength": 4238,
+      "fetched": true,
+      "title": "Special Council Meeting, April 15, 2020",
+      "issuer": "Town of Gander",
+      "cityScope": "Second-phase municipal Honeywell comprehensive-services contract.",
+      "serviceScope": [
+        "smart"
+      ],
+      "exactExcerpt": "Council is now prepared to proceed with additional improvements",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Council minutes April 15, 2020.",
+      "proposedSubstantivePlanningRelevance": "Distinguish council authorization and listed mechanical/lighting works from confirmation that the feasibility-study automation measure was commissioned.",
+      "caveats": "Corroborating project context only; cannot close implementation uncertainty.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "dalhousie-cctv",
+      "city": "dalhousie",
+      "url": "https://projects.constructconnect.com/details/5780533-cctv-system-upgrade-dalhousie-correctional&find_loc=NB-E8C-2A2",
+      "httpStatus": 200,
+      "finalUrl": "https://projects.constructconnect.com/details/5780533-cctv-system-upgrade-dalhousie-correctional&find_loc=NB-E8C-2A2",
+      "textPath": "/tmp/priority-evidence/dalhousie-cctv.txt",
+      "textLength": 6331,
+      "fetched": true,
+      "title": "CCTV System Upgrade \u2013 Dalhousie Correctional",
+      "issuer": "ConstructConnect, procurement aggregator",
+      "cityScope": "Detention facility at 265 Miller Blvd, Dalhousie, New Brunswick; not Dalhousie University.",
+      "serviceScope": [
+        "cctv"
+      ],
+      "exactExcerpt": ".4 Commission CCTV system, include data testing the new cabling for all cameras and network drops.",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Published May 31, 2022; updated September 14, 2023 in discovery; dated project record, not current condition.",
+      "proposedSubstantivePlanningRelevance": "For this correctional replacement example, capture cable-test deliverables, staged head-end replacement, staff-approved aiming and operator training in the project scope.",
+      "caveats": "Secondary aggregator; obtain provincial tender specification/award before promotion to verified primary candidate. Restricted institutional scope cannot establish typical business needs, remote guarding, or general demand.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "yarmouth-terminal-retry",
+      "city": "yarmouth",
+      "url": "https://housing-infrastructure.canada.ca/investments-investissements/stories-histoires/trans-mobil/yarmouth-ns-eng.html",
+      "httpStatus": 200,
+      "fetched": true,
+      "textPath": "/tmp/priority-evidence/yarmouth-terminal-retry.txt",
+      "transportCaveat": "TLS certificate validation disabled after local CA verification failed; verify independently before publication.",
+      "title": "Revitalized Yarmouth Ferry Terminal: A Gateway to Nova Scotias Charm",
+      "issuer": "Housing, Infrastructure and Communities Canada",
+      "cityScope": "Yarmouth, Nova Scotia international ferry terminal; not US municipalities or county-wide businesses.",
+      "serviceScope": [
+        "cctv"
+      ],
+      "exactExcerpt": "Lighting improvements and the integration of advanced electrical systems, including state-of-the-art CCTV and Public Awareness systems, bolster safety and security measures.",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "Undated federal project story fetched during this pass.",
+      "proposedSubstantivePlanningRelevance": "For terminal-like transport sites, coordinate camera views with upgraded lighting, passenger/vehicle entry and public-awareness equipment; document owner security boundaries.",
+      "caveats": "Federal project example, not requirement for private shops. No live remote operator or police access established. TLS certificate-validation retry caveat requires independent verification.",
+      "newRelativeToMaster": true
+    },
+    {
+      "id": "estevan-policy",
+      "city": "estevan",
+      "url": "https://estevan.ca/wp-content/uploads/2024/07/2024-86-VIDEO-SURVEILLANCE-CAMERA-POLICY-JUNE-2024.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://estevan.ca/wp-content/uploads/2024/07/2024-86-VIDEO-SURVEILLANCE-CAMERA-POLICY-JUNE-2024.pdf",
+      "textPath": "/tmp/priority-evidence/estevan-policy.txt",
+      "textLength": 10500,
+      "fetched": true,
+      "title": "Surveillance Camera Policy 2024-86",
+      "issuer": "City of Estevan",
+      "cityScope": "City premises excluding Police Services.",
+      "serviceScope": [
+        "remote"
+      ],
+      "exactExcerpt": "Public Safety is addressed with live feed of public areas.",
+      "excerptMethod": "Exact substring of whitespace-normalized fetched body/PDF text; full extracted text retained at textPath.",
+      "dateContext": "June 2024 policy, refetched successfully.",
+      "proposedSubstantivePlanningRelevance": "Separate live public-area viewing from post-incident recorded access; identify viewing authority and incident handoff when discussing municipal monitoring scope.",
+      "caveats": "New service-angle extraction from existing master source, not a new policy. Does not establish off-site commercial monitoring, staffing, escalation SLA or service availability. Remote service remains a gap.",
+      "newRelativeToMaster": false
+    }
+  ],
+  "blockedOfficialLeads": [
+    {
+      "id": "hvgb-video",
+      "city": "happy-valley-goose-bay",
+      "url": "https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf",
+      "httpStatus": 403,
+      "finalUrl": "https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf",
+      "title": "Municipal camera policy PS0008",
+      "cityScope": "Named municipality/institution only",
+      "serviceScope": [
+        "cctv",
+        "consulting"
+      ],
+      "dateContext": "January 28, 2025 stated approval/implementation; upload directory date is not policy date.",
+      "discoveryExcerpt": "This Policy governs the installation and operation of Video Surveillance Camera\u2019s (VSC), the collection and use of personal information",
+      "exactFetchedExcerpt": null,
+      "evidenceStatus": "discovery-only-direct-fetch-failed",
+      "proposedSubstantivePlanningRelevance": "Retrieve full signed policy to assess town-device retention, authorized viewing and contractor responsibilities; not a private-business rule.",
+      "caveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "id": "hvgb-patrol",
+      "city": "happy-valley-goose-bay",
+      "url": "https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf",
+      "httpStatus": 403,
+      "finalUrl": "https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf",
+      "title": "Municipal mobile patrol contract",
+      "cityScope": "Named municipality/institution only",
+      "serviceScope": [
+        "guards"
+      ],
+      "dateContext": "July 9, 2026 council minutes; upload directory February is not meeting date.",
+      "discoveryExcerpt": "Council award a contract for mobile security patrol services in the observe and report style to GardaWorld",
+      "exactFetchedExcerpt": null,
+      "evidenceStatus": "discovery-only-direct-fetch-failed",
+      "proposedSubstantivePlanningRelevance": "Retrieve signed council minutes and define observe/report versus police duties; award to another provider establishes no Fortega eligibility or coverage.",
+      "caveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "id": "banff-alarm",
+      "city": "banff",
+      "url": "https://banff.ca/DocumentCenter/View/205",
+      "httpStatus": 404,
+      "finalUrl": "https://banff.ca/DocumentCenter/View/205",
+      "fetched": false,
+      "error": "404 Client Error: Not Found for url: https://banff.ca/DocumentCenter/View/205",
+      "title": "False Alarm Bylaw 81-2 consolidated",
+      "cityScope": "Named municipality/institution only",
+      "serviceScope": [
+        "intrusion"
+      ],
+      "dateContext": "Consolidation includes November 21, 2011 amendment; currency unknown.",
+      "discoveryExcerpt": "This bylaw may be cited as the \u201cFalse Alarm Bylaw.\u201d",
+      "exactFetchedExcerpt": null,
+      "evidenceStatus": "discovery-only-direct-fetch-failed",
+      "proposedSubstantivePlanningRelevance": "Obtain current official consolidation and operative sections; search text alone insufficient.",
+      "caveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "id": "banff-cyber",
+      "city": "banff",
+      "url": "https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "httpStatus": 404,
+      "finalUrl": "https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "fetched": false,
+      "error": "404 Client Error: Not Found for url: https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "title": "Archived municipal cybersecurity incident",
+      "cityScope": "Named municipality/institution only",
+      "serviceScope": [
+        "cyber"
+      ],
+      "dateContext": "March 19, 2022 incident; April 25, 2022 update.",
+      "discoveryExcerpt": "the Town detected it was subject to a cybersecurity incident perpetrated by an unauthorized third party",
+      "exactFetchedExcerpt": null,
+      "evidenceStatus": "discovery-only-direct-fetch-failed",
+      "proposedSubstantivePlanningRelevance": "Retrieve official archive to distinguish historical municipal incident from current private-business exposure.",
+      "caveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "id": "yarmouth-light",
+      "city": "yarmouth",
+      "url": "https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "httpStatus": 403,
+      "finalUrl": "https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "title": "Dark Sky Policy TOY 67",
+      "cityScope": "Named municipality/institution only",
+      "serviceScope": [
+        "smart",
+        "cctv"
+      ],
+      "dateContext": "December 8, 2022 effective date in search-index text.",
+      "discoveryExcerpt": "This Policy is applicable to outdoor lighting fixtures for new developments and exterior renovations",
+      "exactFetchedExcerpt": null,
+      "evidenceStatus": "discovery-only-direct-fetch-failed",
+      "proposedSubstantivePlanningRelevance": "Retrieve full lighting controls provisions before using as camera-illumination or automation planning constraint.",
+      "caveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "id": "estevan-registry",
+      "city": "estevan",
+      "url": "https://estevanpolice.ca/cameraregistry/",
+      "httpStatus": 403,
+      "finalUrl": "https://estevanpolice.ca/cameraregistry/",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://estevanpolice.ca/cameraregistry/",
+      "title": "Safe Neighbourhood Camera Registry",
+      "cityScope": "Named municipality/institution only",
+      "serviceScope": [
+        "cctv",
+        "remote"
+      ],
+      "dateContext": "Undated official police indexed page.",
+      "discoveryExcerpt": "Does not allow live monitoring of your cameras",
+      "exactFetchedExcerpt": null,
+      "evidenceStatus": "discovery-only-direct-fetch-failed",
+      "proposedSubstantivePlanningRelevance": "Retrieve police page: voluntary contact registry must not be described as live police monitoring.",
+      "caveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    }
+  ],
+  "fetchLog": [
+    {
+      "id": "dawson-retrofit",
+      "city": "dawson",
+      "url": "https://bsceng.ca/portfolio/old-territorial-administration/",
+      "httpStatus": 200,
+      "finalUrl": "https://bsceng.ca/portfolio/old-territorial-administration/",
+      "textPath": "/tmp/priority-evidence/dawson-retrofit.txt",
+      "textLength": 1857,
+      "fetched": true
+    },
+    {
+      "id": "chetwynd-track",
+      "city": "chetwynd",
+      "url": "https://www.gochetwynd.com/residents/recreation-centre/running-walking-track/",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gochetwynd.com/residents/recreation-centre/running-walking-track/",
+      "textPath": "/tmp/priority-evidence/chetwynd-track.txt",
+      "textLength": 1151,
+      "fetched": true
+    },
+    {
+      "id": "chetwynd-report",
+      "city": "chetwynd",
+      "url": "https://www.gochetwynd.com/wp-content/uploads/2025/10/2025-Annual-Report-Final.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gochetwynd.com/wp-content/uploads/2025/10/2025-Annual-Report-Final.pdf",
+      "textPath": "/tmp/priority-evidence/chetwynd-report.txt",
+      "textLength": 64911,
+      "fetched": true
+    },
+    {
+      "id": "hvgb-video",
+      "city": "happy-valley-goose-bay",
+      "url": "https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf",
+      "httpStatus": 403,
+      "finalUrl": "https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf"
+    },
+    {
+      "id": "hvgb-patrol",
+      "city": "happy-valley-goose-bay",
+      "url": "https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf",
+      "httpStatus": 403,
+      "finalUrl": "https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf"
+    },
+    {
+      "id": "hvgb-review",
+      "city": "happy-valley-goose-bay",
+      "url": "https://townhvgb.com/wp-content/uploads/2024/10/2024-Happy-Valley-Goose-Bay-Public-Safety-Review.pdf",
+      "httpStatus": 403,
+      "finalUrl": "https://townhvgb.com/wp-content/uploads/2024/10/2024-Happy-Valley-Goose-Bay-Public-Safety-Review.pdf",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://townhvgb.com/wp-content/uploads/2024/10/2024-Happy-Valley-Goose-Bay-Public-Safety-Review.pdf"
+    },
+    {
+      "id": "banff-project",
+      "city": "banff",
+      "url": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+      "httpStatus": 200,
+      "finalUrl": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+      "textPath": "/tmp/priority-evidence/banff-project.txt",
+      "textLength": 1331,
+      "fetched": true
+    },
+    {
+      "id": "banff-alarm",
+      "city": "banff",
+      "url": "https://banff.ca/DocumentCenter/View/205",
+      "httpStatus": 404,
+      "finalUrl": "https://banff.ca/DocumentCenter/View/205",
+      "fetched": false,
+      "error": "404 Client Error: Not Found for url: https://banff.ca/DocumentCenter/View/205"
+    },
+    {
+      "id": "banff-cyber",
+      "city": "banff",
+      "url": "https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "httpStatus": 404,
+      "finalUrl": "https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "fetched": false,
+      "error": "404 Client Error: Not Found for url: https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545"
+    },
+    {
+      "id": "gander-energy",
+      "city": "gander",
+      "url": "https://info.gmf-fmv.ca/projectdetails?id=fcfb186d-17dd-ec11-bb3c-0022486da190",
+      "httpStatus": 200,
+      "finalUrl": "https://info.gmf-fmv.ca/en-US/projectdetails/?id=fcfb186d-17dd-ec11-bb3c-0022486da190",
+      "textPath": "/tmp/priority-evidence/gander-energy.txt",
+      "textLength": 3722,
+      "fetched": true
+    },
+    {
+      "id": "gander-contract",
+      "city": "gander",
+      "url": "https://www.gandercanada.com/media/fwdjgfti/04-15-20-special.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gander.ca/media/fwdjgfti/04-15-20-special.pdf",
+      "textPath": "/tmp/priority-evidence/gander-contract.txt",
+      "textLength": 4238,
+      "fetched": true
+    },
+    {
+      "id": "dalhousie-cctv",
+      "city": "dalhousie",
+      "url": "https://projects.constructconnect.com/details/5780533-cctv-system-upgrade-dalhousie-correctional&find_loc=NB-E8C-2A2",
+      "httpStatus": 200,
+      "finalUrl": "https://projects.constructconnect.com/details/5780533-cctv-system-upgrade-dalhousie-correctional&find_loc=NB-E8C-2A2",
+      "textPath": "/tmp/priority-evidence/dalhousie-cctv.txt",
+      "textLength": 6331,
+      "fetched": true
+    },
+    {
+      "id": "yarmouth-light",
+      "city": "yarmouth",
+      "url": "https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "httpStatus": 403,
+      "finalUrl": "https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file"
+    },
+    {
+      "id": "yarmouth-terminal",
+      "city": "yarmouth",
+      "url": "https://housing-infrastructure.canada.ca/investments-investissements/stories-histoires/trans-mobil/yarmouth-ns-eng.html",
+      "fetched": false,
+      "error": "HTTPSConnectionPool(host='housing-infrastructure.canada.ca', port=443): Max retries exceeded with url: /investments-investissements/stories-histoires/trans-mobil/yarmouth-ns-eng.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
+    },
+    {
+      "id": "estevan-registry",
+      "city": "estevan",
+      "url": "https://estevanpolice.ca/cameraregistry/",
+      "httpStatus": 403,
+      "finalUrl": "https://estevanpolice.ca/cameraregistry/",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://estevanpolice.ca/cameraregistry/"
+    },
+    {
+      "id": "estevan-policy",
+      "city": "estevan",
+      "url": "https://estevan.ca/wp-content/uploads/2024/07/2024-86-VIDEO-SURVEILLANCE-CAMERA-POLICY-JUNE-2024.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://estevan.ca/wp-content/uploads/2024/07/2024-86-VIDEO-SURVEILLANCE-CAMERA-POLICY-JUNE-2024.pdf",
+      "textPath": "/tmp/priority-evidence/estevan-policy.txt",
+      "textLength": 10500,
+      "fetched": true
+    },
+    {
+      "id": "dawson-heritage",
+      "city": "dawson",
+      "url": "https://cityofdawson.ca/p/historic-resources-permits",
+      "httpStatus": 200,
+      "finalUrl": "https://cityofdawson.ca/p/historic-resources-permits",
+      "textPath": "/tmp/priority-evidence/dawson-heritage.txt",
+      "textLength": 2836,
+      "fetched": true
+    },
+    {
+      "id": "banff-alarm-retry",
+      "city": "banff",
+      "url": "https://www.banff.ca/DocumentCenter/View/205",
+      "httpStatus": 404,
+      "finalUrl": "https://www.banff.ca/DocumentCenter/View/205",
+      "fetched": false,
+      "error": "404 Client Error: Not Found for url: https://www.banff.ca/DocumentCenter/View/205"
+    },
+    {
+      "id": "banff-cyber-retry",
+      "city": "banff",
+      "url": "https://www.banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "httpStatus": 404,
+      "finalUrl": "https://www.banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "fetched": false,
+      "error": "404 Client Error: Not Found for url: https://www.banff.ca/CivicAlerts.asp?AID=1494&ARC=2545"
+    },
+    {
+      "id": "yarmouth-light-retry",
+      "city": "yarmouth",
+      "url": "https://townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "httpStatus": 403,
+      "finalUrl": "https://townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "fetched": false,
+      "error": "403 Client Error: Forbidden for url: https://townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file"
+    },
+    {
+      "id": "yarmouth-terminal-retry",
+      "city": "yarmouth",
+      "url": "https://housing-infrastructure.canada.ca/investments-investissements/stories-histoires/trans-mobil/yarmouth-ns-eng.html",
+      "httpStatus": 200,
+      "fetched": true,
+      "textPath": "/tmp/priority-evidence/yarmouth-terminal-retry.txt",
+      "transportCaveat": "TLS certificate validation disabled after local CA verification failed; verify independently before publication."
+    }
+  ],
+  "remainingBlockers": [
+    "HVGB official camera policy and 2026 observe/report patrol minutes are blocked by HTTP 403.",
+    "Banff official false-alarm consolidation and archived cyber incident return HTTP 404; do not treat indexed text as fetched facts.",
+    "Yarmouth Dark Sky policy and Estevan police registry return HTTP 403.",
+    "Dalhousie correctional camera specification still needs primary provincial procurement record; Heron Bay IoT page is template filler, not evidence.",
+    "No new direct remote off-site video monitoring, local cybersecurity operating requirement, or electronic-door life-safety specification was verified for these towns.",
+    "Gander automation is a feasibility measure, not confirmed installed plant; Dawson mechanical retrofit alone leaves smart gap.",
+    "Guard licensing, company eligibility, staffing, site attendance, service coverage and response times remain unverified."
+  ],
+  "summary": {
+    "towns": 8,
+    "serviceDecisions": 64,
+    "fetchedEvidenceRecords": 9,
+    "blockedOfficialLeads": 6,
+    "decisions": {
+      "new-scoped-candidate": 8,
+      "gap": 44,
+      "gap-context-only": 2,
+      "existing-candidate-retained": 2,
+      "needs-source-retrieval": 7,
+      "needs-primary-source-review": 1
+    },
+    "publicationReadyPages": 0
+  }
+}

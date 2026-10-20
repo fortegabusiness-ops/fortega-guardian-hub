@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-20T08:21:49.326Z",
+  "reviewedAt": "2026-10-20T08:23:08.195Z",
   "scope": "All review drafts; research records and code-level content/navigation checks. Not a rendered HTTP audit or publication approval.",
   "summary": {
     "rows": 1800,
@@ -42283,7 +42283,7 @@
       "reviewUrl": "/location-review/waterloo/cyber",
       "proposedProductionUrl": "/services/cyber/waterloo",
       "existingCoreProductionCombination": false,
-      "researchDecision": "needs-source-review",
+      "researchDecision": "usable-candidate",
       "checks": {
         "researchAssessmentRecorded": true,
         "keywordMapped": true,
@@ -42301,7 +42301,7 @@
       },
       "blockers": [
         "missing-rendered-city-service-evidence",
-        "research:needs-source-review",
+        "candidate-is-not-publication-clearance",
         "shared-full-body-requires-substantive-rewrite-or-consolidation",
         "private-project-delivery-review-required",
         "complete-backup-not-verified",
@@ -45898,7 +45898,7 @@
       "reviewUrl": "/location-review/cap-de-la-madeleine/cctv",
       "proposedProductionUrl": "/services/cctv/cap-de-la-madeleine",
       "existingCoreProductionCombination": false,
-      "researchDecision": "needs-source-review",
+      "researchDecision": "no-service-specific-evidence-found",
       "checks": {
         "researchAssessmentRecorded": true,
         "keywordMapped": true,
@@ -45916,7 +45916,7 @@
       },
       "blockers": [
         "missing-rendered-city-service-evidence",
-        "research:needs-source-review",
+        "research:no-service-specific-evidence-found",
         "shared-full-body-requires-substantive-rewrite-or-consolidation",
         "private-project-delivery-review-required",
         "complete-backup-not-verified",
