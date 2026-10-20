@@ -1,0 +1,2616 @@
+{
+  "schemaVersion": "west-quality-1",
+  "auditedAt": "2026-10-20T08:28:30.029185+00:00",
+  "input": "/tmp/publication-research/west-followup.json",
+  "auditMode": "Read-only independent saved-evidence audit; /tmp output only; no searches, live retrieval, project edits or publication approval.",
+  "publicationReady": false,
+  "method": [
+    "All 34 new and 22 retained city/service candidates individually audited against source metadata and available whitespace-normalized full captures. Exact offsets and capture hashes recorded.",
+    "Matching a capture verifies saved text, not authenticity, current website content or continued applicability. Retrieval date is not publication date.",
+    "New candidate origin is separated from URL novelty: existing-source reuse is explicitly recorded. Retained baseline acceptance is not new evidence.",
+    "Narrow context acceptance is not proof of differentiated service-page sufficiency. CPTED natural access does not establish electronic credential control; generic permitting and emergencies do not qualify security consulting or CCTV."
+  ],
+  "counts": {
+    "candidatesAudited": 56,
+    "newCandidates": 34,
+    "retainedCandidates": 22,
+    "byOrigin": {
+      "new-followup-candidate": {
+        "accepted-scoped": 33,
+        "uncertain": 1
+      },
+      "retained-baseline-candidate": {
+        "accepted-scoped": 20,
+        "rejected": 2
+      }
+    },
+    "publicationReadyTrue": 0
+  },
+  "newlyAcceptedScopedCandidates": [
+    {
+      "city": "banff",
+      "service": "cctv",
+      "scope": [
+        "Named Banff fuel/convenience/restaurant rebuild for Husky."
+      ],
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "banff",
+      "service": "access",
+      "scope": [
+        "Named Banff fuel/convenience/restaurant rebuild for Husky."
+      ],
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "calgary",
+      "service": "consulting",
+      "scope": "Police CPTED guidance; natural access planning, not electronic credential requirements.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "edmonton",
+      "service": "access",
+      "scope": "City departments and selected boards only; no private delivery inference.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "edmonton",
+      "service": "intrusion",
+      "scope": "City departments and selected boards only; no private delivery inference.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "edmonton",
+      "service": "consulting",
+      "scope": "City departments and selected boards only; no private delivery inference.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "edmonton",
+      "service": "guards",
+      "scope": "City departments and selected boards only; no private delivery inference.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "fort-mcmurray",
+      "service": "consulting",
+      "scope": "Wood Buffalo business guidance; recommendations not mandatory specifications.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "grande-prairie",
+      "service": "cctv",
+      "scope": "Historical 2020 pilot awards; no current funding availability inference.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "lethbridge",
+      "service": "intrusion",
+      "scope": "City limits only; alarm and keyholder planning, not guaranteed response.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "medicine-hat",
+      "service": "intrusion",
+      "scope": "Municipal alarm registration guidance only.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "red-deer",
+      "service": "cctv",
+      "scope": "Local business checklist; not a requirement for electronic access control.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "campbell-river",
+      "service": "guards",
+      "scope": "Downtown municipal partnership context only, not private guard availability.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "chetwynd",
+      "service": "cctv",
+      "scope": [
+        "Upper concourse/mezzanine of Chetwynd & District Rec Centre."
+      ],
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "cranbrook",
+      "service": "cctv",
+      "scope": "Local business CPTED recommendations only.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "cranbrook",
+      "service": "intrusion",
+      "scope": "Local business CPTED recommendations only.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "cranbrook",
+      "service": "consulting",
+      "scope": "Local business CPTED recommendations only.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "dawson-creek",
+      "service": "cyber",
+      "scope": "Historical municipal IT planning procurement; not private sector demand or award proof.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "delta",
+      "service": "cyber",
+      "scope": "Delta police business advice; no local incident-rate inference.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "esquimalt",
+      "service": "cyber",
+      "scope": "Small-business voluntary program, selected applicants only; not all-business coverage.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "kimberley",
+      "service": "cyber",
+      "scope": "Vendor case study of municipal deployment; requires independent corroboration before publication.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "langley",
+      "service": "consulting",
+      "scope": "Langley City guidance only, not Township mandate.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "north-vancouver",
+      "service": "consulting",
+      "scope": "North Vancouver detachment guidance; physical access not electronic credentials.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "penticton",
+      "service": "cctv",
+      "scope": "Historical downtown pilot only; no present operational coverage or Fortega provision inferred.",
+      "sourcePreviouslyInBaseline": true
+    },
+    {
+      "city": "penticton",
+      "service": "remote",
+      "scope": "Historical downtown pilot only; no present operational coverage or Fortega provision inferred.",
+      "sourcePreviouslyInBaseline": true
+    },
+    {
+      "city": "prince-george",
+      "service": "consulting",
+      "scope": "Local CPTED evaluations and natural access, not credential system requirement.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "prince-rupert",
+      "service": "cyber",
+      "scope": "Municipal/RCMP internal systems only; not private business requirements.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "quesnel",
+      "service": "cyber",
+      "scope": "Council device-use policy only, not business-wide regulation.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "surrey",
+      "service": "consulting",
+      "scope": "CPTED assessments; natural control access not automatic electronic credentials.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "vancouver",
+      "service": "intrusion",
+      "scope": "Business prevention advice, not installation mandate or guaranteed dispatch.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "vancouver",
+      "service": "remote",
+      "scope": "Business prevention advice, not installation mandate or guaranteed dispatch.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "vernon",
+      "service": "cyber",
+      "scope": "Community education scope only, not commercial cyber deployment evidence.",
+      "sourcePreviouslyInBaseline": false
+    },
+    {
+      "city": "victoria",
+      "service": "cyber",
+      "scope": "Small-business voluntary selected-applicant program only.",
+      "sourcePreviouslyInBaseline": false
+    }
+  ],
+  "acceptedExistingBaselineCandidates": [
+    {
+      "city": "calgary",
+      "service": "intrusion",
+      "scope": "Calgary Police alarm response guidance, not guaranteed dispatch"
+    },
+    {
+      "city": "edmonton",
+      "service": "cctv",
+      "scope": "City administrative directive dated 2002; not private-sector rules or confirmation of current law"
+    },
+    {
+      "city": "fort-mcmurray",
+      "service": "cctv",
+      "scope": "Regional Wood Buffalo CAPTURE program, including Fort McMurray; not live monitoring"
+    },
+    {
+      "city": "lethbridge",
+      "service": "cctv",
+      "scope": "Lethbridge Polytechnic property only, not a city-wide policy"
+    },
+    {
+      "city": "saint-albert",
+      "service": "cctv",
+      "scope": "St. Albert voluntary RCMP CAPTURE registration; not live access"
+    },
+    {
+      "city": "campbell-river",
+      "service": "intrusion",
+      "scope": "Municipal fire and security false-alarm bylaw; convenience consolidation dated November 9, 2023."
+    },
+    {
+      "city": "chetwynd",
+      "service": "intrusion",
+      "scope": "District fire and security alarm regulation; does not establish live-video monitoring requirements."
+    },
+    {
+      "city": "esquimalt",
+      "service": "cctv",
+      "scope": "February 3, 2020 municipal-facility camera announcement; historical municipal example, not a private-business retention rule."
+    },
+    {
+      "city": "kamloops",
+      "service": "intrusion",
+      "scope": "Municipal guidance for residential and commercial security alarms resulting in RCMP attendance; page references Bylaw 10-43, 2026."
+    },
+    {
+      "city": "nanaimo",
+      "service": "cctv",
+      "scope": "City-operated or contracted civic surveillance; expressly excludes RCMP surveillance."
+    },
+    {
+      "city": "new-westminster",
+      "service": "cctv",
+      "scope": "Municipal parking licence-plate recognition only; not a general commercial CCTV policy."
+    },
+    {
+      "city": "north-vancouver",
+      "service": "intrusion",
+      "scope": "City of North Vancouver only, not District of North Vancouver; July 22, 2024 convenience consolidation excludes fire alarms."
+    },
+    {
+      "city": "oak-bay",
+      "service": "intrusion",
+      "scope": "District burglar/false-alarm bylaw amended by No. 3957; historical consolidation requires currency confirmation."
+    },
+    {
+      "city": "prince-george",
+      "service": "cctv",
+      "scope": "Voluntary owner-managed camera registry; police contact owners for potential evidence."
+    },
+    {
+      "city": "quesnel",
+      "service": "cctv",
+      "scope": "June 4, 2019 municipal public-space/civic-property surveillance policy, not a private-premises rule."
+    },
+    {
+      "city": "richmond",
+      "service": "cyber",
+      "scope": "Richmond BC municipal email incident and public safety guidance; not Richmond California police policy."
+    },
+    {
+      "city": "rossland",
+      "service": "cctv",
+      "scope": "City facilities and operations; reviewed November 2025; not a citywide private-camera mandate."
+    },
+    {
+      "city": "surrey",
+      "service": "remote",
+      "scope": "Police-member response policy updated January 27, 2022; operational example requires current procedure confirmation."
+    },
+    {
+      "city": "vernon",
+      "service": "cctv",
+      "scope": "Municipal safety/security camera policy FAQ, not authorization for other properties."
+    },
+    {
+      "city": "victoria",
+      "service": "guards",
+      "scope": "Special events on City property; not permanent private-building staffing requirements."
+    }
+  ],
+  "rejectsAndUncertainty": [
+    {
+      "city": "jasper",
+      "service": "consulting",
+      "decision": "rejected",
+      "reason": "Household evacuation, wildfire and 72-hour preparedness guidance is not site-specific security assessment or security design evidence."
+    },
+    {
+      "city": "lake-louise",
+      "service": "consulting",
+      "decision": "rejected",
+      "reason": "Parks Canada jurisdiction is correctly local to Lake Louise, but general development/building permitting alone does not establish security consulting, CPTED or device-specific design content."
+    },
+    {
+      "city": "prince-rupert",
+      "service": "cctv",
+      "decision": "uncertain",
+      "reason": "The passage says surveillance without identifying cameras or video. Municipal IT responsibilities cannot establish distinct CCTV content without explicit video-system evidence."
+    }
+  ],
+  "candidateDecisions": [
+    {
+      "city": "banff",
+      "cityName": "Banff",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": [
+        "Named Banff fuel/convenience/restaurant rebuild for Husky."
+      ],
+      "reason": "Exact local contractor account explicitly names cameras and access control; accepted only as attributed participant evidence for the named Husky/A&W project, not owner-verified deployment or current operation.",
+      "sourceAudits": [
+        {
+          "url": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+          "title": "Husky C-Store, Gas Bar and A&W Banff",
+          "issuer": "PM Electric, installation participant",
+          "capturePath": "/tmp/priority-evidence/banff-project.txt",
+          "captureSha256": "1d605b5765d2c8ea25ccf8e6c6dd216a8bca16b9f8cfa412e24efcb2d60608e4",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Fetched page undated; search index labels project 2019, which is not relied on as confirmed body text.",
+          "scope": "Named Banff fuel/convenience/restaurant rebuild for Husky.",
+          "passageChecks": [
+            {
+              "exactPassage": "we integrated state-of-the-art security features such as high-definition surveillance cameras and access control systems",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 874
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Contractor self-report, not owner verification; promotional performance language is not adopted. No models, current condition, integration protocol or hazardous-location design requirement established.",
+        "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "banff",
+      "cityName": "Banff",
+      "service": "access",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": [
+        "Named Banff fuel/convenience/restaurant rebuild for Husky."
+      ],
+      "reason": "Exact local contractor account explicitly names cameras and access control; accepted only as attributed participant evidence for the named Husky/A&W project, not owner-verified deployment or current operation.",
+      "sourceAudits": [
+        {
+          "url": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+          "title": "Husky C-Store, Gas Bar and A&W Banff",
+          "issuer": "PM Electric, installation participant",
+          "capturePath": "/tmp/priority-evidence/banff-project.txt",
+          "captureSha256": "1d605b5765d2c8ea25ccf8e6c6dd216a8bca16b9f8cfa412e24efcb2d60608e4",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Fetched page undated; search index labels project 2019, which is not relied on as confirmed body text.",
+          "scope": "Named Banff fuel/convenience/restaurant rebuild for Husky.",
+          "passageChecks": [
+            {
+              "exactPassage": "we integrated state-of-the-art security features such as high-definition surveillance cameras and access control systems",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 874
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Contractor self-report, not owner verification; promotional performance language is not adopted. No models, current condition, integration protocol or hazardous-location design requirement established.",
+        "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "calgary",
+      "cityName": "Calgary",
+      "service": "intrusion",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Calgary Police alarm response guidance, not guaranteed dispatch",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.calgarypolice.ca/services/security-and-alarm-permits/responding-to-alarms-and-false-alarms.html",
+          "title": "Responding to Alarms and False Alarms",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/calgary.txt",
+          "captureSha256": "fc24dd7a25cdf9cdd702df694e39668d23d780c078edda0cf8c22231dc6eb6e9",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Calgary Police alarm response guidance, not guaranteed dispatch",
+          "passageChecks": [
+            {
+              "exactPassage": "nded permits Alarms within 14 days of installation Unlicensed alarm companies Commercial premises during listed business hours Alarm companies must attempt to contact at least two key holders before calling police. False alarm penalties To reduce repeat false alarms, penalties apply to the licensed alarm company that requested police. The penalties are outlined in the Alarm Services Bylaw . Disputing a false alarm A false alarm penalty can be disputed within six weeks of the date on the notice by emailing a request for review to alarmbylaw@calgarypolice.ca . No payment is required during the review period. We will respond to the request within 45 days. Paying a penalty You can pay a false alarm penalty online, by mail or in person. Pay Online By mail Send your paperwork with a cheque or money order payable to the Calgary Police Service by regular mail to: Calgary Police Service Alarm Bylaw Unit #609 5111 47 St. N.E. Calgary, Alberta T3J 3R2 In person Drop off your paperwork and pay at: Calgary Police Service Headquarters \u2013 Westwinds (5111 \u2013 47 St. N.E.) Accepts cash, debit, credit, cheque or money order Open Monday, Tuesday, Thursday and Friday from 8 a.m. to 3:30 p.m., and Wednesday from 10 a.m. to 3:30 p.m. (Closed on statutory holidays. Any Calgary Police Service district office Accepts debit, credit, cheque or money order CALL YOUR LOCAL POLICE In an emergency always call 911 Non-emergency call 403-266-1234 You may also be",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 421
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "calgary",
+      "cityName": "Calgary",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Police CPTED guidance; natural access planning, not electronic credential requirements.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.calgarypolice.ca/public-safety/crime-prevention/home-and-business-safety-tips/crime-prevention-through-environmental-design.html",
+          "title": "Crime Prevention Through Environmental Design",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/calgary.txt",
+          "captureSha256": "e170b9bc14ec8fbf8f6d0637faf1ee0aae8678098192d89bcf6a93167ba9e898",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Police CPTED guidance; natural access planning, not electronic credential requirements.",
+          "passageChecks": [
+            {
+              "exactPassage": "ained home, building or park signals care and oversight, discouraging criminal activity. Community Engagement: Encouraging legitimate use of public spaces by residents and visitors helps deter crime. Natural Access Control: Strategic placement of entrances, exits, fences, landscaping and lighting guides movement and limits access to potential targets, increasing perceived risk for offenders. Implementing CPTED In existing communities: Implementation is most effective when led by a trained CPTED practitioner, in collaboration with community leaders and members, and crime prevention advocates. Understanding the root causes of crime is essential for success. In new communities: CPTED should be integrated early, during planning, design and construction, to ensure long-term impact. Learn More For more information on CPTED, contact the Crime Prevention Team . CALL YOUR LOCAL POLICE In an emergency always call 911 Non-emergency call 403-266-1234 You may also be interested in Crime Statistics The Calgary Police Service (CPS) provides data and statistics about crime and disorder trends in Calgary. Data is provided at regular intervals. Creating Safe Public Spaces We are committed to enhanci",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 671
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "edmonton",
+      "cityName": "Edmonton",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City administrative directive dated 2002; not private-sector rules or confirmation of current law",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.edmonton.ca/sites/default/files/public-files/VideoSurveillanceinPublicAreasProcedure.pdf",
+          "title": "Video Surveillance in Public Areas Procedure",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/edmonton.txt",
+          "captureSha256": "acb6923ea26bad6dac26ab1e8b3b5344535489d6fbf3589388cbb847e77a8444",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "City administrative directive dated 2002; not private-sector rules or confirmation of current law",
+          "passageChecks": [
+            {
+              "exactPassage": "anch DATE: August 1, 2002 TITLE: VIDEO SURVEILLANCE IN PUBLIC AREAS Directive Statement: The City of Edmonton recognizes the need to balance an individual\u2019s right to protection of privacy against the city\u2019s duty to promote a safe environment for all citizens, and to protect city property. This directive is intended to assist departments in deciding whether collection of personal information by means of a surveillance camera is both lawful and justifiable, and if so, in understanding how privacy protection measures can be built into the use of a surveillance system. It is recognized that each department has unique needs and practices. While these requirements will remain, it is necessary to standardize city procedures in order that all citizens have an expectation of consistency, regardless where the equipment is installed. The purpose of this policy is to: Develop a surveillance system policy that complies with the Freedom of Information and Protection of Privacy Act. Ensure consistency of corporate surveillance measures. These guidelines do not apply to covert or overt surveillance cameras being used as a case-specific investigation tool for law enforcement purposes or in contemplation of litigation. They are also not intended to apply to workplace surveillance systems installed to conduct surveillance of employees. ADMINISTRATIVE PROCEDURE DIRECTIVE A1435 NUMBER: AUTHORITY: City Manager EFFECTIVE DATE: August 1, 2002 TITLE: ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 170
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "edmonton",
+      "cityName": "Edmonton",
+      "service": "access",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City departments and selected boards only; no private delivery inference.",
+      "reason": "City corporate security explicitly designs/administers card access and key control for City clients; this is electronic access evidence, unlike CPTED natural access.",
+      "sourceAudits": [
+        {
+          "url": "https://www.edmonton.ca/city_government/city_organization/corporate-security",
+          "title": "Corporate Security | City of Edmonton",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/edmonton.txt",
+          "captureSha256": "8764e1a05ecb4b12c49c0314cc499ce37c85946156d9e87463ea90ad1f09fbf9",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "City departments and selected boards only; no private delivery inference.",
+          "passageChecks": [
+            {
+              "exactPassage": "n-call 24-hour coverage. Phone: 780-496-8888 Our clients are all City Departments, City Council and selected Boards and Agencies. We provide the following services to the City: Investigation Services Security Systems design and administration, including intrusion alarms, video surveillance, card access and key control Security Audits, including CPTED (Crime Prevention Through Environmental Design) reviews Corporate Security Guard Contract administration Assistance with the transportation, storage and handling of money Security planning in construction projects Executive Protection and Labour Dispute security measures Security awareness presentations, robbery prevention, workplace violence, fraud awareness and cybersecurity Incident Report Form Contact Us Corporate Security Mezzanine, Chancery Hall 3 Sir Winston Churchill Square Edmonton, AB T5J 3C3 Phone 780-496-3846 2026 Provincial Referendum : Visit the Elections Alberta website for information on voting in the 2026 Referendum.",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 980
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "edmonton",
+      "cityName": "Edmonton",
+      "service": "intrusion",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City departments and selected boards only; no private delivery inference.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.edmonton.ca/city_government/city_organization/corporate-security",
+          "title": "Corporate Security | City of Edmonton",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/edmonton.txt",
+          "captureSha256": "8764e1a05ecb4b12c49c0314cc499ce37c85946156d9e87463ea90ad1f09fbf9",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "City departments and selected boards only; no private delivery inference.",
+          "passageChecks": [
+            {
+              "exactPassage": "n-call 24-hour coverage. Phone: 780-496-8888 Our clients are all City Departments, City Council and selected Boards and Agencies. We provide the following services to the City: Investigation Services Security Systems design and administration, including intrusion alarms, video surveillance, card access and key control Security Audits, including CPTED (Crime Prevention Through Environmental Design) reviews Corporate Security Guard Contract administration Assistance with the transportation, storage and handling of money Security planning in construction projects Executive Protection and Labour Dispute security measures Security awareness presentations, robbery prevention, workplace violence, fraud awareness and cybersecurity Incident Report Form Contact Us Corporate Security Mezzanine, Chancery Hall 3 Sir Winston Churchill Square Edmonton, AB T5J 3C3 Phone 780-496-3846 2026 Provincial Referendum : Visit the Elections Alberta website for information on voting in the 2026 Referendum.",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 980
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "edmonton",
+      "cityName": "Edmonton",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City departments and selected boards only; no private delivery inference.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.edmonton.ca/city_government/city_organization/corporate-security",
+          "title": "Corporate Security | City of Edmonton",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/edmonton.txt",
+          "captureSha256": "8764e1a05ecb4b12c49c0314cc499ce37c85946156d9e87463ea90ad1f09fbf9",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "City departments and selected boards only; no private delivery inference.",
+          "passageChecks": [
+            {
+              "exactPassage": "n-call 24-hour coverage. Phone: 780-496-8888 Our clients are all City Departments, City Council and selected Boards and Agencies. We provide the following services to the City: Investigation Services Security Systems design and administration, including intrusion alarms, video surveillance, card access and key control Security Audits, including CPTED (Crime Prevention Through Environmental Design) reviews Corporate Security Guard Contract administration Assistance with the transportation, storage and handling of money Security planning in construction projects Executive Protection and Labour Dispute security measures Security awareness presentations, robbery prevention, workplace violence, fraud awareness and cybersecurity Incident Report Form Contact Us Corporate Security Mezzanine, Chancery Hall 3 Sir Winston Churchill Square Edmonton, AB T5J 3C3 Phone 780-496-3846 2026 Provincial Referendum : Visit the Elections Alberta website for information on voting in the 2026 Referendum.",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 980
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "edmonton",
+      "cityName": "Edmonton",
+      "service": "guards",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City departments and selected boards only; no private delivery inference.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.edmonton.ca/city_government/city_organization/corporate-security",
+          "title": "Corporate Security | City of Edmonton",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/edmonton.txt",
+          "captureSha256": "8764e1a05ecb4b12c49c0314cc499ce37c85946156d9e87463ea90ad1f09fbf9",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "City departments and selected boards only; no private delivery inference.",
+          "passageChecks": [
+            {
+              "exactPassage": "n-call 24-hour coverage. Phone: 780-496-8888 Our clients are all City Departments, City Council and selected Boards and Agencies. We provide the following services to the City: Investigation Services Security Systems design and administration, including intrusion alarms, video surveillance, card access and key control Security Audits, including CPTED (Crime Prevention Through Environmental Design) reviews Corporate Security Guard Contract administration Assistance with the transportation, storage and handling of money Security planning in construction projects Executive Protection and Labour Dispute security measures Security awareness presentations, robbery prevention, workplace violence, fraud awareness and cybersecurity Incident Report Form Contact Us Corporate Security Mezzanine, Chancery Hall 3 Sir Winston Churchill Square Edmonton, AB T5J 3C3 Phone 780-496-3846 2026 Provincial Referendum : Visit the Elections Alberta website for information on voting in the 2026 Referendum.",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 980
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "fort-mcmurray",
+      "cityName": "Fort McMurray",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Regional Wood Buffalo CAPTURE program, including Fort McMurray; not live monitoring",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.rmwb.ca/communities-and-neighbourhoods/fire-police-and-emergency-services/royal-canadian-mounted-police/crime-prevention-wood-buffalo/",
+          "title": "Crime Prevention Wood Buffalo",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/fort-mcmurray.txt",
+          "captureSha256": "80ca1fd239cdb3b63c170194eda4af31af3ca42b75b5c8092ef22d485a47cb0d",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Regional Wood Buffalo CAPTURE program, including Fort McMurray; not live monitoring",
+          "passageChecks": [
+            {
+              "exactPassage": "omplete the registration form online. Select My PIN in the menu and add the PIN code from your packet or sticker when you receive it. The sponsor code is RMWB23 Request a free kit CAPTURE - Register your Security Camera Take an active role in deterring crime and assisting the RCMP with crime prevention in the community. You can help protect your property and keep your community safe through CAPTURE (Community Assisted Policing Through Use of Recorded Evidence). Residents and businesses who have video surveillance are encouraged to sign up. Taking part is completely voluntary and your personal information is held strictly confidential. Register your camera(s) RAVE - Mobile Safety App Sign up for real time alerts on your phone from Alberta \u2013 Wood Buffalo RCMP on the RAVE Mobile Safety APP. Alerts can be sent by email, text message or phone call -- it's up to you. Download the App Bike index Bike Index is a non-profit online registry designed to help victims of bike theft recover their bikes. Help reduce bike theft in the region. Register your bike today. Register your bike Report a crime If you are the victim of a crime, you are encouraged to report it. For emergencies, please call 911. Call your local RCMP detachment non-emergency line to report a crime or report it online. Fort McMurray Detachment Fort Chipewyan Detachment Report a crime online Or, download the Alberta RCMP app through Apple or Google Play to report crime onli",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 826
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Only acceptedServiceScope is credited; candidate mappings from discovery are not decisions. Natural access design does not establish electronic credentials; municipal systems do not establish private requirements.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "fort-mcmurray",
+      "cityName": "Fort McMurray",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Wood Buffalo business guidance; recommendations not mandatory specifications.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.rmwb.ca/media/hppdykwb/business-crime-prevention-kit-2024-1.pdf",
+          "title": "Business crime prevention kit",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/fort-mcmurray.txt",
+          "captureSha256": "b28f5c8a934419e3ad741da82e3f5f328208975279f34fb84231caf55ba99400",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Wood Buffalo business guidance; recommendations not mandatory specifications.",
+          "passageChecks": [
+            {
+              "exactPassage": "Business crime prevention kit Wood Buffalo RCMP 105 Paquette Drive Fort McMurray, AB, T9K 0P5 780-788-4040 communitypolicing@rmwb.ca What is Business Crime Prevention? Steps you can take to minimize the risk that your business may be the victim of either an internal or external crime. Crime. It can happen to your business or your staff. Businesses need to be prepared for such a situation and should have protective measures and a plan in place. Criminals come in all forms - different shapes, sizes, colours and gender. Don\u2019t stereotype individuals you think may \u201clook\u201d like a criminal. All people should be treated with dignity and respect, but keep in mind that anyone may have a criminal intent. This Business Crime Prevention Kit has been created to help Wood Buffalo businesses reduce the risk and impact of crime. While freedom from crime can never be guaranteed, the information and resources included within this Kit are provided as a proactive crime prevention initiative for you - so you",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "grande-prairie",
+      "cityName": "Grande Prairie",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Historical 2020 pilot awards; no current funding availability inference.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://cityofgp.com/culture-community/news-events/news/community-social-development/city-provides-nearly-50000-funding",
+          "title": "City Provides Nearly $50,000 in Funding through Crime Mitigation Grant | City of Grande Prairie",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/grande-prairie.txt",
+          "captureSha256": "7606db4ea35972f542126e0ebb8394af37a67585071307273a63d9fa7375cbb4",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Historical 2020 pilot awards; no current funding availability inference.",
+          "passageChecks": [
+            {
+              "exactPassage": "Protective and Social Services Director\u2019s office. Internal engagement, discussions and site visits to businesses, property owners and various non-government organizations (NGO\u2019s) were also completed. Projects funded largely include adding or enhancement of lighting, security cameras, signage and fencing for a wide variety of businesses and organizations. The City of Grande Prairie is proud to provide this grant to continue to support businesses, organizations and the community and looks forward to seeing the positive impact of these projects. Disclaimer Google Translate is provided as a free tool to enhance the usability of the City of Grande Prairie website. As such, the City of Grande Prairie is not responsible for Google Translate\u2122. > > > > > > > >",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1101
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "jasper",
+      "cityName": "Jasper",
+      "service": "consulting",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "out-of-scope",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "rejected",
+      "acceptedScope": null,
+      "reason": "Household evacuation, wildfire and 72-hour preparedness guidance is not site-specific security assessment or security design evidence.",
+      "sourceAudits": [
+        {
+          "url": "https://www.jasper-alberta.ca/p/emergency-information",
+          "title": "Emergency Information",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/jasper.txt",
+          "captureSha256": "f88d8e50d6c41b3baf91dfc40a4c48d6551a7ef6425ce4b5c794ef067490aaf4",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Municipal household evacuation guidance; not a commercial security standard",
+          "passageChecks": [
+            {
+              "exactPassage": "chool Care Wildwoods Base Camp Friends of Jasper Childcare Board Emergency Information More Option Emergency Preparedness Week Municipal Emergency Alerts Know the Risks Make a Kit Evacuation Volunteer Opportunities Vulnerable Persons Registry Fire Department Doing Business in Jasper More Option Bidding on Municipal Projects Emergency Planning for Business Emergency Information Wildfires If a fire is near, follow directions from authorities and be prepared to evacuate. Individuals and families should be prepared to take care of themselves for at least 72 hours. Know the risks our community may face. Read the Municipality of Jasper Evacuation Guide Being wildfire ready can ease the stress of wildfire season. This customized Jasper evacuation guide has important information on: Evacuation zones and alerts How to evacuate How to make an emergency plan How to build an emergency kit To be prepared, pick up an Evacuation Guide at the Jasper Activity Centre and have a copy in your household. Or, click here and print this one page plan. Download the FireSmart Last-Minute Evacuation Checklist . FireSmart helps communities located in forested areas to reduce the risk of wildfire to homes and neighbourhoods. It also helps property owners and communities understand the wildfire risk and how to make homes more resilient to fire. The combination of community-wide fuel reduction and backyard-level FireSmart work is our community's best defens",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 968
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Temporary marketplace utilities are not a security assessment or service-specific specification.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "lake-louise",
+      "cityName": "Lake Louise",
+      "service": "consulting",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "out-of-scope",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "rejected",
+      "acceptedScope": null,
+      "reason": "Parks Canada jurisdiction is correctly local to Lake Louise, but general development/building permitting alone does not establish security consulting, CPTED or device-specific design content.",
+      "sourceAudits": [
+        {
+          "url": "https://parks.canada.ca/pn-np/ab/banff/info/serviceimmobilier-realty/damenagement-development",
+          "title": "Development and building applications",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/lake-louise.txt",
+          "captureSha256": "18fdd78ce7598a694d0076e53e43384c105ce3438e5c30e737925bc19ff17900",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Parks Canada development jurisdiction including Lake Louise; expressly excludes Town of Banff",
+          "passageChecks": [
+            {
+              "exactPassage": "cess). We welcome your questions. Please do not hesitate to contact us. Banff Field Unit Parks Canada / Government of Canada banffpark.development-banffpark.developpement@pc.gc.ca Lake Louise, Yoho, Kootenay Field Unit Parks Canada / Government of Canada llyklotissementsurbains-llyktownsites@pc.gc.ca 1-403-522-1186 For more information about land use planning and permitting in national parks and national park reserves, please visit our national website . Frequently Asked Questions: Do I need a permit? Consult the following list of work that requires a permit. If you are still unsure, please contact our office. Construction of a new building or structure, or an addition to, or replacement of, or major renovation or repair of a building and the placement in, on, over or under land of any of these; alteration to the interior or exterior of an existing building or structure; the relocation or demolition of a building or other structure; a change of use of land or a building, or an act done in relation to land or a building, that results in or is likely to result in a change in the use of the land and or building, or; a change in the intensity of use of land or a building, or an act done in relation to land or a building, that results in or is likely to result in a change in the intensity of use of the land or building; the cutting or removal of trees in whole or part; an excavation or stockpile and the creation of either of these;",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 503
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Draft community-plan contents are general land-use context, not verified security-design evidence or adopted requirements.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "lethbridge",
+      "cityName": "Lethbridge",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Lethbridge Polytechnic property only, not a city-wide policy",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://lethpolytech.ca/document-centre/college-wide-policies-and-procedures/video-surveillance-policy",
+          "title": "Video Surveillance Policy",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/lethbridge.txt",
+          "captureSha256": "6d897ada67dbc0f43b5f3656838c32a4d7caf6aaaf41937dd5d530865b676d1d",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Lethbridge Polytechnic property only, not a city-wide policy",
+          "passageChecks": [
+            {
+              "exactPassage": "Video Surveillance Policy | Lethbridge Polytechnic Skip to main content Leave this field blank The purpose of this policy is to enhance the safety and security of individuals and protect and manage Lethbridge Polytechnic's property by utilizing video surveillance technology in accordance with Alberta's Freedom of Information and Protection of Privacy (FOIP) Act. Downloads Video Surveillance Policy.pdf Copy link",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "lethbridge",
+      "cityName": "Lethbridge",
+      "service": "intrusion",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City limits only; alarm and keyholder planning, not guaranteed response.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.lethbridgepolice.ca/reporting-and-services/alarm-registry/",
+          "title": "Alarm Registry",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/lethbridge.txt",
+          "captureSha256": "b5f2be8abb94d66b62558c021e6c8f3f2ccd56d24f6edf47172f55c0ccef74df",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "City limits only; alarm and keyholder planning, not guaranteed response.",
+          "passageChecks": [
+            {
+              "exactPassage": " A change in address or owner will require a new application The permit applicant must be the person responsible for the alarm system. If it is for a commercial property, a contact person is required Secondary keyholders must not reside at the property where the permit has been issued. The keyholder must be able to attend within 30 minutes of being contacted The permit will be renewed automatically every year unless cancelled Please be aware that that police may not attend your alarm if you do not have a valid Alarm System Permit. Applying for an Alarm System Permit Registering a New Alarm System/New Owner If you are registering a new alarm system, or are a new owner of an alarm system, fill out the Alarm System Registration Application Form . Submit the completed form by either: Emailing it to alarms@lethbridgepolice.ca Attending the front desk at Lethbridge Police Service (135 - 1 Avenue South) during business hours (Monday to Friday 7:30 am to 4:00 pm. Closed weekends and statutory holidays) Mailing the form to: Alarm Registrations Lethbridge Police Service 135 - 1 Avenue South Lethbridge, AB T1J 0A1 Updating/Cancelling an Alarm System Permit If you are updating information or c",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 999
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "medicine-hat",
+      "cityName": "Medicine Hat",
+      "service": "intrusion",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Municipal alarm registration guidance only.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://mhps.ca/posts/post/26",
+          "title": "Municipal Bylaw Quick Links | Medicine Hat Police Service",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/medicine-hat.txt",
+          "captureSha256": "94ac285b45756e3d1708e62ac11df22c3085dcb49a6d742c0a5ac1b8042e3279",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Municipal alarm registration guidance only.",
+          "passageChecks": [
+            {
+              "exactPassage": "equest Request a Record Submit A Tip Contact Us About Us Executive Team Mission / Vision / Values EDI Action Plan Indigenous Reconciliation Action Plan Land Acknowledgment Municipal Bylaw Quick Links Alarm System Registration: City of Medicine Hat Bylaw 3716 requires all security alarm systems to be registered prior to becoming operable. To register a security alarm system complete the Alarm Systems Registration Form and return it to the Medicine Hat Police Service by mail ( mhps@mhps.ca ), fax, email or delivered in person at 884 2nd Street SE, Medicine Hat. Once registered you will be provided with a sticker with a registration number to place on your alarm system panel. Noise Bylaw: City of Medicine Hat Community Noise Standards Bylaw #4353 outlines acceptable noise levels. To request a noise exemption, permit a written application must be submitted to the Chief of Police at least five (5) business days prior to the proposed activity and must contain the following information pertaining to the work or activity for which the exemption is sought: the name, address, and telephone number of the applicant the address of the site a description of the source(s) of noise or sound levels",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1036
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "red-deer",
+      "cityName": "Red Deer",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Local business checklist; not a requirement for electronic access control.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://reddeer.ca/city-services/police-rcmp/crime-prevention/protect-your-business/business-security-checklist/",
+          "title": "Business security checklist - The City of Red Deer",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/red-deer.txt",
+          "captureSha256": "c167362e76dcdbf082324550f0a4e5d9408c8c497315dc918039eb5b943ee2a4",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Local business checklist; not a requirement for electronic access control.",
+          "passageChecks": [
+            {
+              "exactPassage": " feet high or less, especially in front of windows, for visibility. Keep weeds, shrubbery and debris away from your doors and windows. Don't provide thieves with places to hide, or climbing platforms Monitor all entrances through visual or electronic surveillance. Commercial storefronts Use cash drop safes during lower traffic hours. Avoid having a single employee make after-hours bank deposits. Install and monitor video cameras, but hide VCRs (supply a decoy). Provide employees with safety training. Securely lock rear entrances. Use secure doors and frames. Put 180 degree door viewers in rear security doors. Management tips Your business hours should be the same as those of neighbouring businesses. Night time employees should have access to safe, visible parking located close to the entrance. Put a cash limit, such as $50, in place. Train employees to check regularly for cash over the limit and to place it in a drop safe that they can't open. Then post a sign that the maximum amount of cash in register is $50. If it isn't possible to have a safe, don't place large bills under the cash register \u2013 \ufb01nd a safe alternate hiding place. Try to have two staff on hand at opening and closin",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1537
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "saint-albert",
+      "cityName": "Saint Albert",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "St. Albert voluntary RCMP CAPTURE registration; not live access",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://stalbert.ca/city/eps/rcmp/crime/cameras/",
+          "title": "Camera Registry",
+          "issuer": null,
+          "capturePath": "/tmp/prairies-evidence/saint-albert.txt",
+          "captureSha256": "dafd630600817622ba585d20b97d2e41cd496ee8c6c090642a0ebfa851d2e43a",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "St. Albert voluntary RCMP CAPTURE registration; not live access",
+          "passageChecks": [
+            {
+              "exactPassage": "s the RCMP to see a list of security cameras so they can contact the owners during an investigation; The video footage on your camera remains your property; The RCMP will not have live access to your camera feed. We will only ask for videos already recorded; You can share your video footage through the website for an officer to view before they decide if the video will help in their investigation; and An officer can provide you with a USB thumb drive to copy your video. An officer can not download the video; they can only view it. Registering Your Security Cameras To register and learn more visit: ruralalbertacapture.ca Related Pages RCMP Crime Map \u203a 9 PM Routine \u203a Safe Internet Exchange Zone \u203a Last edited: November 21, 2023 Return to the top \u2191",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1632
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "campbell-river",
+      "cityName": "Campbell River",
+      "service": "intrusion",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Municipal fire and security false-alarm bylaw; convenience consolidation dated November 9, 2023.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.campbellriver.ca/media/file/3498-false-alarm-fees-bylaw2013",
+          "title": "False Alarm Fees Bylaw No. 3498",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/campbell-river-0.txt",
+          "captureSha256": "5be6540e2d741ae45ef6b70ed0af6a5ede5b97dc435cac0cc629bd7ffd30d996",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Municipal fire and security false-alarm bylaw; convenience consolidation dated November 9, 2023.",
+          "passageChecks": [
+            {
+              "exactPassage": "CONSOLIDATED November 9, 2023 CONSOLIDATED FOR CONVENIENCE PURPOSES OF BYLAW: 3930 CITY OF CAMPBELL RIVER PROVINCE OF BRITISH COLUMBIA BYLAW NO. 3498 A BYLAW OF THE CITY OF CAMPBELL RIVER TO ESTABLISH FEES FOR SERVICES PROVIDED IN RESPONSE TO A FALSE ALARM. The Council of the City of Campbell River, in open meeting assembled, enacts as follows: 1. TITLE This Bylaw may be cited for all purposes as \u201cFalse Alarm Fees Bylaw No. 3498, 2013\u201d. 2. DEFINITIONS In this Bylaw, unless the context otherwise requires: \u201cAlarm Business\u201d means a person who is engaged in the business of monitoring alarm systems and reporting the occurrence of alarms to the Police and the Fire Department. \u201cCity\u201d means the City of Campbell River. \"False Alarm\" means the activation of a Fire Alarm System or a Security Alarm System resulting in the direct or indirect notification to the Fire Department or Police for which Fire Department or Police services are provided on behalf of the City and the providers of the service do not find any unauthorized entry or commission of an unlawful act or any evidence of fire, fire damage or smoke in relation to the building, structure, residence or facility, or where there has been no emergency situation. False Alarm incidents also include but are not limited to: i) The testing of an alarm which results in a Fire Department or Police response; ii) An alarm actually or apparently activated by mechanical failure, malfunction or faulty equipment; iii) An alarm activated by user error; iv) An alarm reporting an attempted or completed criminal offence or an emergency situation occurring on or in relation to the premises in which the alarm system is installed where no evidence exists or where no such event took place. \u201cFire Alarm System\u201d means a device or devices installed on",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "campbell-river",
+      "cityName": "Campbell River",
+      "service": "guards",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Downtown municipal partnership context only, not private guard availability.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.campbellriver.ca/community-safety/public-safety/downtown-safety",
+          "title": "Downtown Safety | City of Campbell River",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/campbell-river.txt",
+          "captureSha256": "69e85cbe71e2bd2166a4aeb2b363e1389053a9d7c89a1312876420b8fd7847d2",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Downtown municipal partnership context only, not private guard availability.",
+          "passageChecks": [
+            {
+              "exactPassage": "itiatives are underway or have expanded in 2024 and into 2025. These include: Increased personnel and proactive patrol hours of the Bylaw Enforcement team to 7 days a week from 8:30 a.m. to 7:30 p.m. Expanded downtown security patrols in collaboration with the Business Improvement Area Additional RCMP Officers A dedicated downtown cleanliness crew Increased downtown activations to encourage a lively, positive, and welcoming community core that attracts community members and visitors alike. For details, visit the City's event calendar. Broad public engagement to develop a Community Safety and Wellbeing Plan with key actions aimed to deliver positive change in the short, medium and long term. Proactive Response to Downtown Safety is one of the City\u2019s policing priorities for 2026 to 2027. The City\u2019s six policing priorities work in parallel with the 39 key actions identified in its CSWB Action Plan. For more information about policing priorities and RCMP services, visit the RCMP Services page. Much has been and is being done, but there is more to do. The City will continue to lead efforts in our community to improve community safety through collaboration and advocacy.",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1291
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "chetwynd",
+      "cityName": "Chetwynd",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": [
+        "Upper concourse/mezzanine of Chetwynd & District Rec Centre."
+      ],
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.gochetwynd.com/residents/recreation-centre/running-walking-track/",
+          "title": "Running/Walking Track",
+          "issuer": "District of Chetwynd",
+          "capturePath": "/tmp/priority-evidence/chetwynd-track.txt",
+          "captureSha256": "fde966afcc777adf14d6fab3600ad3cb3035b56afae2c9577bf8b2b897d51e2b",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Undated page; age/supervision guidelines explicitly trial-based.",
+          "scope": "Upper concourse/mezzanine of Chetwynd & District Rec Centre.",
+          "passageChecks": [
+            {
+              "exactPassage": "This area is monitored by cameras and staff",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1040
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Facility example only; no retention, camera model, off-site monitoring or 24/7 operator proven. Do not upgrade remote-video service on this wording.",
+        "Confirm applicable property, current source and actual delivery capability; no page approval follows from a scoped source.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "chetwynd",
+      "cityName": "Chetwynd",
+      "service": "intrusion",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "District fire and security alarm regulation; does not establish live-video monitoring requirements.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.gochetwynd.com/wp-content/uploads/2021/05/False-Alarm-Bylaw-No.-1135-2021.pdf",
+          "title": "False Alarm Bylaw No. 1135, 2021",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/chetwynd-0.txt",
+          "captureSha256": "d51776eabdbe9e3663e7db841c448a1ed7ec81211f30249e55d50391f0634f81",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "District fire and security alarm regulation; does not establish live-video monitoring requirements.",
+          "passageChecks": [
+            {
+              "exactPassage": "District of Chetwynd BYLAW NO. 1135 A BYLAW TO PROVIDE FOR THE REGULATION OF FIRE AND SECURITY ALARM SYSTEMS WHEREAS Part 3, Division 10 of the Community Charter authorizes a local government to regulate, prohibit and impose requirements in relation to the protection of persons and property; AND WHEREAS section 196 of the Community Charter authorizes a local government to impose fees for False Alarms originating from fire and security Alarm Systems; AND WHEREAS such False Alarms require emergency responses from the Fire Department and/or Police and such unnecessary emergency responses pose a threat to the safety of fire fighters, Police and members of the public by creating unnecessary hazards and, in addition, fire and Police response to a False Alarm may result in a delayed response to a true emergency; AND WHEREAS excessive numbers of False Alarms are being permitted to occur by the Owners or users of fire and security Alarm Systems; AND WHEREAS the Council of the District of Chetwynd deems it expedient to provide for regulations and prohibitions regarding emergency services in response to False Alarms; AND WHEREAS section 258(1)(b) of the Charter permits the recovery of unpaid fees for fees that are to be paid by the Owner of real property for services in response to a False Alarm in the same manner as taxes deemed in arrears; NOW THEREFORE the Council of the District of Chetwynd in open meeting assembled enacts as follows: 1. CITATION This bylaw may be cited as \"District of Chetwynd False Alarm Bylaw No. 1135, 2021.\" 2. DEFINITIONS In this bylaw the following definitions shall apply: \"Activate\" or \u201cActivation\u201d means the triggering of an Alarm System, either intentional or accidental, which results in an alarm response including, but not limited to, an audible siren",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Need direct local facts for this service; no inference from unrelated services or provincial boilerplate.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "cranbrook",
+      "cityName": "Cranbrook",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Local business CPTED recommendations only.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://cranbrook.ca/our-city/city-departments/royal-canadian-mounted-police/crime-prevention-through-environmental-design-cpted",
+          "title": "City of Cranbrook - Crime Prevention Through Environmental Design (CPTED)",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/cranbrook.txt",
+          "captureSha256": "35e2355b306caf3b7f6e0287ae37c373c66310a01f8e093001dbe43c7e17d603",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Local business CPTED recommendations only.",
+          "passageChecks": [
+            {
+              "exactPassage": "iness area clean and well-maintained. Fix broken lights, trim bushes, and keep the property looking cared for. A well-maintained area signals that someone is paying attention and can deter criminals. Target hardening (security measures) : Install security cameras, alarms, and locks to make it harder for criminals to target your business. Store high value items out of sight and away from windows or exits. Download a copy of our CPTED brochure - a quick and practical guide to steps you can take to make your property safer. This page: https://cranbrook.ca/our-city/city-departments/royal-canadian-mounted-police/crime-prevention-through-environmental-design-cpted Copyright \u00a9 2026 City of Cranbrook - All rights reserved | www.cranbrook.ca Royal Canadian Mounted Police Royal Canadian Mounted Police Canadian Police Certificate (CRC) Crime Prevention Through Environmental Design (CPTED) Crime Reporting Fraud & Scam Information (BC RCMP) Police Information Check RCMP Projects Volunteer Opportunities Make Payment Apply For Permits Faq Contact Data Portal Close Apply for Owner's Authorization Form * * Please note this form applies to all permit applications Owner's Acknowledgement of Responsib",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 966
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "cranbrook",
+      "cityName": "Cranbrook",
+      "service": "intrusion",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Local business CPTED recommendations only.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://cranbrook.ca/our-city/city-departments/royal-canadian-mounted-police/crime-prevention-through-environmental-design-cpted",
+          "title": "City of Cranbrook - Crime Prevention Through Environmental Design (CPTED)",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/cranbrook.txt",
+          "captureSha256": "35e2355b306caf3b7f6e0287ae37c373c66310a01f8e093001dbe43c7e17d603",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Local business CPTED recommendations only.",
+          "passageChecks": [
+            {
+              "exactPassage": "iness area clean and well-maintained. Fix broken lights, trim bushes, and keep the property looking cared for. A well-maintained area signals that someone is paying attention and can deter criminals. Target hardening (security measures) : Install security cameras, alarms, and locks to make it harder for criminals to target your business. Store high value items out of sight and away from windows or exits. Download a copy of our CPTED brochure - a quick and practical guide to steps you can take to make your property safer. This page: https://cranbrook.ca/our-city/city-departments/royal-canadian-mounted-police/crime-prevention-through-environmental-design-cpted Copyright \u00a9 2026 City of Cranbrook - All rights reserved | www.cranbrook.ca Royal Canadian Mounted Police Royal Canadian Mounted Police Canadian Police Certificate (CRC) Crime Prevention Through Environmental Design (CPTED) Crime Reporting Fraud & Scam Information (BC RCMP) Police Information Check RCMP Projects Volunteer Opportunities Make Payment Apply For Permits Faq Contact Data Portal Close Apply for Owner's Authorization Form * * Please note this form applies to all permit applications Owner's Acknowledgement of Responsib",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 966
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "cranbrook",
+      "cityName": "Cranbrook",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Local business CPTED recommendations only.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://cranbrook.ca/our-city/city-departments/royal-canadian-mounted-police/crime-prevention-through-environmental-design-cpted",
+          "title": "City of Cranbrook - Crime Prevention Through Environmental Design (CPTED)",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/cranbrook.txt",
+          "captureSha256": "35e2355b306caf3b7f6e0287ae37c373c66310a01f8e093001dbe43c7e17d603",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Local business CPTED recommendations only.",
+          "passageChecks": [
+            {
+              "exactPassage": "iness area clean and well-maintained. Fix broken lights, trim bushes, and keep the property looking cared for. A well-maintained area signals that someone is paying attention and can deter criminals. Target hardening (security measures) : Install security cameras, alarms, and locks to make it harder for criminals to target your business. Store high value items out of sight and away from windows or exits. Download a copy of our CPTED brochure - a quick and practical guide to steps you can take to make your property safer. This page: https://cranbrook.ca/our-city/city-departments/royal-canadian-mounted-police/crime-prevention-through-environmental-design-cpted Copyright \u00a9 2026 City of Cranbrook - All rights reserved | www.cranbrook.ca Royal Canadian Mounted Police Royal Canadian Mounted Police Canadian Police Certificate (CRC) Crime Prevention Through Environmental Design (CPTED) Crime Reporting Fraud & Scam Information (BC RCMP) Police Information Check RCMP Projects Volunteer Opportunities Make Payment Apply For Permits Faq Contact Data Portal Close Apply for Owner's Authorization Form * * Please note this form applies to all permit applications Owner's Acknowledgement of Responsib",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 966
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "dawson-creek",
+      "cityName": "Dawson Creek",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Historical municipal IT planning procurement; not private sector demand or award proof.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.dawsoncreek.ca/news/posts/rfp-2025-36-information-and-technology-master-plan/",
+          "title": "RFP 2025-36 Information and Technology Master Plan | City of Dawson Creek",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/dawson-creek.txt",
+          "captureSha256": "8b79145ce1d7f6e67bb7b043205e772813f3eeb8e3f227edb88a079b410f428e",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Historical municipal IT planning procurement; not private sector demand or award proof.",
+          "passageChecks": [
+            {
+              "exactPassage": "-year Information and Technology (IT) Master Plan. The City is looking for a plan that is innovative, practical, cost-effective and strategic, to serve as a roadmap for modernizing IT infrastructure, strengthening security and governance, as well as enhancing IT capabilities to ensure adaptability to future technological advancements. Further information on this project is available in the RFP Documents posted on BC Bid . All proposal submissions must be received on or before Thursday, July 24, 2025 at 2:00 PM MST. Contact our Procurement Officer by email or by phone at 250-784-3612. Subscribe Back to News Search Contact Us The City of Dawson Creek Unit 1C \u2013 11000 8 Street City of Dawson Creek, BC V1G 4K6 Telephone: 250-784-3600 This website uses cookies to enhance usability and provide you with a more personal experience. By using this website, you agree to our use of cookies as explained in our Privacy Policy . Agree",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 232
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "delta",
+      "cityName": "Delta",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Delta police business advice; no local incident-rate inference.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.deltapolice.ca/safetytips/business",
+          "title": "Business Safety Tips | Delta Police Department",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/delta.txt",
+          "captureSha256": "add434008113e0c8b43ca759c2133b96ae39a11efa5a164c986822b273efad1b",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Delta police business advice; no local incident-rate inference.",
+          "passageChecks": [
+            {
+              "exactPassage": "ifting and internal theft involves a combination of proactive customer service, thoughtful store layout, and effective security measures such as surveillance, mirrors, and entrance alerts. Learn More Cybersecurity Resources Cybersecurity is an essential part of protecting modern businesses, especially as digital threats become more accessible and sophisticated. Learn More",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 808
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "esquimalt",
+      "cityName": "Esquimalt",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "February 3, 2020 municipal-facility camera announcement; historical municipal example, not a private-business retention rule.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.esquimalt.ca/community-events/news/township-bolstering-security-municipal-facilities",
+          "title": "Township bolstering security at municipal facilities",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/esquimalt-0.txt",
+          "captureSha256": "689f128ffe55c0e23b402123a58c39308a4b2dbcb1d32fed15064a79d8fd7f8f",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "February 3, 2020 municipal-facility camera announcement; historical municipal example, not a private-business retention rule.",
+          "passageChecks": [
+            {
+              "exactPassage": "Township bolstering security at municipal facilities | Corporation of the Township of Esquimalt Skip to main content Township bolstering security at municipal facilities February 3, 2020 Type(s) News Visitors to Esquimalt facilities may observe the addition of cameras in some public spaces in the next week. The cameras will be there to add an additional layer of safety and security for Township staff, clients, visitors, facilities and properties. The Township will be following the rules set out in the Freedom of Information and Personal Privacy Act (FIPPA) and will balance the need to protect municipal assets with individuals\u2019 want of privacy. Signage will indicate where the cameras are located. Records are retained for public safety or security, criminal investigations, evidentiary purposes, as otherwise required by law, or disclosed to a request for access to records under FIPPA; however the Township does not retain the original or a copy of any record for longer than 30 days unless it is flagged for a longer retention. Any records that are accessed or disclosed under FIPPA shall be securely retained by the Township for the required period in accordance with the Township\u2019s Records Management Policy. Any questions about the collection of personal information or requests for access to records may be directed to the Corporate Officer, Township of Esquimalt, 1229 Esquimalt Road, Esquimalt, BC V9A 3P1, or by telephone at 250-414-7135. More information about privacy and video recording can be found at Esquimalt.ca/privacy . Category Esquimalt News",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "esquimalt",
+      "cityName": "Esquimalt",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Small-business voluntary program, selected applicants only; not all-business coverage.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.vicpd.ca/Programs/cyber-safety-assessments",
+          "title": "Cyber Safety Assessments | Victoria Police Department",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/esquimalt.txt",
+          "captureSha256": "ab3046f36b096bcfc8d4a2ea2a4d815512a47c2c0b4442b5f91eb6d7be624849",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Small-business voluntary program, selected applicants only; not all-business coverage.",
+          "passageChecks": [
+            {
+              "exactPassage": "PD Local Business Cyber Safety Assessments Amid rising concern with online security threats, the Victoria Police Department has established a proactive initiative aimed at helping small businesses in Victoria and Esquimalt reduce their risk of becoming a victim to cybercrime. VicPD Local Business Cyber Safety Assessments is a three-step process to analyze a company\u2019s online infrastructure and network setup. The voluntary program is free to small businesses in the City of Victoria and Township of Esquimalt, exclusively. Upon registration and program acceptance, members from VicPD\u2019s Cybercrime and IT Units consult on the following tasks: 1. Initial Visit: Explains the assessment process, obtains consent, and conducts an early review. 2. Network Scan: VicPD IT staff conduct a secure scan of the businesses\u2019 public-facing systems \u2013 such as websites and emails. 3. Security Report: Cybercrime investigators and IT staff provide a summary of the findings and give recommendations to help the business improve cybersecurity resilience. The program launched in August 2025 and scaled up in February 2026. Since then, it has been helping close vulnerability gaps that could lead to financial loss, ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1226
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "kamloops",
+      "cityName": "Kamloops",
+      "service": "intrusion",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Municipal guidance for residential and commercial security alarms resulting in RCMP attendance; page references Bylaw 10-43, 2026.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.kamloops.ca/public-safety/rcmp-services/false-alarms",
+          "title": "False Alarms",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/kamloops-0.txt",
+          "captureSha256": "da8a3e7ff764360cf0565e0f5143e9e90e7b6829b2f08b89afd6ee57ba14b01e",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Municipal guidance for residential and commercial security alarms resulting in RCMP attendance; page references Bylaw 10-43, 2026.",
+          "passageChecks": [
+            {
+              "exactPassage": "False Alarms | City of Kamloops Skip to main content Skip to main menu Skip to footer Search Related Contacts Related Pages Related Pages Related Links Related Links Related Documents Related Documents Related News Related News Share page Related Contacts Related Pages Related Pages Related Links Related Links Related Documents Related Documents Related News Related News Share page False Alarms Reducing Excessive False Alarms in Kamloops Security alarm systems play an important role in protecting homes and businesses. However, when alarm systems are activated accidentally or due to equipment issues, police resources are diverted away from higher-priority policing needs. The City of Kamloops Security Alarm System Bylaw helps reduce unnecessary police responses by establishing responsibilities, service fees, and fines related to false alarms. The bylaw applies to both residential and commercial security alarm systems that result in RCMP attendance. Security Alarm System Bylaw No. 10-43 What is a false alarm? A false alarm is the activation of an alarm system that results in an RCMP response when no evidence of unauthorized entry, an unlawful act, or an emergency is found. Common causes of false alarm activation include, but are not limited to: testing of the alarm system without prior notice to the RCMP and the monitoring company user error, mechanical failure, malfunction, or faulty equipment atmospheric conditions, excessive vibration, power failure, or trigger sensitivity A false alarm does not include alarm activations resulting from proven criminal activity, attempted break-ins, or other legitimate emergencies. Why are false alarms concerning? False alarms consume valuable police resources and taxpayer dollars. In 2025, the RCMP responded to approximately 840 alarm-r",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "kimberley",
+      "cityName": "Kimberley",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Vendor case study of municipal deployment; requires independent corroboration before publication.",
+      "reason": "Exact vendor deployment account supports attributed municipal cybersecurity context only; independent owner corroboration remains required, and vendor performance claims are not adopted.",
+      "sourceAudits": [
+        {
+          "url": "https://www.fortinet.com/customers/city-of-kimberley",
+          "title": "City of Kimberley | Case Study",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/kimberley.txt",
+          "captureSha256": "69e825995093937512c175fad496c664e55fcf21b84fb55f9834d85657a912b6",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Vendor case study of municipal deployment; requires independent corroboration before publication.",
+          "passageChecks": [
+            {
+              "exactPassage": "int of concern when nearby municipalities began succumbing to cyberattacks. The IT team worried that the technologies they had in place were not adequately protecting the city\u2019s data and network. The city responded by rolling out Fortinet Security Fabric solutions. A FortiGate Next-Generation Firewall enables the IT team to detect and block sophisticated threats. FortiSwitches and FortiAPs provide wired and wireless network connectivity. FortiAuthenticator provides user authentication, while FortiEDR and FortiClient EMS protect the city\u2019s endpoints. Meanwhile, the FortiDeceptor deception solution serves as a decoy to attract attackers. The products\u2019 communication and integration dramatically enhanced the city\u2019s security, while simultaneously reducing costs. \u201cWe chose the Fortinet Security Fabric because of its cost-efficiency. Since it\u2019s a whole cybersecurity framework, I could envision having all my devices talking to each other\u2014my switches, firewalls, and access points becoming a single pane of glass, reducing the complexity of my infrastructure.\u201d \u2013 Dave Hlady, Manager of Information Technology, City of Kimberley Download Case Study Business Impact Unified, coordinated, cost-effe",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 550
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "langley",
+      "cityName": "Langley",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Langley City guidance only, not Township mandate.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.langleycity.ca/media/file/cpted-brochurefinalnocutmarks",
+          "title": "CRIME PREVENTION THROUGH ENVIRONMENTAL DESIGN",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/langley.txt",
+          "captureSha256": "ea7f59d9f9d48fb00c32474c157cc7a5470d74e96a0b0f718195ba1877031a60",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Langley City guidance only, not Township mandate.",
+          "passageChecks": [
+            {
+              "exactPassage": "e through your space and limit Put a clear line of distinction between your private opportunities for undesired access. property and public property. This gives legitimate \u2022 Make clear and definitive entrances and exits. occupants a sense of ownership and a willingness \u2022 Employ fences, landscaping, and other to defend their property while putting intruders on physical barriers to guide exterior movement. the defensive. \u2022 Consider employing interior obstacles, like maze \u2022 Employ unique facades, projected awnings, different entrances, to cut off straight-line access to potential coloured entrances, patios, and flower boxes to targets, such as the cashier. delineate your space. \u2022 Use curbing and bollards to direct automobile and \u2022 Install short walls or plant gardens to discourage foot traffic into a controlled visible area. trespassing. \u2022 Use lights, security devices and tamper-resistant \u2022 Make security signage clearly visible at all materials to make your property less of a target. entrances. \u2022 Consider escorting visitors or provide badges. NATURAL SURVEILLANCE MAINTENANCE AND MANAGEMENT REDUCE CRIME, PREVENT Maximize the ability to spot suspicious people A well maintained area comm",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 950
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "nanaimo",
+      "cityName": "Nanaimo",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City-operated or contracted civic surveillance; expressly excludes RCMP surveillance.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.nanaimo.ca/docs/your-government/city-council/policies/video-surveillance-of-civic-property-policy.pdf",
+          "title": "Video Surveillance of Civic Property Policy COU-223",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/nanaimo-0.txt",
+          "captureSha256": "b3608740d03855d3c11c85c0cd0e69d73ad4c0b6211725e6a80fa3c43372744f",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "City-operated or contracted civic surveillance; expressly excludes RCMP surveillance.",
+          "passageChecks": [
+            {
+              "exactPassage": "PURPOSE: To establish guidelines for the use of video surveillance to enhance the security and safety of persons, properties, things, and activities that are in or near facilities, infrastructure or on properties owned or occupied by the City of Nanaimo and used for public civic purposes. DEFINITIONS: Personal Information Means recorded information about an identifiable individual other than business contact information Privacy Impact Means a process which assists organizations in identifying and managing the Assessment (PIA) privacy risks arising from new projects, initiatives, systems, or processes. PIAs must be approved by the Freedom of Information Head (FOI Head) SCOPE: This Policy applies to any video surveillance system operated by or for the City of Nanaimo that collects personal information in any form. This Policy does not apply to video surveillance conducted by the Royal Canadian Mounted Police (RCMP), who are subject to the Privacy Act (Canada). POLICY: 1.0 PRINCIPLES 1.1 As an owner of significant public assets that represent a large investment of public money, the City of Nanaimo makes use of video surveillance systems to better monitor and protect the security of its people, assets and property. 1.2 The City acknowledges that the use of video surveillance may, in some circumstances, represent a potential intrusion into personal privacy and does not wish to impair personal privacy any more than is warranted to provide necessary and reasonable protection of its property against crimes such as vandalism, theft, damage and destruction. Video surveillance recordings can be used by the City for an investigation and as evidence in any civil proceedings. 1.3 Video surveillance systems will be installed if, in the opinion of the City of Nanaimo, there is a risk t",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 244
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "new-westminster",
+      "cityName": "New Westminster",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Municipal parking licence-plate recognition only; not a general commercial CCTV policy.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.newwestcity.ca/transportation/parking-and-towing/parking/frequently-asked-questions/sb_expander_articles/1085.php",
+          "title": "Parking Enforcement Methods",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/new-westminster-0.txt",
+          "captureSha256": "bad71985dcade345ac40a622acf1fcc36d93b07bde69bf0257f6cf8376e88a26",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Municipal parking licence-plate recognition only; not a general commercial CCTV policy.",
+          "passageChecks": [
+            {
+              "exactPassage": "Parking Enforcement Methods | City of New Westminster Transportation Planning Travel in New Westminster Parking & Towing Parking Pay a Parking Ticket Parking Permits Parking Payment Methods Pay Stations and Meters Passport Mobile Parking App Designated Disabled On-Street Parking Frequently Asked Questions Towing Street Occupancy Permit Speed Humps Trucks Railways Roadworks & Construction Projects Q to Q Ferry Parking Enforcement Methods Street use enforcement and parking officers monitor and enforce sections with the Street and Traffic Bylaw . Officers respond to Calls for Service from the public through multiple reporting streams. Officers monitor street use and parking through a variety of methods, some of which include, electronic parking reports, Licence Plate Recognition (LPR), and conventional foot patrols. License Plate Recognition System (LPR) What is LPR? The LPR is a license plate recognition application whereby vehicles observed by cameras taking pictures, have their license plates read, recorded and checked against a pre-loaded data base using pattern recognition software. Peace officers will review and assess all information, correcting for system errors, and controlling the issuing of violation notices. The system is located in either marked City vehicles, which have four (4) cameras mounted on the vehicle, two facing forward and one to each side. The system is run on a laptop mounted in the patrol vehicle with communication using encrypted cellular technology with the City network in real time, or as a static camera at the entrance to the parkade. Mobile Version The Parking Services branch runs two vehicles equipped with LPR camera. These vehicles are linked in real time with the City\u2019s system which allows them to automatically verify payment at digital m",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-vancouver",
+      "cityName": "North Vancouver",
+      "service": "intrusion",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City of North Vancouver only, not District of North Vancouver; July 22, 2024 convenience consolidation excludes fire alarms.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Bylaws/Consolidated/8931-C.pdf",
+          "title": "Security Alarm Systems Bylaw No. 8931",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/north-vancouver-0.txt",
+          "captureSha256": "5683e3adedf7b0c8c1af882160c862b263773d00ee7eedb10e932d9aa56797b6",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "City of North Vancouver only, not District of North Vancouver; July 22, 2024 convenience consolidation excludes fire alarms.",
+          "passageChecks": [
+            {
+              "exactPassage": "THE CORPORATION OF THE CITY OF NORTH VANCOUVER \u201cSecurity Alarm Systems Bylaw, 2022, No. 8931\u201d CONSOLIDATED FOR CONVENIENCE \u2013 JULY 22, 2024 Amendment # Adoption Date Subject 9050 July 22, 2024 Fees and Charges The Corporation of the City of North Vancouver Page 1 Bylaw No. 8931 CONSOLIDATED THE CORPORATION OF THE CITY OF NORTH VANCOUVER BYLAW NO. 8931 A Bylaw to regulate the use of security alarm systems The Council of the Corporation of the City of North Vancouver, in open meeting assembled, enacts as follows: 1. This Bylaw shall be known and cited for all purposes as \u201cSecurity Alarm Systems Bylaw, 2022, No. 8931\u201d. DEFINITIONS 2. In this Bylaw: \u201cAlarm Coordinator\u201d means the person appointed by the RCMP to administer the provisions of this bylaw; \u201cAlarm Incident\u201d means the activation of an Alarm System; \u201cAlarm Monitoring Service\u201d means a person, partnership, company or other legal entity engaged in the business of monitoring the Alarm System installed at a Property and reporting Alarm Incidents to the RCMP; \u201cAlarm System\u201d means any assembly of mechanical, electrical or electronic devices, including but not limited to, systems interconnected with a radio frequency method such as cellular or private radio signals, which emit or transmit a remote or local audible, visual or electronic signal, including a Hold Up Alarm, indicating an alarm condition and intended to summon a response from the Alarm Monitoring Service, but does not include: (a) an alarm that is installed in a \u201cmotor vehicle\u201d or \u201cmotor home\u201d as those terms are defined in the Motor Vehicle Act, R.S.B.C 1996, c. 318; (b) an alarm provided by the RCMP to a domestic violence victim for personal use; and (c) a fire alarm as the term defined in the \u201cFire Bylaw, 2021, No. 8852\u201d; \u201cCity\u201d means The Corporation of the Cit",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-vancouver",
+      "cityName": "North Vancouver",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "North Vancouver detachment guidance; physical access not electronic credentials.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://rcmp.ca/en/bc/north-vancouver/community-policing/crime-prevention-environmental",
+          "title": "Crime Prevention Through Environmental Design (CPTED) - North Vancouver RCMP | Royal Canadian Mounted Police",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/north-vancouver.txt",
+          "captureSha256": "ea42e6dc9e369565f20250f6c1a03bf3e2dac80f5ee4be0a3797f77cf11504e8",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "North Vancouver detachment guidance; physical access not electronic credentials.",
+          "passageChecks": [
+            {
+              "exactPassage": "ity support - encouraging the intended use of public space by residents. Hierarchy of space - identifying ownership by delineating private space from public space through real or symbolic boundaries. Access control/target hardening - using physical barriers, security devices and tamper-resistant materials to restrict entrance. Environment - a design or location decision that takes into account the surrounding environment and minimizes the use of space by conflicting groups. Image/Maintenance - ensuring that a building or area is clean, well-maintained, and graffiti-free. The North Vancouver RCMP offers CPTED evaluations for free to the citizens of North Vancouver. During an evaluation, a police officer trained in CPTED will attend the location in question to photograph and review the area. They will then compose a formal report with suggestions about how to change the environment of the location to reduce crime. For more information or to request this service, please contact the Front Counter . Date modified: 2014-01-02",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 767
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "oak-bay",
+      "cityName": "Oak Bay",
+      "service": "intrusion",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "District burglar/false-alarm bylaw amended by No. 3957; historical consolidation requires currency confirmation.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.oakbay.ca/wp-content/uploads/2025/02/3832-Burglar-Alarm-Bylaw.pdf",
+          "title": "Burglar Alarm Bylaw No. 3832",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/oak-bay-0.txt",
+          "captureSha256": "a980e72d724a6418a9be585f26d400f18005f1b2d95e3f00e4be67e50afefde4",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "District burglar/false-alarm bylaw amended by No. 3957; historical consolidation requires currency confirmation.",
+          "passageChecks": [
+            {
+              "exactPassage": "THE CORPORATION OF THE DISTRICT OF OAK BAY BYLAW NO. 3832 (**amended by Bylaw No. 3957) A Bylaw to reduce false alarms WHEREAS section 932.1 of the Municipal Act provides that Council may establish fees to be paid by the owner or occupier of real property to which policing services are provided in response to a false alarm of a security alarm system; and WHEREAS excessive numbers of false alarms are being permitted to occur by the owners or users of security alarm systems; and WHEREAS these false alarms require emergency responses from police, posing a threat to the safety of police officers and members of the public by creating unnecessary hazards and delaying the police response to true emer- gencies; and WHEREAS under section 526 of the Municipal Act the Council may regulate the carrying on of business in the Municipality for the purpose of protecting the public or preventing or minimizing nuisances; NOW THEREFORE the Council of The Corporation of the District of Oak Bay in open meeting assembled enacts as follows: 1. DEFINITIONS In this Bylaw, \"ALARM BUSINESS\" means a person, partnership or company engaged in the business of monitoring alarm systems and reporting the occurrence of alarms to the police. \"ALARM SYSTEM\" means any mechanical, electrical or electronic device which is designed, intended or used for the detection of an unauthorized entry into a building, structure, facility or surrounding area, or for alerting others to the commission of an unlawful act, or both, and which emits a sound or transmits a message, or does both, but does not include: (i) a device which registers an alarm which is not audible, visible or perceptible outside the premises inside which it is installed; or (ii) a device which is installed in a motor vehicle. \u201cCALENDAR YEAR\" means a ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "penticton",
+      "cityName": "Penticton",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Historical downtown pilot only; no present operational coverage or Fortega provision inferred.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.penticton.ca/city-hall/news-alerts/city-partners-dpa-enhance-downtown-safety",
+          "title": "City partners with DPA to enhance downtown safety | City of Penticton",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/penticton.txt",
+          "captureSha256": "7317b8b7b68e6d77b37a51689b3116eee328f1b11ec4becd478fad22d525d540",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Historical downtown pilot only; no present operational coverage or Fortega provision inferred.",
+          "passageChecks": [
+            {
+              "exactPassage": "with a $40,000 grant to fund the project costs associated with installing downtown surveillance cameras on commercial properties. Located in three to five high-crime locations, and featuring signage, two-way voice notifications and strobe lights, each camera will be monitored from 9pm to 9am with the operator, if needed, advising those trespassing or acting irresponsibly to move on or, if needed, dispatching a response from either Bylaw or the RCMP. \u201cBy way of this pilot project, businesses and residents in the downtown will gain a better sense of security knowing that our Bylaw and RCMP are responding to issues that are happening, versus issues that have happened,\u201d said Penticton Mayor, John Vassilaki. \u201cOverall, the situation downtown is challenging, and while there\u2019s no single solution for addressing the deliberate disorder we witness, I\u2019m pleased to see proactive organizations like the DPA helping the situation by coming forward to Council with ideas that we can introduce now to deter poor behavior and respond to crime.\u201d \u201cIn keeping with City Council\u2019s focus on security, we created this program to fit within the scope of the Community Safety Strategic Priority. With crime and di",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 536
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "penticton",
+      "cityName": "Penticton",
+      "service": "remote",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Historical downtown pilot only; no present operational coverage or Fortega provision inferred.",
+      "reason": "Historical pilot explicitly specifies overnight monitored cameras, operator voice intervention and escalation. Supports announced pilot design only, not current operation, citywide coverage or a private provider.",
+      "sourceAudits": [
+        {
+          "url": "https://www.penticton.ca/city-hall/news-alerts/city-partners-dpa-enhance-downtown-safety",
+          "title": "City partners with DPA to enhance downtown safety | City of Penticton",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/penticton.txt",
+          "captureSha256": "7317b8b7b68e6d77b37a51689b3116eee328f1b11ec4becd478fad22d525d540",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Historical downtown pilot only; no present operational coverage or Fortega provision inferred.",
+          "passageChecks": [
+            {
+              "exactPassage": "with a $40,000 grant to fund the project costs associated with installing downtown surveillance cameras on commercial properties. Located in three to five high-crime locations, and featuring signage, two-way voice notifications and strobe lights, each camera will be monitored from 9pm to 9am with the operator, if needed, advising those trespassing or acting irresponsibly to move on or, if needed, dispatching a response from either Bylaw or the RCMP. \u201cBy way of this pilot project, businesses and residents in the downtown will gain a better sense of security knowing that our Bylaw and RCMP are responding to issues that are happening, versus issues that have happened,\u201d said Penticton Mayor, John Vassilaki. \u201cOverall, the situation downtown is challenging, and while there\u2019s no single solution for addressing the deliberate disorder we witness, I\u2019m pleased to see proactive organizations like the DPA helping the situation by coming forward to Council with ideas that we can introduce now to deter poor behavior and respond to crime.\u201d \u201cIn keeping with City Council\u2019s focus on security, we created this program to fit within the scope of the Community Safety Strategic Priority. With crime and di",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 536
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "prince-george",
+      "cityName": "Prince George",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Voluntary owner-managed camera registry; police contact owners for potential evidence.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.princegeorge.ca/city-services/permits-applications/cctv-registry-program",
+          "title": "CCTV Registry Program",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/prince-george-0.txt",
+          "captureSha256": "677010ff86c3a68baa09bbb6aa256d75772cbd935dcc866e9215ccdb8e8b989e",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Voluntary owner-managed camera registry; police contact owners for potential evidence.",
+          "passageChecks": [
+            {
+              "exactPassage": "CCTV Registry Program | City of Prince George Skip to main content Skip to main menu Skip to footer Print Share Facebook LinkedIn Twitter CCTV Registry Program Type(s) Public Works You must have JavaScript enabled to use this form. Terms of Service and Agreement Collection Notice The personal information on this form is collected by the City of Prince George for the purposes of facilitating the CCTV Registry Program under the authority of section 26(c) of the Freedom of Information and Protection of Privacy Act . If you have any questions about the collection of your personal information, to update or correct your information, or to opt out of the program, please contact the Manager of Police Support Services at 455 Victoria Street, Prince George, B.C., or by telephone at 250-561-3300 or email at cctvregistry@princegeorge.ca . Terms of Service The CCTV Registry allows you to proactively participate in the enhancement of your community\u2019s public safety by confidentially and voluntarily registering your surveillance recording camera(s) with the City of Prince George. By registering your surveillance equipment, you will be helping law enforcement quickly identify the location and owners of potential sources of video evidence, decreasing time, effort, and cost of an incident investigation. By voluntarily registering your camera equipment with the City of Prince George, you acknowledge and agree to the following: You are registering only those cameras that you own and manage. The information you voluntarily register (your contact information and camera location details) will be confidentially managed by the City of Prince George and securely shared with law enforcement for the sole purpose of identifying potential recorded video footage related to a law enforcement investigat",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "prince-george",
+      "cityName": "Prince George",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Local CPTED evaluations and natural access, not credential system requirement.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.rcmp.ca/en/bc/prince-george/services-and-information/crime-prevention-through-environmental-design-cpted",
+          "title": "Prince George RCMP : Crime Prevention through Environmental Design (CPTED) | Royal Canadian Mounted Police",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/prince-george.txt",
+          "captureSha256": "6ce191c6684d3148cf0559238e57cad1e65ab0b1a048e7fcfe4cdf205da1a525",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Local CPTED evaluations and natural access, not credential system requirement.",
+          "passageChecks": [
+            {
+              "exactPassage": "ective use of physical space can reduce opportunities for crime. However, in order to create more sustainable crime prevention, community involvement and a collaborative community effort is required. Community Policing provides CPTED evaluations of buildings, areas, spaces or homes, in addition to educational sessions. For more information please call (250) 561-3366. Date modified: 2024-11-27",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1278
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "prince-rupert",
+      "cityName": "Prince Rupert",
+      "service": "cctv",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "uncertain",
+      "acceptedScope": null,
+      "reason": "The passage says surveillance without identifying cameras or video. Municipal IT responsibilities cannot establish distinct CCTV content without explicit video-system evidence.",
+      "sourceAudits": [
+        {
+          "url": "https://www.princerupert.ca/city-hall/departments/information-technology-it",
+          "title": "Information Technology (IT) | City of Prince Rupert",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/prince-rupert.txt",
+          "captureSha256": "97851df0f1ce45c285a5ed3c9bfdc5c6d328a011a02595f5cefc426e19b1d254",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Municipal/RCMP internal systems only; not private business requirements.",
+          "passageChecks": [
+            {
+              "exactPassage": "lso provide a helpdesk function for assistance to all municipal staff for any IT-related need. In addition to supporting all departments, we additionally maintain RCMP department computer systems and surveillance in the City of Prince Rupert. IT's main responsibilities include: Managing the organization's hardware, software and physical communication Providing a source of guidance for technology issues for staff and associated organizations Maintaining information security and availability Providing a corporate perspective on information technology initiatives Supplying the guidance and infrastructure to deliver meaningful information Assisting organizations that work closely with the city for IT needs Contact the IT Department Marko Kessler, Manager of IT Operations Phone: 250-627-0932 Fax: 250-627-0918 Email: marko.kessler@princerupert.ca",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 706
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "prince-rupert",
+      "cityName": "Prince Rupert",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Municipal/RCMP internal systems only; not private business requirements.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.princerupert.ca/city-hall/departments/information-technology-it",
+          "title": "Information Technology (IT) | City of Prince Rupert",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/prince-rupert.txt",
+          "captureSha256": "97851df0f1ce45c285a5ed3c9bfdc5c6d328a011a02595f5cefc426e19b1d254",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Municipal/RCMP internal systems only; not private business requirements.",
+          "passageChecks": [
+            {
+              "exactPassage": "lso provide a helpdesk function for assistance to all municipal staff for any IT-related need. In addition to supporting all departments, we additionally maintain RCMP department computer systems and surveillance in the City of Prince Rupert. IT's main responsibilities include: Managing the organization's hardware, software and physical communication Providing a source of guidance for technology issues for staff and associated organizations Maintaining information security and availability Providing a corporate perspective on information technology initiatives Supplying the guidance and infrastructure to deliver meaningful information Assisting organizations that work closely with the city for IT needs Contact the IT Department Marko Kessler, Manager of IT Operations Phone: 250-627-0932 Fax: 250-627-0918 Email: marko.kessler@princerupert.ca",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 706
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "quesnel",
+      "cityName": "Quesnel",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "June 4, 2019 municipal public-space/civic-property surveillance policy, not a private-premises rule.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://quesnel.civicweb.net/filepro/document/113574/CCR-6%20Video%20Surveillance%20Policy%20-%20June%204,%202019.pdf",
+          "title": "Video Surveillance Policy CCR-6",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/quesnel-0.txt",
+          "captureSha256": "23b7e77cd93a3bbf6044f210091e13ef7ee0cc012f15a21b277389cfcc837e0b",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "June 4, 2019 municipal public-space/civic-property surveillance policy, not a private-premises rule.",
+          "passageChecks": [
+            {
+              "exactPassage": "Video Surveillance Policy \u2013 CCR-6 Effective: June 4, 2019 Authorized By: Council Resolution: 19-15-283 Replaces: April 26, 2010, March 27, 2018 Scope The City of Quesnel in its\u2019 commitment to public safety has initiated a program to deter and prevent nuisance, mischief, theft and vandalism in, on or near property and facilities owned or occupied by the City and to support law enforcement, through the use of video surveillance cameras at certain locations of our open public areas. Safeguards will be implemented to protect the privacy of our citizens while at the same time providing enhanced safety in the use and enjoyment of the public space in our community. The program is intended to be consistent with the Privacy Act of Canada and the Freedom of Information and Protection of Privacy Act of British Columbia. DEFINITIONS \u201cActs\u201d mean the Freedom of Information and Protection of Privacy Act, RSBC 1996, c. 165 and the Privacy Act of Canada. \u201cFOI Head\u201d means the person or persons designated to act on behalf of the City for the purposes of the Freedom of Information and Protection of Privacy Act and to carry out the powers, duties and functions of the head under the Act. \u201cGuidelines\u201d mean the \u201cGuidelines for the Use of Video Surveillance of Public Places by Police and Law Enforcement Authorities\u201d published by the Office of the Privacy Commissioner of Canada, or similar guidelines published by the Information and Privacy Commissioner of British Columbia, both as may be amended or replaced from time to time. \u201cPersonal Information\u201d means recorded information about an identifiable individual as defined under the Freedom of Information and Protection of Privacy Act. \u201cOpen Public Space\u201d means the grounds of any real property, or portions of real property, owned or subject to a rig",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "quesnel",
+      "cityName": "Quesnel",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Council device-use policy only, not business-wide regulation.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://quesnel.civicweb.net/document/160758/",
+          "title": "E-Mail, Internet and Electronic Device Usage \u2013 IWC-16",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/quesnel.txt",
+          "captureSha256": "1728d0cff4360f56c50bf15c69fbcbede1a1ce48f092cc33a39ac0b17a5f0b97",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Council device-use policy only, not business-wide regulation.",
+          "passageChecks": [
+            {
+              "exactPassage": "by the City of Quesnel and provided for Council use or tech resources not owned by the City but which access the City systems. These guidelines protect council, the organization, and its data against cybersecurity threats, including malware, ransomware, unauthorized access, and data breaches. 2. APPLICABILITY This policy applies to Mayor and Council. It covers all devices and networks owned or leased by the city, and in some cases this policy applies to personal devices when accessing city owned cloud resources. 3. POLICY 3.01 City Resources are for City Business: City-owned technology resources shall serve the business needs of the City of Quesnel and are to be used primarily for Council business. If a council member leaves their position with the City, they may not delete, password protect, or in any way hinder the City's future use of these computer files. Any official city records must be stored on approved systems. 3.02 Security and Confidentiality: City held data files may not be disclosed without a business need and are subjected to requests under the terms of Freedom of Information and Protection of Privacy (FOIPPA). All access to the City\u2019s proprietary information must be ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 239
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "richmond",
+      "cityName": "Richmond",
+      "service": "cyber",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Richmond BC municipal email incident and public safety guidance; not Richmond California police policy.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.richmond.ca/city-hall/privacydisclaimers/security.htm",
+          "title": "Cybersecurity & Email Safety",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/richmond-0.txt",
+          "captureSha256": "89692b7dae4169c49db2e941afa0eb8c0fbb67b00fac8c92ec07df5bc30e4042",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Richmond BC municipal email incident and public safety guidance; not Richmond California police policy.",
+          "passageChecks": [
+            {
+              "exactPassage": "Cybersecurity & Email Safety - City of Richmond, BC Skip to main content Cybersecurity & Email Safety The City of Richmond, like many organizations, can be a target for cybercrime. We have experienced instances of cybercrime over the past few months and continue to work to prevent such attacks and protect the information and online safety of our customers and staff. We are aware that some fraudulent email messages have been circulating claiming to be from City staff, municipal officials, and Gateway Theatre staff. When the City discovered the intrusion into the email system in June 2023, it took immediate steps to mitigate the risk of impact and remediate the attack by engaging a team of cybersecurity experts to contain and investigate the incident, in accordance with industry best practices. There is no indication any outside party has accessed the City\u2019s financial or human resources data, or any other enterprise systems or databases. City operations were not impacted and business continues as normal. However, in the interest of transparency, we want people to know that fraudulent emails continue to circulate. The following provides important information about the City's ongoing cybersecurity initiatives and how to remain safe in an online environment. What has the City of Richmond done? The City of Richmond engaged cybersecurity experts in June 2023 to investigate, contain and remediate the incident that occurred at that time. The City also placed a public warning regarding fraudulent e-mails on its website, and social media channels. Local media was also advised of the situation. This criminal activity was reported to the RCMP and to the Office of the Information & Privacy Commissioner for British Columbia. Fraudulent email messages often contain a fake PDF file atta",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "rossland",
+      "cityName": "Rossland",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "City facilities and operations; reviewed November 2025; not a citywide private-camera mandate.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://rossland.civicweb.net/document/6670/",
+          "title": "Video Surveillance Policy",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/rossland-0.txt",
+          "captureSha256": "78f00e4cfd5edec0bb7086c2575dcd05885caec15f9564919522bb4407de2a4a",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "City facilities and operations; reviewed November 2025; not a citywide private-camera mandate.",
+          "passageChecks": [
+            {
+              "exactPassage": "POLICY OBJECTIVES: The Video Surveillance Policy aims to: 1. improve and maintain the personal safety of our staff members and citizens by deterring criminal conduct in regards to harassment, assault, thefts or vandalism; 2. assist with the continued integrity, public confidence, security and protection of any or all municipal properties and assets; 3. minimize impacts on personal privacy by reserving the use of any video surveillance technology for legitimate law enforcement purposes; 4. confirm video surveillance equipment is restricted so it cannot be adjusted or manipulated by anyone to overlook spaces that are not intended to be covered by the video surveillance system, 5. ensure applications of video surveillance in City of Rossland facilities and operations are authorized and are compliant with the British Columbia Freedom of Information and Protection of Privacy Act (FOIPPA). POLICY BACKGROUND/SCOPE: Closed Circuit Video Surveillance (CCTV) is used to serve as a deterrent with respect to criminal activity and ensure proper conduct is administered in relation to City staff members, customers and assets. The City recognizes that any video surveillance technology has a high potential for impacting general individual expectations to privacy and does not wish to breech personal privacy any more than is warranted to provide reasonable protection to City related property. However, the City of Rossland also recognizes the need to strike a balance between an individual\u2019s right to be free from invasion of privacy and the City\u2019s duty to promote a safe environment which protects the security of its staff members, citizens, municipal resources and property. DEFINITIONS: There are no specific terms that need to be defined to understand this policy. Video Surveillance Page 1 o",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 378
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "surrey",
+      "cityName": "Surrey",
+      "service": "remote",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "out-of-scope",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Police-member response policy updated January 27, 2022; operational example requires current procedure confirmation.",
+      "reason": "Police procedure explicitly addresses monitoring-company reports, contact attempts and dispatch discretion. Alarm escalation workflow only, not live-video monitoring or guaranteed attendance.",
+      "sourceAudits": [
+        {
+          "url": "https://www.surreypolice.ca/sites/default/files/media/documents/op_4.2.1_false_alarms_-_public.pdf",
+          "title": "Surrey Police False Alarms OP 4.2.1",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/surrey-0.txt",
+          "captureSha256": "7fa80c647d03d481959431dd5d2baa67db77c8c87afddd92dd8bc2504177091a",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Police-member response policy updated January 27, 2022; operational example requires current procedure confirmation.",
+          "passageChecks": [
+            {
+              "exactPassage": "4. PROCEDURE 4.1. In accordance with Surrey Bylaw No. 13168, Surrey Security and Fire Alarm By-Law, a False Alarm means an alarm incident where there is no apparent or actual evidence that an unauthorized entry or unlawful act has been attempted or made, and includes but is not limited to: i. activation of an alarm during its testing; ii. an alarm activated by mechanical failure, malfunction, or faulty equipment; iii. an alarm activated by user error; and iv. an alarm actually or apparently activated by atmosphere conditions, excessive vibrations or power failure. Page 1 of 4 S A F E R . S T R O N G E R . T O G E T H E R . 4.1. The Operational Communications Centre (OCC) may cancel an alarm incident prior to dispatching a Member when the property representative indicates the alarm is false and attendance by police is not required. 4.2. The OCC may provide a General Broadcast without dispatching a police unit when the alarm monitoring company reports an alarm, but has not made attempts to contact property representatives and there are no other extenuating circumstances. 4.3. For the purposes of this policy, a Nuisance Alarm is considered an audible security system that activates three (3) or more false alarms within a twenty-four (24) hour period; or a security alarm system that when activated emits a continuous and/or intermittent audible sound for a period greater than five minutes after the activation. When no property representative can be contacted to resolve the matter, Members must: i. if possible, obtain particulars of witnesses, including neighbours, who can attest to the malfunctioning system; and ii. submit a General Occurrence (GO) report documenting attempts made at locating the representative and information of people spoken to. 4.4. All dispatched alarm in",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 535
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "surrey",
+      "cityName": "Surrey",
+      "service": "consulting",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "CPTED assessments; natural control access not automatic electronic credentials.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.surreypolice.ca/homesecurityassessments",
+          "title": "Home & Business Security Assessments (CPTED) | Surrey Police",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/surrey.txt",
+          "captureSha256": "4254d4ce5be0eb35b46ea541baed437efec60d89beab3ad1bd40c6468a3760a0",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "CPTED assessments; natural control access not automatic electronic credentials.",
+          "passageChecks": [
+            {
+              "exactPassage": "e and business security assessments based on Crime Prevention Through Environmental Design (CPTED) principles to help reduce the risk of crime. Features such as lighting, landscaping, sightlines, and access control can significantly influence how attractive a property is to potential offenders. Through a CPTED assessment, trained staff will review your property and provide practical, tailored recommendations to improve safety and security. Whether you own a home or operate a business, a free security assessment can help you identify opportunities to deter theft, vandalism, and other crimes\u2014before they occur. Schedule a free assessment today. You can schedule a free home or business security assessment with SPS today. Our trained representatives will come to your home or place of work and give you important feedback on how to make your business or home safer. To learn more or book an assessment, email SecurityAssessments@surreypolice.ca Book an assessment What is Crime Prevention Through Environmental Design? Crime Prevention Through Environmental Design (CPTED) is the theory that proper design and effective use of the environment can lead to a reduction in incidents of crime and ul",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 266
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "vancouver",
+      "cityName": "Vancouver",
+      "service": "intrusion",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Business prevention advice, not installation mandate or guaranteed dispatch.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://vpd.ca/crime-prevention-safety/business/",
+          "title": "Business Crime Prevention & Safety - Vancouver Police Department",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/vancouver.txt",
+          "captureSha256": "8feb094470e9afa15dc9b64834f4f6a386de6edeaaf356a29e066ca4ed4d8413",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Business prevention advice, not installation mandate or guaranteed dispatch.",
+          "passageChecks": [
+            {
+              "exactPassage": "and open, and visible from outside Use deadbolts with a minimum 1-inch bolt and a saw-resistant insert on all exterior doors If you are considering installing or upgrading an alarm system, consider a monitored alarm, with a panic button in case of robbery We\u2019ve Had a Break-in \u2013 Now What? If it has just happened, call 9-1-1 \u2013 if there is a time delay, call 604-717-3321 Do not go inside, as there is a chance the thief might still be there and evidence could be accidentally destroyed Credit Fraud These schemes are used to defraud manufacturers, suppliers, or distributors of their merchandise. Con artists set up fake companies and buy materials and goods on credit, then vanish without a trace. What to Watch For A new customer ordering an unusually large amount of merchandise on credit A customer\u2019s business references can\u2019t be verified. A sudden change in a customer\u2019s management staff without notice A customer\u2019s payments start to lag behind A company suddenly increasing its orders for no apparent reason Prevention Get to know the new management of the company Do a thorough credit check Make sure that new orders are not filled until the credit check is complete Credit Card Fraud Signs a ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1116
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "vancouver",
+      "cityName": "Vancouver",
+      "service": "remote",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Business prevention advice, not installation mandate or guaranteed dispatch.",
+      "reason": "Police explicitly recommend considering a monitored alarm with panic button. Narrow alarm-monitoring planning evidence only: not live video, a monitoring deployment, verified dispatch performance or a monitoring provider.",
+      "sourceAudits": [
+        {
+          "url": "https://vpd.ca/crime-prevention-safety/business/",
+          "title": "Business Crime Prevention & Safety - Vancouver Police Department",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/vancouver.txt",
+          "captureSha256": "8feb094470e9afa15dc9b64834f4f6a386de6edeaaf356a29e066ca4ed4d8413",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Business prevention advice, not installation mandate or guaranteed dispatch.",
+          "passageChecks": [
+            {
+              "exactPassage": "and open, and visible from outside Use deadbolts with a minimum 1-inch bolt and a saw-resistant insert on all exterior doors If you are considering installing or upgrading an alarm system, consider a monitored alarm, with a panic button in case of robbery We\u2019ve Had a Break-in \u2013 Now What? If it has just happened, call 9-1-1 \u2013 if there is a time delay, call 604-717-3321 Do not go inside, as there is a chance the thief might still be there and evidence could be accidentally destroyed Credit Fraud These schemes are used to defraud manufacturers, suppliers, or distributors of their merchandise. Con artists set up fake companies and buy materials and goods on credit, then vanish without a trace. What to Watch For A new customer ordering an unusually large amount of merchandise on credit A customer\u2019s business references can\u2019t be verified. A sudden change in a customer\u2019s management staff without notice A customer\u2019s payments start to lag behind A company suddenly increasing its orders for no apparent reason Prevention Get to know the new management of the company Do a thorough credit check Make sure that new orders are not filled until the credit check is complete Credit Card Fraud Signs a ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1116
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "vernon",
+      "cityName": "Vernon",
+      "service": "cctv",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Municipal safety/security camera policy FAQ, not authorization for other properties.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.vernon.ca/government-services/mayor-council/council-meetings/council-meeting-agenda-minutes/video-monitoring",
+          "title": "Video Monitoring Cameras",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/vernon-0.txt",
+          "captureSha256": "579519b535c1a5d6bfde6a976fde5fd6a62908740950fe5c5a3d835cb49f5cf7",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Municipal safety/security camera policy FAQ, not authorization for other properties.",
+          "passageChecks": [
+            {
+              "exactPassage": "Video Monitoring Cameras | City of Vernon Skip to main content Skip to main menu Skip to footer Grey menus Share Video Monitoring Cameras Introduction This webpage is intended to provide information about the video monitoring cameras that are used for safety and security purposes in the City of Vernon under the authority of the City of Vernon\u2019s Video Monitoring Policy . FREQUENTLY ASKED QUESTIONS What is the purpose of the Video Monitoring Policy? The Video Monitoring Policy promotes certainty and predictability by creating specific rules around the installation and use of cameras by the City of Vernon, and providing for meaningful oversight of compliance with these rules. This ensures the City complies with its legal obligations to protect privacy when it uses cameras, and aligns the City of Vernon with other Local Governments and Public Institutions that already have policies or guidelines governing camera use. The Video Monitoring Policy The Video Monitoring Policy was developed by Senior Managers and reviewed and approved by the Chief Administrative Officer. Many other local governments and public institutions were contacted and their respective policies and procedures were reviewed and discussed in order to determine best practices. The policy and the program was implemented due to ongoing public requests to improve safety and security in certain areas of the City. The location of the video monitoring systems were chosen due to documented incidents of concern to our citizens. The Video Monitoring Policy promotes certainty and predictability by creating specific rules around the installation and use of cameras by the City of Vernon, and providing for meaningful oversight of compliance with these rules. How was the Office of the Information and Privacy Commissioner c",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 0
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "vernon",
+      "cityName": "Vernon",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Community education scope only, not commercial cyber deployment evidence.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.vernon.ca/government-services/community-safety/community-safety-office",
+          "title": "Community Safety Office | City of Vernon",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/vernon.txt",
+          "captureSha256": "01b4f3505dce6aa8c8ceb7d8a7079694f185aace768590c51f3e0a9fcda3a824",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Community education scope only, not commercial cyber deployment evidence.",
+          "passageChecks": [
+            {
+              "exactPassage": "ugh the CSO Community members are able to access core Community Safety programs/information such as: Crime Prevention Through Environmental Design (CPTED) Frauds Cons & Scams Information Personal and Cyber Safety The Vernon Anti-tag team (seasonally) Folks on Spokes (seasonally) Sharps Hotline (seasonally) Drug Awareness Garage 529 Bike Registration Program Contact Community Safety The Community Safety Coordinator - Public Programs The Community Safety Coordinator also provides community outreach through a variety of educational workshops designed to help residents, businesses, and organizations improve their safety and security. All workshops are tailored to meet the unique needs, interests, and developmental stages of the audience. Workshops provided by the CSO Such workshops include, but are not limited to: Personal and Community Safety Frauds Cons and Scams Home and Vehicle Security Internet Safety and Digital Citizenry Drug Awareness Bike Safety Contact Community Safety The Community Safety Coordinator - Public Programs During the summer, the Coordinator is responsible for hiring, training and supervision of the Vernon Safety Ambassadors & the Vernon Anti-Tag Team. The Safety ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 546
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "victoria",
+      "cityName": "Victoria",
+      "service": "cyber",
+      "inputDecision": "new-scoped-candidate-unapproved",
+      "candidateOrigin": "new-followup-candidate",
+      "baselineEvidenceDecision": "no-service-specific-evidence-found",
+      "sourcePreviouslyInBaseline": false,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Small-business voluntary selected-applicant program only.",
+      "reason": "Exact captured passage directly supports only the stated local institution, recommendation, policy or historical activity; no citywide requirement or private delivery inferred.",
+      "sourceAudits": [
+        {
+          "url": "https://www.vicpd.ca/Programs/cyber-safety-assessments",
+          "title": "Cyber Safety Assessments | Victoria Police Department",
+          "issuer": null,
+          "capturePath": "/tmp/west-followup-fetch/victoria.txt",
+          "captureSha256": "ab3046f36b096bcfc8d4a2ea2a4d815512a47c2c0b4442b5f91eb6d7be624849",
+          "httpStatus": 200,
+          "recordedVerified": true,
+          "fetchedAt": "2026-10-20T08:23:42.687759+00:00",
+          "dateContext": "Publication date not independently established unless explicit in excerpt; fetchedAt records retrieval.",
+          "scope": "Small-business voluntary selected-applicant program only.",
+          "passageChecks": [
+            {
+              "exactPassage": "PD Local Business Cyber Safety Assessments Amid rising concern with online security threats, the Victoria Police Department has established a proactive initiative aimed at helping small businesses in Victoria and Esquimalt reduce their risk of becoming a victim to cybercrime. VicPD Local Business Cyber Safety Assessments is a three-step process to analyze a company\u2019s online infrastructure and network setup. The voluntary program is free to small businesses in the City of Victoria and Township of Esquimalt, exclusively. Upon registration and program acceptance, members from VicPD\u2019s Cybercrime and IT Units consult on the following tasks: 1. Initial Visit: Explains the assessment process, obtains consent, and conducts an early review. 2. Network Scan: VicPD IT staff conduct a secure scan of the businesses\u2019 public-facing systems \u2013 such as websites and emails. 3. Security Report: Cybercrime investigators and IT staff provide a summary of the findings and give recommendations to help the business improve cybersecurity resilience. The program launched in August 2025 and scaled up in February 2026. Since then, it has been helping close vulnerability gaps that could lead to financial loss, ",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 1226
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "victoria",
+      "cityName": "Victoria",
+      "service": "guards",
+      "inputDecision": "prior-candidate-retained-for-review",
+      "candidateOrigin": "retained-baseline-candidate",
+      "baselineEvidenceDecision": "usable-candidate",
+      "sourcePreviouslyInBaseline": true,
+      "auditDecision": "accepted-scoped",
+      "acceptedScope": "Special events on City property; not permanent private-building staffing requirements.",
+      "reason": "Original quote is only a table of contents and cannot qualify guards. Independently checked substantive security-personnel provisions in the same existing full capture resolve the issue for City-property events only; not newly discovered evidence.",
+      "sourceAudits": [
+        {
+          "url": "https://www.victoria.ca/media/file/special-event-guidelines-2025",
+          "title": "Special Event Guidelines 2025",
+          "issuer": null,
+          "capturePath": "/tmp/bc-evidence/victoria-0.txt",
+          "captureSha256": "6faab8ae1e11c09f449245f069c12ab43aadea841fad19b32bd4c77b539f17d7",
+          "httpStatus": null,
+          "recordedVerified": true,
+          "fetchedAt": null,
+          "dateContext": "Original capture; publication date and continued currency not independently confirmed.",
+          "scope": "Special events on City property; not permanent private-building staffing requirements.",
+          "passageChecks": [
+            {
+              "exactPassage": "Security..................................................................................................... 14 Security ................................................................................................................. 14 First Aid Provision ................................................................................................... 14 Safety .................................................................................................................... 14 Access for persons with disabilities .......................................................................... 14 City Services .............................................................................................................. 15 Use of City Parks and Greenspaces .......................................................................... 15 Police .................................................................................................................... 15 Fire ........................................................................................................................ 15 Street Occupancy ................................................................................................... 15 Use of Traffic Control Equipment .............................................................................. 16 Access to Water or Power ........................................................................................ 16 Insurance .................................................................................................................. 16 General Conditions ............................................................................................. 17 Cancellation ...........................................................................................",
+              "matchesNormalizedCapture": true,
+              "normalizedOffset": 3253
+            }
+          ]
+        }
+      ],
+      "supplementalPassageChecks": [
+        {
+          "exactPassage": "Security personnel should be briefed in advance, trained and equipped to assess and intervene in situations that may arise. They should be visible and present on-site at all scheduled times and have an emergency protocol and communication plan in place.",
+          "capturePath": "/tmp/bc-evidence/victoria-0.txt",
+          "normalizedOffset": 25702,
+          "matchesNormalizedCapture": true,
+          "url": "https://www.victoria.ca/media/file/special-event-guidelines-2025",
+          "captureSha256": "6faab8ae1e11c09f449245f069c12ab43aadea841fad19b32bd4c77b539f17d7"
+        }
+      ],
+      "remainingUncertainty": [
+        "Current source applicability, property scope and private delivery capability not established.",
+        "Current applicability, full policy amendments and private regulated-service capability not established."
+      ],
+      "publicationReady": false
+    }
+  ],
+  "excludedInfrastructureLeads": [
+    {
+      "city": "brooks",
+      "services": [
+        "remote",
+        "smart"
+      ],
+      "auditDecision": "rejected-as-service-evidence",
+      "url": "https://www.brooksregion.ca/get-to-know-us/news-and-media/post/brooks-next-generation-broadband-network",
+      "reason": "Network availability, fibre construction or connectivity announcements do not establish remote security monitoring or smart-building controls; no address-level coverage inferred.",
+      "publicationReady": false
+    },
+    {
+      "city": "kitimat",
+      "services": [
+        "remote",
+        "smart"
+      ],
+      "auditDecision": "rejected-as-service-evidence",
+      "url": "https://invest.kitimat.ca/broadband-services",
+      "reason": "Network availability, fibre construction or connectivity announcements do not establish remote security monitoring or smart-building controls; no address-level coverage inferred.",
+      "publicationReady": false
+    },
+    {
+      "city": "revelstoke",
+      "services": [
+        "remote",
+        "smart"
+      ],
+      "auditDecision": "rejected-as-service-evidence",
+      "url": "https://data.chooserevelstoke.ca/broadband-services",
+      "reason": "Network availability, fibre construction or connectivity announcements do not establish remote security monitoring or smart-building controls; no address-level coverage inferred.",
+      "publicationReady": false
+    },
+    {
+      "city": "trail",
+      "services": [
+        "remote",
+        "smart"
+      ],
+      "auditDecision": "rejected-as-service-evidence",
+      "url": "https://www.secure-by-design.com/support/trail-bc-broadband-service-map/",
+      "reason": "Network availability, fibre construction or connectivity announcements do not establish remote security monitoring or smart-building controls; no address-level coverage inferred.",
+      "publicationReady": false
+    }
+  ],
+  "unchangedGaps": "The other 344 input city/service decisions are not promoted. Blocked Banff alarm/cyber retrievals remain unresolved; no new service or geography inferred.",
+  "publishReadinessImplications": "No publication clearances. No provider coverage, licensing, staffing, response time, current deployment, funding availability or citywide mandates established."
+}

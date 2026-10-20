@@ -1,0 +1,34 @@
+{
+  "inventoryCoverage": {
+    "communities": 225,
+    "servicesPerCommunity": 8,
+    "drafts": 1800,
+    "uniqueDrafts": 1800
+  },
+  "httpChecks": {
+    "checked": 1800,
+    "failed": 0
+  },
+  "navigation": {
+    "sameCityOtherServicesPerDraft": 7,
+    "draftsWithSameProvincePeerLinks": 1792,
+    "singletonProvinceException": "Eight Iqaluit drafts have no same-province peers because the reviewed Nunavut inventory contains only Iqaluit; same-city and resource links remain.",
+    "allDraftsHaveFortegaResourceLinks": true
+  },
+  "contentReadiness": {
+    "rows": 1800,
+    "cities": 225,
+    "missingLocalBodies": 1770,
+    "regulatedDeliveryBlocked": 225,
+    "missingResearchAssessments": 0,
+    "followupAssessmentsRecorded": 1800,
+    "draftsWithIndependentFollowupDecisions": 622,
+    "baselineFollowupDisagreements": 36,
+    "nonPricingQuestionFailures": 0,
+    "metadataLengthFailures": 0,
+    "publicationReady": 0
+  },
+  "backup": "Source archive only; full database export, storage files and three inaccessible external images unresolved.",
+  "publication": "No publication, draft approvals, production URL eligibility or sitemap changes.",
+  "evidence": "Follow-up assessment is not verified local substance. Independent rejects and uncertainties remain blocking."
+}

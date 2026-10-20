@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { LOCATION_SERVICE_DRAFTS } from '../src/lib/seo/location-service-drafts';
 import { isNonPricingQuestion } from '../src/lib/seo/service-search-content';
 import { SERVICE_AREA_COMBOS } from '../src/lib/seo/service-areas';
@@ -8,9 +8,27 @@ type Evidence = { evidenceDecision: string; privateDeliveryReview: string };
 type CityResearch = { slug: string; services: Record<string, Evidence> };
 const research = JSON.parse(readFileSync('.lovable/local-content-research/full-research-2026-10-20.json', 'utf8')) as { cities: CityResearch[] };
 const researchByCity = new Map(research.cities.map(city => [city.slug, city]));
+type IndependentDecision = { city: string; service: string; audit: string; decision: string; scope?: unknown; limitations?: unknown; publicationReady: boolean };
+const independentPath = '.lovable/local-content-research/independent-followup-decisions-2026-10-20.json';
+const independent = existsSync(independentPath)
+  ? (JSON.parse(readFileSync(independentPath, 'utf8')) as { records: IndependentDecision[] }).records
+  : [];
+const followupByDraft = new Map<string, { region: string; record: string; decision: string; independentReviewRequired: boolean; publicationReady: boolean }>();
+for (const region of ['west', 'central', 'east', 'other']) {
+  const record = `${region}-followup-2026-10-20.json`;
+  const path = `.lovable/local-content-research/${record}`;
+  if (!existsSync(path)) continue;
+  const data = JSON.parse(readFileSync(path, 'utf8')) as CityResearch[] | { cities: CityResearch[] };
+  const cities = Array.isArray(data) ? data : data.cities;
+  for (const city of cities) for (const [service, evidence] of Object.entries(city.services)) {
+    followupByDraft.set(`${city.slug}/${service}`, { region, record, decision: evidence.evidenceDecision, independentReviewRequired: true, publicationReady: false });
+  }
+}
 const quality = JSON.parse(readFileSync('.lovable/location-expansion-quality.json', 'utf8')) as { repeatedBodyGroups: { service: string; cities: string[]; count: number }[] };
 const rows = LOCATION_SERVICE_DRAFTS.map(draft => {
   const evidence = researchByCity.get(draft.city.slug)?.services[draft.service.slug];
+  const independentDecisions = independent.filter(record => record.city === draft.city.slug && record.service === draft.service.slug);
+  const evidenceDisagreement = evidence?.evidenceDecision === 'usable-candidate' && independentDecisions.some(record => ['rejected', 'uncertain', 'out-of-scope', 'needs-source-review', 'unresolved-gap'].includes(record.decision));
   const repeatedGroup = quality.repeatedBodyGroups.find(group => group.service === draft.service.slug && group.cities.includes(draft.city.slug));
   const checks = {
     researchAssessmentRecorded: Boolean(evidence),
@@ -28,6 +46,7 @@ const rows = LOCATION_SERVICE_DRAFTS.map(draft => {
     approvedForPublication: draft.approved,
   };
   const blockers = [
+    ...(evidenceDisagreement ? ['baseline-and-followup-evidence-disagreement-requires-resolution'] : []),
     ...(!draft.local ? ['missing-rendered-city-service-evidence'] : ['local-body-editorial-and-source-scope-review-required']),
     ...(evidence?.evidenceDecision !== 'usable-candidate' ? [`research:${evidence?.evidenceDecision ?? 'missing-assessment'}`] : ['candidate-is-not-publication-clearance']),
     ...(repeatedGroup ? ['shared-full-body-requires-substantive-rewrite-or-consolidation'] : []),
@@ -42,6 +61,9 @@ const rows = LOCATION_SERVICE_DRAFTS.map(draft => {
     proposedProductionUrl: `/services/${draft.service.slug}/${draft.city.slug}`,
     existingCoreProductionCombination: SERVICE_AREA_COMBOS.some(combo => combo.city === draft.city.slug && combo.service === draft.service.slug),
     researchDecision: evidence?.evidenceDecision ?? 'missing-assessment', checks, blockers,
+    followupResearch: followupByDraft.get(`${draft.city.slug}/${draft.service.slug}`) ?? null,
+    independentFollowupDecisions: independentDecisions,
+    evidenceDisagreement,
     publicationReady: false,
   };
 });
@@ -52,6 +74,9 @@ const report = {
     missingLocalBodies: rows.filter(row => !row.checks.citySpecificBodyPresent).length,
     regulatedDeliveryBlocked: rows.filter(row => row.checks.regulatedDeliveryBlocked).length,
     missingResearchAssessments: rows.filter(row => !row.checks.researchAssessmentRecorded).length,
+    followupAssessmentsRecorded: rows.filter(row => row.followupResearch !== null).length,
+    draftsWithIndependentFollowupDecisions: rows.filter(row => row.independentFollowupDecisions.length > 0).length,
+    baselineFollowupDisagreements: rows.filter(row => row.evidenceDisagreement).length,
     nonPricingQuestionFailures: rows.filter(row => !row.checks.nonPricingQuestions).length,
     metadataLengthFailures: rows.filter(row => !row.checks.titleWithinLimit || !row.checks.descriptionWithinLimit).length,
     publicationReady: 0 },

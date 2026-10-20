@@ -3,144 +3,168 @@
     "routeFile": "src/routes/__root.tsx",
     "hasHead": true,
     "rootOrLayout": true,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "root-layout"
   },
   {
     "routeFile": "src/routes/about.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/blog.$.tsx",
     "hasHead": false,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "removed-blog-301-redirect-not-content"
   },
   {
     "routeFile": "src/routes/blog.index.tsx",
     "hasHead": false,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "removed-blog-301-redirect-not-content"
   },
   {
     "routeFile": "src/routes/contact.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/fr.securite.$city.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/fr.securite.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/industries.$industry.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/industries.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/location-review.$city.$service.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": true
+    "isReview": true,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/location-review.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": true
+    "isReview": true,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/locations.$city.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/locations.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/locations.province.$province.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/privacy.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/resources.$slug.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/resources.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/services.$service.$city.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/services.$service.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/services.$service.tsx",
     "hasHead": false,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "outlet-layout-not-content"
   },
   {
     "routeFile": "src/routes/services.index.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   },
   {
     "routeFile": "src/routes/services.tsx",
     "hasHead": false,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "outlet-layout-not-content"
   },
   {
     "routeFile": "src/routes/terms.tsx",
     "hasHead": true,
     "rootOrLayout": false,
-    "isReview": false
+    "isReview": false,
+    "routeKind": "content"
   }
 ]
