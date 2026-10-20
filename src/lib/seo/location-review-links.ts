@@ -1,5 +1,10 @@
 import { REVIEW_CITY_INVENTORY, type City } from "./cities";
 
+/** Review listings never modify the approved public-city inventory. */
+export const REVIEW_PROVINCE_GROUPS = [...new Set(REVIEW_CITY_INVENTORY.map(city => city.province))]
+  .sort((a, b) => a.localeCompare(b))
+  .map(province => ({ province, cities: REVIEW_CITY_INVENTORY.filter(city => city.province === province).sort((a, b) => a.name.localeCompare(b.name)) }));
+
 /** A stable province-local ring makes every same-service draft reachable without geographic proximity claims. */
 export function getRelatedReviewCities(city: City): City[] {
   const peers = REVIEW_CITY_INVENTORY.filter(item => item.province === city.province).sort((a, b) => a.name.localeCompare(b.name));
