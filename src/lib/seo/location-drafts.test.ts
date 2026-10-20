@@ -39,4 +39,16 @@ describe("location draft safeguards", () => {
     assert.equal(SERVICE_AREA_COMBOS.length, 208);
     assert.equal(getLocationServiceDraft("not-a-real-town", "cctv"), undefined);
   });
+  test("review editorial copy omits Fortega availability claims and caveats", () => {
+    for (const draft of LOCATION_SERVICE_DRAFTS) {
+      const copy = [draft.description, draft.plan.answer, ...draft.plan.checklist, draft.searchOverview, ...draft.faqs.flatMap(faq => [faq.q, faq.a])].join(" ");
+      assert.equal(/Fortega.{0,100}(availability|eligibility|coverage)|personnel availability|local personnel availability|delivery arrangements require confirmation/i.test(copy), false, `${draft.city.slug}/${draft.service.slug}`);
+    }
+  });
+  test("verified municipal facts remain separate from absent local evidence", () => {
+    assert.equal(getLocationServiceDraft("lethbridge", "access")?.status, "needs-review");
+    assert.equal(getLocationServiceDraft("lethbridge", "remote")?.local, undefined);
+    assert.equal(getLocationServiceDraft("iqaluit", "intrusion")?.local?.sourceUrl, "https://iqaluit.ca/sites/default/files/alarm_contact_information_annual_revision_form_-_eng.pdf");
+    assert.equal(getLocationServiceDraft("iqaluit", "guards")?.status, "delivery-blocked");
+  });
 });

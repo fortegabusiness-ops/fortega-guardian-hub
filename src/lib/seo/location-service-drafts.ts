@@ -4,6 +4,7 @@ import { SERVICE_BY_SLUG, SERVICE_SLUGS } from "./services";
 import { SERVICE_KEYWORDS } from "./service-keywords";
 import { clampDescription, clampTitle } from "./meta";
 import { getServiceSearchFaqs, PROJECT_ENQUIRY_FAQS, SERVICE_SEARCH_CONTENT } from "./service-search-content";
+import { MUNICIPAL_SERVICE_PLANS } from "./municipal-service-plans";
 
 type LocalPlan = { heading: string; body: string; sourceTitle: string; sourceUrl: string };
 type ServicePlan = { answer: string; checklist: string[]; cost: string; sourceTitle: string; sourceUrl: string };
@@ -93,13 +94,13 @@ export function getLocationServiceDraft(citySlug: string, serviceSlug: string) {
   const plan = SERVICE_PLANS[serviceSlug];
   const keywords = SERVICE_KEYWORDS[serviceSlug as keyof typeof SERVICE_KEYWORDS];
   if (!city || !service || !plan || !keywords) return undefined;
-  const local = LOCAL_PLANS[citySlug]?.[serviceSlug];
+  const local = LOCAL_PLANS[citySlug]?.[serviceSlug] ?? MUNICIPAL_SERVICE_PLANS[citySlug]?.[serviceSlug];
   const geography = (geographicReferences as Record<string, { sourceTitle: string; sourceUrl: string; excerpt: string; reviewed: string }>)[citySlug];
   const status = serviceSlug === "guards" ? "delivery-blocked" : local ? "needs-review" : "insufficient-local-evidence";
   const title = clampTitle([`${keywords.primary} — ${city.name} | Fortega`, `${service.shortName} planning — ${city.name} | Fortega`]);
   const description = clampDescription(`Explore ${keywords.primary} for ${city.name}: practical requirements, system planning and answers to common questions. Discuss your project with Fortega.`);
   const searchOverview = SERVICE_SEARCH_CONTENT[serviceSlug]?.overview ?? plan.answer;
-  const faqs = [...getServiceSearchFaqs(serviceSlug), ...PROJECT_ENQUIRY_FAQS];
+  const faqs = [...getServiceSearchFaqs(serviceSlug), ...PROJECT_ENQUIRY_FAQS, ...(local ? [{ q: `What local planning checks matter for ${service.shortName.toLowerCase()} in ${city.name}?`, a: local.body }] : [])];
   return { city, service, plan, keywords, searchOverview, faqs, local, geography, status, title, description, updated: "2026-10-20", approved: false as const };
 }
 
