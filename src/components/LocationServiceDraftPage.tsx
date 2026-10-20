@@ -6,7 +6,7 @@ import { CITY_BY_SLUG } from "@/lib/seo/cities";
 import planningImage from "@/assets/smart-building.jpg";
 
 export function LocationServiceDraftPage({ draft }: { draft: NonNullable<ReturnType<typeof getLocationServiceDraft>> }) {
-  const { city, service, plan, local, keywords, geography, searchOverview, faqs } = draft;
+  const { city, service, plan, local, keywords, searchOverview, faqs } = draft;
   const siblings = LOCATION_SERVICE_DRAFTS.filter((d) => d.city.slug === city.slug && d.service.slug !== service.slug);
   return <>
     <section className="border-b border-border bg-ink">
