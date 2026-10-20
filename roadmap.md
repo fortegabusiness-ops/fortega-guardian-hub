@@ -1,6 +1,7 @@
 # Fortega SEO roadmap
 
 ## Approved full location expansion
+- [ ] October 20 follow-up: add verified jurisdiction-aware service-planning context across all review drafts, remove external editorial links while retaining private source records, strengthen same-city/same-service/province/resource navigation, and verify linking and evidence scope. City-specific research gaps must not be relabelled as complete by adding province-wide guidance.
 - [x] October 20: removed availability wording from review-page copy, expanded all eight services' non-pricing FAQs, added 13 attributed municipal planning records across six cities, and matched review FAQ structured data to visible answers. All 1,800 drafts audited, 17 safeguards pass, representative dropdowns/local content/enquiry navigation and mobile layout verified. Nothing published; 1,772 drafts still lack local evidence.
 - [x] Enrich all 1,800 city-service review drafts and existing service pages with researched terms and 7–8 non-pricing draft FAQs; remove pricing questions from existing city-service and resource/industry questions. Draft inventory and safeguards verified; representative pages and enquiry link checked. Nothing published; local-evidence gaps remain unchanged.
 - [x] October 19 continuation: created all 1,800 review addresses and searchable review directory; checked every address, deleted-URL isolation and 12 safeguards. Nothing published or restored.
