@@ -64,5 +64,5 @@
   "independentReviewRecords": 625,
   "draftsWithIndependentReviewRecords": 622,
   "baselineFollowupDisagreements": 36,
-  "ontarioDiscoveryStatus": "Initial repair reported searches without saving results; no verified artifact exists. Three smaller artifact-first repairs in progress."
+  "ontarioDiscoveryStatus": "Artifact-first repair completed: 66 recorded clustered searches, 528 mappings, seven source attempts, six successful captures. Finite discovery, not exhaustive local evidence."
 }

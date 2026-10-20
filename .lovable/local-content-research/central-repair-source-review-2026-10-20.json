@@ -1,0 +1,96 @@
+{
+  "scope": "Checked exact saved passages for narrow candidates; not exhaustive source review. Historical Toronto audit retained for source-scope review only, not current vulnerabilities; Hamilton general recovery source not transferred to unrelated services; Cornwall 404 rejected.",
+  "decisions": [
+    {
+      "city": "fort-frances",
+      "service": "cctv",
+      "decision": "usable-scoped-research-candidate",
+      "url": "https://www.fortfrances.ca/projects/safe-streets",
+      "exactPassage": "Replaced existing cameras at the Fort Frances Museum, Rainy Lake Square, and Fire Hall",
+      "characterOffset": 1053,
+      "textSha256": "b8abbf0c76666b49177ec80f5a65d983623d2f0a72c4f9630bcaece1aae15e7e",
+      "scope": "Town-reported Safe Streets downtown surveillance upgrade; public programme, not all premises.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "london",
+      "service": "consulting",
+      "decision": "usable-scoped-research-candidate",
+      "url": "https://london.ca/sites/default/files/2026-02/Security%20Services.pdf",
+      "exactPassage": "include infrastructure protective systems, security audits, fire safety, downtown camera management, incident and",
+      "characterOffset": 577,
+      "textSha256": "c06cb076776b60f023e3ae9cc2982aa397c69019fc8755648acdc6ddd81042f6",
+      "scope": "City Security Services 2024\u20132027 business plan; municipal asset protection only, no supplier eligibility.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "london",
+      "service": "cctv",
+      "decision": "usable-scoped-research-candidate",
+      "url": "https://london.ca/sites/default/files/2026-02/Security%20Services.pdf",
+      "exactPassage": "include infrastructure protective systems, security audits, fire safety, downtown camera management, incident and",
+      "characterOffset": 577,
+      "textSha256": "c06cb076776b60f023e3ae9cc2982aa397c69019fc8755648acdc6ddd81042f6",
+      "scope": "City Security Services 2024\u20132027 business plan; municipal asset protection only, no supplier eligibility.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "london",
+      "service": "guards",
+      "decision": "usable-scoped-research-candidate",
+      "url": "https://london.ca/sites/default/files/2026-02/Security%20Services.pdf",
+      "exactPassage": "include infrastructure protective systems, security audits, fire safety, downtown camera management, incident and",
+      "characterOffset": 577,
+      "textSha256": "c06cb076776b60f023e3ae9cc2982aa397c69019fc8755648acdc6ddd81042f6",
+      "scope": "City Security Services 2024\u20132027 business plan; municipal asset protection only, no supplier eligibility.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "midland",
+      "service": "cctv",
+      "decision": "usable-scoped-research-candidate",
+      "url": "https://www.midland.ca/media-manager/media-pages/policies-procedures/surveillance-policy/",
+      "exactPassage": "This Video Surveillance Policy governs the Town\u2019s use of video surveillance at properties owned and leased by the Town",
+      "characterOffset": 1451,
+      "textSha256": "9b2bb8efab48072ba12ca4c60253a6245614c4e37bf14377dbbcbb506551278b",
+      "scope": "Town-owned and leased properties only; municipal policy not universal private-sector rule.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "thorold",
+      "service": "cyber",
+      "decision": "usable-scoped-research-candidate",
+      "url": "https://www.thorold.ca/news/news/update-on-the-cybersecurity-incident/",
+      "exactPassage": "The City of Thorold is providing an update regarding the cybersecurity incident identified on June 1, 2026, involving unauthorized access to certain systems within our network.",
+      "characterOffset": 786,
+      "textSha256": "bc021cdfc89b3b4a8c89fca30195854048f6bc92184d01c650326e24852e0f8c",
+      "scope": "City incident update July 8, 2026; historical municipal response, not current vulnerability or all local businesses.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    }
+  ],
+  "publicationReady": false
+}
