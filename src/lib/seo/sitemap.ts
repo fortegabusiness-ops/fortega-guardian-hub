@@ -7,25 +7,18 @@ export interface SitemapEntry {
   lastmod?: string;
 }
 
-/**
- * Content revision dates per sitemap group. Bump the relevant value when the
- * pages in that group are meaningfully rewritten — not on every deploy.
- */
-export const CONTENT_UPDATED = {
-  core: "2026-02-18",
-  services: "2026-10-19",
-  locations: "2026-10-19",
-  serviceAreas: "2026-10-19",
-  resources: "2026-10-19",
-  fr: "2026-10-19",
-} as const;
+function escapeXml(value: string): string {
+  return value.replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;",
+  })[character] ?? character);
+}
 
 export function sitemapXml(entries: SitemapEntry[]): Response {
   const urls = entries.map((e) =>
     [
       `  <url>`,
-      `    <loc>${SITEMAP_BASE_URL}${e.path}</loc>`,
-      e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
+      `    <loc>${escapeXml(SITEMAP_BASE_URL + e.path)}</loc>`,
+      e.lastmod ? `    <lastmod>${escapeXml(e.lastmod)}</lastmod>` : null,
       e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
       e.priority ? `    <priority>${e.priority}</priority>` : null,
       `  </url>`,
@@ -44,15 +37,15 @@ export function sitemapXml(entries: SitemapEntry[]): Response {
   });
 }
 
-export function sitemapIndexXml(children: { path: string; lastmod: string }[]): Response {
+export function sitemapIndexXml(children: { path: string; lastmod?: string }[]): Response {
   const xml = [
     `<?xml version="1.0" encoding="UTF-8"?>`,
     `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
     ...children.map((c) =>
       [
         `  <sitemap>`,
-        `    <loc>${SITEMAP_BASE_URL}${c.path}</loc>`,
-        `    <lastmod>${c.lastmod}</lastmod>`,
+        `    <loc>${escapeXml(SITEMAP_BASE_URL + c.path)}</loc>`,
+        ...(c.lastmod ? [`    <lastmod>${escapeXml(c.lastmod)}</lastmod>`] : []),
         `  </sitemap>`,
       ].join("\n"),
     ),
