@@ -55,16 +55,8 @@ function LocationsIndex() {
 
       <section className="border-b border-border bg-surface/30">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
-          <div className="flex flex-wrap items-baseline justify-between gap-4">
-            <h2 className="font-display text-3xl font-semibold text-foreground">Communities by province</h2>
-            <Link to="/location-review" className="text-sm font-medium text-brand-glow" rel="nofollow">All {REVIEW_PROVINCE_GROUPS.reduce((n, g) => n + g.cities.length, 0)} communities →</Link>
-          </div>
-          <p className="mt-4 text-muted-foreground">
-            {REVIEW_PROVINCE_GROUPS.reduce((n, g) => n + g.cities.length, 0)} communities · 8 service drafts each ·
-            Every province appears once. Approved city pages are linked from their community heading; all service
-            drafts remain under review, separate from approved location pages.
-          </p>
-          <div className="mt-10 space-y-12">
+          <div className="space-y-12">
+
             {REVIEW_PROVINCE_GROUPS.map(({ province, cities }) => {
               const hub = PROVINCE_BY_NAME[province];
               return (
