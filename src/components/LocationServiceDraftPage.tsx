@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQList } from "@/components/FAQSection";
 import { getLocationServiceDraft, LOCATION_SERVICE_DRAFTS } from "@/lib/seo/location-service-drafts";
@@ -9,6 +9,7 @@ import planningImage from "@/assets/smart-building.jpg";
 export function LocationServiceDraftPage({ draft }: { draft: NonNullable<ReturnType<typeof getLocationServiceDraft>> }) {
   const { city, service, plan, local, keywords, searchOverview, faqs } = draft;
   const siblings = LOCATION_SERVICE_DRAFTS.filter((d) => d.city.slug === city.slug && d.service.slug !== service.slug);
+  const showClearAssessmentCta = city.slug === "lethbridge" && service.slug === "remote";
   return <>
     <section className="border-b border-border bg-ink">
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-20">
@@ -16,7 +17,10 @@ export function LocationServiceDraftPage({ draft }: { draft: NonNullable<ReturnT
         <p className="text-sm font-semibold text-brand-glow">Fortega · {city.province}</p>
         <h1 className="mt-4 max-w-4xl font-display text-4xl font-bold leading-tight text-foreground md:text-5xl">{keywords.primary.charAt(0).toUpperCase() + keywords.primary.slice(1)} for {city.name}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">{plan.answer}</p>
-        <Button asChild size="lg" className="mt-8 h-auto whitespace-normal py-3"><Link to="/contact">Discuss your project <ArrowRight /></Link></Button>
+        {showClearAssessmentCta ? <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+          <Button asChild size="lg" className="h-auto min-h-12 whitespace-normal py-3 text-center"><Link to="/contact">Request a Video Monitoring Assessment <ArrowRight className="shrink-0" /></Link></Button>
+          <Button asChild size="lg" variant="outline" className="h-auto min-h-12 whitespace-normal py-3"><a href="tel:+18888691679"><Phone className="shrink-0" />Call 1-888-869-1679</a></Button>
+        </div> : <Button asChild size="lg" className="mt-8 h-auto whitespace-normal py-3"><Link to="/contact">Discuss your project <ArrowRight /></Link></Button>}
       </div>
     </section>
     <section className="border-b border-border">
@@ -26,6 +30,7 @@ export function LocationServiceDraftPage({ draft }: { draft: NonNullable<ReturnT
           <article><h2 className="font-display text-2xl font-semibold md:text-3xl">What to prepare for {service.shortName.toLowerCase()}</h2><ul className="mt-5 space-y-4">{plan.checklist.map((item) => <li key={item} className="flex gap-3 text-muted-foreground"><Check className="mt-1 h-4 w-4 shrink-0 text-brand-glow" />{item}</li>)}</ul></article>
           <article><h2 className="font-display text-2xl font-semibold md:text-3xl">{service.shortName} systems and requirements</h2><p className="mt-5 leading-relaxed text-muted-foreground">{searchOverview}</p></article>
           <article><h2 className="font-display text-2xl font-semibold md:text-3xl">{service.shortName} — common questions</h2><FAQList faqs={faqs} className="mt-6" /></article>
+          {showClearAssessmentCta && <div className="border-t border-border pt-8"><Button asChild size="lg" className="h-auto min-h-12 w-full whitespace-normal py-3 text-center sm:w-auto"><Link to="/contact">Request a Video Monitoring Assessment <ArrowRight className="shrink-0" /></Link></Button></div>}
         </div>
         <aside className="space-y-8 md:col-span-4"><figure><img src={planningImage} alt="Illustrative connected-building planning" className="aspect-[4/3] w-full rounded-md object-cover" /></figure><div className="border-t border-border pt-6"><h2 className="font-display text-xl font-semibold">Project availability</h2><p className="mt-3 text-sm leading-relaxed text-muted-foreground">The requested service, installation arrangements, travel costs and support need confirmation after assessment. No local office, partner or attendance time is assumed.</p></div><div className="border-t border-border pt-6"><h2 className="font-display text-xl font-semibold">Other project topics</h2><ul className="mt-4 space-y-3 text-sm">{siblings.map((other) => <li key={other.service.slug}><Link to="/location-review/$city/$service" params={{ city: city.slug, service: other.service.slug }} className="text-brand-glow">{other.service.shortName}</Link></li>)}</ul></div><Button asChild variant="outline" className="h-auto whitespace-normal py-3"><Link to="/services/$service" params={{ service: service.slug }}>About {service.shortName.toLowerCase()} <ArrowRight /></Link></Button></aside>
       </div>
