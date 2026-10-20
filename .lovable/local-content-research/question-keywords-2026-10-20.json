@@ -1,0 +1,17 @@
+{
+  "source": "Semrush keyword_research",
+  "database": "ca",
+  "reviewed": "2026-10-20",
+  "scope": "National question-term evidence, not town demand or page facts",
+  "notes": ["Normalized grammar only for editorial question suggestions; recorded terms below retain tool wording.", "Excluded pricing, licence, irrelevant brands, medical monitoring, tax/selling intent and malformed phrases.", "Zero volume does not establish zero demand or easy ranking.", "Related lists for building automation and cybersecurity contained substantial irrelevant terms; not adopted."],
+  "questions": {
+    "cctv": [{"term":"how to install security cameras","volume":90},{"term":"can tenants install security cameras ontario canada","volume":70},{"term":"how to install security camera wiring","volume":30},{"term":"can a landlord install a security camera outside","volume":20}],
+    "access": [{"term":"how does access control system work","volume":30},{"term":"what is physical access control system","volume":30},{"term":"what is the best access control system","volume":30},{"term":"what are access control systems","volume":20}],
+    "intrusion": [{"term":"can my business be secure with an alarm system alone","volume":0}],
+    "remote": [{"term":"how does remote video monitoring work","volume":0},{"term":"what is remote video monitoring","volume":0},{"term":"what to look for in a remote video monitoring company","volume":0}],
+    "consulting": [{"term":"how to conduct a security risk assessment","volume":20},{"term":"what is a security risk assessment","volume":20},{"term":"how to do a security risk assessment","volume":10}],
+    "smart": [{"term":"what is a building automation system","volume":30},{"term":"how building automation systems work","volume":20},{"term":"what is building automation systems in hvac","volume":20}],
+    "cyber": [{"term":"what are cybersecurity services","volume":20},{"term":"why businesses need cybersecurity services in canada","volume":20},{"term":"how can managed it services improve cybersecurity","volume":10}],
+    "guards": [{"term":"what is customer service in security guard","volume":20},{"term":"what vital services can a security guard provide","volume":20},{"term":"how to choose right security guard services","volume":0}]
+  }
+}

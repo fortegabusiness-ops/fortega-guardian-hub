@@ -1,0 +1,27 @@
+{
+  "source": "Abhay's Google Search Console",
+  "site": "https://fortega.ca/",
+  "period": {"start":"2026-07-22","end":"2026-10-17"},
+  "dimensions": ["query"],
+  "limitations": ["Query-only site-wide records do not attribute an enquiry or ranking to a specific page.", "Missing rows do not establish absent demand or indexing.", "Average positions span dates and contexts; they are not current localized rankings.", "Irrelevant and competitor-brand queries were excluded from content suggestions.", "A search phrase does not establish a Fortega capability, regulated eligibility or local cyber threat."],
+  "remoteSamples": [
+    {"query":"cyber security estevan","clicks":0,"impressions":5,"position":11},
+    {"query":"cyber security iqaluit","clicks":0,"impressions":14,"position":16.357142857142858},
+    {"query":"cyber security yarmouth","clicks":0,"impressions":10,"position":7.5},
+    {"query":"cyber security yellowknife","clicks":0,"impressions":13,"position":16.846153846153847},
+    {"query":"cybersecurity estevan","clicks":0,"impressions":4,"position":12},
+    {"query":"cybersecurity iqaluit","clicks":0,"impressions":5,"position":19.8},
+    {"query":"fire alarm installation dawson creek","clicks":0,"impressions":15,"position":60.2,"use":"Do not equate fire-alarm installation with intrusion services."},
+    {"query":"security companies iqaluit","clicks":0,"impressions":30,"position":21.333333333333332},
+    {"query":"security guard companies iqaluit","clicks":0,"impressions":67,"position":28.656716417910449,"use":"Research only; guard delivery blocked."},
+    {"query":"security guards iqaluit","clicks":0,"impressions":25,"position":32.88,"use":"Research only; guard delivery blocked."}
+  ],
+  "relevantQuestionSamples": [
+    {"query":"how many cameras does a business need","impressions":1,"clicks":0},
+    {"query":"how many security cameras does a business need","impressions":4,"clicks":0},
+    {"query":"what are the leading smart building providers in canada?","impressions":1,"clicks":0,"use":"Provider selection intent; no unsupported best-provider claims."},
+    {"query":"what companies offer building automation upgrades in canada?","impressions":5,"clicks":0},
+    {"query":"what is the difference between live remote video monitoring and remote guarding services?","impressions":1,"clicks":0},
+    {"query":"where can i find cpted consulting services in british columbia","impressions":1,"clicks":0,"use":"Do not claim a CPTED credential or offered capability without confirmation."}
+  ]
+}
