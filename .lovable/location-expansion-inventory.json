@@ -15576,7 +15576,7 @@
       "target": "/services/cctv/charlottetown",
       "keyword": "security camera installation",
       "reviewUrl": "/location-review/charlottetown/cctv",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": false,
       "approvedForExpansion": false
     },
@@ -15768,7 +15768,7 @@
       "target": "/services/cctv/summerside",
       "keyword": "security camera installation",
       "reviewUrl": "/location-review/summerside/cctv",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": false,
       "approvedForExpansion": false
     },

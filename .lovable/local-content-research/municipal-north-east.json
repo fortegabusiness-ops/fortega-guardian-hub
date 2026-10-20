@@ -1,0 +1,30 @@
+[
+  {
+    "jurisdiction": "St. John’s, Newfoundland and Labrador",
+    "record": "Video Surveillance and Access Control - Standing Offer Agreement (RFP 2026033)",
+    "sourceTitle": "Bids and Tenders - St. John’s",
+    "sourceUrl": "https://stjohns.bidsandtenders.ca/Module/Tenders/en/Tender/Detail/96accdb7-15d5-4fd3-a566-cc076c1f8478",
+    "scope": "City corporate facility systems; listing says roughly 205 CCTV devices and 200 door access controls, support/maintenance and new installation. Listed 2026 dates require direct status verification."
+  },
+  {
+    "jurisdiction": "Whitehorse, Yukon",
+    "record": "Supply and Install CCTV (BT-RFB-2023-10-3004)",
+    "sourceTitle": "Supply and Install CCTV - CanadaBuys",
+    "sourceUrl": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/bt-78eef83a-f3e2-45b1-afba-c261b25f20c3",
+    "scope": "CCTV for Elijah Smith Elementary School; federal contracting organization Yukon, not a municipal contract. Notice status: cancelled."
+  },
+  {
+    "jurisdiction": "Iqaluit, Nunavut",
+    "record": "Security Services, City of Iqaluit Aquatics Centre (2025-RFP-010)",
+    "sourceTitle": "Security Services",
+    "sourceUrl": "https://iqaluit.ca/sites/default/files/attachments/2025-rfp-010_-_security_services.pdf",
+    "scope": "City-facility security services RFP; due date has passed, not evidence of current procurement or availability."
+  },
+  {
+    "jurisdiction": "Iqaluit, Nunavut",
+    "record": "Wastewater/sewer line cleaning and CCTV assessment (2024-RFT-063)",
+    "sourceTitle": "WASTEWATER/SEWER LINE CLEANING AND CCTV ASSESSMENT (PHASE 2)",
+    "sourceUrl": "https://iqaluit.ca/sites/default/files/attachments/2024-rft-063_sewer_line_cleaning_and_cctv_assesment_0.pdf",
+    "scope": "Municipal utility CCTV pipe inspection, not building security surveillance."
+  }
+]

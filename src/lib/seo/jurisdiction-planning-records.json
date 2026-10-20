@@ -1,0 +1,93 @@
+{
+  "british-columbia": {
+    "body": "British Columbia publishes physical-security standards specifically for government facilities. Their stated scope is not every private business. Identify the building owner and any project standards they actually require before transferring public-facility design assumptions to a private property.",
+    "sourceTitle": "Physical Security Standards for Government of B.C. Facilities; Privacy Guidelines for BC Public Libraries",
+    "sourceUrl": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/real-estate-space/physical_security_standards_for_government_of_bc_facilities.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "alberta": {
+    "body": "Alberta's public-area surveillance guide addresses public bodies and covers camera policy, equipment design, record access and retention. For a private property, establish the current privacy framework separately; older public-body guidance is not a complete statement of today's business obligations.",
+    "sourceTitle": "Guide to Using Surveillance Cameras in Public Areas; Physical Security Guidelines & Standards for Government of Alberta Facilities; Efficient Operations of Alberta Infrastructure Facilities",
+    "sourceUrl": "https://open.alberta.ca/dataset/2dab1729-0e71-4501-9788-ce8e1eb483be/resource/5188d1f6-6234-426c-b889-86bc5192f3e5/download/surveillanceguide.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "saskatchewan": {
+    "body": "Saskatchewan's building-standards information identifies adoption of the 2020 national building, fire and energy codes from January 1, 2024. Determine the current applicable edition, project scope and reviewing authority before changing building systems; a code-adoption page does not approve a particular installation.",
+    "sourceTitle": "National Building Code, National Fire Code, National Energy Code for Buildings; Information Security Policies; CCTV and Remote Monitoring Systems",
+    "sourceUrl": "https://www.saskatchewan.ca/business/housing-development-construction-and-property-management/building-and-technical-standards/national-building-and-fire-code-information",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "manitoba": {
+    "body": "Manitoba Housing's multi-unit affordable and social-housing design guidelines cover building access, video monitoring and commissioning within a defined housing-development scope. A retail, industrial or unrelated residential project should establish its own owner standards rather than assume that housing-program specifications apply.",
+    "sourceTitle": "Design Guidelines for Multi-unit Affordable and Social Housing; Manitoba Energy Code for Buildings; Baseline Cyber Security Controls for Small and Medium Organizations",
+    "sourceUrl": "https://www.gov.mb.ca/housing/pubs/procurement/design-guidelines-for-multi-unit-affordable-and-social-housing.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "ontario": {
+    "body": "Ontario's privacy commissioner publishes institutional video-surveillance guidance covering appropriate use, collection notices, retention and disclosure. Its page flags public-sector law changes during 2026 and guidance under review. Identify the property's public or private status and check current applicable guidance before writing a recording policy.",
+    "sourceTitle": "Guidelines for the Use of Video Surveillance",
+    "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "quebec": {
+    "body": "Quebec's privacy commission explains that an image of an identifiable person is personal information. Its video-surveillance guidance distinguishes public bodies from private businesses. Record why images are needed and who handles them; the property's governing privacy requirements must be reviewed for its actual use.",
+    "sourceTitle": "La vidéosurveillance",
+    "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "new-brunswick": {
+    "body": "New Brunswick's Fire Marshal guidance distinguishes building-code design and renovation requirements from ongoing fire-safe operation. Certain construction and occupancy projects need plan review. Identify whether proposed equipment work alters the building, exit arrangement or use before deciding which review process applies.",
+    "sourceTitle": "Fire inspections, plans and standards",
+    "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "nova-scotia": {
+    "body": "Nova Scotia's video-surveillance guidance is directed to public bodies and municipalities and discusses their privacy obligations. For a private business, establish the applicable privacy framework separately. A public-institution surveillance policy should not be adopted unchanged simply because the property is in the same province.",
+    "sourceTitle": "Video Surveillance Guidelines",
+    "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "newfoundland-and-labrador": {
+    "body": "Newfoundland and Labrador's privacy commissioner has published video-surveillance guidelines for public bodies. The release identifies necessity, camera locations and operating times, authorized viewing, storage and retention as review topics. Private premises need a separate applicability review rather than automatic adoption of public-body rules.",
+    "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+    "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "prince-edward-island": {
+    "body": "PEI's Public Library Service surveillance policy defines authorized footage access and a two-week storage limit, with incident-related exceptions. Those are library-policy provisions, not a universal recording rule for businesses. Establish the actual owner's policy and privacy obligations before setting a recorder's retention or access permissions.",
+    "sourceTitle": "Video Surveillance Policy",
+    "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "yukon": {
+    "body": "Yukon's public privacy-assessment register describes a Yukon Housing camera project at 15 multi-unit buildings in Whitehorse. This is a specific housing-project example, not evidence of conditions in every Yukon community or a territory-wide requirement for surveillance. Establish the property's own purpose and privacy review.",
+    "sourceTitle": "Video Surveillance System - Pia-Summaries",
+    "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "northwest-territories": {
+    "body": "The Northwest Territories government's electronic-information security policy explicitly assigns responsibilities for protecting government information assets. Its scope is government systems, not a universal private-business standard. Identify who owns the system and its information before deciding which institutional requirements or contracts apply.",
+    "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+    "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  },
+  "nunavut": {
+    "body": "Nunavut Education's school camera policy specifies permitted purposes, visible cameras and restrictions on capturing private areas or adjacent buildings. These provisions are school-specific, not a universal specification for commercial properties. Establish the building's use and the applicable privacy and operating policies before selecting coverage.",
+    "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+    "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf",
+    "reviewed": "2026-10-20",
+    "scope": "jurisdiction-reference-not-city-evidence"
+  }
+}
