@@ -1,31 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
-import { CONTENT_UPDATED, sitemapXml } from "@/lib/seo/sitemap";
-import { CITIES } from "@/lib/seo/cities";
-import { PROVINCES } from "@/lib/seo/provinces";
-import { getLocationPilot } from "@/lib/seo/location-pilots";
-
-const lastmod = CONTENT_UPDATED.locations;
+import { sitemapXml } from "@/lib/seo/sitemap";
+import { SITEMAP_GROUPS } from "@/lib/seo/sitemap-inventory";
 
 export const Route = createFileRoute("/sitemap-locations.xml")({
   server: {
     handlers: {
-      GET: async () =>
-        sitemapXml([
-          { path: "/locations", changefreq: "monthly", priority: "0.8", lastmod },
-          ...PROVINCES.map((p) => ({
-            path: `/locations/province/${p.slug}`,
-            changefreq: "monthly",
-            priority: "0.8",
-            lastmod,
-          })),
-          ...CITIES.map((c) => ({
-            path: `/locations/${c.slug}`,
-            changefreq: "monthly",
-            priority: "0.7",
-            lastmod: getLocationPilot(c.slug)?.updated ?? lastmod,
-          })),
-        ]),
+      GET: async () => sitemapXml(SITEMAP_GROUPS["locations"]),
     },
   },
 });
