@@ -1,97 +1,334 @@
-# Fortega
+# Fortega Inc.
 
-> Fortega is a Canadian electronic security company delivering integrated physical security, monitoring, automation and cyber security solutions across Canada.
+> Security systems, security guard services, monitoring, building automation and cyber security for homes and businesses.
 
-Fortega protects people, property and operations through intelligent, integrated systems — combining best-in-class hardware, software and human expertise. We serve corporations, institutions and critical infrastructure operators from coast to coast with a single, accountable team.
+## Contact
 
-Headquartered at 3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1 (Google Business Profile: https://www.google.com/maps?cid=2304580937278547264), Fortega delivers end-to-end security programs that span consulting, design, installation, monitoring and ongoing support. Our services include CCTV and video surveillance, intrusion alarms, access control, remote guarding, security guards, smart building automation and cyber security. Every program is tailored to the operational rhythm, threat landscape and compliance requirements of the industries we serve.
+- Website: https://fortega.ca
+- Telephone: 1-888-869-1679
+- Address: 3080 Yonge Street, Suite 6060, Toronto, ON M4N 3N1
+- Assessments can begin remotely using drawings, layouts, building types and project details.
 
-Fortega is committed to transparency and ethical operations. Our AI usage is limited to operational efficiency and security analytics; we do not train generative AI models on client data. All personal data is handled in accordance with Canadian privacy legislation.
+## Public page directory
 
-## Pages
+This directory lists production-eligible pages. Community service review drafts are excluded from this directory and the XML sitemaps.
+Province and building-type guidance is not evidence of a completed local installation.
 
-- [Home](/): Fortega — integrated security solutions across Canada
-- [About](/about): Company overview, mission, vision and core values
-- [Services](/services): Full list of security services from consulting to cyber
-- [Contact](/contact): Request a security consultation or site assessment
-- [Locations](/locations): Service areas and cities across Canada
-- [Industries](/industries): Industry-specific security programs
-- [Resources](/resources): Answer-first guides on commercial security costs, cameras, access control, privacy rules and false alarms
-- [Sécurité au Québec](/fr/securite): French (fr-CA) pages for Quebec businesses, including project assessment and privacy considerations
+- [XML sitemap index](https://fortega.ca/sitemap.xml)
+- [Crawler instructions](https://fortega.ca/robots.txt)
 
-## Guides (answer-first)
+## core
 
-- [Commercial security system cost in Canada](/resources/commercial-security-system-cost-canada)
-- [How many security cameras does my business need](/resources/how-many-security-cameras-does-my-business-need)
-- [Remote guarding vs security guards](/resources/remote-guarding-vs-security-guards)
-- [Choosing a commercial access control system](/resources/choosing-a-commercial-access-control-system)
-- [Integrating access control and CCTV](/resources/integrating-access-control-and-cctv)
-- [CCTV privacy rules in Canada](/resources/cctv-privacy-rules-canada)
-- [How to reduce commercial false alarms](/resources/reduce-false-alarms-commercial)
-- [Commercial vs residential security systems](/resources/commercial-vs-residential-security-systems)
-- [Cyber hardening a security system](/resources/security-system-cyber-hardening)
+- [Home](https://fortega.ca/)
+- [about](https://fortega.ca/about)
+- [contact](https://fortega.ca/contact)
+- [industries](https://fortega.ca/industries)
+- [privacy](https://fortega.ca/privacy)
+- [terms](https://fortega.ca/terms)
+- [industries / commercial real estate](https://fortega.ca/industries/commercial-real-estate)
+- [industries / retail](https://fortega.ca/industries/retail)
+- [industries / industrial manufacturing](https://fortega.ca/industries/industrial-manufacturing)
+- [industries / logistics warehousing](https://fortega.ca/industries/logistics-warehousing)
+- [industries / healthcare](https://fortega.ca/industries/healthcare)
+- [industries / education](https://fortega.ca/industries/education)
+- [industries / government](https://fortega.ca/industries/government)
+- [industries / multi family residential](https://fortega.ca/industries/multi-family-residential)
+- [industries / cannabis](https://fortega.ca/industries/cannabis)
+- [industries / financial services](https://fortega.ca/industries/financial-services)
+- [industries / construction](https://fortega.ca/industries/construction)
+- [industries / hospitality](https://fortega.ca/industries/hospitality)
+- [industries / automotive dealerships](https://fortega.ca/industries/automotive-dealerships)
+- [industries / energy utilities](https://fortega.ca/industries/energy-utilities)
+- [industries / data centers](https://fortega.ca/industries/data-centers)
+- [industries / transportation transit](https://fortega.ca/industries/transportation-transit)
+- [industries / sports entertainment](https://fortega.ca/industries/sports-entertainment)
 
-## Services
+## services
 
-- [Consulting & Professional Services](/services/consulting): Security audits, risk assessments and compliance consulting
-- [CCTV & Video Surveillance](/services/cctv): Camera installation, AI analytics and remote viewing
-- [Intrusion & Burglar Alarms](/services/intrusion): Commercial alarms, motion detection and 24/7 monitoring
-- [Access Control Systems](/services/access): Card access, mobile credentials and visitor management
-- [Remote Guarding & Monitoring](/services/remote): Live virtual patrols, alarm verification and remote intervention
-- [Security Guard Services](/services/guards): On-site guards, mobile patrol and event security
-- [Smart Building & Automation](/services/smart): Building automation, smart lighting and IoT integration
-- [Cyber Security](/services/cyber): Network defense, threat monitoring, endpoint protection and incident response
+- [services](https://fortega.ca/services)
+- [services / consulting](https://fortega.ca/services/consulting)
+- [services / cctv](https://fortega.ca/services/cctv)
+- [services / intrusion](https://fortega.ca/services/intrusion)
+- [services / access](https://fortega.ca/services/access)
+- [services / remote](https://fortega.ca/services/remote)
+- [services / guards](https://fortega.ca/services/guards)
+- [services / smart](https://fortega.ca/services/smart)
+- [services / cyber](https://fortega.ca/services/cyber)
 
-## Provinces and territories
+## locations
 
-- [Alberta](/locations/province/alberta): Security services across Alberta; project availability confirmed after assessment
-- [British Columbia](/locations/province/british-columbia): Security project assessment in BC; delivery arrangements confirmed individually
-- [Manitoba](/locations/province/manitoba): Security services across Manitoba
-- [New Brunswick](/locations/province/new-brunswick): Security services across New Brunswick
-- [Newfoundland and Labrador](/locations/province/newfoundland-and-labrador): Security services across Newfoundland and Labrador
-- [Northwest Territories](/locations/province/northwest-territories): Security services across the Northwest Territories
-- [Nova Scotia](/locations/province/nova-scotia): Security services across Nova Scotia
-- [Nunavut](/locations/province/nunavut): Security services across Nunavut
-- [Ontario](/locations/province/ontario): Security services across Ontario; project availability confirmed after assessment
-- [Prince Edward Island](/locations/province/prince-edward-island): Security services across PEI
-- [Quebec](/locations/province/quebec): Security services across Quebec; project assessment and privacy planning
-- [Saskatchewan](/locations/province/saskatchewan): Security services across Saskatchewan
-- [Yukon](/locations/province/yukon): Security services across Yukon
+- [locations](https://fortega.ca/locations)
+- [locations / province / alberta](https://fortega.ca/locations/province/alberta)
+- [locations / province / british columbia](https://fortega.ca/locations/province/british-columbia)
+- [locations / province / manitoba](https://fortega.ca/locations/province/manitoba)
+- [locations / province / new brunswick](https://fortega.ca/locations/province/new-brunswick)
+- [locations / province / newfoundland and labrador](https://fortega.ca/locations/province/newfoundland-and-labrador)
+- [locations / province / northwest territories](https://fortega.ca/locations/province/northwest-territories)
+- [locations / province / nova scotia](https://fortega.ca/locations/province/nova-scotia)
+- [locations / province / nunavut](https://fortega.ca/locations/province/nunavut)
+- [locations / province / ontario](https://fortega.ca/locations/province/ontario)
+- [locations / province / prince edward island](https://fortega.ca/locations/province/prince-edward-island)
+- [locations / province / quebec](https://fortega.ca/locations/province/quebec)
+- [locations / province / saskatchewan](https://fortega.ca/locations/province/saskatchewan)
+- [locations / province / yukon](https://fortega.ca/locations/province/yukon)
+- [locations / calgary](https://fortega.ca/locations/calgary)
+- [locations / edmonton](https://fortega.ca/locations/edmonton)
+- [locations / burnaby](https://fortega.ca/locations/burnaby)
+- [locations / vancouver](https://fortega.ca/locations/vancouver)
+- [locations / victoria](https://fortega.ca/locations/victoria)
+- [locations / winnipeg](https://fortega.ca/locations/winnipeg)
+- [locations / halifax](https://fortega.ca/locations/halifax)
+- [locations / barrie](https://fortega.ca/locations/barrie)
+- [locations / brampton](https://fortega.ca/locations/brampton)
+- [locations / guelph](https://fortega.ca/locations/guelph)
+- [locations / hamilton](https://fortega.ca/locations/hamilton)
+- [locations / kitchener](https://fortega.ca/locations/kitchener)
+- [locations / london](https://fortega.ca/locations/london)
+- [locations / mississauga](https://fortega.ca/locations/mississauga)
+- [locations / oshawa](https://fortega.ca/locations/oshawa)
+- [locations / ottawa](https://fortega.ca/locations/ottawa)
+- [locations / toronto](https://fortega.ca/locations/toronto)
+- [locations / windsor](https://fortega.ca/locations/windsor)
+- [locations / gatineau](https://fortega.ca/locations/gatineau)
+- [locations / laval](https://fortega.ca/locations/laval)
+- [locations / montreal](https://fortega.ca/locations/montreal)
+- [locations / quebec city](https://fortega.ca/locations/quebec-city)
+- [locations / vaughan](https://fortega.ca/locations/vaughan)
+- [locations / markham](https://fortega.ca/locations/markham)
+- [locations / surrey](https://fortega.ca/locations/surrey)
+- [locations / richmond](https://fortega.ca/locations/richmond)
+- [locations / dawson](https://fortega.ca/locations/dawson)
+- [locations / chetwynd](https://fortega.ca/locations/chetwynd)
+- [locations / happy valley goose bay](https://fortega.ca/locations/happy-valley-goose-bay)
 
-## City service pages
+## service areas
 
-- [Access control in Chatham](/services/access/chatham): Access control systems for Chatham, Ontario businesses
-- [Access control in Guelph](/services/access/guelph): Access control systems for Guelph, Ontario businesses
-- [Access control in Toronto](/services/access/toronto): Access control systems for Toronto businesses
-- [Remote monitoring in North York](/services/remote/north-york): 24/7 remote guarding and video monitoring in North York
-- [Remote monitoring in Etobicoke](/services/remote/etobicoke): 24/7 remote guarding and video monitoring in Etobicoke
-- [Remote monitoring in Barrie](/services/remote/barrie): 24/7 remote guarding and video monitoring in Barrie
-- [Remote monitoring in Estevan](/services/remote/estevan): 24/7 remote guarding and video monitoring in Estevan, Saskatchewan
-- [CCTV in Toronto](/services/cctv/toronto): Commercial CCTV and video surveillance in Toronto
-- [CCTV in Mississauga](/services/cctv/mississauga): Commercial CCTV and video surveillance in Mississauga
-- [Intrusion alarms in Sudbury](/services/intrusion/sudbury): Commercial burglar alarm systems in Sudbury
-- [Security guards in Halifax](/services/guards/halifax): On-site presence and patrol planning; delivery arrangements require confirmation
-- [Cyber security in Vancouver](/services/cyber/vancouver): Cyber security services for Vancouver businesses
+- [services / consulting / calgary](https://fortega.ca/services/consulting/calgary)
+- [services / consulting / edmonton](https://fortega.ca/services/consulting/edmonton)
+- [services / consulting / burnaby](https://fortega.ca/services/consulting/burnaby)
+- [services / consulting / vancouver](https://fortega.ca/services/consulting/vancouver)
+- [services / consulting / victoria](https://fortega.ca/services/consulting/victoria)
+- [services / consulting / winnipeg](https://fortega.ca/services/consulting/winnipeg)
+- [services / consulting / halifax](https://fortega.ca/services/consulting/halifax)
+- [services / consulting / barrie](https://fortega.ca/services/consulting/barrie)
+- [services / consulting / brampton](https://fortega.ca/services/consulting/brampton)
+- [services / consulting / guelph](https://fortega.ca/services/consulting/guelph)
+- [services / consulting / hamilton](https://fortega.ca/services/consulting/hamilton)
+- [services / consulting / kitchener](https://fortega.ca/services/consulting/kitchener)
+- [services / consulting / london](https://fortega.ca/services/consulting/london)
+- [services / consulting / mississauga](https://fortega.ca/services/consulting/mississauga)
+- [services / consulting / oshawa](https://fortega.ca/services/consulting/oshawa)
+- [services / consulting / ottawa](https://fortega.ca/services/consulting/ottawa)
+- [services / consulting / toronto](https://fortega.ca/services/consulting/toronto)
+- [services / consulting / windsor](https://fortega.ca/services/consulting/windsor)
+- [services / consulting / gatineau](https://fortega.ca/services/consulting/gatineau)
+- [services / consulting / laval](https://fortega.ca/services/consulting/laval)
+- [services / consulting / montreal](https://fortega.ca/services/consulting/montreal)
+- [services / consulting / quebec city](https://fortega.ca/services/consulting/quebec-city)
+- [services / consulting / vaughan](https://fortega.ca/services/consulting/vaughan)
+- [services / consulting / markham](https://fortega.ca/services/consulting/markham)
+- [services / consulting / surrey](https://fortega.ca/services/consulting/surrey)
+- [services / consulting / richmond](https://fortega.ca/services/consulting/richmond)
+- [services / cctv / calgary](https://fortega.ca/services/cctv/calgary)
+- [services / cctv / edmonton](https://fortega.ca/services/cctv/edmonton)
+- [services / cctv / burnaby](https://fortega.ca/services/cctv/burnaby)
+- [services / cctv / vancouver](https://fortega.ca/services/cctv/vancouver)
+- [services / cctv / victoria](https://fortega.ca/services/cctv/victoria)
+- [services / cctv / winnipeg](https://fortega.ca/services/cctv/winnipeg)
+- [services / cctv / halifax](https://fortega.ca/services/cctv/halifax)
+- [services / cctv / barrie](https://fortega.ca/services/cctv/barrie)
+- [services / cctv / brampton](https://fortega.ca/services/cctv/brampton)
+- [services / cctv / guelph](https://fortega.ca/services/cctv/guelph)
+- [services / cctv / hamilton](https://fortega.ca/services/cctv/hamilton)
+- [services / cctv / kitchener](https://fortega.ca/services/cctv/kitchener)
+- [services / cctv / london](https://fortega.ca/services/cctv/london)
+- [services / cctv / mississauga](https://fortega.ca/services/cctv/mississauga)
+- [services / cctv / oshawa](https://fortega.ca/services/cctv/oshawa)
+- [services / cctv / ottawa](https://fortega.ca/services/cctv/ottawa)
+- [services / cctv / toronto](https://fortega.ca/services/cctv/toronto)
+- [services / cctv / windsor](https://fortega.ca/services/cctv/windsor)
+- [services / cctv / gatineau](https://fortega.ca/services/cctv/gatineau)
+- [services / cctv / laval](https://fortega.ca/services/cctv/laval)
+- [services / cctv / montreal](https://fortega.ca/services/cctv/montreal)
+- [services / cctv / quebec city](https://fortega.ca/services/cctv/quebec-city)
+- [services / cctv / vaughan](https://fortega.ca/services/cctv/vaughan)
+- [services / cctv / markham](https://fortega.ca/services/cctv/markham)
+- [services / cctv / surrey](https://fortega.ca/services/cctv/surrey)
+- [services / cctv / richmond](https://fortega.ca/services/cctv/richmond)
+- [services / intrusion / calgary](https://fortega.ca/services/intrusion/calgary)
+- [services / intrusion / edmonton](https://fortega.ca/services/intrusion/edmonton)
+- [services / intrusion / burnaby](https://fortega.ca/services/intrusion/burnaby)
+- [services / intrusion / vancouver](https://fortega.ca/services/intrusion/vancouver)
+- [services / intrusion / victoria](https://fortega.ca/services/intrusion/victoria)
+- [services / intrusion / winnipeg](https://fortega.ca/services/intrusion/winnipeg)
+- [services / intrusion / halifax](https://fortega.ca/services/intrusion/halifax)
+- [services / intrusion / barrie](https://fortega.ca/services/intrusion/barrie)
+- [services / intrusion / brampton](https://fortega.ca/services/intrusion/brampton)
+- [services / intrusion / guelph](https://fortega.ca/services/intrusion/guelph)
+- [services / intrusion / hamilton](https://fortega.ca/services/intrusion/hamilton)
+- [services / intrusion / kitchener](https://fortega.ca/services/intrusion/kitchener)
+- [services / intrusion / london](https://fortega.ca/services/intrusion/london)
+- [services / intrusion / mississauga](https://fortega.ca/services/intrusion/mississauga)
+- [services / intrusion / oshawa](https://fortega.ca/services/intrusion/oshawa)
+- [services / intrusion / ottawa](https://fortega.ca/services/intrusion/ottawa)
+- [services / intrusion / toronto](https://fortega.ca/services/intrusion/toronto)
+- [services / intrusion / windsor](https://fortega.ca/services/intrusion/windsor)
+- [services / intrusion / gatineau](https://fortega.ca/services/intrusion/gatineau)
+- [services / intrusion / laval](https://fortega.ca/services/intrusion/laval)
+- [services / intrusion / montreal](https://fortega.ca/services/intrusion/montreal)
+- [services / intrusion / quebec city](https://fortega.ca/services/intrusion/quebec-city)
+- [services / intrusion / vaughan](https://fortega.ca/services/intrusion/vaughan)
+- [services / intrusion / markham](https://fortega.ca/services/intrusion/markham)
+- [services / intrusion / surrey](https://fortega.ca/services/intrusion/surrey)
+- [services / intrusion / richmond](https://fortega.ca/services/intrusion/richmond)
+- [services / access / calgary](https://fortega.ca/services/access/calgary)
+- [services / access / edmonton](https://fortega.ca/services/access/edmonton)
+- [services / access / burnaby](https://fortega.ca/services/access/burnaby)
+- [services / access / vancouver](https://fortega.ca/services/access/vancouver)
+- [services / access / victoria](https://fortega.ca/services/access/victoria)
+- [services / access / winnipeg](https://fortega.ca/services/access/winnipeg)
+- [services / access / halifax](https://fortega.ca/services/access/halifax)
+- [services / access / barrie](https://fortega.ca/services/access/barrie)
+- [services / access / brampton](https://fortega.ca/services/access/brampton)
+- [services / access / guelph](https://fortega.ca/services/access/guelph)
+- [services / access / hamilton](https://fortega.ca/services/access/hamilton)
+- [services / access / kitchener](https://fortega.ca/services/access/kitchener)
+- [services / access / london](https://fortega.ca/services/access/london)
+- [services / access / mississauga](https://fortega.ca/services/access/mississauga)
+- [services / access / oshawa](https://fortega.ca/services/access/oshawa)
+- [services / access / ottawa](https://fortega.ca/services/access/ottawa)
+- [services / access / toronto](https://fortega.ca/services/access/toronto)
+- [services / access / windsor](https://fortega.ca/services/access/windsor)
+- [services / access / gatineau](https://fortega.ca/services/access/gatineau)
+- [services / access / laval](https://fortega.ca/services/access/laval)
+- [services / access / montreal](https://fortega.ca/services/access/montreal)
+- [services / access / quebec city](https://fortega.ca/services/access/quebec-city)
+- [services / access / vaughan](https://fortega.ca/services/access/vaughan)
+- [services / access / markham](https://fortega.ca/services/access/markham)
+- [services / access / surrey](https://fortega.ca/services/access/surrey)
+- [services / access / richmond](https://fortega.ca/services/access/richmond)
+- [services / remote / calgary](https://fortega.ca/services/remote/calgary)
+- [services / remote / edmonton](https://fortega.ca/services/remote/edmonton)
+- [services / remote / burnaby](https://fortega.ca/services/remote/burnaby)
+- [services / remote / vancouver](https://fortega.ca/services/remote/vancouver)
+- [services / remote / victoria](https://fortega.ca/services/remote/victoria)
+- [services / remote / winnipeg](https://fortega.ca/services/remote/winnipeg)
+- [services / remote / halifax](https://fortega.ca/services/remote/halifax)
+- [services / remote / barrie](https://fortega.ca/services/remote/barrie)
+- [services / remote / brampton](https://fortega.ca/services/remote/brampton)
+- [services / remote / guelph](https://fortega.ca/services/remote/guelph)
+- [services / remote / hamilton](https://fortega.ca/services/remote/hamilton)
+- [services / remote / kitchener](https://fortega.ca/services/remote/kitchener)
+- [services / remote / london](https://fortega.ca/services/remote/london)
+- [services / remote / mississauga](https://fortega.ca/services/remote/mississauga)
+- [services / remote / oshawa](https://fortega.ca/services/remote/oshawa)
+- [services / remote / ottawa](https://fortega.ca/services/remote/ottawa)
+- [services / remote / toronto](https://fortega.ca/services/remote/toronto)
+- [services / remote / windsor](https://fortega.ca/services/remote/windsor)
+- [services / remote / gatineau](https://fortega.ca/services/remote/gatineau)
+- [services / remote / laval](https://fortega.ca/services/remote/laval)
+- [services / remote / montreal](https://fortega.ca/services/remote/montreal)
+- [services / remote / quebec city](https://fortega.ca/services/remote/quebec-city)
+- [services / remote / vaughan](https://fortega.ca/services/remote/vaughan)
+- [services / remote / markham](https://fortega.ca/services/remote/markham)
+- [services / remote / surrey](https://fortega.ca/services/remote/surrey)
+- [services / remote / richmond](https://fortega.ca/services/remote/richmond)
+- [services / guards / calgary](https://fortega.ca/services/guards/calgary)
+- [services / guards / edmonton](https://fortega.ca/services/guards/edmonton)
+- [services / guards / burnaby](https://fortega.ca/services/guards/burnaby)
+- [services / guards / vancouver](https://fortega.ca/services/guards/vancouver)
+- [services / guards / victoria](https://fortega.ca/services/guards/victoria)
+- [services / guards / winnipeg](https://fortega.ca/services/guards/winnipeg)
+- [services / guards / halifax](https://fortega.ca/services/guards/halifax)
+- [services / guards / barrie](https://fortega.ca/services/guards/barrie)
+- [services / guards / brampton](https://fortega.ca/services/guards/brampton)
+- [services / guards / guelph](https://fortega.ca/services/guards/guelph)
+- [services / guards / hamilton](https://fortega.ca/services/guards/hamilton)
+- [services / guards / kitchener](https://fortega.ca/services/guards/kitchener)
+- [services / guards / london](https://fortega.ca/services/guards/london)
+- [services / guards / mississauga](https://fortega.ca/services/guards/mississauga)
+- [services / guards / oshawa](https://fortega.ca/services/guards/oshawa)
+- [services / guards / ottawa](https://fortega.ca/services/guards/ottawa)
+- [services / guards / toronto](https://fortega.ca/services/guards/toronto)
+- [services / guards / windsor](https://fortega.ca/services/guards/windsor)
+- [services / guards / gatineau](https://fortega.ca/services/guards/gatineau)
+- [services / guards / laval](https://fortega.ca/services/guards/laval)
+- [services / guards / montreal](https://fortega.ca/services/guards/montreal)
+- [services / guards / quebec city](https://fortega.ca/services/guards/quebec-city)
+- [services / guards / vaughan](https://fortega.ca/services/guards/vaughan)
+- [services / guards / markham](https://fortega.ca/services/guards/markham)
+- [services / guards / surrey](https://fortega.ca/services/guards/surrey)
+- [services / guards / richmond](https://fortega.ca/services/guards/richmond)
+- [services / smart / calgary](https://fortega.ca/services/smart/calgary)
+- [services / smart / edmonton](https://fortega.ca/services/smart/edmonton)
+- [services / smart / burnaby](https://fortega.ca/services/smart/burnaby)
+- [services / smart / vancouver](https://fortega.ca/services/smart/vancouver)
+- [services / smart / victoria](https://fortega.ca/services/smart/victoria)
+- [services / smart / winnipeg](https://fortega.ca/services/smart/winnipeg)
+- [services / smart / halifax](https://fortega.ca/services/smart/halifax)
+- [services / smart / barrie](https://fortega.ca/services/smart/barrie)
+- [services / smart / brampton](https://fortega.ca/services/smart/brampton)
+- [services / smart / guelph](https://fortega.ca/services/smart/guelph)
+- [services / smart / hamilton](https://fortega.ca/services/smart/hamilton)
+- [services / smart / kitchener](https://fortega.ca/services/smart/kitchener)
+- [services / smart / london](https://fortega.ca/services/smart/london)
+- [services / smart / mississauga](https://fortega.ca/services/smart/mississauga)
+- [services / smart / oshawa](https://fortega.ca/services/smart/oshawa)
+- [services / smart / ottawa](https://fortega.ca/services/smart/ottawa)
+- [services / smart / toronto](https://fortega.ca/services/smart/toronto)
+- [services / smart / windsor](https://fortega.ca/services/smart/windsor)
+- [services / smart / gatineau](https://fortega.ca/services/smart/gatineau)
+- [services / smart / laval](https://fortega.ca/services/smart/laval)
+- [services / smart / montreal](https://fortega.ca/services/smart/montreal)
+- [services / smart / quebec city](https://fortega.ca/services/smart/quebec-city)
+- [services / smart / vaughan](https://fortega.ca/services/smart/vaughan)
+- [services / smart / markham](https://fortega.ca/services/smart/markham)
+- [services / smart / surrey](https://fortega.ca/services/smart/surrey)
+- [services / smart / richmond](https://fortega.ca/services/smart/richmond)
+- [services / cyber / calgary](https://fortega.ca/services/cyber/calgary)
+- [services / cyber / edmonton](https://fortega.ca/services/cyber/edmonton)
+- [services / cyber / burnaby](https://fortega.ca/services/cyber/burnaby)
+- [services / cyber / vancouver](https://fortega.ca/services/cyber/vancouver)
+- [services / cyber / victoria](https://fortega.ca/services/cyber/victoria)
+- [services / cyber / winnipeg](https://fortega.ca/services/cyber/winnipeg)
+- [services / cyber / halifax](https://fortega.ca/services/cyber/halifax)
+- [services / cyber / barrie](https://fortega.ca/services/cyber/barrie)
+- [services / cyber / brampton](https://fortega.ca/services/cyber/brampton)
+- [services / cyber / guelph](https://fortega.ca/services/cyber/guelph)
+- [services / cyber / hamilton](https://fortega.ca/services/cyber/hamilton)
+- [services / cyber / kitchener](https://fortega.ca/services/cyber/kitchener)
+- [services / cyber / london](https://fortega.ca/services/cyber/london)
+- [services / cyber / mississauga](https://fortega.ca/services/cyber/mississauga)
+- [services / cyber / oshawa](https://fortega.ca/services/cyber/oshawa)
+- [services / cyber / ottawa](https://fortega.ca/services/cyber/ottawa)
+- [services / cyber / toronto](https://fortega.ca/services/cyber/toronto)
+- [services / cyber / windsor](https://fortega.ca/services/cyber/windsor)
+- [services / cyber / gatineau](https://fortega.ca/services/cyber/gatineau)
+- [services / cyber / laval](https://fortega.ca/services/cyber/laval)
+- [services / cyber / montreal](https://fortega.ca/services/cyber/montreal)
+- [services / cyber / quebec city](https://fortega.ca/services/cyber/quebec-city)
+- [services / cyber / vaughan](https://fortega.ca/services/cyber/vaughan)
+- [services / cyber / markham](https://fortega.ca/services/cyber/markham)
+- [services / cyber / surrey](https://fortega.ca/services/cyber/surrey)
+- [services / cyber / richmond](https://fortega.ca/services/cyber/richmond)
 
-## Industries
+## resources
 
-- [Commercial Real Estate](/industries/commercial-real-estate): Portfolio-wide standards for office towers and mixed-use buildings
-- [Retail](/industries/retail): Loss prevention, POS integration and shoplifting deterrence
-- [Healthcare](/industries/healthcare): Patient safety, pharmacy security and HIPAA-aligned programs
-- [Industrial & Manufacturing](/industries/industrial-manufacturing): Perimeter protection, hazardous-area safety and OT security
-- [Logistics & Warehousing](/industries/logistics-warehousing): Yard management, cargo theft prevention and inventory protection
-- [Financial Services](/industries/financial-services): Bank branch security, ATM protection and fraud deterrence
-- [Government](/industries/government): Federal and municipal facility security with clearance-ready teams
-- [Education](/industries/education): Campus safety, emergency notification and after-hours protection
+- [resources](https://fortega.ca/resources)
+- [resources / commercial security system cost canada](https://fortega.ca/resources/commercial-security-system-cost-canada)
+- [resources / how many security cameras does my business need](https://fortega.ca/resources/how-many-security-cameras-does-my-business-need)
+- [resources / remote guarding vs security guards](https://fortega.ca/resources/remote-guarding-vs-security-guards)
+- [resources / choosing a commercial access control system](https://fortega.ca/resources/choosing-a-commercial-access-control-system)
+- [resources / integrating access control and cctv](https://fortega.ca/resources/integrating-access-control-and-cctv)
+- [resources / cctv privacy rules canada](https://fortega.ca/resources/cctv-privacy-rules-canada)
+- [resources / reduce false alarms commercial](https://fortega.ca/resources/reduce-false-alarms-commercial)
+- [resources / commercial vs residential security systems](https://fortega.ca/resources/commercial-vs-residential-security-systems)
+- [resources / security system cyber hardening](https://fortega.ca/resources/security-system-cyber-hardening)
 
-## Optional
+## French pages
 
-- [Construction](/industries/construction): Site security, equipment protection and vandalism prevention
-- [Hospitality](/industries/hospitality): Guest safety, back-of-house protection and loss prevention
-- [Automotive Dealerships](/industries/automotive-dealerships): Lot protection, key control and showroom security
-- [Energy & Utilities](/industries/energy-utilities): Critical infrastructure protection and NERC-aligned monitoring
-- [Data Centers](/industries/data-centers): Layered physical security for colocation and cloud facilities
-- [Transportation & Transit](/industries/transportation-transit): Fare-evasion deterrence, platform safety and depot security
-- [Sports & Entertainment](/industries/sports-entertainment): Crowd management, venue access and athlete protection
-- [Cannabis](/industries/cannabis): Security planning for cultivation, processing and retail properties
-- [Multi-Family Residential](/industries/multi-family-residential): Resident safety, amenity protection and package theft prevention
+- [fr / securite](https://fortega.ca/fr/securite)
+- [fr / securite / gatineau](https://fortega.ca/fr/securite/gatineau)
+- [fr / securite / laval](https://fortega.ca/fr/securite/laval)
+- [fr / securite / montreal](https://fortega.ca/fr/securite/montreal)
+- [fr / securite / quebec city](https://fortega.ca/fr/securite/quebec-city)
