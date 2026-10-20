@@ -22,8 +22,16 @@ describe("location draft safeguards", () => {
       }
     }
   });
-  test("unconfirmed guard delivery remains blocked", () => {
-    for (const city of ["dawson", "chetwynd", "happy-valley-goose-bay"]) assert.equal(getLocationServiceDraft(city, "guards")?.status, "delivery-blocked");
+  test("guard drafts get building-type content and never mention licences", () => {
+    for (const draft of LOCATION_SERVICE_DRAFTS.filter(d => d.service.slug === "guards")) {
+      assert.ok(draft.buildings.length >= 4);
+      const copy = [draft.plan.answer, ...draft.plan.checklist, draft.searchOverview, ...draft.faqs.flatMap(f => [f.q, f.a]), ...draft.buildings.map(b => b.guidance)].join(" ");
+      assert.equal(/licen[cs]|partner/i.test(copy), false, draft.city.slug);
+    }
+  });
+  test("Quebec drafts cite Law 25 and Alberta drafts cite PIPA", () => {
+    assert.match(getLocationServiceDraft("gatineau", "cctv")?.privacyText ?? "", /Law 25/);
+    assert.match(getLocationServiceDraft("lethbridge", "cctv")?.privacyText ?? "", /Alberta's Personal Information Protection Act/);
   });
   test("national cybersecurity advice cannot count as city-specific evidence", () => {
     for (const city of ["dawson", "chetwynd", "happy-valley-goose-bay"]) assert.equal(getLocationServiceDraft(city, "cyber")?.status, "insufficient-local-evidence");
@@ -49,7 +57,6 @@ describe("location draft safeguards", () => {
     assert.equal(getLocationServiceDraft("lethbridge", "access")?.status, "needs-review");
     assert.equal(getLocationServiceDraft("lethbridge", "remote")?.local, undefined);
     assert.equal(getLocationServiceDraft("iqaluit", "intrusion")?.local?.sourceUrl, "https://iqaluit.ca/sites/default/files/alarm_contact_information_annual_revision_form_-_eng.pdf");
-    assert.equal(getLocationServiceDraft("iqaluit", "guards")?.status, "delivery-blocked");
   });
   test("all 1800 drafts have jurisdiction context without granting city evidence or approval", () => {
     for (const draft of LOCATION_SERVICE_DRAFTS) {

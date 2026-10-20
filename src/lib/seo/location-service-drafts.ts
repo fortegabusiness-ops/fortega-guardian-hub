@@ -7,6 +7,7 @@ import { getServiceSearchFaqs, PROJECT_ENQUIRY_FAQS, SERVICE_SEARCH_CONTENT } fr
 import { MUNICIPAL_SERVICE_PLANS } from "./municipal-service-plans";
 import { PROVINCE_BY_NAME } from "./provinces";
 import { getJurisdictionServicePlanning } from "./jurisdiction-service-planning";
+import { getProvinceBuildingContent } from "./province-building-content";
 
 type LocalPlan = { heading: string; body: string; sourceTitle: string; sourceUrl: string };
 type ServicePlan = { answer: string; checklist: string[]; cost: string; sourceTitle: string; sourceUrl: string };
@@ -100,12 +101,13 @@ export function getLocationServiceDraft(citySlug: string, serviceSlug: string) {
   const province = PROVINCE_BY_NAME[city.province];
   const jurisdiction = province ? getJurisdictionServicePlanning(province.slug, serviceSlug) : undefined;
   const geography = (geographicReferences as Record<string, { sourceTitle: string; sourceUrl: string; excerpt: string; reviewed: string }>)[citySlug];
-  const status = serviceSlug === "guards" ? "delivery-blocked" : local ? "needs-review" : "insufficient-local-evidence";
+  const status = local ? "needs-review" : "insufficient-local-evidence";
+  const { buildings, privacyText } = getProvinceBuildingContent(province?.slug ?? "", serviceSlug, city.name);
   const title = clampTitle([`${keywords.primary} — ${city.name} | Fortega`, `${service.shortName} planning — ${city.name} | Fortega`]);
   const description = clampDescription(`Explore ${keywords.primary} for ${city.name}: practical requirements, system planning and answers to common questions. Discuss your project with Fortega.`);
   const searchOverview = SERVICE_SEARCH_CONTENT[serviceSlug]?.overview ?? plan.answer;
-  const faqs = [...getServiceSearchFaqs(serviceSlug), ...PROJECT_ENQUIRY_FAQS, ...(jurisdiction ? [{ q: `How should ${city.province} guidance inform ${service.shortName.toLowerCase()} planning?`, a: `${jurisdiction.body} ${jurisdiction.application}` }] : []), ...(local ? [{ q: `What local planning checks matter for ${service.shortName.toLowerCase()} in ${city.name}?`, a: local.body }] : [])];
-  return { city, service, plan, keywords, searchOverview, faqs, local, jurisdiction, geography, status, title, description, updated: "2026-10-20", approved: false as const };
+  const faqs = [...getServiceSearchFaqs(serviceSlug), ...PROJECT_ENQUIRY_FAQS, ...(jurisdiction ? [{ q: `How should ${city.province} guidance inform ${service.shortName.toLowerCase()} planning?`, a: `${jurisdiction.body} ${jurisdiction.application}` }] : []), ...(privacyText ? [{ q: `Which privacy rules apply to ${service.shortName.toLowerCase()} in ${city.name}?`, a: privacyText }] : []), ...(buildings.length ? [{ q: `How does ${service.shortName.toLowerCase()} planning differ by building type in ${city.name}?`, a: buildings.map(b => `${b.type}: ${b.guidance}`).join(" ") }] : []), ...(local ? [{ q: `What local planning checks matter for ${service.shortName.toLowerCase()} in ${city.name}?`, a: local.body }] : [])];
+  return { city, service, plan, keywords, searchOverview, faqs, local, jurisdiction, geography, buildings, privacyText, status, title, description, updated: "2026-10-20", approved: false as const };
 }
 
 export const LOCATION_SERVICE_DRAFTS = REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.flatMap((service) => {
