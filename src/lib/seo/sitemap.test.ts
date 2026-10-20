@@ -2,8 +2,8 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { SITEMAP_CHILDREN, SITEMAP_GROUPS } from "./sitemap-inventory";
 import { sitemapIndexXml, sitemapXml } from "./sitemap";
-import { CITIES } from "./cities";
-import { SERVICES } from "./services";
+import { CITIES, REVIEW_CITY_INVENTORY } from "./cities";
+import { SERVICES, SERVICE_SLUGS } from "./services";
 import { SERVICE_AREAS } from "./service-areas";
 import { PROVINCES } from "./provinces";
 import { GUIDES } from "./resources";
@@ -24,12 +24,16 @@ describe("whole-site public discovery inventory", () => {
       ...SERVICE_AREAS.map((item) => `/services/${item.service.slug}/${item.city.slug}`),
       ...GUIDES.map((item) => `/resources/${item.slug}`),
       ...FR_CITIES.map((item) => `/fr/securite/${item.slug}`),
+      "/location-review",
+      ...REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.map((service) => `/location-review/${city.slug}/${service}`)),
     ];
     assert.deepEqual([...paths].sort(), expected.sort());
     assert.equal(new Set(paths).size, paths.length);
   });
-  test("excludes all review, deleted and private addresses", () => {
-    assert.equal(paths.some((path) => path.startsWith("/location-review") || path.startsWith("/api") || path.startsWith("/blog") || isLocationGone(path)), false);
+  test("includes all 1800 authorized community pages but excludes deleted and private addresses", () => {
+    assert.equal(SITEMAP_GROUPS.communities.length, 1801);
+    assert.equal(paths.includes("/location-review/iqaluit/cctv"), true);
+    assert.equal(paths.some((path) => path.startsWith("/api") || path.startsWith("/blog") || isLocationGone(path)), false);
     assert.equal(paths.includes("/locations/iqaluit"), false);
     assert.equal(paths.includes("/services/cctv/dawson"), false);
   });
@@ -46,7 +50,7 @@ describe("whole-site public discovery inventory", () => {
     assert.equal((await sitemapIndexXml(SITEMAP_CHILDREN).text()).includes("<lastmod>"), false);
   });
   test("uses the primary domain and escapes XML locations", async () => {
-    assert.equal(SITEMAP_CHILDREN.length, 6);
+    assert.equal(SITEMAP_CHILDREN.length, 7);
     const xml = await sitemapXml([{ path: "/resources?first=1&second=2" }]).text();
     assert.equal(xml.includes("https://fortega.ca/resources?first=1&amp;second=2"), true);
   });

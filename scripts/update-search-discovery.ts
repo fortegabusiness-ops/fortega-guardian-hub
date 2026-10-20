@@ -2,7 +2,7 @@ import { writeFileSync } from "node:fs";
 import { SITEMAP_GROUPS } from "../src/lib/seo/sitemap-inventory";
 import { SITEMAP_BASE_URL } from "../src/lib/seo/sitemap";
 
-// Run after changing the public inventories. Never import private research/drafts here.
+// Run after changing public inventories. Never import private research here.
 const introduction = `# Fortega Inc.
 
 > Security systems, security guard services, monitoring, building automation and cyber security for homes and businesses.
@@ -16,7 +16,7 @@ const introduction = `# Fortega Inc.
 
 ## Public page directory
 
-This directory lists production-eligible pages. Community service review drafts are excluded from this directory and the XML sitemaps.
+This directory lists public pages, including the owner-authorized community-service collection.
 Province and building-type guidance is not evidence of a completed local installation.
 
 - [XML sitemap index](https://fortega.ca/sitemap.xml)

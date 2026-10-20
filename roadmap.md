@@ -1,6 +1,7 @@
 # Fortega SEO roadmap
 
 ## Whole-site discovery files
+- [ ] Owner authorized all 1,800 community-service addresses and their directory for indexing: remove noindex/nofollow, include them in XML/AI directories and verify every address; retain deleted legacy URLs and private evidence protections. Do not publish without a separate request.
 - [x] Consolidated all six existing sitemap sections through one production-only inventory; removed group-date lastmod fallbacks and preserved three recorded page revisions. Generated llms.txt covering all 298 public URLs with `bun scripts/update-search-discovery.ts`; verified all 298 responses, metadata/canonicals, robots sitemap directive, review noindex and deleted-page 410. All 26 SEO tests pass. No publication or eligibility changes.
 
 ## Approved full location expansion
