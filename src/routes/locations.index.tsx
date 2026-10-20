@@ -5,17 +5,20 @@ import { REVIEW_PROVINCE_GROUPS } from "@/lib/seo/location-review-links";
 import { SERVICE_SLUGS, SERVICE_BY_SLUG } from "@/lib/seo/services";
 import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
+const communityCount = REVIEW_PROVINCE_GROUPS.reduce((total, group) => total + group.cities.length, 0);
+const locationsDescription = `Explore security planning for ${communityCount} Canadian communities, organized by province. Assessments can begin remotely using drawings, layouts and project details.`;
+
 export const Route = createFileRoute("/locations/")({
   head: () => ({
     meta: [
       { title: "Security Services Across Canada — Locations | Fortega" },
       {
         name: "description",
-        content: "Explore Fortega location pages and remote security assessments. Service availability and installation arrangements are confirmed for each project.",
+        content: locationsDescription,
       },
       ...socialMeta({
         title: "Security Services Across Canada — Locations | Fortega",
-        description: "Explore Fortega location pages and remote security assessments. Service availability and installation arrangements are confirmed for each project.",
+        description: locationsDescription,
         url: `${SITE_URL}/locations`,
       }),
     ],
@@ -46,9 +49,7 @@ function LocationsIndex() {
             Security services across Canada.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            Explore security planning and coverage information for {CITIES.length} Canadian
-            communities. Assessments can begin remotely using drawings and project details;
-            service availability and installation arrangements are confirmed for each project.
+            {locationsDescription}
           </p>
         </div>
       </section>
