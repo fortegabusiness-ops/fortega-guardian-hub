@@ -15,7 +15,7 @@ const comparisons = SERVICE_SLUGS.flatMap(service=>compareDrafts(LOCATION_SERVIC
 const repeatedBodyGroups = SERVICE_SLUGS.flatMap(service => {
  const groups = new Map<string, string[]>();
  for (const draft of LOCATION_SERVICE_DRAFTS.filter(d => d.service.slug === service)) {
-  const text = [draft.plan.answer, ...draft.plan.checklist, draft.searchOverview, ...draft.faqs.flatMap(faq => [faq.q, faq.a]), draft.local?.body ?? ''].join(' ');
+  const text = [draft.plan.answer, ...draft.plan.checklist, draft.searchOverview, draft.jurisdiction?.body ?? '', draft.jurisdiction?.application ?? '', ...draft.faqs.flatMap(faq => [faq.q, faq.a]), draft.local?.body ?? ''].join(' ');
   const normalized = substantiveTokens({id:draft.city.slug,city:draft.city.name,province:draft.city.province,text}).join(' ');
   const group = groups.get(normalized) ?? []; group.push(draft.city.slug); groups.set(normalized, group);
  }

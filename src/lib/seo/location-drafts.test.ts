@@ -51,4 +51,14 @@ describe("location draft safeguards", () => {
     assert.equal(getLocationServiceDraft("iqaluit", "intrusion")?.local?.sourceUrl, "https://iqaluit.ca/sites/default/files/alarm_contact_information_annual_revision_form_-_eng.pdf");
     assert.equal(getLocationServiceDraft("iqaluit", "guards")?.status, "delivery-blocked");
   });
+  test("all 1800 drafts have jurisdiction context without granting city evidence or approval", () => {
+    for (const draft of LOCATION_SERVICE_DRAFTS) {
+      assert.ok(draft.jurisdiction, `${draft.city.slug}/${draft.service.slug}`);
+      assert.equal(draft.jurisdiction.scope, "jurisdiction-reference-not-city-evidence");
+      assert.equal(draft.approved, false);
+      assert.ok(draft.jurisdiction.sourceUrl.startsWith("https://"));
+      assert.equal(/wikipedia/i.test(draft.jurisdiction.sourceUrl), false);
+      if (!draft.local && draft.service.slug !== "guards") assert.equal(draft.status, "insufficient-local-evidence");
+    }
+  });
 });
