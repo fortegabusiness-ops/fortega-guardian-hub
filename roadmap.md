@@ -1,5 +1,8 @@
 # Fortega SEO roadmap
 
+## Whole-site discovery files
+- [x] Consolidated all six existing sitemap sections through one production-only inventory; removed group-date lastmod fallbacks and preserved three recorded page revisions. Generated llms.txt covering all 298 public URLs with `bun scripts/update-search-discovery.ts`; verified all 298 responses, metadata/canonicals, robots sitemap directive, review noindex and deleted-page 410. All 26 SEO tests pass. No publication or eligibility changes.
+
 ## Approved full location expansion
 - [x] Add all 225 communities grouped by province in a separate Locations review section; verified 1,800 nofollow service links, Brockville CCTV navigation/noindex, mobile overflow and unchanged public eligibility. Nine tests pass; build OK. This listing update is not yet published.
 - [x] October 20 recorded research/readiness assessment: all 225 communities have 1,800 follow-up decisions and per-draft blocker records; all 1,800 HTTP review addresses passed metadata, H1, noindex/canonical, FAQ-question and outside-link checks. Twenty safeguards pass; filtered-directory browser navigation is verified. Regional candidate audits are saved privately, with 36 baseline/follow-up disagreements explicitly blocked. Ontario discovery repair records 66 clustered searches, 528 mappings and seven source attempts (six successful captures), with six narrow exact-passage candidates checked. This completes recorded assessment coverage, not exhaustive research or publication readiness. No draft copy, production eligibility, sitemap or publication changes.
