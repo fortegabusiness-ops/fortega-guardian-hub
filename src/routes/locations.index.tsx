@@ -92,9 +92,6 @@ function LocationsIndex() {
                               city.name
                             )}
                           </h4>
-                          {approved && (
-                            <p className="mt-1 text-xs font-medium text-brand-glow">Approved city page</p>
-                          )}
                           <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
                             {SERVICE_SLUGS.map(service => (
                               <li key={service}><Link to="/location-review/$city/$service" params={{ city: city.slug, service }} rel="nofollow" className="text-muted-foreground transition-colors hover:text-brand-glow">{SERVICE_BY_SLUG[service]?.shortName}</Link></li>
