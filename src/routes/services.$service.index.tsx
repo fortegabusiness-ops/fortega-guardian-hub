@@ -7,6 +7,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { SERVICE_BY_SLUG, SERVICES, type ServiceDetail } from "@/lib/seo/services";
 import { INDUSTRY_BY_SLUG } from "@/lib/seo/industries";
 import { areasForService } from "@/lib/seo/service-areas";
+import { getServiceSearchFaqs, SERVICE_SEARCH_CONTENT } from "@/lib/seo/service-search-content";
 import {
   breadcrumbSchema, faqSchema, jsonLd, serviceSchema, SITE_URL,
   socialMeta,
@@ -43,7 +44,7 @@ export const Route = createFileRoute("/services/$service/")({
           { name: "Services", path: "/services" },
           { name: service.name, path: `/services/${service.slug}` },
         ])),
-        jsonLd(faqSchema(service.faqs)),
+        jsonLd(faqSchema(getServiceSearchFaqs(service.slug))),
         jsonLd(serviceSchema({
           name: service.name,
           description: service.metaDescription,
@@ -127,6 +128,7 @@ function ServiceDetailPage() {
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
               {service.overview.map((p) => <p key={p}>{p}</p>)}
+              <p>{SERVICE_SEARCH_CONTENT[service.slug]?.overview}</p>
             </div>
           </div>
           <div className="md:col-span-5">
@@ -218,7 +220,7 @@ function ServiceDetailPage() {
         eyebrow="FAQ"
         title={`${service.shortName} — common questions`}
         sub={`Quick answers about Fortega's ${service.shortName.toLowerCase()} program.`}
-        faqs={service.faqs}
+        faqs={getServiceSearchFaqs(service.slug)}
       />
 
       {related.length > 0 && (

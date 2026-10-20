@@ -3,6 +3,7 @@ import geographicReferences from "./location-geographic-references.json";
 import { SERVICE_BY_SLUG, SERVICE_SLUGS } from "./services";
 import { SERVICE_KEYWORDS } from "./service-keywords";
 import { clampDescription, clampTitle } from "./meta";
+import { getServiceSearchFaqs, PROJECT_ENQUIRY_FAQS, SERVICE_SEARCH_CONTENT } from "./service-search-content";
 
 type LocalPlan = { heading: string; body: string; sourceTitle: string; sourceUrl: string };
 type ServicePlan = { answer: string; checklist: string[]; cost: string; sourceTitle: string; sourceUrl: string };
@@ -97,7 +98,9 @@ export function getLocationServiceDraft(citySlug: string, serviceSlug: string) {
   const status = serviceSlug === "guards" ? "delivery-blocked" : local ? "needs-review" : "insufficient-local-evidence";
   const title = clampTitle([`${keywords.primary} — ${city.name} | Fortega`, `${service.shortName} planning — ${city.name} | Fortega`]);
   const description = clampDescription(`Plan ${keywords.primary} for ${city.name}. Review equipment and site needs with Fortega; delivery arrangements require confirmation.`);
-  return { city, service, plan, keywords, local, geography, status, title, description, updated: "2026-10-19", approved: false as const };
+  const searchOverview = SERVICE_SEARCH_CONTENT[serviceSlug]?.overview ?? plan.answer;
+  const faqs = [...getServiceSearchFaqs(serviceSlug), ...PROJECT_ENQUIRY_FAQS];
+  return { city, service, plan, keywords, searchOverview, faqs, local, geography, status, title, description, updated: "2026-10-20", approved: false as const };
 }
 
 export const LOCATION_SERVICE_DRAFTS = REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.flatMap((service) => {

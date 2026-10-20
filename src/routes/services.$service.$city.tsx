@@ -9,6 +9,7 @@ import {
   breadcrumbSchema, faqSchema, jsonLd, SITE_URL, socialMeta,
 } from "@/lib/seo/schema";
 import { clampDescription, clampTitle, pickVariant } from "@/lib/seo/meta";
+import { getServiceSearchFaqs, SERVICE_SEARCH_CONTENT } from "@/lib/seo/service-search-content";
 
 function leadAnswer(service: ServiceDetail, city: City) {
   const s = service.name.toLowerCase();
@@ -42,8 +43,8 @@ function localFaqs(service: ServiceDetail, city: City) {
       a: `Contact Fortega to assess ${service.name.toLowerCase()} for your ${city.name} property. Drawings and building details can support an initial review; availability and installation arrangements need project-specific confirmation.`,
     },
     {
-      q: `What does ${service.shortName.toLowerCase()} cost in ${city.name}?`,
-      a: `Cost depends on site count, door or camera counts, cabling conditions, and whether monitoring is included. Fortega quotes after a free ${city.name} site assessment rather than from a fixed price list, so the number reflects your building rather than an average.`,
+      q: `What information helps assess ${service.shortName.toLowerCase()} in ${city.name}?`,
+      a: "Provide the building type, drawings or layouts, operating needs and existing-equipment details. Keep access codes, passwords and sensitive vulnerabilities out of the enquiry form; agree a suitable way to share project documents.",
     },
   ];
   if (p) {
@@ -58,7 +59,7 @@ function localFaqs(service: ServiceDetail, city: City) {
     q: `How quickly can Fortega respond to an alarm in ${city.name}?`,
     a: `Monitoring suitability, verification, escalation contacts and any on-site response arrangements are agreed for the project. A monitoring event is not a guarantee of technician, guard or emergency-service attendance time.`,
   });
-  return faqs;
+  return [...getServiceSearchFaqs(service.slug), ...faqs];
 }
 
 export const Route = createFileRoute("/services/$service/$city")({
@@ -181,6 +182,7 @@ function ServiceAreaPage() {
               {province && <p>{province.economy}</p>}
               {province && <p>{province.environment}</p>}
               <p>{service.overview[0]}</p>
+              <p>{SERVICE_SEARCH_CONTENT[service.slug]?.overview}</p>
             </div>
           </div>
           <div className="md:col-span-5">
