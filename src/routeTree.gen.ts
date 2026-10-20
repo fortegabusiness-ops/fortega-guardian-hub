@@ -15,6 +15,7 @@ import { Route as AuthDotmdRouteImport } from './routes/auth[.]md'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SitemapCommunitiesDotxmlRouteImport } from './routes/sitemap-communities[.]xml'
 import { Route as SitemapCoreDotxmlRouteImport } from './routes/sitemap-core[.]xml'
 import { Route as SitemapFrDotxmlRouteImport } from './routes/sitemap-fr[.]xml'
 import { Route as SitemapLocationsDotxmlRouteImport } from './routes/sitemap-locations[.]xml'
@@ -77,6 +78,12 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SitemapCommunitiesDotxmlRoute =
+  SitemapCommunitiesDotxmlRouteImport.update({
+    id: '/sitemap-communities.xml',
+    path: '/sitemap-communities.xml',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SitemapCoreDotxmlRoute = SitemapCoreDotxmlRouteImport.update({
   id: '/sitemap-core.xml',
   path: '/sitemap-core.xml',
@@ -248,6 +255,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
+  '/sitemap-communities.xml': typeof SitemapCommunitiesDotxmlRoute
   '/sitemap-core.xml': typeof SitemapCoreDotxmlRoute
   '/sitemap-fr.xml': typeof SitemapFrDotxmlRoute
   '/sitemap-locations.xml': typeof SitemapLocationsDotxmlRoute
@@ -286,6 +294,7 @@ export interface FileRoutesByTo {
   '/auth.md': typeof AuthDotmdRoute
   '/contact': typeof ContactRoute
   '/privacy': typeof PrivacyRoute
+  '/sitemap-communities.xml': typeof SitemapCommunitiesDotxmlRoute
   '/sitemap-core.xml': typeof SitemapCoreDotxmlRoute
   '/sitemap-fr.xml': typeof SitemapFrDotxmlRoute
   '/sitemap-locations.xml': typeof SitemapLocationsDotxmlRoute
@@ -325,6 +334,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
+  '/sitemap-communities.xml': typeof SitemapCommunitiesDotxmlRoute
   '/sitemap-core.xml': typeof SitemapCoreDotxmlRoute
   '/sitemap-fr.xml': typeof SitemapFrDotxmlRoute
   '/sitemap-locations.xml': typeof SitemapLocationsDotxmlRoute
@@ -366,6 +376,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/privacy'
     | '/services'
+    | '/sitemap-communities.xml'
     | '/sitemap-core.xml'
     | '/sitemap-fr.xml'
     | '/sitemap-locations.xml'
@@ -404,6 +415,7 @@ export interface FileRouteTypes {
     | '/auth.md'
     | '/contact'
     | '/privacy'
+    | '/sitemap-communities.xml'
     | '/sitemap-core.xml'
     | '/sitemap-fr.xml'
     | '/sitemap-locations.xml'
@@ -442,6 +454,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/privacy'
     | '/services'
+    | '/sitemap-communities.xml'
     | '/sitemap-core.xml'
     | '/sitemap-fr.xml'
     | '/sitemap-locations.xml'
@@ -482,6 +495,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRouteWithChildren
+  SitemapCommunitiesDotxmlRoute: typeof SitemapCommunitiesDotxmlRoute
   SitemapCoreDotxmlRoute: typeof SitemapCoreDotxmlRoute
   SitemapFrDotxmlRoute: typeof SitemapFrDotxmlRoute
   SitemapLocationsDotxmlRoute: typeof SitemapLocationsDotxmlRoute
@@ -553,6 +567,13 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap-communities.xml': {
+      id: '/sitemap-communities.xml'
+      path: '/sitemap-communities.xml'
+      fullPath: '/sitemap-communities.xml'
+      preLoaderRoute: typeof SitemapCommunitiesDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap-core.xml': {
@@ -810,6 +831,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRouteWithChildren,
+  SitemapCommunitiesDotxmlRoute: SitemapCommunitiesDotxmlRoute,
   SitemapCoreDotxmlRoute: SitemapCoreDotxmlRoute,
   SitemapFrDotxmlRoute: SitemapFrDotxmlRoute,
   SitemapLocationsDotxmlRoute: SitemapLocationsDotxmlRoute,
