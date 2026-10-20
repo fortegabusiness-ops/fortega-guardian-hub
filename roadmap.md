@@ -1,6 +1,7 @@
 # Fortega SEO roadmap
 
 ## Approved full location expansion
+- [ ] October 20: remove availability wording from review-page copy, expand useful non-pricing service FAQs, add verified municipal evidence where found, and rerun inventory/content checks before any publication; missing local evidence must remain flagged privately.
 - [x] Enrich all 1,800 city-service review drafts and existing service pages with researched terms and 7–8 non-pricing draft FAQs; remove pricing questions from existing city-service and resource/industry questions. Draft inventory and safeguards verified; representative pages and enquiry link checked. Nothing published; local-evidence gaps remain unchanged.
 - [x] October 19 continuation: created all 1,800 review addresses and searchable review directory; checked every address, deleted-URL isolation and 12 safeguards. Nothing published or restored.
 - [x] Remove public licensing claims; replace location response guarantees and guarding delivery assurances with project-specific enquiry wording.
