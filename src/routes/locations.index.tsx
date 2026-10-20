@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CITIES, CITIES_BY_PROVINCE } from "@/lib/seo/cities";
+import { CITIES } from "@/lib/seo/cities";
 import { PROVINCE_BY_NAME } from "@/lib/seo/provinces";
 import { REVIEW_PROVINCE_GROUPS } from "@/lib/seo/location-review-links";
 import { SERVICE_SLUGS, SERVICE_BY_SLUG } from "@/lib/seo/services";
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/locations/")({
 });
 
 function LocationsIndex() {
-  const provinces = Object.keys(CITIES_BY_PROVINCE).sort();
+  const approvedSlugs = new Set(CITIES.map((c) => c.slug));
   return (
     <>
       <section className="relative isolate overflow-hidden border-b border-border">
