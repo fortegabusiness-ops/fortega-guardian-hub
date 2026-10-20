@@ -213,7 +213,7 @@ export const INDUSTRIES: Industry[] = [
       { q: "Can you integrate with our WMS or YMS?", a: "Yes. Fortega integrates with major WMS, YMS and TMS platforms so video and access events can be searched by trailer, BOL, dock door or driver." },
       { q: "Do you support multi-DC rollouts?", a: "Yes. We standardise hardware, configuration and monitoring procedures across portfolios so every DC reports the same way." },
       { q: "Can you handle high-value cage monitoring?", a: "Yes. Caged areas get tighter access control, motion-triggered video and seal-break alerts wired to our monitoring centre." },
-      { q: "How do you reduce false-alarm fees in big yards?", a: "Operators verify every alarm with live video and voice-down before requesting dispatch, eliminating the bulk of false-alarm charges." },
+      { q: "How can large yards reduce false alarms?", a: "Review detector positioning, operating schedules, camera views and maintenance. An agreed video-verification process can help distinguish routine activity from an incident before escalation; confirm the procedure for the property." },
     ],
   },
   {
