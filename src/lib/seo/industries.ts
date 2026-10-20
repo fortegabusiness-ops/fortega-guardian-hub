@@ -213,7 +213,7 @@ export const INDUSTRIES: Industry[] = [
       { q: "Can you integrate with our WMS or YMS?", a: "Yes. Fortega integrates with major WMS, YMS and TMS platforms so video and access events can be searched by trailer, BOL, dock door or driver." },
       { q: "Do you support multi-DC rollouts?", a: "Yes. We standardise hardware, configuration and monitoring procedures across portfolios so every DC reports the same way." },
       { q: "Can you handle high-value cage monitoring?", a: "Yes. Caged areas get tighter access control, motion-triggered video and seal-break alerts wired to our monitoring centre." },
-      { q: "How do you reduce false-alarm fees in big yards?", a: "Operators verify every alarm with live video and voice-down before requesting dispatch, eliminating the bulk of false-alarm charges." },
+      { q: "How can large yards reduce false alarms?", a: "Review detector positioning, operating schedules, camera views and maintenance. An agreed video-verification process can help distinguish routine activity from an incident before escalation; confirm the procedure for the property." },
     ],
   },
   {
@@ -554,7 +554,7 @@ export const INDUSTRIES: Industry[] = [
     ],
     faqs: [
       { q: "Can Fortega secure a site without permanent power?", a: "Yes. Solar-powered camera trailers and cellular-connected alarms operate independently of site power and move with the project." },
-      { q: "Do you offer remote guarding as an alternative to static guards?", a: "Yes. Verified video monitoring with voice-down challenge typically costs a fraction of overnight static guards while improving response quality." },
+      { q: "How does remote video monitoring differ from static guarding?", a: "Remote video monitoring supports observation, verification and agreed escalation. It cannot perform physical visitor handling or attendance. Confirm required duties and delivery arrangements separately; Fortega's eligibility for guard delivery remains unresolved." },
       { q: "Can you carry through to permanent security at occupancy?", a: "Yes. We design the permanent program up-front so handover at turnover is clean — no re-engineering, no re-procurement." },
       { q: "Do you handle multi-site general contractors?", a: "Yes. Fortega standardises hardware, monitoring procedures and reporting across portfolios so every project site reports the same way." },
     ],

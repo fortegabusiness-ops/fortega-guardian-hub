@@ -26,11 +26,11 @@ export type Guide = {
 export const GUIDES: Guide[] = [
   {
     slug: "commercial-security-system-cost-canada",
-    title: "What does a commercial security system cost in Canada?",
+    title: "Planning a commercial security system in Canada",
     metaTitle: "Commercial Security System Cost in Canada",
-    question: "How much does a commercial security system cost in Canada?",
+    question: "What should a commercial security system proposal include?",
     answer:
-      "There is no single price: a commercial security system is quoted from door count, camera count, how much cabling the building needs, and whether monitoring and service are included. Most Canadian businesses plan for a one-time design and installation cost plus a recurring monthly cost for monitoring, cloud video and support. The honest way to get a number is a site assessment — anything quoted before someone has seen the building is a guess.",
+      "A commercial security system proposal should document controlled doors, camera views, cabling, recording retention, monitoring responsibilities and ongoing support. Separate installation work from recurring services and confirm assumptions, exclusions and handover tests. Drawings and building details can support an initial review; site work and delivery arrangements require project-specific confirmation.",
     description:
       "What drives the price of a commercial security system in Canada — equipment, cabling, monitoring and service — and how to compare quotes fairly.",
     category: "Cost & planning",
@@ -78,12 +78,12 @@ export const GUIDES: Guide[] = [
     ],
     faqs: [
       {
-        q: "Is it cheaper to buy or lease a commercial security system?",
-        a: "Buying costs more up front and less over time; leasing or bundling hardware into a monitoring contract spreads the cost but usually locks you in for several years and can mean you do not own the equipment. Compare the five-year total and check who owns the hardware at the end.",
+        q: "Who owns the equipment and accounts after installation?",
+        a: "Ownership depends on the agreement. Confirm who owns hardware, recordings and administration accounts, and how access and data are transferred when the agreement ends.",
       },
       {
-        q: "Does a security system reduce commercial insurance premiums?",
-        a: "Often yes — monitored intrusion detection and, in some cases, video surveillance can reduce premiums or be a condition of coverage. Ask your broker what evidence they need; monitoring certificates and system documentation are usually part of it.",
+        q: "What security documentation might an insurer require?",
+        a: "Ask the insurer or broker which system records, monitoring documentation and testing evidence apply to the property. Equipment selection alone does not establish that an insurance requirement is satisfied.",
       },
       {
         q: "How long does a commercial installation take?",
@@ -157,9 +157,9 @@ export const GUIDES: Guide[] = [
     slug: "remote-guarding-vs-security-guards",
     title: "Remote guarding vs on-site security guards: which is right?",
     metaTitle: "Remote Guarding vs Security Guards Compared",
-    question: "Is remote guarding cheaper than on-site security guards?",
+    question: "How does remote video monitoring differ from on-site security guards?",
     answer:
-      "Remote guarding is usually less expensive per covered hour than a staffed guard post, because one operator supervises many sites through cameras, analytics and speakers. On-site guards are still the right answer when you need physical presence: customer interaction, access screening, escorts, key holding and hands-on incident response. Most mature programs blend the two — remote coverage overnight and weekends, guards during operating hours or at high-risk sites.",
+      "Remote video monitoring supports observation, verification and agreed escalation through suitable cameras and communications. On-site security duties can require physical visitor handling or attendance, which video cannot perform. Assess the duties separately; Fortega's eligibility and personnel availability for guard delivery remain unresolved, and a monitoring arrangement does not establish on-site coverage.",
     description:
       "How remote video guarding and on-site guards compare on cost, deterrence and response — and when a blended program makes more sense than either.",
     category: "Operations",
@@ -321,8 +321,8 @@ export const GUIDES: Guide[] = [
         a: "Yes — most commercial panels support integration so that disarming follows a valid credential at the first door and arming happens on last-out, which removes the most common cause of accidental alarms.",
       },
       {
-        q: "Is integration worth it for a single small site?",
-        a: "Often yes, because the same investigation benefit applies. The question is cost: if the integration requires an expensive subscription tier, a small site may get most of the value from tight time sync and matching camera coverage at each controlled door.",
+        q: "Can a single small site benefit from access control and CCTV integration?",
+        a: "Linked door events and matching footage can support incident review at a single site. Confirm the supported integration, time synchronization and intended camera views, then test the actual workflow.",
       },
     ],
     related: ["choosing-a-commercial-access-control-system", "how-many-security-cameras-does-my-business-need", "security-system-cyber-hardening"],
@@ -437,8 +437,8 @@ export const GUIDES: Guide[] = [
     ],
     faqs: [
       {
-        q: "Do municipalities charge for false alarms in Canada?",
-        a: "Many do. Policies vary by municipality — some charge after a set number of false dispatches per year, and some require verification before police will attend at all. Check your local police service's alarm bylaw.",
+        q: "Do alarm verification requirements vary by municipality?",
+        a: "Yes. Local alarm procedures and attendance requirements can differ. Check the current police-service guidance for the property and agree verification and escalation procedures; an alarm signal does not guarantee attendance.",
       },
       {
         q: "What is a verified alarm?",
@@ -493,8 +493,8 @@ export const GUIDES: Guide[] = [
         a: "It may cover the basics, but expect limits on users, retention and evidence export, and no service agreement when it fails. Most shops that start there migrate once they need footage for an insurance or police matter.",
       },
       {
-        q: "Is a commercial system much more expensive?",
-        a: "Per camera it can be comparable; the difference is in cabling, storage, software subscriptions and service. You are largely paying for reliability, retention and accountability rather than for the camera itself.",
+        q: "What should a business check before using a residential security system?",
+        a: "Check named user accounts, access permissions, recording retention, incident exports, communications and maintenance needs. Suitability depends on the building and operating requirements, not just whether the hardware is marketed for homes or businesses.",
       },
     ],
     related: ["commercial-security-system-cost-canada", "how-many-security-cameras-does-my-business-need", "choosing-a-commercial-access-control-system"],

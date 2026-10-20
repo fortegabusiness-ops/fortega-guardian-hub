@@ -1,6 +1,7 @@
 # Fortega SEO roadmap
 
 ## Approved full location expansion
+- [x] Enrich all 1,800 city-service review drafts and existing service pages with researched terms and 7–8 non-pricing draft FAQs; remove pricing questions from existing city-service and resource/industry questions. Draft inventory and safeguards verified; representative pages and enquiry link checked. Nothing published; local-evidence gaps remain unchanged.
 - [x] October 19 continuation: created all 1,800 review addresses and searchable review directory; checked every address, deleted-URL isolation and 12 safeguards. Nothing published or restored.
 - [x] Remove public licensing claims; replace location response guarantees and guarding delivery assurances with project-specific enquiry wording.
 - [x] Research Canadian search terms for all eight services and map 225 communities / 1,800 draft targets.

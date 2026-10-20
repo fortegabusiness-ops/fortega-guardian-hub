@@ -7,3 +7,4 @@
 - Treat normalized text similarity as a review signal, never a guarantee against spam classification; exclude shared service and delivery copy from local-substance comparisons.
 - Run the standalone location-inventory and lexical-difference audit with `bun scripts/audit-location-expansion.ts` from the project root; it writes review reports only and cannot restore pages.
 - Review drafts use a separate historical-city inventory and attributed reference records; missing local evidence stays explicitly flagged, and full-body duplicate grouping must accompany local-only similarity scores.
+- Keep service search guidance and non-pricing FAQs in a shared browser-safe content module used by review drafts and existing service pages; visible FAQs and their structured data must use the same records to prevent divergence.

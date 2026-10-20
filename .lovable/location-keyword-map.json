@@ -18,6 +18,7 @@
       "volume": 1000,
       "difficulty": 21,
       "secondary": [
+        "surveillance camera installation",
         "CCTV installation",
         "commercial security cameras"
       ],
@@ -38,7 +39,8 @@
       "volume": 720,
       "difficulty": 30,
       "secondary": [
-        "door access control systems",
+        "commercial access control system",
+        "door access control system",
         "access control solutions"
       ],
       "question": "How do access control systems work?"
@@ -48,7 +50,8 @@
       "volume": 110,
       "difficulty": 11,
       "secondary": [
-        "video surveillance systems",
+        "live video monitoring",
+        "security camera monitoring service",
         "CCTV monitoring"
       ],
       "question": "How does remote video monitoring work?"
