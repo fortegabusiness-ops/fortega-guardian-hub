@@ -1,0 +1,68 @@
+{
+  "purpose": "Follow-up assessment coverage, not exhaustive research or publication clearance",
+  "communities": 225,
+  "assessments": 1800,
+  "regions": [
+    {
+      "region": "west",
+      "cities": 50,
+      "assessments": 400,
+      "researcherDecisions": {
+        "new-scoped-candidate-unapproved": 34,
+        "needs-source-retrieval": 2,
+        "gap": 10,
+        "gap-after-limited-followup": 332,
+        "prior-candidate-retained-for-review": 22
+      },
+      "independentQualityReviewRequired": true
+    },
+    {
+      "region": "central",
+      "cities": 66,
+      "assessments": 528,
+      "researcherDecisions": {
+        "insufficient-direct-local-service-evidence": 495,
+        "local-institutional-context-only": 32,
+        "delegated-do-not-duplicate": 1
+      },
+      "independentQualityReviewRequired": true
+    },
+    {
+      "region": "east",
+      "cities": 44,
+      "assessments": 352,
+      "researcherDecisions": {
+        "no-service-specific-evidence-found": 306,
+        "out-of-scope": 22,
+        "needs-source-review": 1,
+        "usable-candidate": 23
+      },
+      "independentQualityReviewRequired": true
+    },
+    {
+      "region": "other",
+      "cities": 65,
+      "assessments": 520,
+      "researcherDecisions": {
+        "gap-after-limited-followup": 428,
+        "prior-candidate-retained-for-review": 38,
+        "substantiated-narrow-candidate": 6,
+        "delegated": 48
+      },
+      "independentQualityReviewRequired": true
+    }
+  ],
+  "unavoidableLimitations": [
+    "Public-source research cannot establish Fortega regulated-service eligibility or private delivery arrangements.",
+    "Finite searches cannot guarantee discovery of every possible source.",
+    "Some service-city combinations may not have defensible distinct local substance.",
+    "A full restorable Cloud backup requires owner-managed database export and separate storage downloads.",
+    "Google Ads account access and usable Google Trends evidence are not established."
+  ],
+  "productionChanges": 0,
+  "publicationApprovals": 0,
+  "independentReviewRecords": 625,
+  "draftsWithIndependentReviewRecords": 622,
+  "baselineFollowupDisagreements": 36,
+  "ontarioDiscoveryStatus": "Initial repair reported searches without saving results; no verified artifact exists. Three smaller artifact-first repairs in progress."
+}

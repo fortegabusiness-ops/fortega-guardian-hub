@@ -1,0 +1,3976 @@
+{
+  "purpose": "Independent read-only evidence-quality audit; private planning candidates only, never publication approval.",
+  "inputs": [
+    "/tmp/publication-priority-town-research.json",
+    "/tmp/publication-research/other-followup.json"
+  ],
+  "method": [
+    "Read complete saved texts for accepted sources; verify each quoted passage as a contiguous substring, with zero-based character offsets and SHA-256 of saved UTF-8 text.",
+    "No search snippets accepted. No independent network fetch needed to establish the limited historical/source-reported candidates below; source currentness and Yarmouth transport provenance remain blockers.",
+    "City-only scope requires explicit local linkage; institutional examples do not establish citywide conditions. Proposed planning actions are recommendations, not source claims.",
+    "Previously usable city/services excluded using baselineServices and priorDecision; delegated entries resolved against priority file. Limited discovery is not evidence of no need."
+  ],
+  "usableScopedCandidates": [
+    {
+      "city": "dawson",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://cityofdawson.ca/p/historic-resources-permits",
+        "path": "/tmp/priority-evidence/dawson-heritage.txt",
+        "title": "Historic Resources Permits",
+        "issuer": "City of Dawson",
+        "savedTextSha256": "9b9b804e2d0daa668f90b25103990929e7a9c4dceff9d1db2672abc87e5fefe4"
+      },
+      "passages": [
+        {
+          "exactPassage": "A historic resources permit is required for any proposed exterior alterations and/or alterations of a character defining element of a Municipal Historic Site.",
+          "characterStart": 921,
+          "characterEndExclusive": 1079,
+          "pinpoint": "Historic Resources Permits, first substantive paragraph"
+        }
+      ],
+      "scope": "Exterior or character-defining-element alterations to Municipal Historic Sites, not all Dawson installations.",
+      "proposedAccuratePrivatePlanningParagraph": "Dawson\u2019s historic-resources page requires a permit for proposed exterior alterations or changes to a character-defining element of a Municipal Historic Site. For a proposed camera mount and cable route, identify the parcel\u2019s designation and affected fabric before selecting fixings. Ask the City which review applies to the actual work; the page does not itself approve a security device or establish a universal installation permit requirement.",
+      "limitations": [
+        "Physical installation constraint only; no device-specific mandate, electronic egress approval or existing system proven."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "dawson",
+      "service": "access",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://cityofdawson.ca/p/historic-resources-permits",
+        "path": "/tmp/priority-evidence/dawson-heritage.txt",
+        "title": "Historic Resources Permits",
+        "issuer": "City of Dawson",
+        "savedTextSha256": "9b9b804e2d0daa668f90b25103990929e7a9c4dceff9d1db2672abc87e5fefe4"
+      },
+      "passages": [
+        {
+          "exactPassage": "A historic resources permit is required for any proposed exterior alterations and/or alterations of a character defining element of a Municipal Historic Site.",
+          "characterStart": 921,
+          "characterEndExclusive": 1079,
+          "pinpoint": "Historic Resources Permits, first substantive paragraph"
+        }
+      ],
+      "scope": "Exterior or character-defining-element alterations to Municipal Historic Sites, not all Dawson installations.",
+      "proposedAccuratePrivatePlanningParagraph": "Dawson\u2019s historic-resources page requires a permit for proposed exterior alterations or changes to a character-defining element of a Municipal Historic Site. For a proposed entrance reader, cabling or door alteration, identify the parcel\u2019s designation and affected fabric before selecting fixings. Ask the City which review applies to the actual work; the page does not itself approve a security device or establish a universal installation permit requirement.",
+      "limitations": [
+        "Physical installation constraint only; no device-specific mandate, electronic egress approval or existing system proven."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "chetwynd",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://www.gochetwynd.com/residents/recreation-centre/running-walking-track/",
+        "path": "/tmp/priority-evidence/chetwynd-track.txt",
+        "title": "Running/Walking Track",
+        "issuer": "District of Chetwynd",
+        "savedTextSha256": "fde966afcc777adf14d6fab3600ad3cb3035b56afae2c9577bf8b2b897d51e2b"
+      },
+      "passages": [
+        {
+          "exactPassage": "The Walking Track is located on the upper concourse (mezzanine level) of the Chetwynd & District Rec Centre",
+          "characterStart": 97,
+          "characterEndExclusive": 204,
+          "pinpoint": "Walking Track; Safety Guidelines"
+        },
+        {
+          "exactPassage": "This area is monitored by cameras and staff",
+          "characterStart": 1040,
+          "characterEndExclusive": 1083,
+          "pinpoint": "Walking Track; Safety Guidelines"
+        },
+        {
+          "exactPassage": "Staff may intervene if unsafe or inappropriate behavior is observed",
+          "characterStart": 1084,
+          "characterEndExclusive": 1151,
+          "pinpoint": "Walking Track; Safety Guidelines"
+        }
+      ],
+      "scope": "Named recreation-centre walking track only.",
+      "proposedAccuratePrivatePlanningParagraph": "Chetwynd\u2019s walking-track page describes cameras and staff monitoring the recreation-centre mezzanine, with staff able to intervene. A private assessment for this facility should separate camera observation from staff intervention, confirm current coverage and sign-in procedures, and document who handles an incident. The page does not establish remote operators, continuous observation, retention periods or a requirement for other premises.",
+      "limitations": [],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "banff",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+        "path": "/tmp/priority-evidence/banff-project.txt",
+        "title": "Husky C-Store, Gas Bar and A&W Banff",
+        "issuer": "PM Electric, installation participant",
+        "savedTextSha256": "1d605b5765d2c8ea25ccf8e6c6dd216a8bca16b9f8cfa412e24efcb2d60608e4"
+      },
+      "passages": [
+        {
+          "exactPassage": "Location Banff, Alberta",
+          "characterStart": 100,
+          "characterEndExclusive": 123,
+          "pinpoint": "Project location and security-features paragraph"
+        },
+        {
+          "exactPassage": "we integrated state-of-the-art security features such as high-definition surveillance cameras and access control systems",
+          "characterStart": 874,
+          "characterEndExclusive": 994,
+          "pinpoint": "Project location and security-features paragraph"
+        }
+      ],
+      "scope": "PM Electric participant account of Husky C-Store, Gas Bar and A&W Banff rebuild.",
+      "proposedAccuratePrivatePlanningParagraph": "PM Electric\u2019s Banff project account reports surveillance cameras and access-control systems as part of the Husky station rebuild, alongside lighting and power work. For a comparable enquiry, inventory the existing camera views, lighting and recording arrangements and agree owner-approved boundaries before proposing changes. This is a named contractor-reported example, not proof of current equipment, performance or a requirement for Banff businesses.",
+      "limitations": [
+        "Saved body actually includes \u201c2019 | Commercial\u201d; input incorrectly treated 2019 as search-only. No completion/current-condition claim follows."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "banff",
+      "service": "access",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://pmelectric.ca/project/husky-c-store-gas-bar-aw-banff/",
+        "path": "/tmp/priority-evidence/banff-project.txt",
+        "title": "Husky C-Store, Gas Bar and A&W Banff",
+        "issuer": "PM Electric, installation participant",
+        "savedTextSha256": "1d605b5765d2c8ea25ccf8e6c6dd216a8bca16b9f8cfa412e24efcb2d60608e4"
+      },
+      "passages": [
+        {
+          "exactPassage": "Location Banff, Alberta",
+          "characterStart": 100,
+          "characterEndExclusive": 123,
+          "pinpoint": "Project location and security-features paragraph"
+        },
+        {
+          "exactPassage": "we integrated state-of-the-art security features such as high-definition surveillance cameras and access control systems",
+          "characterStart": 874,
+          "characterEndExclusive": 994,
+          "pinpoint": "Project location and security-features paragraph"
+        }
+      ],
+      "scope": "PM Electric participant account of Husky C-Store, Gas Bar and A&W Banff rebuild.",
+      "proposedAccuratePrivatePlanningParagraph": "PM Electric\u2019s Banff project account reports surveillance cameras and access-control systems as part of the Husky station rebuild, alongside lighting and power work. For a comparable enquiry, inventory the existing controlled openings, user permissions and door interfaces and agree owner-approved boundaries before proposing changes. This is a named contractor-reported example, not proof of current equipment, performance or a requirement for Banff businesses.",
+      "limitations": [
+        "Saved body actually includes \u201c2019 | Commercial\u201d; input incorrectly treated 2019 as search-only. No completion/current-condition claim follows."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "gander",
+      "service": "smart",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://info.gmf-fmv.ca/projectdetails?id=fcfb186d-17dd-ec11-bb3c-0022486da190",
+        "path": "/tmp/priority-evidence/gander-energy.txt",
+        "title": "Energy efficiency and renewable energy for municipal buildings in Gander",
+        "issuer": "Federation of Canadian Municipalities Green Municipal Fund",
+        "savedTextSha256": "82cd4378d0c178af7e36cbf86db5d17b3506420f208d6108da1ad57603f6accc"
+      },
+      "passages": [
+        {
+          "exactPassage": "Project Type Feasibility Study",
+          "characterStart": 298,
+          "characterEndExclusive": 328,
+          "pinpoint": "Project metadata and Description, measures bullet"
+        },
+        {
+          "exactPassage": "Project timeline 2019 - 2020",
+          "characterStart": 491,
+          "characterEndExclusive": 519,
+          "pinpoint": "Project metadata and Description, measures bullet"
+        },
+        {
+          "exactPassage": "Integration of the heating, ventilation and air conditioning (HVAC) system with geothermal heat exchanger, high-efficiency cooling coil, low-emissivity ceiling and central automation system at the community centre",
+          "characterStart": 1274,
+          "characterEndExclusive": 1487,
+          "pinpoint": "Project metadata and Description, measures bullet"
+        }
+      ],
+      "scope": "Gander municipal community-centre measure considered in feasibility study 16612.",
+      "proposedAccuratePrivatePlanningParagraph": "FCM\u2019s record for Gander study 16612 lists a central automation system with HVAC integration among measures to be considered at the community centre in a 2019\u20132020 feasibility study. Before a controls proposal, obtain the current plant and controller inventory, establish whether this measure was implemented, and agree sequences and commissioning evidence with the owner. Fully disbursed study funding does not establish an installed or commissioned automation system.",
+      "limitations": [
+        "Council minutes are project context, not proof that this automation measure was delivered."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "yarmouth",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://housing-infrastructure.canada.ca/investments-investissements/stories-histoires/trans-mobil/yarmouth-ns-eng.html",
+        "path": "/tmp/priority-evidence/yarmouth-terminal-retry.txt",
+        "title": "Revitalized Yarmouth Ferry Terminal: A Gateway to Nova Scotias Charm",
+        "issuer": "Housing, Infrastructure and Communities Canada",
+        "savedTextSha256": "c6f31e814837300c9818dd6fb2770a8f2125ac57d126adb2f5e780a15e7f14f2"
+      },
+      "passages": [
+        {
+          "exactPassage": "Lighting improvements and the integration of advanced electrical systems, including state-of-the-art CCTV and Public Awareness systems, bolster safety and security measures.",
+          "characterStart": 1481,
+          "characterEndExclusive": 1654,
+          "pinpoint": "Terminal improvements paragraph"
+        }
+      ],
+      "scope": "Federal account of Yarmouth international ferry-terminal improvements only.",
+      "proposedAccuratePrivatePlanningParagraph": "A federal Yarmouth ferry-terminal project story describes CCTV and public-awareness systems alongside lighting and electrical improvements. A terminal-specific planning enquiry can therefore separate lighting, camera coverage and passenger-information interfaces, confirm owner responsibilities, and request as-built and handover records. This example does not demonstrate live remote guarding or requirements for ordinary Yarmouth businesses.",
+      "limitations": [
+        "Saved source obtained with TLS certificate validation disabled; independently authenticated retrieval required before external use. Source-reported example only."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "brandon",
+      "service": "guards",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://www.gov.mb.ca/housing/tenants/security.html",
+        "path": "/tmp/publication-research/other-followup-fetches/e2937f5b0548377e.txt",
+        "title": "Province of Manitoba | Housing, Addictions and Homelessness",
+        "issuer": "www.gov.mb.ca",
+        "savedTextSha256": "7edd30874730f86a774bcd0bce02bb73b4e5d0ef61a050bb732c7eab9baf05b1"
+      },
+      "passages": [
+        {
+          "exactPassage": "Manitoba Housing Security: Manitoba Housing Security is responsible for contract security throughout the Province, as well as a 27 member mobile security service which provides call responses within Winnipeg and Brandon.",
+          "characterStart": 1843,
+          "characterEndExclusive": 2063,
+          "pinpoint": "Manitoba Housing Security paragraph"
+        }
+      ],
+      "scope": "Manitoba Housing mobile call-response program explicitly names Brandon.",
+      "proposedAccuratePrivatePlanningParagraph": "Manitoba Housing\u2019s security page explicitly includes Brandon in its mobile security call-response area. For work involving a Manitoba Housing property, first identify the housing authority\u2019s incident contacts, dispatch responsibilities and site-access arrangements, then clarify any proposed contractor\u2019s role. The program is an institutional example, not evidence of general commercial patrol coverage or private-provider eligibility.",
+      "limitations": [
+        "Staff count is undated and not adopted as current. Province-wide technical-system descriptions do not establish local camera, access or monitoring deployments."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+    },
+    {
+      "city": "winnipeg",
+      "service": "guards",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://www.gov.mb.ca/housing/tenants/security.html",
+        "path": "/tmp/publication-research/other-followup-fetches/e2937f5b0548377e.txt",
+        "title": "Province of Manitoba | Housing, Addictions and Homelessness",
+        "issuer": "www.gov.mb.ca",
+        "savedTextSha256": "7edd30874730f86a774bcd0bce02bb73b4e5d0ef61a050bb732c7eab9baf05b1"
+      },
+      "passages": [
+        {
+          "exactPassage": "Manitoba Housing Security: Manitoba Housing Security is responsible for contract security throughout the Province, as well as a 27 member mobile security service which provides call responses within Winnipeg and Brandon.",
+          "characterStart": 1843,
+          "characterEndExclusive": 2063,
+          "pinpoint": "Manitoba Housing Security paragraph"
+        }
+      ],
+      "scope": "Manitoba Housing mobile call-response program explicitly names Winnipeg.",
+      "proposedAccuratePrivatePlanningParagraph": "Manitoba Housing\u2019s security page explicitly includes Winnipeg in its mobile security call-response area. For work involving a Manitoba Housing property, first identify the housing authority\u2019s incident contacts, dispatch responsibilities and site-access arrangements, then clarify any proposed contractor\u2019s role. The program is an institutional example, not evidence of general commercial patrol coverage or private-provider eligibility.",
+      "limitations": [
+        "Staff count is undated and not adopted as current. Province-wide technical-system descriptions do not establish local camera, access or monitoring deployments."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://ustboniface.ca/installations-et-securite",
+        "path": "/tmp/publication-research/other-followup-fetches/27ec5a7f76837b34.txt",
+        "title": "Installations et s\u00e9curit\u00e9 | Universit\u00e9 de Saint-Boniface",
+        "issuer": "ustboniface.ca",
+        "savedTextSha256": "ee569c634ee15af57af2a6c817b0276defecdfc388b28d3e98711efdb9803cde"
+      },
+      "passages": [
+        {
+          "exactPassage": "Le campus est muni de plus de 71 cam\u00e9ras pour la s\u00e9curit\u00e9 \u00e0 divers endroits.",
+          "characterStart": 1009,
+          "characterEndExclusive": 1085,
+          "pinpoint": "Mesures s\u00e9curitaires en place \u00e0 l\u2019USB; address block"
+        }
+      ],
+      "scope": "Universit\u00e9 de Saint-Boniface campus, 521 rue Aulneau; neighbourhood example, not a separate municipality.",
+      "proposedAccuratePrivatePlanningParagraph": "Universit\u00e9 de Saint-Boniface describes more than 71 campus security cameras. A campus-specific assessment should verify the current inventory, viewing permissions, privacy exclusions and incident handoff rather than assuming that the published count or coverage remains unchanged. This is an institutional example in Saint Boniface, not evidence of neighbourhood-wide surveillance or private monitoring.",
+      "limitations": [],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "guards",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://ustboniface.ca/installations-et-securite",
+        "path": "/tmp/publication-research/other-followup-fetches/27ec5a7f76837b34.txt",
+        "title": "Installations et s\u00e9curit\u00e9 | Universit\u00e9 de Saint-Boniface",
+        "issuer": "ustboniface.ca",
+        "savedTextSha256": "ee569c634ee15af57af2a6c817b0276defecdfc388b28d3e98711efdb9803cde"
+      },
+      "passages": [
+        {
+          "exactPassage": "Un gardien de s\u00e9curit\u00e9 est sur place tous les jours, 24 heures sur 24.",
+          "characterStart": 938,
+          "characterEndExclusive": 1008,
+          "pinpoint": "Mesures s\u00e9curitaires en place \u00e0 l\u2019USB"
+        },
+        {
+          "exactPassage": "Un service d\u2019accompagnement d\u2019un gardien de s\u00e9curit\u00e9 aux voitures est disponible pour ceux et celles qui le d\u00e9sirent.",
+          "characterStart": 1608,
+          "characterEndExclusive": 1725,
+          "pinpoint": "Mesures s\u00e9curitaires en place \u00e0 l\u2019USB"
+        },
+        {
+          "exactPassage": "Ce service est offert \u00e0 ceux et \u00e0 celles qui sont stationn\u00e9s dans le stationnement de l'USB, c\u2019est-\u00e0-dire, le stationnement au sud de l'\u00e9difice.",
+          "characterStart": 1957,
+          "characterEndExclusive": 2101,
+          "pinpoint": "Mesures s\u00e9curitaires en place \u00e0 l\u2019USB"
+        }
+      ],
+      "scope": "Named university campus; accompaniment limited to USB south parking lot.",
+      "proposedAccuratePrivatePlanningParagraph": "The university page describes an on-site guard and an optional guard accompaniment service to the USB south parking lot. For a campus enquiry, confirm current staffing, the Aulneau-entry request point, escort boundaries and incident escalation with the university. Do not extend this campus arrangement to all Saint Boniface properties or represent it as this company\u2019s available service.",
+      "limitations": [],
+      "publicationReady": false,
+      "privateDeliveryReview": "blocked-unresolved-regulated-service-eligibility"
+    },
+    {
+      "city": "swan-river",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://news.gov.mb.ca/news/index.html?item=58980",
+        "path": "/tmp/publication-research/other-followup-fetches/b244859678673610.txt",
+        "title": "Province of Manitoba | News Releases | Manitoba Government Providing $50,000 to Support Community Crime Prevention Efforts in Swan River",
+        "issuer": "news.gov.mb.ca",
+        "savedTextSha256": "2fd5553198fd2ba380186c5c91c1c9b1f8b626871fa7b9f67e67b044a1e7ec44"
+      },
+      "passages": [
+        {
+          "exactPassage": "April 21, 2023",
+          "characterStart": 305,
+          "characterEndExclusive": 319,
+          "pinpoint": "Dated news release, minister funding quotation"
+        },
+        {
+          "exactPassage": "Our government is pleased to provide this funding to Swan River toward the purchase of surveillance camera equipment",
+          "characterStart": 887,
+          "characterEndExclusive": 1003,
+          "pinpoint": "Dated news release, minister funding quotation"
+        }
+      ],
+      "scope": "April 21, 2023 Manitoba funding announcement naming Swan River.",
+      "proposedAccuratePrivatePlanningParagraph": "Manitoba announced funding toward surveillance-camera equipment for Swan River in April 2023. A private planning enquiry should establish which equipment was actually procured, who owns recordings and what evidence-transfer procedure applies before discussing interfaces with a proposed system. The announcement is not confirmation of installation, measured deterrence or current camera condition.",
+      "limitations": [],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "swan-river",
+      "service": "remote",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://swanvalleychamber.ca/chamber-on-patrol-program/",
+        "path": "/tmp/publication-research/other-followup-fetches/f2eec5aac5e8516c.txt",
+        "title": "Chamber on Patrol Program \u2013 Swan Valley Chamber of Commerce",
+        "issuer": "swanvalleychamber.ca",
+        "savedTextSha256": "50097ffe94bad4657aeaf0c70350695acd4bdbc44d4cacb20c466565d2d4efa7"
+      },
+      "passages": [
+        {
+          "exactPassage": "The Chamber on Patrol Video Program provides centrally monitored video surveillance.",
+          "characterStart": 185,
+          "characterEndExclusive": 269,
+          "pinpoint": "Chamber on Patrol Video Program description"
+        }
+      ],
+      "scope": "Swan Valley Chamber program; regional program associated with Swan River, not evidence every camera or host lies within town boundaries.",
+      "proposedAccuratePrivatePlanningParagraph": "The Swan Valley Chamber describes centrally monitored video in its Chamber on Patrol program. A Swan River enquiry may use this as a named community-program reference, but must confirm that the actual proposed property participates, who may view footage and what volunteer escalation arrangements apply. Do not equate the program with contracted 24-hour remote guarding, guaranteed response or a citywide deployment.",
+      "limitations": [
+        "Regional program only; no city-only deployment gain claimed without a confirmed Swan River host."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "flin-flon",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://cityofflinflon.ca/security-grant",
+        "path": "/tmp/publication-research/other-followup-fetches/0cbd61e53ceff50d.txt",
+        "title": "Grafitti and Security Offsetting Grants - Flin Flon, MB",
+        "issuer": "cityofflinflon.ca",
+        "savedTextSha256": "9714b47860cb0f24d17c6bf6d52d1b6ba6555858c7dbbc6d889041a1c4f839ec"
+      },
+      "passages": [
+        {
+          "exactPassage": "City of Flin Flon homeowners and businesses can apply for an offsetting grant in the amount of up to $150 toward the purchase and installation of a security camera system.",
+          "characterStart": 201,
+          "characterEndExclusive": 372,
+          "pinpoint": "Home and Business Security Offsetting Grant"
+        }
+      ],
+      "scope": "Municipal page describing a camera-installation grant for Flin Flon homeowners and businesses.",
+      "proposedAccuratePrivatePlanningParagraph": "Flin Flon\u2019s municipal page describes an offsetting grant of up to $150 toward a security-camera purchase and installation. Before relying on it in a private budget, ask the City to confirm current terms, funding and applicant eligibility and obtain the relevant application requirements. The page is a concrete local camera-planning reference, not confirmation that any applicant will receive funding or that any installation is complete.",
+      "limitations": [
+        "No current grant availability or entitlement inferred. Overlooked in follow-up gap decision."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "moncton",
+      "service": "cctv",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://www.moncton.ca/en/my-govt-work/public-safety",
+        "path": "/tmp/publication-research/other-followup-fetches/eafc40b8fb2455d8.txt",
+        "title": "Public Safety | City of Moncton",
+        "issuer": "www.moncton.ca",
+        "savedTextSha256": "ffec5c4f99cb0019537ea1a316a053d4d011c189465b40cbab1e077116975c57"
+      },
+      "passages": [
+        {
+          "exactPassage": "Several cameras are installed around City infrastructure (i.e., parking garage), along Main Street and St. George Street. A policy has been developed around camera use in the municipality.",
+          "characterStart": 10298,
+          "characterEndExclusive": 10486,
+          "pinpoint": "Action 14, camera-use update"
+        }
+      ],
+      "scope": "Named municipal infrastructure and streets in Moncton, not private premises.",
+      "proposedAccuratePrivatePlanningParagraph": "Moncton\u2019s public-safety update reports cameras at City infrastructure, including a parking garage, and along Main and St. George streets, with a municipal camera-use policy. For a nearby private proposal, establish separate ownership and fields of view, avoid assuming access to municipal recordings, and request the applicable policy before planning any interface. The update does not prove active remote operators or a mandate for private cameras.",
+      "limitations": [
+        "Overlooked in follow-up gap decision; reported municipal deployment only."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "saint-john",
+      "service": "intrusion",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://saintjohnpolice.ca/storage/2024/02/06.ASSTGPUB.01.001-Commercial-Alarm-Policy.pdf",
+        "path": "/tmp/publication-research/other-followup-fetches/9f6d63d49bd8bf7e.txt",
+        "title": "Official PDF record",
+        "issuer": "saintjohnpolice.ca",
+        "savedTextSha256": "d86233cd5ff9749209dcab78b9aa0b23b8ffa0b9381b175827bfd7f0e605f54f"
+      },
+      "passages": [
+        {
+          "exactPassage": "This policy does not apply to residential alarms.",
+          "characterStart": 5615,
+          "characterEndExclusive": 5664,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        },
+        {
+          "exactPassage": "Alarm Companies: Means any person or persons who engage in the business of monitoring alarm systems (including live video surveillance) and reports to the SJPF when an alarm system has been activated.",
+          "characterStart": 5683,
+          "characterEndExclusive": 5883,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        },
+        {
+          "exactPassage": "the alarm company operator has contacted the key holder and confirmed they are attending;",
+          "characterStart": 8095,
+          "characterEndExclusive": 8184,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        },
+        {
+          "exactPassage": "This policy only applies to commercial alarms, in which Financial Institutions, schools and hospitals are exempt.",
+          "characterStart": 8537,
+          "characterEndExclusive": 8650,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        }
+      ],
+      "scope": "SJPF commercial non-residential alarm response; stated institutional exemptions and residential exclusion.",
+      "proposedAccuratePrivatePlanningParagraph": "Saint John Police\u2019s commercial-alarm policy, approved December 20, 2023, makes key-holder attendance confirmation and police-response suspension status relevant to alarm-company requests. For a covered commercial premises, document an attending key holder, current contact details and the monitoring operator\u2019s escalation procedure; verify current policy and any suspension before specifying response arrangements. Residential alarms and the policy\u2019s listed exempt institutions must not be folded into this scope. Inclusion of live video in the alarm-company definition does not guarantee police attendance or establish a local remote-guarding deployment.",
+      "limitations": [
+        "New overlooked policy candidate, not proof of installed systems. Confirm exceptions and complete policy before operational advice."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    },
+    {
+      "city": "saint-john",
+      "service": "remote",
+      "previousDecision": "no-service-specific-evidence-found",
+      "decision": "new-defensible-scoped-candidate",
+      "source": {
+        "url": "https://saintjohnpolice.ca/storage/2024/02/06.ASSTGPUB.01.001-Commercial-Alarm-Policy.pdf",
+        "path": "/tmp/publication-research/other-followup-fetches/9f6d63d49bd8bf7e.txt",
+        "title": "Official PDF record",
+        "issuer": "saintjohnpolice.ca",
+        "savedTextSha256": "d86233cd5ff9749209dcab78b9aa0b23b8ffa0b9381b175827bfd7f0e605f54f"
+      },
+      "passages": [
+        {
+          "exactPassage": "This policy does not apply to residential alarms.",
+          "characterStart": 5615,
+          "characterEndExclusive": 5664,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        },
+        {
+          "exactPassage": "Alarm Companies: Means any person or persons who engage in the business of monitoring alarm systems (including live video surveillance) and reports to the SJPF when an alarm system has been activated.",
+          "characterStart": 5683,
+          "characterEndExclusive": 5883,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        },
+        {
+          "exactPassage": "the alarm company operator has contacted the key holder and confirmed they are attending;",
+          "characterStart": 8095,
+          "characterEndExclusive": 8184,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        },
+        {
+          "exactPassage": "This policy only applies to commercial alarms, in which Financial Institutions, schools and hospitals are exempt.",
+          "characterStart": 8537,
+          "characterEndExclusive": 8650,
+          "pinpoint": "Cover; B.2; C.1; D.1"
+        }
+      ],
+      "scope": "SJPF commercial non-residential alarm response; stated institutional exemptions and residential exclusion.",
+      "proposedAccuratePrivatePlanningParagraph": "Saint John Police\u2019s commercial-alarm policy, approved December 20, 2023, makes key-holder attendance confirmation and police-response suspension status relevant to alarm-company requests. For a covered commercial premises, document an attending key holder, current contact details and the monitoring operator\u2019s escalation procedure; verify current policy and any suspension before specifying response arrangements. Residential alarms and the policy\u2019s listed exempt institutions must not be folded into this scope. Inclusion of live video in the alarm-company definition does not guarantee police attendance or establish a local remote-guarding deployment.",
+      "limitations": [
+        "New overlooked policy candidate, not proof of installed systems. Confirm exceptions and complete policy before operational advice."
+      ],
+      "publicationReady": false,
+      "privateDeliveryReview": "not-established-by-research"
+    }
+  ],
+  "rejectedOrOutOfScope": [
+    {
+      "city": "dawson",
+      "services": [
+        "consulting"
+      ],
+      "evidenceId": "dawson-heritage",
+      "reason": "Generic heritage review provides a narrow physical-installation constraint for cameras/access, but no security risk assessment or consulting scope; not an independent consulting gain."
+    },
+    {
+      "city": "dawson",
+      "services": [
+        "smart"
+      ],
+      "evidenceId": "dawson-retrofit",
+      "reason": "Saved participant text lists mechanical retrofit but no automation or controls. HVAC alone is insufficient."
+    },
+    {
+      "city": "estevan",
+      "services": [
+        "remote"
+      ],
+      "evidenceId": "estevan-policy",
+      "reason": "Live public-area feed does not establish remote operators, dispatch or monitoring service. CCTV already usable and excluded."
+    },
+    {
+      "cities": [
+        "brandon",
+        "winnipeg"
+      ],
+      "services": [
+        "cctv",
+        "access",
+        "intrusion",
+        "remote"
+      ],
+      "sourceUrl": "https://www.gov.mb.ca/housing/tenants/security.html",
+      "reason": "Province-wide technical support and alarm/camera monitoring are not tied to specific city properties. Only mobile call responses explicitly name both cities; do not transfer that locality to other paragraphs."
+    },
+    {
+      "city": "inuvik",
+      "services": [
+        "consulting"
+      ],
+      "reason": "Camera policy and facility camera plans are not a security assessment or consulting brief; CCTV and smart are already usable, excluded."
+    },
+    {
+      "city": "saint-john",
+      "services": [
+        "cctv"
+      ],
+      "reason": "Monitoring definition includes live video but supports only alarm-response workflow; not a separate CCTV deployment/design candidate."
+    }
+  ],
+  "uncertain": [
+    {
+      "city": "happy-valley-goose-bay",
+      "evidenceId": "hvgb-video",
+      "sourceUrl": "https://townhvgb.com/wp-content/uploads/2023/08/PS0008-Video-Surveillance-Cameras-signed.pdf",
+      "services": [
+        "cctv",
+        "consulting"
+      ],
+      "decision": "unverified-lead-not-a-gain",
+      "reason": "No independently read saved full source for the asserted passage; discovery snippet/fetch failure cannot qualify.",
+      "originalCaveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "evidenceId": "hvgb-patrol",
+      "sourceUrl": "https://townhvgb.com/wp-content/uploads/2026/02/19th-Council-Meeting-Minutes-July-9-2026.pdf",
+      "services": [
+        "guards"
+      ],
+      "decision": "unverified-lead-not-a-gain",
+      "reason": "No independently read saved full source for the asserted passage; discovery snippet/fetch failure cannot qualify.",
+      "originalCaveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "city": "banff",
+      "evidenceId": "banff-alarm",
+      "sourceUrl": "https://banff.ca/DocumentCenter/View/205",
+      "services": [
+        "intrusion"
+      ],
+      "decision": "unverified-lead-not-a-gain",
+      "reason": "No independently read saved full source for the asserted passage; discovery snippet/fetch failure cannot qualify.",
+      "originalCaveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "city": "banff",
+      "evidenceId": "banff-cyber",
+      "sourceUrl": "https://banff.ca/CivicAlerts.asp?AID=1494&ARC=2545",
+      "services": [
+        "cyber"
+      ],
+      "decision": "unverified-lead-not-a-gain",
+      "reason": "No independently read saved full source for the asserted passage; discovery snippet/fetch failure cannot qualify.",
+      "originalCaveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "city": "yarmouth",
+      "evidenceId": "yarmouth-light",
+      "sourceUrl": "https://www.townofyarmouth.ca/town-hall/policies/1326-dark-sky-policy/file",
+      "services": [
+        "smart",
+        "cctv"
+      ],
+      "decision": "unverified-lead-not-a-gain",
+      "reason": "No independently read saved full source for the asserted passage; discovery snippet/fetch failure cannot qualify.",
+      "originalCaveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "city": "estevan",
+      "evidenceId": "estevan-registry",
+      "sourceUrl": "https://estevanpolice.ca/cameraregistry/",
+      "services": [
+        "cctv",
+        "remote"
+      ],
+      "decision": "unverified-lead-not-a-gain",
+      "reason": "No independently read saved full source for the asserted passage; discovery snippet/fetch failure cannot qualify.",
+      "originalCaveats": "Search-index text is not accepted as fetched verification; preserve gap pending accessible full official source."
+    },
+    {
+      "city": "dalhousie",
+      "services": [
+        "cctv"
+      ],
+      "evidenceId": "dalhousie-cctv",
+      "source": {
+        "url": "https://projects.constructconnect.com/details/5780533-cctv-system-upgrade-dalhousie-correctional&find_loc=NB-E8C-2A2",
+        "path": "/tmp/priority-evidence/dalhousie-cctv.txt",
+        "title": "CCTV System Upgrade \u2013 Dalhousie Correctional",
+        "issuer": "ConstructConnect, procurement aggregator"
+      },
+      "exactPassage": ".4 Commission CCTV system, include data testing the new cabling for all cameras and network drops.",
+      "verifiedInSavedText": true,
+      "reason": "Secondary procurement aggregator describes correctional CCTV commissioning; named facility only. Obtain primary tender/specification to establish authoritative scope; not counted as defensible accepted gain."
+    }
+  ],
+  "excludedPreviouslyUsable": [
+    {
+      "city": "dawson",
+      "service": "guards"
+    },
+    {
+      "city": "chetwynd",
+      "service": "intrusion"
+    },
+    {
+      "city": "estevan",
+      "service": "cctv"
+    },
+    {
+      "city": "brandon",
+      "service": "intrusion"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "cyber"
+    },
+    {
+      "city": "thompson",
+      "service": "intrusion"
+    },
+    {
+      "city": "winnipeg",
+      "service": "intrusion"
+    },
+    {
+      "city": "fredericton",
+      "service": "cctv"
+    },
+    {
+      "city": "miramichi",
+      "service": "cctv"
+    },
+    {
+      "city": "miramichi",
+      "service": "intrusion"
+    },
+    {
+      "city": "miramichi",
+      "service": "cyber"
+    },
+    {
+      "city": "argentia",
+      "service": "cctv"
+    },
+    {
+      "city": "argentia",
+      "service": "access"
+    },
+    {
+      "city": "st-johns",
+      "service": "cctv"
+    },
+    {
+      "city": "inuvik",
+      "service": "cctv"
+    },
+    {
+      "city": "inuvik",
+      "service": "smart"
+    },
+    {
+      "city": "yellowknife",
+      "service": "cyber"
+    },
+    {
+      "city": "halifax",
+      "service": "intrusion"
+    },
+    {
+      "city": "iqaluit",
+      "service": "consulting"
+    },
+    {
+      "city": "regina",
+      "service": "cctv"
+    },
+    {
+      "city": "watson-lake",
+      "service": "cctv"
+    },
+    {
+      "city": "whitehorse",
+      "service": "intrusion"
+    },
+    {
+      "city": "whitehorse",
+      "service": "smart"
+    }
+  ],
+  "previouslyUnsupportedServicesGainingDefensibleCityScopedEvidence": [
+    {
+      "city": "banff",
+      "service": "access"
+    },
+    {
+      "city": "banff",
+      "service": "cctv"
+    },
+    {
+      "city": "brandon",
+      "service": "guards"
+    },
+    {
+      "city": "chetwynd",
+      "service": "cctv"
+    },
+    {
+      "city": "dawson",
+      "service": "access"
+    },
+    {
+      "city": "dawson",
+      "service": "cctv"
+    },
+    {
+      "city": "flin-flon",
+      "service": "cctv"
+    },
+    {
+      "city": "gander",
+      "service": "smart"
+    },
+    {
+      "city": "moncton",
+      "service": "cctv"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "cctv"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "guards"
+    },
+    {
+      "city": "saint-john",
+      "service": "intrusion"
+    },
+    {
+      "city": "saint-john",
+      "service": "remote"
+    },
+    {
+      "city": "swan-river",
+      "service": "cctv"
+    },
+    {
+      "city": "winnipeg",
+      "service": "guards"
+    },
+    {
+      "city": "yarmouth",
+      "service": "cctv"
+    }
+  ],
+  "regionalOnlyCandidateNotCountedAsCityOnlyGain": [
+    {
+      "city": "swan-river",
+      "service": "remote"
+    }
+  ],
+  "remainingCityServiceDecisions": [
+    {
+      "city": "dawson",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "dawson",
+      "service": "access",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "dawson",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dawson",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dawson",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-context-only"
+    },
+    {
+      "city": "dawson",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "dawson",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "chetwynd",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "chetwynd",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "chetwynd",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "chetwynd",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "chetwynd",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "chetwynd",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "chetwynd",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-source-retrieval"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-source-retrieval"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "happy-valley-goose-bay",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-source-retrieval"
+    },
+    {
+      "city": "banff",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "banff",
+      "service": "access",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "banff",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-source-retrieval"
+    },
+    {
+      "city": "banff",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "banff",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "banff",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "banff",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-source-retrieval"
+    },
+    {
+      "city": "banff",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "smart",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "gander",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "gander",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-primary-source-review"
+    },
+    {
+      "city": "dalhousie",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "dalhousie",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "yarmouth",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "new-scoped-candidate"
+    },
+    {
+      "city": "yarmouth",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "yarmouth",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "yarmouth",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "yarmouth",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "needs-source-retrieval"
+    },
+    {
+      "city": "yarmouth",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "yarmouth",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "yarmouth",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "estevan",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "estevan",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "estevan",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-context-only"
+    },
+    {
+      "city": "estevan",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "estevan",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "estevan",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "estevan",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap"
+    },
+    {
+      "city": "brandon",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "brandon",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "brandon",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "brandon",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "brandon",
+      "service": "guards",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "substantiated-narrow-candidate"
+    },
+    {
+      "city": "brandon",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "brandon",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "churchill",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "churchill",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "dauphin",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "flin-flon",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "flin-flon",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "kildonan",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "substantiated-narrow-candidate"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "guards",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "substantiated-narrow-candidate"
+    },
+    {
+      "city": "saint-boniface",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "swan-river",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "swan-river",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "substantiated-narrow-candidate"
+    },
+    {
+      "city": "swan-river",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "swan-river",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "swan-river",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "substantiated-narrow-candidate"
+    },
+    {
+      "city": "swan-river",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "swan-river",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "swan-river",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "thompson",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "winnipeg",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "winnipeg",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "winnipeg",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "winnipeg",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "winnipeg",
+      "service": "guards",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "substantiated-narrow-candidate"
+    },
+    {
+      "city": "winnipeg",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "winnipeg",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "york-factory",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "york-factory",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bathurst",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "caraquet",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fredericton",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "fredericton",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fredericton",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fredericton",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fredericton",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fredericton",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fredericton",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "miramichi",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "miramichi",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "miramichi",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "miramichi",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "miramichi",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "moncton",
+      "service": "cctv",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moncton",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "saint-john",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "intrusion",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "remote",
+      "decision": "gained-scoped-candidate",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-john",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "argentia",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "argentia",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "argentia",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "argentia",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "argentia",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "argentia",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "bonavista",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "bonavista",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "channel-port-aux-basques",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "corner-brook",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "ferryland",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "grand-falls-windsor",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "harbour-grace",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "labrador-city",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "placentia",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saint-anthony",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "st-johns",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "wabana",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "fort-smith",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "hay-river",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "hay-river",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "hay-river",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "hay-river",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "hay-river",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "hay-river",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "hay-river",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "hay-river",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "inuvik",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "inuvik",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "inuvik",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "inuvik",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "inuvik",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "inuvik",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "tuktoyaktuk",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "yellowknife",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "baddeck",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "digby",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "glace-bay",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "halifax",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "liverpool",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "liverpool",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "louisbourg",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "lunenburg",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "pictou",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "port-hawkesbury",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "springhill",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "sydney",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "iqaluit",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "iqaluit",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "iqaluit",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "iqaluit",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "iqaluit",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "iqaluit",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "iqaluit",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "borden",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "cavendish",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cavendish",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "charlottetown",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "souris",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "summerside",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "batoche",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "batoche",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "cumberland-house",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "moose-jaw",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "prince-albert",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "regina",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "saskatoon",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "saskatoon",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "uranium-city",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "uranium-city",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "intrusion",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "smart",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "watson-lake",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "whitehorse",
+      "service": "consulting",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "whitehorse",
+      "service": "cctv",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "whitehorse",
+      "service": "access",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "whitehorse",
+      "service": "remote",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "prior-candidate-retained-for-review"
+    },
+    {
+      "city": "whitehorse",
+      "service": "guards",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    },
+    {
+      "city": "whitehorse",
+      "service": "cyber",
+      "decision": "no-defensible-city-only-gain",
+      "inputDecision": "gap-after-limited-followup"
+    }
+  ],
+  "deliveryAndPublicationBlockers": [
+    "All entries publicationReady=false: no complete page or city/service approval follows.",
+    "No private-provider service availability, coverage, capacity, contracts or customer relationships established.",
+    "Regulated-service eligibility, licences, jurisdictional permissions and guard-delivery eligibility unresolved; no licence claims made.",
+    "Confirm source currentness, actual site and applicable jurisdiction, owner authorization, privacy requirements, equipment and implementation status before external use.",
+    "Institutional/participant examples must remain attributed and site-specific; no inference of citywide need, crime rates or deployment.",
+    "Yarmouth requires authenticated independent retrieval before external use. Dalhousie requires primary procurement verification. Regional Swan Valley program cannot close city-only remote gap.",
+    "Source snippets and generic permits, emergency preparedness, environmental monitoring, fire alarms, HVAC retrofits and cybersecurity-by-association do not close unrelated service gaps."
+  ],
+  "summary": {
+    "acceptedScopedCandidates": 17,
+    "cityServiceGains": 16,
+    "excludedPreviouslyUsable": 23,
+    "publicationReady": false,
+    "projectFilesChanged": false
+  }
+}

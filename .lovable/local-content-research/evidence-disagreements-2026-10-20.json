@@ -1,0 +1,725 @@
+{
+  "count": 36,
+  "purpose": "Keep historical evidence decisions auditable; do not treat baseline positives as clearance when an independent follow-up rejects or cannot substantiate them.",
+  "rows": [
+    {
+      "city": "brampton",
+      "service": "cyber",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "brampton",
+          "service": "cyber",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "chatham-kent",
+      "service": "cctv",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "chatham-kent",
+          "service": "cctv",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "cornwall",
+      "service": "cyber",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "cornwall",
+          "service": "cyber",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "etobicoke",
+      "service": "cctv",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "etobicoke",
+          "service": "cctv",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "laurentian-hills",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "laurentian-hills",
+          "service": "consulting",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject security-consulting qualification: emergency preparedness/municipal emergency plan, household guidance, table of contents or fire-risk assessment does not establish security consulting. May remain separately labelled emergency-management background.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-york",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "north-york",
+          "service": "consulting",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject security-consulting qualification: emergency preparedness/municipal emergency plan, household guidance, table of contents or fire-risk assessment does not establish security consulting. May remain separately labelled emergency-management background.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-york",
+      "service": "cctv",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "north-york",
+          "service": "cctv",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-york",
+      "service": "intrusion",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "north-york",
+          "service": "intrusion",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-york",
+      "service": "access",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "north-york",
+          "service": "access",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-york",
+      "service": "remote",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "north-york",
+          "service": "remote",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "north-york",
+      "service": "guards",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "north-york",
+          "service": "guards",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "oakville",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "oakville",
+          "service": "consulting",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "orillia",
+      "service": "smart",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "orillia",
+          "service": "smart",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "peterborough",
+      "service": "cyber",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "peterborough",
+          "service": "cyber",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject standalone cybersecurity qualification: password advice for cameras, generic emergency guidance or municipal IT liaison is not a local cybersecurity service.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "picton",
+      "service": "cctv",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "picton",
+          "service": "cctv",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "saint-catharines",
+      "service": "access",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "saint-catharines",
+          "service": "access",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "scarborough",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "scarborough",
+          "service": "consulting",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject security-consulting qualification: emergency preparedness/municipal emergency plan, household guidance, table of contents or fire-risk assessment does not establish security consulting. May remain separately labelled emergency-management background.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "scarborough",
+      "service": "cctv",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "scarborough",
+          "service": "cctv",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "scarborough",
+      "service": "intrusion",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "scarborough",
+          "service": "intrusion",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "scarborough",
+      "service": "access",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "scarborough",
+          "service": "access",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "scarborough",
+      "service": "remote",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "scarborough",
+          "service": "remote",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "scarborough",
+      "service": "guards",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "scarborough",
+          "service": "guards",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "toronto",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "toronto",
+          "service": "consulting",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject security-consulting qualification: emergency preparedness/municipal emergency plan, household guidance, table of contents or fire-risk assessment does not establish security consulting. May remain separately labelled emergency-management background.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "toronto",
+      "service": "intrusion",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "toronto",
+          "service": "intrusion",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "toronto",
+      "service": "access",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "toronto",
+          "service": "access",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject service qualification: keyword/heading alone does not establish relevant scoped local service.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "toronto",
+      "service": "remote",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "toronto",
+          "service": "remote",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "toronto",
+      "service": "guards",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "toronto",
+          "service": "guards",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject service qualification: keyword/heading alone does not establish relevant scoped local service.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "waterloo",
+      "service": "cyber",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "waterloo",
+          "service": "cyber",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Delegated and unresolved: no search or fetch in this pass; no duplicate research performed by audit.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "york",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "york",
+          "service": "consulting",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Reject security-consulting qualification: emergency preparedness/municipal emergency plan, household guidance, table of contents or fire-risk assessment does not establish security consulting. May remain separately labelled emergency-management background.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "york",
+      "service": "cctv",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "york",
+          "service": "cctv",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "york",
+      "service": "intrusion",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "york",
+          "service": "intrusion",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "york",
+      "service": "access",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "york",
+          "service": "access",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "york",
+      "service": "remote",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "york",
+          "service": "remote",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Unresolved, not negative evidence: no verified service-specific candidate in supplied pass; empty search attempts are not exhaustive research.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "york",
+      "service": "guards",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "york",
+          "service": "guards",
+          "audit": "central-quality-2026-10-20.json",
+          "decision": "unresolved-gap",
+          "scope": "Retain gap: parent-city/county source is not district-specific evidence. Shared Toronto advice may be cited as Toronto-wide guidance only, not unique district evidence; municipal corporate policy is not private service availability.",
+          "limitations": [
+            "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
+            "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "baie-comeau",
+      "service": "intrusion",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "baie-comeau",
+          "service": "intrusion",
+          "audit": "east-quality-2026-10-20.json",
+          "decision": "needs-source-review",
+          "scope": "Municipal public-order index only",
+          "limitations": [
+            "No current private supplier delivery, licensing, consent or publication clearance established.",
+            "Current authoritative consolidated regulation and applicability require confirmation."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "quebec-city",
+      "service": "consulting",
+      "baseline": "usable-candidate",
+      "followup": [
+        {
+          "city": "quebec-city",
+          "service": "consulting",
+          "audit": "east-quality-2026-10-20.json",
+          "decision": "out-of-scope",
+          "scope": "Designated CUCQ properties/sectors only",
+          "limitations": [
+            "No current private supplier delivery, licensing, consent or publication clearance established."
+          ],
+          "publicationReady": false
+        }
+      ],
+      "publicationReady": false
+    }
+  ]
+}
