@@ -5,19 +5,28 @@
     "provinces": 13,
     "targets": 1800,
     "reviewDrafts": 1800,
-    "localBodies": 15,
-    "pairComparisons": 15,
+    "localBodies": 28,
+    "pairComparisons": 71,
     "exactNameSwaps": 0,
     "maxJaccard": 0,
     "maxContainment": 0,
-    "maxTokenJaccard": 0.20930232558139536,
-    "maxTrigramJaccard": 0.008771929824561403,
-    "draftsMissingServiceSpecificLocalResearch": 1785,
+    "maxTokenJaccard": 0.2926829268292683,
+    "maxTrigramJaccard": 0.017241379310344827,
+    "draftsMissingServiceSpecificLocalResearch": 1772,
     "deliveryBlocked": 225,
     "uncreatedTargets": 0,
     "repeatedBodyGroups": 8
   },
   "comparisons": [
+    {
+      "a": "happy-valley-goose-bay/cctv",
+      "b": "toronto/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.14457831325301204,
+      "trigramJaccard": 0
+    },
     {
       "a": "happy-valley-goose-bay/cctv",
       "b": "dawson/cctv",
@@ -37,12 +46,237 @@
       "trigramJaccard": 0.008771929824561403
     },
     {
+      "a": "toronto/cctv",
+      "b": "dawson/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.16470588235294117,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "toronto/cctv",
+      "b": "chetwynd/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.10975609756097561,
+      "trigramJaccard": 0
+    },
+    {
       "a": "dawson/cctv",
       "b": "chetwynd/cctv",
       "exactNameSwap": false,
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.11363636363636363,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "edmonton/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.14666666666666667,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "lethbridge/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.15789473684210525,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "vancouver/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.17567567567567569,
+      "trigramJaccard": 0.00980392156862745
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "happy-valley-goose-bay/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "iqaluit/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.2463768115942029,
+      "trigramJaccard": 0.009345794392523364
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "dawson/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.07954545454545454,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/intrusion",
+      "b": "chetwynd/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.07954545454545454,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/intrusion",
+      "b": "lethbridge/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.14285714285714285,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/intrusion",
+      "b": "vancouver/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.15853658536585366,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/intrusion",
+      "b": "happy-valley-goose-bay/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1566265060240964,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/intrusion",
+      "b": "iqaluit/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.189873417721519,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/intrusion",
+      "b": "dawson/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.09574468085106383,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/intrusion",
+      "b": "chetwynd/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.07291666666666667,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/intrusion",
+      "b": "vancouver/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12790697674418605,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/intrusion",
+      "b": "happy-valley-goose-bay/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12643678160919541,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/intrusion",
+      "b": "iqaluit/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1566265060240964,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/intrusion",
+      "b": "dawson/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.10526315789473684,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/intrusion",
+      "b": "chetwynd/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.09375,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/intrusion",
+      "b": "happy-valley-goose-bay/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.06593406593406594,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/intrusion",
+      "b": "iqaluit/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.20253164556962025,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/intrusion",
+      "b": "dawson/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.11827956989247312,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/intrusion",
+      "b": "chetwynd/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13043478260869565,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "happy-valley-goose-bay/intrusion",
+      "b": "iqaluit/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.11627906976744186,
       "trigramJaccard": 0
     },
     {
@@ -64,12 +298,174 @@
       "trigramJaccard": 0
     },
     {
+      "a": "iqaluit/intrusion",
+      "b": "dawson/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.09574468085106383,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "iqaluit/intrusion",
+      "b": "chetwynd/intrusion",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.09574468085106383,
+      "trigramJaccard": 0
+    },
+    {
       "a": "dawson/intrusion",
       "b": "chetwynd/intrusion",
       "exactNameSwap": false,
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.14285714285714285,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/access",
+      "b": "lethbridge/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.2926829268292683,
+      "trigramJaccard": 0.017241379310344827
+    },
+    {
+      "a": "calgary/access",
+      "b": "vancouver/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.24390243902439024,
+      "trigramJaccard": 0.00909090909090909
+    },
+    {
+      "a": "calgary/access",
+      "b": "happy-valley-goose-bay/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.21839080459770116,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/access",
+      "b": "toronto/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.16304347826086957,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/access",
+      "b": "dawson/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.275,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "calgary/access",
+      "b": "chetwynd/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.15053763440860216,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/access",
+      "b": "vancouver/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13043478260869565,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/access",
+      "b": "happy-valley-goose-bay/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.2,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/access",
+      "b": "toronto/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1978021978021978,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/access",
+      "b": "dawson/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.18181818181818182,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "lethbridge/access",
+      "b": "chetwynd/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1978021978021978,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/access",
+      "b": "happy-valley-goose-bay/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.16853932584269662,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/access",
+      "b": "toronto/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.15384615384615385,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/access",
+      "b": "dawson/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.14942528735632185,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "vancouver/access",
+      "b": "chetwynd/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.10526315789473684,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "happy-valley-goose-bay/access",
+      "b": "toronto/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.2247191011235955,
       "trigramJaccard": 0
     },
     {
@@ -91,12 +487,39 @@
       "trigramJaccard": 0
     },
     {
+      "a": "toronto/access",
+      "b": "dawson/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12903225806451613,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "toronto/access",
+      "b": "chetwynd/access",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.2087912087912088,
+      "trigramJaccard": 0
+    },
+    {
       "a": "dawson/access",
       "b": "chetwynd/access",
       "exactNameSwap": false,
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.1797752808988764,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "happy-valley-goose-bay/remote",
+      "b": "iqaluit/remote",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12195121951219512,
       "trigramJaccard": 0
     },
     {
@@ -118,12 +541,75 @@
       "trigramJaccard": 0
     },
     {
+      "a": "iqaluit/remote",
+      "b": "dawson/remote",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1625,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "iqaluit/remote",
+      "b": "chetwynd/remote",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13953488372093023,
+      "trigramJaccard": 0
+    },
+    {
       "a": "dawson/remote",
       "b": "chetwynd/remote",
       "exactNameSwap": false,
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.12222222222222222,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/smart",
+      "b": "happy-valley-goose-bay/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13636363636363635,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/smart",
+      "b": "toronto/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.23684210526315788,
+      "trigramJaccard": 0.00909090909090909
+    },
+    {
+      "a": "edmonton/smart",
+      "b": "dawson/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13953488372093023,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "edmonton/smart",
+      "b": "chetwynd/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.17857142857142858,
+      "trigramJaccard": 0.009009009009009009
+    },
+    {
+      "a": "happy-valley-goose-bay/smart",
+      "b": "toronto/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13953488372093023,
       "trigramJaccard": 0
     },
     {
@@ -142,6 +628,24 @@
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.17045454545454544,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "toronto/smart",
+      "b": "dawson/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.11627906976744186,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "toronto/smart",
+      "b": "chetwynd/smart",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.11494252873563218,
       "trigramJaccard": 0
     },
     {
@@ -541,7 +1045,6 @@
         "thorold",
         "thunder-bay",
         "timmins",
-        "toronto",
         "trenton",
         "waterloo",
         "welland",
@@ -613,7 +1116,7 @@
         "surrey",
         "richmond"
       ],
-      "count": 222,
+      "count": 221,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -621,13 +1124,10 @@
       "cities": [
         "banff",
         "brooks",
-        "calgary",
-        "edmonton",
         "fort-mcmurray",
         "grande-prairie",
         "jasper",
         "lake-louise",
-        "lethbridge",
         "medicine-hat",
         "red-deer",
         "saint-albert",
@@ -661,7 +1161,6 @@
         "revelstoke",
         "rossland",
         "trail",
-        "vancouver",
         "vernon",
         "victoria",
         "west-vancouver",
@@ -713,7 +1212,6 @@
         "springhill",
         "sydney",
         "yarmouth",
-        "iqaluit",
         "bancroft",
         "barrie",
         "belleville",
@@ -842,7 +1340,7 @@
         "surrey",
         "richmond"
       ],
-      "count": 222,
+      "count": 217,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -850,13 +1348,11 @@
       "cities": [
         "banff",
         "brooks",
-        "calgary",
         "edmonton",
         "fort-mcmurray",
         "grande-prairie",
         "jasper",
         "lake-louise",
-        "lethbridge",
         "medicine-hat",
         "red-deer",
         "saint-albert",
@@ -890,7 +1386,6 @@
         "revelstoke",
         "rossland",
         "trail",
-        "vancouver",
         "vernon",
         "victoria",
         "west-vancouver",
@@ -999,7 +1494,6 @@
         "thorold",
         "thunder-bay",
         "timmins",
-        "toronto",
         "trenton",
         "waterloo",
         "welland",
@@ -1071,7 +1565,7 @@
         "surrey",
         "richmond"
       ],
-      "count": 222,
+      "count": 218,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -1171,7 +1665,6 @@
         "springhill",
         "sydney",
         "yarmouth",
-        "iqaluit",
         "bancroft",
         "barrie",
         "belleville",
@@ -1300,7 +1793,7 @@
         "surrey",
         "richmond"
       ],
-      "count": 222,
+      "count": 221,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -1541,7 +2034,6 @@
         "banff",
         "brooks",
         "calgary",
-        "edmonton",
         "fort-mcmurray",
         "grande-prairie",
         "jasper",
@@ -1689,7 +2181,6 @@
         "thorold",
         "thunder-bay",
         "timmins",
-        "toronto",
         "trenton",
         "waterloo",
         "welland",
@@ -1761,7 +2252,7 @@
         "surrey",
         "richmond"
       ],
-      "count": 222,
+      "count": 220,
       "status": "shared-body-not-distinct-city-content"
     },
     {
