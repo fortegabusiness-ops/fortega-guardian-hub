@@ -55,7 +55,7 @@ function LocationsIndex() {
 
       <section className="border-b border-border bg-surface/30">
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
-          <div className="mt-10 space-y-12">
+          <div className="space-y-12">
 
             {REVIEW_PROVINCE_GROUPS.map(({ province, cities }) => {
               const hub = PROVINCE_BY_NAME[province];
