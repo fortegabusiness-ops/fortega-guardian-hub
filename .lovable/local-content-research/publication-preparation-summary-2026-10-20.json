@@ -30,5 +30,13 @@
   },
   "backup": "Source archive only; full database export, storage files and three inaccessible external images unresolved.",
   "publication": "No publication, draft approvals, production URL eligibility or sitemap changes.",
-  "evidence": "Follow-up assessment is not verified local substance. Independent rejects and uncertainties remain blocking."
+  "evidence": "Follow-up assessment is not verified local substance. Independent rejects and uncertainties remain blocking.",
+  "ontarioDiscoveryRepair": {
+    "communities": 66,
+    "serviceMappings": 528,
+    "sourceAttempts": 7,
+    "successfulCaptures": 6,
+    "checkedNarrowSourceCandidates": 6,
+    "exhaustive": false
+  }
 }

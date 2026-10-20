@@ -1,5 +1,5 @@
 {
-  "scope": "Independent regional audit records retain potentially conflicting evidence decisions separately; no wholesale replacement of baseline evidence or draft content. Ontario discovery repair remains pending.",
+  "scope": "Independent regional audits and exact-passage repair reviews retain potentially conflicting decisions separately; no wholesale replacement of baseline evidence or draft content. Recorded Ontario discovery repair is complete but finite, not exhaustive evidence.",
   "records": [
     {
       "city": "banff",
@@ -7473,6 +7473,78 @@
       "limitations": [
         "No current private supplier delivery, licensing, consent or publication clearance established.",
         "Current authoritative consolidated regulation and applicability require confirmation."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "fort-frances",
+      "service": "cctv",
+      "audit": "central-repair-source-review-2026-10-20.json",
+      "decision": "usable-scoped-research-candidate",
+      "scope": "Town-reported Safe Streets downtown surveillance upgrade; public programme, not all premises.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "london",
+      "service": "consulting",
+      "audit": "central-repair-source-review-2026-10-20.json",
+      "decision": "usable-scoped-research-candidate",
+      "scope": "City Security Services 2024\u20132027 business plan; municipal asset protection only, no supplier eligibility.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "london",
+      "service": "cctv",
+      "audit": "central-repair-source-review-2026-10-20.json",
+      "decision": "usable-scoped-research-candidate",
+      "scope": "City Security Services 2024\u20132027 business plan; municipal asset protection only, no supplier eligibility.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "london",
+      "service": "guards",
+      "audit": "central-repair-source-review-2026-10-20.json",
+      "decision": "usable-scoped-research-candidate",
+      "scope": "City Security Services 2024\u20132027 business plan; municipal asset protection only, no supplier eligibility.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "midland",
+      "service": "cctv",
+      "audit": "central-repair-source-review-2026-10-20.json",
+      "decision": "usable-scoped-research-candidate",
+      "scope": "Town-owned and leased properties only; municipal policy not universal private-sector rule.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
+      ],
+      "publicationReady": false
+    },
+    {
+      "city": "thorold",
+      "service": "cyber",
+      "audit": "central-repair-source-review-2026-10-20.json",
+      "decision": "usable-scoped-research-candidate",
+      "scope": "City incident update July 8, 2026; historical municipal response, not current vulnerability or all local businesses.",
+      "limitations": [
+        "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+        "No Fortega delivery, customer association, regulated eligibility or page approval established."
       ],
       "publicationReady": false
     }
