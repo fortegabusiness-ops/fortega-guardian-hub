@@ -76,7 +76,7 @@ function LocationsIndex() {
                         province
                       )}
                     </h3>
-                    <Link to="/location-review" search={{ province }} rel="nofollow" className="text-sm font-medium text-brand-glow">{cities.length} communities →</Link>
+                    <Link to="/location-review" search={{ province }} className="text-sm font-medium text-brand-glow">{cities.length} communities →</Link>
                   </div>
                   <ul className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
                     {cities.map(city => {
@@ -94,7 +94,7 @@ function LocationsIndex() {
                           </h4>
                           <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
                             {SERVICE_SLUGS.map(service => (
-                              <li key={service}><Link to="/location-review/$city/$service" params={{ city: city.slug, service }} rel="nofollow" className="text-muted-foreground transition-colors hover:text-brand-glow">{SERVICE_BY_SLUG[service]?.shortName}</Link></li>
+                              <li key={service}><Link to="/location-review/$city/$service" params={{ city: city.slug, service }} className="text-muted-foreground transition-colors hover:text-brand-glow">{SERVICE_BY_SLUG[service]?.shortName}</Link></li>
                             ))}
                           </ul>
                         </li>
