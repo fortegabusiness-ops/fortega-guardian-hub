@@ -1,10 +1,20 @@
 import { describe, test } from "node:test";
 import assert from "node:assert/strict";
-import { REVIEW_CITY_INVENTORY } from "./cities";
-import { getRelatedReviewCities, REVIEW_RESOURCE_LINKS } from "./location-review-links";
+import { CITIES, REVIEW_CITY_INVENTORY } from "./cities";
+import { getRelatedReviewCities, REVIEW_RESOURCE_LINKS, REVIEW_PROVINCE_GROUPS } from "./location-review-links";
 import { GUIDES } from "./resources";
 
 describe("review internal navigation", () => {
+  test("province review listings include all 225 communities without granting public eligibility", () => {
+    const listed = REVIEW_PROVINCE_GROUPS.flatMap(group => group.cities);
+    assert.equal(listed.length, 225);
+    assert.equal(new Set(listed.map(city => city.slug)).size, 225);
+    for (const group of REVIEW_PROVINCE_GROUPS) {
+      assert.ok(group.cities.every(city => city.province === group.province));
+    }
+    assert.ok(listed.some(city => city.slug === "brockville"));
+    assert.equal(CITIES.some(city => city.slug === "brockville"), false);
+  });
   test("every community is reachable from a same-province peer without deleted URLs", () => {
     const incoming = new Set<string>();
     for (const city of REVIEW_CITY_INVENTORY) {

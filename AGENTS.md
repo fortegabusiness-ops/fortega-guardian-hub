@@ -13,3 +13,4 @@
 - Keep additional verified municipal service-planning records in a browser-safe module with attributed sources; merge them only for the matching city and service so general municipal facts cannot silently qualify unrelated drafts.
 - Review navigation uses a deterministic same-province community ring, same-city service links and existing Fortega guides; all review addresses remain isolated from production eligibility.
 - Jurisdiction planning context uses reviewed source records separately from municipal evidence; regional guidance never clears a draft's missing city-specific evidence flag.
+- Public Locations review listings group the isolated review inventory by province and link only to nofollow review addresses; listing a community never changes public-city eligibility.
