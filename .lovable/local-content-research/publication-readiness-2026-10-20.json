@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-20T08:30:43.676Z",
+  "reviewedAt": "2026-10-20T08:36:03.091Z",
   "scope": "All review drafts; research records and code-level content/navigation checks. Not a rendered HTTP audit or publication approval.",
   "summary": {
     "rows": 1800,
@@ -40352,6 +40352,18 @@
             "Only saved-source passage checks; source currentness and private delivery remain unresolved."
           ],
           "publicationReady": false
+        },
+        {
+          "city": "fort-frances",
+          "service": "cctv",
+          "audit": "central-repair-source-review-2026-10-20.json",
+          "decision": "usable-scoped-research-candidate",
+          "scope": "Town-reported Safe Streets downtown surveillance upgrade; public programme, not all premises.",
+          "limitations": [
+            "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+            "No Fortega delivery, customer association, regulated eligibility or page approval established."
+          ],
+          "publicationReady": false
         }
       ],
       "evidenceDisagreement": false,
@@ -45685,6 +45697,18 @@
             "Only saved-source passage checks; source currentness and private delivery remain unresolved."
           ],
           "publicationReady": false
+        },
+        {
+          "city": "london",
+          "service": "consulting",
+          "audit": "central-repair-source-review-2026-10-20.json",
+          "decision": "usable-scoped-research-candidate",
+          "scope": "City Security Services 2024–2027 business plan; municipal asset protection only, no supplier eligibility.",
+          "limitations": [
+            "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+            "No Fortega delivery, customer association, regulated eligibility or page approval established."
+          ],
+          "publicationReady": false
         }
       ],
       "evidenceDisagreement": false,
@@ -45739,6 +45763,18 @@
           "limitations": [
             "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
             "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        },
+        {
+          "city": "london",
+          "service": "cctv",
+          "audit": "central-repair-source-review-2026-10-20.json",
+          "decision": "usable-scoped-research-candidate",
+          "scope": "City Security Services 2024–2027 business plan; municipal asset protection only, no supplier eligibility.",
+          "limitations": [
+            "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+            "No Fortega delivery, customer association, regulated eligibility or page approval established."
           ],
           "publicationReady": false
         }
@@ -45966,6 +46002,18 @@
             "Only saved-source passage checks; source currentness and private delivery remain unresolved."
           ],
           "publicationReady": false
+        },
+        {
+          "city": "london",
+          "service": "guards",
+          "audit": "central-repair-source-review-2026-10-20.json",
+          "decision": "usable-scoped-research-candidate",
+          "scope": "City Security Services 2024–2027 business plan; municipal asset protection only, no supplier eligibility.",
+          "limitations": [
+            "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+            "No Fortega delivery, customer association, regulated eligibility or page approval established."
+          ],
+          "publicationReady": false
         }
       ],
       "evidenceDisagreement": false,
@@ -46188,6 +46236,18 @@
           "limitations": [
             "Remove proposed service paragraph and supporting IDs; retain explicit unresolved service gap.",
             "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        },
+        {
+          "city": "midland",
+          "service": "cctv",
+          "audit": "central-repair-source-review-2026-10-20.json",
+          "decision": "usable-scoped-research-candidate",
+          "scope": "Town-owned and leased properties only; municipal policy not universal private-sector rule.",
+          "limitations": [
+            "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+            "No Fortega delivery, customer association, regulated eligibility or page approval established."
           ],
           "publicationReady": false
         }
@@ -58216,6 +58276,18 @@
           "limitations": [
             "Replace generic template with a short specific institution/programme/date statement and a full operative quote; keep private delivery unresolved.",
             "Only saved-source passage checks; source currentness and private delivery remain unresolved."
+          ],
+          "publicationReady": false
+        },
+        {
+          "city": "thorold",
+          "service": "cyber",
+          "audit": "central-repair-source-review-2026-10-20.json",
+          "decision": "usable-scoped-research-candidate",
+          "scope": "City incident update July 8, 2026; historical municipal response, not current vulnerability or all local businesses.",
+          "limitations": [
+            "Source-reported municipal context only; current implementation and project applicability require confirmation.",
+            "No Fortega delivery, customer association, regulated eligibility or page approval established."
           ],
           "publicationReady": false
         }
