@@ -228,7 +228,7 @@
       "target": "/services/intrusion/calgary",
       "keyword": "business alarm systems",
       "reviewUrl": "/location-review/calgary/intrusion",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -240,7 +240,7 @@
       "target": "/services/access/calgary",
       "keyword": "access control systems",
       "reviewUrl": "/location-review/calgary/access",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -324,7 +324,7 @@
       "target": "/services/intrusion/edmonton",
       "keyword": "business alarm systems",
       "reviewUrl": "/location-review/edmonton/intrusion",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -372,7 +372,7 @@
       "target": "/services/smart/edmonton",
       "keyword": "building automation systems",
       "reviewUrl": "/location-review/edmonton/smart",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -804,7 +804,7 @@
       "target": "/services/intrusion/lethbridge",
       "keyword": "business alarm systems",
       "reviewUrl": "/location-review/lethbridge/intrusion",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": false,
       "approvedForExpansion": false
     },
@@ -816,7 +816,7 @@
       "target": "/services/access/lethbridge",
       "keyword": "access control systems",
       "reviewUrl": "/location-review/lethbridge/access",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": false,
       "approvedForExpansion": false
     },
@@ -4068,7 +4068,7 @@
       "target": "/services/intrusion/vancouver",
       "keyword": "business alarm systems",
       "reviewUrl": "/location-review/vancouver/intrusion",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -4080,7 +4080,7 @@
       "target": "/services/access/vancouver",
       "keyword": "access control systems",
       "reviewUrl": "/location-review/vancouver/access",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -9156,7 +9156,7 @@
       "target": "/services/intrusion/iqaluit",
       "keyword": "business alarm systems",
       "reviewUrl": "/location-review/iqaluit/intrusion",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": false,
       "approvedForExpansion": false
     },
@@ -9180,7 +9180,7 @@
       "target": "/services/remote/iqaluit",
       "keyword": "remote video monitoring",
       "reviewUrl": "/location-review/iqaluit/remote",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": false,
       "approvedForExpansion": false
     },
@@ -14616,7 +14616,7 @@
       "target": "/services/cctv/toronto",
       "keyword": "security camera installation",
       "reviewUrl": "/location-review/toronto/cctv",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -14640,7 +14640,7 @@
       "target": "/services/access/toronto",
       "keyword": "access control systems",
       "reviewUrl": "/location-review/toronto/access",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
@@ -14676,7 +14676,7 @@
       "target": "/services/smart/toronto",
       "keyword": "building automation systems",
       "reviewUrl": "/location-review/toronto/smart",
-      "status": "insufficient-local-evidence",
+      "status": "needs-review",
       "currentlyEligible": true,
       "approvedForExpansion": false
     },
