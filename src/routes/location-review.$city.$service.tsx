@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { LocationServiceDraftPage } from "@/components/LocationServiceDraftPage";
 import { getLocationServiceDraft } from "@/lib/seo/location-service-drafts";
-import { SITE_URL } from "@/lib/seo/schema";
+import { faqSchema, jsonLd, SITE_URL } from "@/lib/seo/schema";
 
 /** Separate review addresses never grant eligibility to deleted production URLs. */
 export const Route = createFileRoute("/location-review/$city/$service")({
@@ -16,6 +16,7 @@ export const Route = createFileRoute("/location-review/$city/$service")({
     return {
       meta: [{ title }, { name: "description", content: description }, { name: "robots", content: "noindex, nofollow" }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }],
       links: loaderData ? [{ rel: "canonical", href: `${SITE_URL}/location-review/${loaderData.city.slug}/${loaderData.service.slug}` }] : [],
+      scripts: loaderData ? [jsonLd(faqSchema(loaderData.faqs))] : [],
     };
   },
   component: LocationServiceReview,
