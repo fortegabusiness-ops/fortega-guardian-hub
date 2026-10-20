@@ -5,17 +5,17 @@
     "provinces": 13,
     "targets": 1800,
     "reviewDrafts": 1800,
-    "localBodies": 28,
-    "pairComparisons": 71,
+    "localBodies": 30,
+    "pairComparisons": 80,
     "exactNameSwaps": 0,
     "maxJaccard": 0,
     "maxContainment": 0,
     "maxTokenJaccard": 0.2926829268292683,
     "maxTrigramJaccard": 0.017241379310344827,
-    "draftsMissingServiceSpecificLocalResearch": 1772,
+    "draftsMissingServiceSpecificLocalResearch": 1770,
     "deliveryBlocked": 225,
     "uncreatedTargets": 0,
-    "repeatedBodyGroups": 8
+    "repeatedBodyGroups": 91
   },
   "comparisons": [
     {
@@ -25,6 +25,24 @@
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.14457831325301204,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "happy-valley-goose-bay/cctv",
+      "b": "charlottetown/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.09278350515463918,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "happy-valley-goose-bay/cctv",
+      "b": "summerside/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13,
       "trigramJaccard": 0
     },
     {
@@ -47,6 +65,24 @@
     },
     {
       "a": "toronto/cctv",
+      "b": "charlottetown/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.1839080459770115,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "toronto/cctv",
+      "b": "summerside/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.25,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "toronto/cctv",
       "b": "dawson/cctv",
       "exactNameSwap": false,
       "jaccard": 0,
@@ -61,6 +97,51 @@
       "jaccard": 0,
       "containment": 0,
       "tokenJaccard": 0.10975609756097561,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "charlottetown/cctv",
+      "b": "summerside/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.16346153846153846,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "charlottetown/cctv",
+      "b": "dawson/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.13402061855670103,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "charlottetown/cctv",
+      "b": "chetwynd/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.10869565217391304,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "summerside/cctv",
+      "b": "dawson/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.09345794392523364,
+      "trigramJaccard": 0
+    },
+    {
+      "a": "summerside/cctv",
+      "b": "chetwynd/cctv",
+      "exactNameSwap": false,
+      "jaccard": 0,
+      "containment": 0,
+      "tokenJaccard": 0.12371134020618557,
       "trigramJaccard": 0
     },
     {
@@ -673,7 +754,14 @@
         "lethbridge",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -709,6 +797,16 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond",
+        "chetwynd"
+      ],
+      "count": 38,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -718,14 +816,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -739,12 +851,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 14,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -756,8 +882,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
-        "iqaluit",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -822,11 +954,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 66,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -870,7 +1018,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -878,17 +1033,18 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "dawson",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond",
-        "chetwynd"
+        "uranium-city"
       ],
-      "count": 225,
+      "count": 8,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "consulting",
+      "cities": [
+        "dawson",
+        "watson-lake"
+      ],
+      "count": 2,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -905,7 +1061,14 @@
         "lethbridge",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -941,6 +1104,15 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond"
+      ],
+      "count": 37,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -950,14 +1122,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -970,12 +1156,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 13,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -987,8 +1187,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
-        "iqaluit",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -1052,11 +1258,25 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 65,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "borden",
         "cavendish",
-        "charlottetown",
-        "souris",
-        "summerside",
+        "souris"
+      ],
+      "count": 3,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -1100,7 +1320,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cctv",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -1108,15 +1335,9 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond"
+        "uranium-city"
       ],
-      "count": 221,
+      "count": 8,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -1130,7 +1351,14 @@
         "lake-louise",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 9,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -1165,6 +1393,15 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond"
+      ],
+      "count": 36,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -1174,14 +1411,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -1194,12 +1445,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 13,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -1211,7 +1476,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -1276,11 +1548,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 66,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -1324,7 +1612,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "intrusion",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -1332,15 +1627,9 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond"
+        "uranium-city"
       ],
-      "count": 217,
+      "count": 8,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -1355,7 +1644,14 @@
         "lake-louise",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -1390,6 +1686,15 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond"
+      ],
+      "count": 36,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -1399,14 +1704,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -1419,12 +1738,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 13,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -1436,8 +1769,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
-        "iqaluit",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -1501,11 +1840,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 65,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -1549,7 +1904,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "access",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -1557,15 +1919,9 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond"
+        "uranium-city"
       ],
-      "count": 218,
+      "count": 8,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -1582,7 +1938,14 @@
         "lethbridge",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -1618,6 +1981,15 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond"
+      ],
+      "count": 37,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -1627,14 +1999,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -1647,12 +2033,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 13,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -1664,7 +2064,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -1729,11 +2136,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 66,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -1777,7 +2200,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "remote",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -1785,15 +2215,9 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond"
+        "uranium-city"
       ],
-      "count": 221,
+      "count": 8,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -1810,7 +2234,14 @@
         "lethbridge",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -1846,6 +2277,16 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond",
+        "chetwynd"
+      ],
+      "count": 38,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -1855,14 +2296,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -1876,12 +2331,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 14,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -1893,8 +2362,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
-        "iqaluit",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -1959,11 +2434,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 66,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -2007,7 +2498,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -2015,17 +2513,18 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "dawson",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond",
-        "chetwynd"
+        "uranium-city"
       ],
-      "count": 225,
+      "count": 8,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "guards",
+      "cities": [
+        "dawson",
+        "watson-lake"
+      ],
+      "count": 2,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -2041,7 +2540,14 @@
         "lethbridge",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 11,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -2077,6 +2583,15 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond"
+      ],
+      "count": 37,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -2086,14 +2601,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -2106,12 +2635,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 13,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -2123,8 +2666,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
-        "iqaluit",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -2188,11 +2737,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 65,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -2236,7 +2801,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "smart",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -2244,15 +2816,9 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond"
+        "uranium-city"
       ],
-      "count": 220,
+      "count": 8,
       "status": "shared-body-not-distinct-city-content"
     },
     {
@@ -2269,7 +2835,14 @@
         "lethbridge",
         "medicine-hat",
         "red-deer",
-        "saint-albert",
+        "saint-albert"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "barkerville",
         "burnaby",
         "campbell-river",
@@ -2305,6 +2878,16 @@
         "victoria",
         "west-vancouver",
         "white-rock",
+        "surrey",
+        "richmond",
+        "chetwynd"
+      ],
+      "count": 38,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "brandon",
         "churchill",
         "dauphin",
@@ -2314,14 +2897,28 @@
         "swan-river",
         "thompson",
         "winnipeg",
-        "york-factory",
+        "york-factory"
+      ],
+      "count": 10,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "bathurst",
         "caraquet",
         "dalhousie",
         "fredericton",
         "miramichi",
         "moncton",
-        "saint-john",
+        "saint-john"
+      ],
+      "count": 7,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "argentia",
         "bonavista",
         "channel-port-aux-basques",
@@ -2335,12 +2932,26 @@
         "placentia",
         "saint-anthony",
         "st-johns",
-        "wabana",
+        "wabana"
+      ],
+      "count": 14,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "fort-smith",
         "hay-river",
         "inuvik",
         "tuktoyaktuk",
-        "yellowknife",
+        "yellowknife"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "baddeck",
         "digby",
         "glace-bay",
@@ -2352,8 +2963,14 @@
         "port-hawkesbury",
         "springhill",
         "sydney",
-        "yarmouth",
-        "iqaluit",
+        "yarmouth"
+      ],
+      "count": 12,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "bancroft",
         "barrie",
         "belleville",
@@ -2418,11 +3035,27 @@
         "windsor",
         "woodstock",
         "york",
+        "vaughan",
+        "markham"
+      ],
+      "count": 66,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "borden",
         "cavendish",
         "charlottetown",
         "souris",
-        "summerside",
+        "summerside"
+      ],
+      "count": 5,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "asbestos",
         "baie-comeau",
         "beloeil",
@@ -2466,7 +3099,14 @@
         "sorel-tracy",
         "trois-rivieres",
         "val-dor",
-        "waskaganish",
+        "waskaganish"
+      ],
+      "count": 44,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
         "batoche",
         "cumberland-house",
         "estevan",
@@ -2474,17 +3114,18 @@
         "prince-albert",
         "regina",
         "saskatoon",
-        "uranium-city",
-        "dawson",
-        "watson-lake",
-        "whitehorse",
-        "vaughan",
-        "markham",
-        "surrey",
-        "richmond",
-        "chetwynd"
+        "uranium-city"
       ],
-      "count": 225,
+      "count": 8,
+      "status": "shared-body-not-distinct-city-content"
+    },
+    {
+      "service": "cyber",
+      "cities": [
+        "dawson",
+        "watson-lake"
+      ],
+      "count": 2,
       "status": "shared-body-not-distinct-city-content"
     }
   ]
