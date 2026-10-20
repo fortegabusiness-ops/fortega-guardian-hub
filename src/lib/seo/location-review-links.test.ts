@@ -9,7 +9,9 @@ describe("review internal navigation", () => {
     const incoming = new Set<string>();
     for (const city of REVIEW_CITY_INVENTORY) {
       const related = getRelatedReviewCities(city);
-      assert.ok(related.length > 0, city.slug);
+      const peerCount = REVIEW_CITY_INVENTORY.filter(item => item.province === city.province).length;
+      if (peerCount === 1) { assert.equal(related.length, 0); incoming.add(city.slug); }
+      else assert.ok(related.length > 0, city.slug);
       assert.equal(new Set(related.map(item => item.slug)).size, related.length);
       for (const peer of related) {
         assert.equal(peer.province, city.province);
