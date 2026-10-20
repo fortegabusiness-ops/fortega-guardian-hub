@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { SITE_URL } from "@/lib/seo/schema";
 
 export const Route = createFileRoute("/location-review/")({
-  validateSearch: (search: Record<string, unknown>) => ({ province: typeof search.province === "string" ? search.province : "", service: typeof search.service === "string" && SERVICE_SLUGS.includes(search.service) ? search.service : "" }),
+  validateSearch: (search: Record<string, unknown>): { province?: string; service?: string } => ({ province: typeof search.province === "string" ? search.province : undefined, service: typeof search.service === "string" && SERVICE_SLUGS.includes(search.service) ? search.service : undefined }),
   head: () => ({
     meta: [{ title: "City-service draft directory | Fortega" }, { name: "description", content: "Review security planning drafts for 225 Canadian communities across eight service topics." }, { name: "robots", content: "noindex, nofollow" }, { property: "og:title", content: "City-service draft directory | Fortega" }, { property: "og:description", content: "Fortega's Canadian city-service content review directory." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }],
     links: [{ rel: "canonical", href: `${SITE_URL}/location-review` }],
