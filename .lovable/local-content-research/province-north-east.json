@@ -1,0 +1,287 @@
+[
+  {
+    "slug": "newfoundland-and-labrador",
+    "contextHeading": "Newfoundland and Labrador context",
+    "contextBody": "Province-wide public-body CCTV guidelines from the provincial privacy commissioner cover necessity, camera locations/times, authorized viewing, storage and retention. Public works safety specifications are examples, not claims about every private premise.",
+    "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+    "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV planning and privacy",
+        "body": "For public bodies consider purpose, proportionate camera coverage, notice, authorized viewing and retention. The cited source is limited to its stated public-body or institutional scope.",
+        "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+        "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx"
+      },
+      "access": {
+        "heading": "Access control and life safety",
+        "body": "Coordinate controlled entry/door hardware with applicable building and fire rules and safe egress; confirm requirements with the authority having jurisdiction.",
+        "sourceTitle": "Official fire/building safety source",
+        "sourceUrl": "https://www.gov.nl.ca/ti/files/works-fire-life-safety.pdf"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection",
+        "body": "A site risk review can define monitored openings, zones, alarm handling and maintenance; source specifications are public-project examples, not universal mandates.",
+        "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+        "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx"
+      },
+      "remote": {
+        "heading": "Remote monitoring and escalation",
+        "body": "Document acknowledgment, contacts, escalation, communications resilience and incident records. Sources do not establish Fortega availability, coverage or response times.",
+        "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+        "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Consider controls and energy management within applicable code and owner requirements. National model-code scope does not itself establish local adoption.",
+        "sourceTitle": "National Energy Code of Canada for Buildings: 2025",
+        "sourceUrl": "https://publications-cnrc.canada.ca/eng/view/object/?id=0d558a8e-28fe-4b5d-bb73-35b5a3703e8b"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Manage connected equipment with controlled accounts, updates, network safeguards, logging and incident planning. Government policy sources apply within their published scope.",
+        "sourceTitle": "Government cybersecurity/information security source",
+        "sourceUrl": "https://www.gov.nl.ca/exec/ocio/office/branches/infrastructure-and-cybersecurity/"
+      },
+      "consulting": {
+        "heading": "Risk planning and consulting",
+        "body": "Plan against site-specific risks, privacy, life safety, operating workflows and system dependencies; this is planning guidance, not a claim of mandated consulting.",
+        "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+        "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx"
+      },
+      "guards": {
+        "heading": "Guard services",
+        "body": "Specify scope, supervision, post orders, reporting and escalation. No claim about licensing requirements or current provider availability.",
+        "sourceTitle": "OIPC Guidelines for Video Surveillance by Public Bodies in Newfoundland and Labrador",
+        "sourceUrl": "https://www.releases.gov.nl.ca/releases/2015/OIPC/0707n02.aspx"
+      }
+    }
+  },
+  {
+    "slug": "prince-edward-island",
+    "contextHeading": "Prince Edward Island context",
+    "contextBody": "PEI library surveillance policy is a public-library example, not a universal rule. Provincial building permit information states adoption of Tier 1 of the 2020 National Model Codes, including National Building and Energy Codes.",
+    "sourceTitle": "Video Surveillance Policy",
+    "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV planning and privacy",
+        "body": "For public bodies consider purpose, proportionate camera coverage, notice, authorized viewing and retention. The cited source is limited to its stated public-body or institutional scope.",
+        "sourceTitle": "Video Surveillance Policy",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy"
+      },
+      "access": {
+        "heading": "Access control and life safety",
+        "body": "Coordinate controlled entry/door hardware with applicable building and fire rules and safe egress; confirm requirements with the authority having jurisdiction.",
+        "sourceTitle": "Official fire/building safety source",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/land-and-environment/building-and-development-in-pei"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection",
+        "body": "A site risk review can define monitored openings, zones, alarm handling and maintenance; source specifications are public-project examples, not universal mandates.",
+        "sourceTitle": "Video Surveillance Policy",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy"
+      },
+      "remote": {
+        "heading": "Remote monitoring and escalation",
+        "body": "Document acknowledgment, contacts, escalation, communications resilience and incident records. Sources do not establish Fortega availability, coverage or response times.",
+        "sourceTitle": "Video Surveillance Policy",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Consider controls and energy management within applicable code and owner requirements. National model-code scope does not itself establish local adoption.",
+        "sourceTitle": "National Energy Code of Canada for Buildings: 2025",
+        "sourceUrl": "https://publications-cnrc.canada.ca/eng/view/object/?id=0d558a8e-28fe-4b5d-bb73-35b5a3703e8b"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Manage connected equipment with controlled accounts, updates, network safeguards, logging and incident planning. Government policy sources apply within their published scope.",
+        "sourceTitle": "Government cybersecurity/information security source",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/justice-and-public-safety/freedom-of-information-and-protection-of-privacy-foipp"
+      },
+      "consulting": {
+        "heading": "Risk planning and consulting",
+        "body": "Plan against site-specific risks, privacy, life safety, operating workflows and system dependencies; this is planning guidance, not a claim of mandated consulting.",
+        "sourceTitle": "Video Surveillance Policy",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy"
+      },
+      "guards": {
+        "heading": "Guard services",
+        "body": "Specify scope, supervision, post orders, reporting and escalation. No claim about licensing requirements or current provider availability.",
+        "sourceTitle": "Video Surveillance Policy",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/education-and-early-years/video-surveillance-policy"
+      }
+    }
+  },
+  {
+    "slug": "yukon",
+    "contextHeading": "Yukon context",
+    "contextBody": "Yukon privacy impact assessments describe particular public-sector camera projects, including Yukon Housing buildings in Whitehorse; these are localized examples, not territory-wide mandates.",
+    "sourceTitle": "Video Surveillance System - Pia-Summaries",
+    "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV planning and privacy",
+        "body": "For public bodies consider purpose, proportionate camera coverage, notice, authorized viewing and retention. The cited source is limited to its stated public-body or institutional scope.",
+        "sourceTitle": "Video Surveillance System - Pia-Summaries",
+        "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system"
+      },
+      "access": {
+        "heading": "Access control and life safety",
+        "body": "Coordinate controlled entry/door hardware with applicable building and fire rules and safe egress; confirm requirements with the authority having jurisdiction.",
+        "sourceTitle": "Official fire/building safety source",
+        "sourceUrl": "https://yukon.ca/sites/default/files/hpw/design_requirements_and_standards.pdf"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection",
+        "body": "A site risk review can define monitored openings, zones, alarm handling and maintenance; source specifications are public-project examples, not universal mandates.",
+        "sourceTitle": "Video Surveillance System - Pia-Summaries",
+        "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system"
+      },
+      "remote": {
+        "heading": "Remote monitoring and escalation",
+        "body": "Document acknowledgment, contacts, escalation, communications resilience and incident records. Sources do not establish Fortega availability, coverage or response times.",
+        "sourceTitle": "Video Surveillance System - Pia-Summaries",
+        "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Consider controls and energy management within applicable code and owner requirements. National model-code scope does not itself establish local adoption.",
+        "sourceTitle": "National Energy Code of Canada for Buildings: 2025",
+        "sourceUrl": "https://publications-cnrc.canada.ca/eng/view/object/?id=0d558a8e-28fe-4b5d-bb73-35b5a3703e8b"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Manage connected equipment with controlled accounts, updates, network safeguards, logging and incident planning. Government policy sources apply within their published scope.",
+        "sourceTitle": "Government cybersecurity/information security source",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/justice-and-public-safety/freedom-of-information-and-protection-of-privacy-foipp"
+      },
+      "consulting": {
+        "heading": "Risk planning and consulting",
+        "body": "Plan against site-specific risks, privacy, life safety, operating workflows and system dependencies; this is planning guidance, not a claim of mandated consulting.",
+        "sourceTitle": "Video Surveillance System - Pia-Summaries",
+        "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system"
+      },
+      "guards": {
+        "heading": "Guard services",
+        "body": "Specify scope, supervision, post orders, reporting and escalation. No claim about licensing requirements or current provider availability.",
+        "sourceTitle": "Video Surveillance System - Pia-Summaries",
+        "sourceUrl": "https://open.yukon.ca/pia-summaries/video-surveillance-system"
+      }
+    }
+  },
+  {
+    "slug": "northwest-territories",
+    "contextHeading": "Northwest Territories context",
+    "contextBody": "Official territorial sources include fire prevention regulation and a GNWT electronic information-security policy. That policy applies to government electronic information assets, not as a general private-sector specification.",
+    "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+    "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV planning and privacy",
+        "body": "For public bodies consider purpose, proportionate camera coverage, notice, authorized viewing and retention. The cited source is limited to its stated public-body or institutional scope.",
+        "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+        "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf"
+      },
+      "access": {
+        "heading": "Access control and life safety",
+        "body": "Coordinate controlled entry/door hardware with applicable building and fire rules and safe egress; confirm requirements with the authority having jurisdiction.",
+        "sourceTitle": "Official fire/building safety source",
+        "sourceUrl": "https://www.justice.gov.nt.ca/en/files/legislation/fire-prevention/fire-prevention.r1.pdf"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection",
+        "body": "A site risk review can define monitored openings, zones, alarm handling and maintenance; source specifications are public-project examples, not universal mandates.",
+        "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+        "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf"
+      },
+      "remote": {
+        "heading": "Remote monitoring and escalation",
+        "body": "Document acknowledgment, contacts, escalation, communications resilience and incident records. Sources do not establish Fortega availability, coverage or response times.",
+        "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+        "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Consider controls and energy management within applicable code and owner requirements. National model-code scope does not itself establish local adoption.",
+        "sourceTitle": "National Energy Code of Canada for Buildings: 2025",
+        "sourceUrl": "https://publications-cnrc.canada.ca/eng/view/object/?id=0d558a8e-28fe-4b5d-bb73-35b5a3703e8b"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Manage connected equipment with controlled accounts, updates, network safeguards, logging and incident planning. Government policy sources apply within their published scope.",
+        "sourceTitle": "Government cybersecurity/information security source",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/justice-and-public-safety/freedom-of-information-and-protection-of-privacy-foipp"
+      },
+      "consulting": {
+        "heading": "Risk planning and consulting",
+        "body": "Plan against site-specific risks, privacy, life safety, operating workflows and system dependencies; this is planning guidance, not a claim of mandated consulting.",
+        "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+        "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf"
+      },
+      "guards": {
+        "heading": "Guard services",
+        "body": "Specify scope, supervision, post orders, reporting and escalation. No claim about licensing requirements or current provider availability.",
+        "sourceTitle": "Policy GNWT INFORMATION TECHNOLOGY Electronic Information Security",
+        "sourceUrl": "https://www.fin.gov.nt.ca/sites/fin/files/electronic_information_security.pdf"
+      }
+    }
+  },
+  {
+    "slug": "nunavut",
+    "contextHeading": "Nunavut context",
+    "contextBody": "Nunavut Department of Education has school-specific video-surveillance guidance; the Fire Marshal’s Office is responsible for territorial fire and building safety. Neither is a general specification for every facility.",
+    "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+    "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV planning and privacy",
+        "body": "For public bodies consider purpose, proportionate camera coverage, notice, authorized viewing and retention. The cited source is limited to its stated public-body or institutional scope.",
+        "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+        "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf"
+      },
+      "access": {
+        "heading": "Access control and life safety",
+        "body": "Coordinate controlled entry/door hardware with applicable building and fire rules and safe egress; confirm requirements with the authority having jurisdiction.",
+        "sourceTitle": "Official fire/building safety source",
+        "sourceUrl": "https://www.gov.nu.ca/en/public-safety-and-emergencies/nunavut-fire-marshals-office"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection",
+        "body": "A site risk review can define monitored openings, zones, alarm handling and maintenance; source specifications are public-project examples, not universal mandates.",
+        "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+        "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf"
+      },
+      "remote": {
+        "heading": "Remote monitoring and escalation",
+        "body": "Document acknowledgment, contacts, escalation, communications resilience and incident records. Sources do not establish Fortega availability, coverage or response times.",
+        "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+        "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Consider controls and energy management within applicable code and owner requirements. National model-code scope does not itself establish local adoption.",
+        "sourceTitle": "National Energy Code of Canada for Buildings: 2025",
+        "sourceUrl": "https://publications-cnrc.canada.ca/eng/view/object/?id=0d558a8e-28fe-4b5d-bb73-35b5a3703e8b"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Manage connected equipment with controlled accounts, updates, network safeguards, logging and incident planning. Government policy sources apply within their published scope.",
+        "sourceTitle": "Government cybersecurity/information security source",
+        "sourceUrl": "https://www.princeedwardisland.ca/en/information/justice-and-public-safety/freedom-of-information-and-protection-of-privacy-foipp"
+      },
+      "consulting": {
+        "heading": "Risk planning and consulting",
+        "body": "Plan against site-specific risks, privacy, life safety, operating workflows and system dependencies; this is planning guidance, not a claim of mandated consulting.",
+        "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+        "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf"
+      },
+      "guards": {
+        "heading": "Guard services",
+        "body": "Specify scope, supervision, post orders, reporting and escalation. No claim about licensing requirements or current provider availability.",
+        "sourceTitle": "Video Surveillance and Recording in Schools Policy and Guidelines",
+        "sourceUrl": "https://www.gov.nu.ca/sites/default/files/policies-legislations/2023-12/Video%20Surveillance%20and%20Recording%20in%20Schools%20-%20ENG.pdf"
+      }
+    }
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "slug": "ontario",
+    "contextHeading": "Ontario context",
+    "contextBody": "Ontario privacy commissioner says video surveillance can create privacy risks and provides guidance on appropriateness, retention, notice and disclosure for public institutions; applicability to private businesses varies by governing law.",
+    "sourceTitle": "Guidelines for the Use of Video Surveillance",
+    "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV and privacy",
+        "body": "Before deployment, define purpose, field of view, notice, access to recordings and retention. The cited guidance is jurisdiction- and entity-specific; ask which privacy rules govern this site.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      },
+      "access": {
+        "heading": "Access control and egress",
+        "body": "Confirm exit function, lock hardware and release behaviour with the building/fire authority. Provincial source describes building/fire plan review; it does not determine approval for a particular access-control change.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection planning",
+        "body": "Ask about monitored zones, authorized contacts, alarm verification and false-alarm procedures. The provincial source does not establish a province-wide intrusion alarm process.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      },
+      "remote": {
+        "heading": "Remote escalation",
+        "body": "Ask who receives alerts, escalation order, response window and contact-update responsibility. These are project questions, not provincial facts established by the cited source.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Ontario says its energy and water reporting/benchmarking initiative helps building owners track performance and identify efficiency opportunities. Ask whether the property falls within the reporting program and what baseline data exists.",
+        "sourceTitle": "Report energy and water use in large buildings",
+        "sourceUrl": "https://www.ontario.ca/page/report-energy-water-use-large-buildings"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Ask about network segmentation, credentials, updates, vendor access and incident handling for connected systems. No province-wide technical standard is asserted here.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      },
+      "consulting": {
+        "heading": "Consulting and risk planning",
+        "body": "Begin with a site-specific inventory, threat and privacy assessment, life-safety interfaces and documented assumptions. These are planning prompts, not provincial legal requirements.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      },
+      "guards": {
+        "heading": "Guard operations",
+        "body": "Ask what duties, site instructions, training and escalation arrangements are needed. No licensing claim or province-specific guard requirement is made.",
+        "sourceTitle": "Guidelines for the Use of Video Surveillance",
+        "sourceUrl": "https://www.ipc.on.ca/en/resources-and-decisions/guidelines-use-video-surveillance"
+      }
+    }
+  },
+  {
+    "slug": "quebec",
+    "contextHeading": "Contexte québécois",
+    "contextBody": "La Commission d’accès à l’information indique qu’une image permettant d’identifier une personne constitue un renseignement personnel et propose des pratiques de vidéosurveillance pour les organismes publics et les entreprises.",
+    "sourceTitle": "La vidéosurveillance",
+    "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV and privacy",
+        "body": "Before deployment, define purpose, field of view, notice, access to recordings and retention. The cited guidance is jurisdiction- and entity-specific; ask which privacy rules govern this site.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      },
+      "access": {
+        "heading": "Access control and egress",
+        "body": "Confirm exit function, lock hardware and release behaviour with the building/fire authority. Provincial source describes building/fire plan review; it does not determine approval for a particular access-control change.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection planning",
+        "body": "Ask about monitored zones, authorized contacts, alarm verification and false-alarm procedures. The provincial source does not establish a province-wide intrusion alarm process.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      },
+      "remote": {
+        "heading": "Remote escalation",
+        "body": "Ask who receives alerts, escalation order, response window and contact-update responsibility. These are project questions, not provincial facts established by the cited source.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Ask what energy data, meters and controls are available and how outcomes will be measured. The selected provincial reference does not establish local energy savings or incentives.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Québec CAI says businesses should restrict access to personal information to authorized persons who need it for their duties. Ask how video/access logs and system accounts are controlled.",
+        "sourceTitle": "Utilisation et communication de renseignements personnels",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/protection-renseignements-personnels/information-entreprises-privees/utilisation-communication-renseignements-personnels"
+      },
+      "consulting": {
+        "heading": "Consulting and risk planning",
+        "body": "Begin with a site-specific inventory, threat and privacy assessment, life-safety interfaces and documented assumptions. These are planning prompts, not provincial legal requirements.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      },
+      "guards": {
+        "heading": "Guard operations",
+        "body": "Ask what duties, site instructions, training and escalation arrangements are needed. No licensing claim or province-specific guard requirement is made.",
+        "sourceTitle": "La vidéosurveillance",
+        "sourceUrl": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_FIC_Videosurv.pdf"
+      }
+    }
+  },
+  {
+    "slug": "new-brunswick",
+    "contextHeading": "New Brunswick context",
+    "contextBody": "New Brunswick says buildings must comply with applicable National Building and Fire Codes, and certain construction or occupancy projects require plan review before work begins. Project applicability should be confirmed with the Fire Marshal/local authority.",
+    "sourceTitle": "Fire inspections, plans and standards",
+    "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV and privacy",
+        "body": "Before deployment, define purpose, field of view, notice, access to recordings and retention. The cited guidance is jurisdiction- and entity-specific; ask which privacy rules govern this site.",
+        "sourceTitle": "Fire inspections, plans and standards",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "access": {
+        "heading": "Access control and egress",
+        "body": "Confirm exit function, lock hardware and release behaviour with the building/fire authority. Provincial source describes building/fire plan review; it does not determine approval for a particular access-control change.",
+        "sourceTitle": "Fire inspections, plans and standards - gnb.ca",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection planning",
+        "body": "Ask about monitored zones, authorized contacts, alarm verification and false-alarm procedures. The provincial source does not establish a province-wide intrusion alarm process.",
+        "sourceTitle": "Fire inspections, plans and standards",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "remote": {
+        "heading": "Remote escalation",
+        "body": "Ask who receives alerts, escalation order, response window and contact-update responsibility. These are project questions, not provincial facts established by the cited source.",
+        "sourceTitle": "Fire inspections, plans and standards",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Ask what energy data, meters and controls are available and how outcomes will be measured. The selected provincial reference does not establish local energy savings or incentives.",
+        "sourceTitle": "Fire inspections, plans and standards",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Ask about network segmentation, credentials, updates, vendor access and incident handling for connected systems. No province-wide technical standard is asserted here.",
+        "sourceTitle": "Fire inspections, plans and standards",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "consulting": {
+        "heading": "Consulting and risk planning",
+        "body": "Begin with a site-specific inventory, threat and privacy assessment, life-safety interfaces and documented assumptions. These are planning prompts, not provincial legal requirements.",
+        "sourceTitle": "Fire inspections, plans and standards",
+        "sourceUrl": "https://www.gnb.ca/en/org/office-fire-marshal/inspections-plans-standards.html"
+      },
+      "guards": {
+        "heading": "Guard operations",
+        "body": "New Brunswick public safety advice includes locks, lighting, cameras and neighbour awareness for homes. For a commercial guarding plan, ask about duties, site instructions and escalation; this residential advice does not specify commercial guard requirements.",
+        "sourceTitle": "Protecting your home and neighborhood - gnb.ca",
+        "sourceUrl": "https://www.gnb.ca/en/topic/laws-safety/community-safety/protecting-home-neighborhood.html"
+      }
+    }
+  },
+  {
+    "slug": "nova-scotia",
+    "contextHeading": "Nova Scotia context",
+    "contextBody": "Nova Scotia’s privacy commissioner provides video-surveillance guidance for public bodies and municipalities, addressing privacy obligations under FOIPOP and the Municipal Government Act; this is not blanket guidance for every private business.",
+    "sourceTitle": "Video Surveillance Guidelines",
+    "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf",
+    "serviceNotes": {
+      "cctv": {
+        "heading": "CCTV and privacy",
+        "body": "Before deployment, define purpose, field of view, notice, access to recordings and retention. The cited guidance is jurisdiction- and entity-specific; ask which privacy rules govern this site.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "access": {
+        "heading": "Access control and egress",
+        "body": "Confirm exit function, lock hardware and release behaviour with the building/fire authority. Provincial source describes building/fire plan review; it does not determine approval for a particular access-control change.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "intrusion": {
+        "heading": "Intrusion detection planning",
+        "body": "Ask about monitored zones, authorized contacts, alarm verification and false-alarm procedures. The provincial source does not establish a province-wide intrusion alarm process.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "remote": {
+        "heading": "Remote escalation",
+        "body": "Ask who receives alerts, escalation order, response window and contact-update responsibility. These are project questions, not provincial facts established by the cited source.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "smart": {
+        "heading": "Smart-building energy",
+        "body": "Ask what energy data, meters and controls are available and how outcomes will be measured. The selected provincial reference does not establish local energy savings or incentives.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "cyber": {
+        "heading": "Cybersecurity",
+        "body": "Ask about network segmentation, credentials, updates, vendor access and incident handling for connected systems. No province-wide technical standard is asserted here.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "consulting": {
+        "heading": "Consulting and risk planning",
+        "body": "Begin with a site-specific inventory, threat and privacy assessment, life-safety interfaces and documented assumptions. These are planning prompts, not provincial legal requirements.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      },
+      "guards": {
+        "heading": "Guard operations",
+        "body": "Ask what duties, site instructions, training and escalation arrangements are needed. No licensing claim or province-specific guard requirement is made.",
+        "sourceTitle": "Video Surveillance Guidelines",
+        "sourceUrl": "https://oipc.novascotia.ca/sites/default/files/publications/Video%20Surveillance%20Guidelines%202019%2012%2004.pdf"
+      }
+    }
+  }
+]

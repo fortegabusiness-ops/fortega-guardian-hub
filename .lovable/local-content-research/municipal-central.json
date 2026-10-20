@@ -1,0 +1,23 @@
+[
+  {
+    "city": "Toronto",
+    "service": "access control, CCTV",
+    "record": "Exhibition Place municipal board report recommends a grounds-wide security upgrade covering CCTV, card access and related infrastructure; it is a specific city-agency procurement record, not evidence of general city conditions or vendor availability.",
+    "sourceTitle": "Security System Upgrades Grounds-wide",
+    "sourceUrl": "https://www.toronto.ca/legdocs/mmis/2026/ep/bgrd/backgroundfile-287887.pdf"
+  },
+  {
+    "city": "Toronto",
+    "service": "smart building energy",
+    "record": "Toronto retrofit guide companion addresses building automation systems and can inform retrofit discovery; technical guidance does not imply savings or a specific municipal project.",
+    "sourceTitle": "Toronto Net Zero Retrofit Guide: Building Automation Systems",
+    "sourceUrl": "https://www.toronto.ca/wp-content/uploads/2025/08/87bd-P3.12-Building-Automation-Systems.pdf"
+  },
+  {
+    "city": "Halifax",
+    "service": "transit CCTV",
+    "record": "Halifax Regional Council record concerns an award for Halifax Transit vehicle CCTV surveillance system upgrade; it documents a specific municipal transit project, not general local demand.",
+    "sourceTitle": "Award - RFP #P17-023, Halifax Transit – Transit Vehicle CCTV Surveillance System Upgrade",
+    "sourceUrl": "https://www.halifax.ca/sites/default/files/documents/city-hall/regional-council/171128rc1411.pdf"
+  }
+]
