@@ -9,3 +9,4 @@
 - Review drafts use a separate historical-city inventory and attributed reference records; missing local evidence stays explicitly flagged, and full-body duplicate grouping must accompany local-only similarity scores.
 - Keep service search guidance and non-pricing FAQs in a shared browser-safe content module used by review drafts and existing service pages; visible FAQs and their structured data must use the same records to prevent divergence.
 - Keep additional verified municipal service-planning records in a browser-safe module with attributed sources; merge them only for the matching city and service so general municipal facts cannot silently qualify unrelated drafts.
+- Review navigation uses a deterministic same-province community ring, same-city service links and existing Fortega guides; all review addresses remain isolated from production eligibility.
