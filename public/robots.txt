@@ -1,5 +1,7 @@
 # Fortega Security — robots.txt
 # Allow general crawlers and major AI / answer-engine crawlers to read and cite our content.
+# All public community-service pages under /location-review/ are included.
+# Allowing a crawler does not guarantee indexing or AI answer inclusion.
 
 User-agent: *
 Allow: /
@@ -43,3 +45,10 @@ Allow: /
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 Sitemap: https://fortega.ca/sitemap.xml
+Sitemap: https://fortega.ca/sitemap-core.xml
+Sitemap: https://fortega.ca/sitemap-services.xml
+Sitemap: https://fortega.ca/sitemap-locations.xml
+Sitemap: https://fortega.ca/sitemap-service-areas.xml
+Sitemap: https://fortega.ca/sitemap-resources.xml
+Sitemap: https://fortega.ca/sitemap-fr.xml
+Sitemap: https://fortega.ca/sitemap-communities.xml
