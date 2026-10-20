@@ -321,8 +321,8 @@ export const GUIDES: Guide[] = [
         a: "Yes — most commercial panels support integration so that disarming follows a valid credential at the first door and arming happens on last-out, which removes the most common cause of accidental alarms.",
       },
       {
-        q: "Is integration worth it for a single small site?",
-        a: "Often yes, because the same investigation benefit applies. The question is cost: if the integration requires an expensive subscription tier, a small site may get most of the value from tight time sync and matching camera coverage at each controlled door.",
+        q: "Can a single small site benefit from access control and CCTV integration?",
+        a: "Linked door events and matching footage can support incident review at a single site. Confirm the supported integration, time synchronization and intended camera views, then test the actual workflow.",
       },
     ],
     related: ["choosing-a-commercial-access-control-system", "how-many-security-cameras-does-my-business-need", "security-system-cyber-hardening"],

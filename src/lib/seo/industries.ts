@@ -554,7 +554,7 @@ export const INDUSTRIES: Industry[] = [
     ],
     faqs: [
       { q: "Can Fortega secure a site without permanent power?", a: "Yes. Solar-powered camera trailers and cellular-connected alarms operate independently of site power and move with the project." },
-      { q: "Do you offer remote guarding as an alternative to static guards?", a: "Yes. Verified video monitoring with voice-down challenge typically costs a fraction of overnight static guards while improving response quality." },
+      { q: "How does remote video monitoring differ from static guarding?", a: "Remote video monitoring supports observation, verification and agreed escalation. It cannot perform physical visitor handling or attendance. Confirm required duties and delivery arrangements separately; Fortega's eligibility for guard delivery remains unresolved." },
       { q: "Can you carry through to permanent security at occupancy?", a: "Yes. We design the permanent program up-front so handover at turnover is clean — no re-engineering, no re-procurement." },
       { q: "Do you handle multi-site general contractors?", a: "Yes. Fortega standardises hardware, monitoring procedures and reporting across portfolios so every project site reports the same way." },
     ],
