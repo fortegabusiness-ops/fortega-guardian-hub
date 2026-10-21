@@ -25,10 +25,10 @@ export function initAnalytics(): void {
   document.head.appendChild(script);
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: unknown[]) {
-    // eslint-disable-next-line prefer-rest-params -- gtag.js needs the Arguments object
-    window.dataLayer!.push(args.length ? args : arguments);
-  };
+  window.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params -- gtag.js only accepts the Arguments object
+    window.dataLayer!.push(arguments);
+  } as (...args: unknown[]) => void;
   window.gtag("set", "developer_id.dZjgwMW", true);
   window.gtag("js", new Date());
   // send_page_view: false — we send page_view manually so SPA route changes
