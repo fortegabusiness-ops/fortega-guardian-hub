@@ -15,11 +15,14 @@ mock.module("@/integrations/supabase/client.server", () => ({
   get supabaseAdmin() {
     if (setupFails) throw new Error("Missing SUPABASE_SERVICE_ROLE_KEY configuration");
     return {
-      from: () => ({ insert: async (row: Record<string, unknown>) => {
+      from: () => {
+        if (setupFails) throw new Error("Missing SUPABASE_SERVICE_ROLE_KEY configuration");
+        return { insert: async (row: Record<string, unknown>) => {
         if (logFails) throw new Error("Internal database failure");
         inserted.push(row);
         return { error: null };
-      } }),
+        } };
+      },
     };
   },
 }));
