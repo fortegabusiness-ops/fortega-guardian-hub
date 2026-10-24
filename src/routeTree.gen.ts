@@ -33,6 +33,7 @@ import { Route as IndustriesIndexRouteImport } from './routes/industries.index'
 import { Route as IndustriesIndustryRouteImport } from './routes/industries.$industry'
 import { Route as LocationReviewIndexRouteImport } from './routes/location-review.index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
+import { Route as LocationsCityRouteImport } from './routes/locations.$city'
 import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
 import { Route as ResourcesSlugRouteImport } from './routes/resources.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
@@ -43,6 +44,7 @@ import { Route as FrSecuriteIndexRouteImport } from './routes/fr.securite.index'
 import { Route as FrSecuriteCityRouteImport } from './routes/fr.securite.$city'
 import { Route as LocationReviewCityServiceRouteImport } from './routes/location-review.$city.$service'
 import { Route as LocationsCityIndexRouteImport } from './routes/locations.$city.index'
+import { Route as LocationsCityServiceRouteImport } from './routes/locations.$city.$service'
 import { Route as LocationsProvinceProvinceRouteImport } from './routes/locations.province.$province'
 import { Route as ServicesServiceIndexRouteImport } from './routes/services.$service.index'
 import { Route as ServicesServiceCityRouteImport } from './routes/services.$service.$city'
@@ -172,6 +174,11 @@ const LocationsIndexRoute = LocationsIndexRouteImport.update({
   path: '/locations/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LocationsCityRoute = LocationsCityRouteImport.update({
+  id: '/locations/$city',
+  path: '/locations/$city',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
   id: '/resources/',
   path: '/resources/',
@@ -221,9 +228,14 @@ const LocationReviewCityServiceRoute =
     getParentRoute: () => rootRouteImport,
   } as any)
 const LocationsCityIndexRoute = LocationsCityIndexRouteImport.update({
-  id: '/locations/$city/',
-  path: '/locations/$city/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => LocationsCityRoute,
+} as any)
+const LocationsCityServiceRoute = LocationsCityServiceRouteImport.update({
+  id: '/$service',
+  path: '/$service',
+  getParentRoute: () => LocationsCityRoute,
 } as any)
 const LocationsProvinceProvinceRoute =
   LocationsProvinceProvinceRouteImport.update({
@@ -269,6 +281,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
   '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
+  '/locations/$city': typeof LocationsCityRouteWithChildren
   '/resources/$slug': typeof ResourcesSlugRoute
   '/services/$service': typeof ServicesServiceRouteWithChildren
   '/blog/': typeof BlogIndexRoute
@@ -281,6 +294,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/fr/securite/$city': typeof FrSecuriteCityRoute
   '/location-review/$city/$service': typeof LocationReviewCityServiceRoute
+  '/locations/$city/$service': typeof LocationsCityServiceRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
   '/fr/securite/': typeof FrSecuriteIndexRoute
@@ -319,6 +333,7 @@ export interface FileRoutesByTo {
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/fr/securite/$city': typeof FrSecuriteCityRoute
   '/location-review/$city/$service': typeof LocationReviewCityServiceRoute
+  '/locations/$city/$service': typeof LocationsCityServiceRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
   '/fr/securite': typeof FrSecuriteIndexRoute
@@ -348,6 +363,7 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
   '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
+  '/locations/$city': typeof LocationsCityRouteWithChildren
   '/resources/$slug': typeof ResourcesSlugRoute
   '/services/$service': typeof ServicesServiceRouteWithChildren
   '/blog/': typeof BlogIndexRoute
@@ -360,6 +376,7 @@ export interface FileRoutesById {
   '/.well-known/mcp/server-card.json': typeof DotwellKnownMcpServerCardDotjsonRoute
   '/fr/securite/$city': typeof FrSecuriteCityRoute
   '/location-review/$city/$service': typeof LocationReviewCityServiceRoute
+  '/locations/$city/$service': typeof LocationsCityServiceRoute
   '/locations/province/$province': typeof LocationsProvinceProvinceRoute
   '/services/$service/$city': typeof ServicesServiceCityRoute
   '/fr/securite/': typeof FrSecuriteIndexRoute
@@ -390,6 +407,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/blog/$'
     | '/industries/$industry'
+    | '/locations/$city'
     | '/resources/$slug'
     | '/services/$service'
     | '/blog/'
@@ -402,6 +420,7 @@ export interface FileRouteTypes {
     | '/.well-known/mcp/server-card.json'
     | '/fr/securite/$city'
     | '/location-review/$city/$service'
+    | '/locations/$city/$service'
     | '/locations/province/$province'
     | '/services/$service/$city'
     | '/fr/securite/'
@@ -440,6 +459,7 @@ export interface FileRouteTypes {
     | '/.well-known/mcp/server-card.json'
     | '/fr/securite/$city'
     | '/location-review/$city/$service'
+    | '/locations/$city/$service'
     | '/locations/province/$province'
     | '/services/$service/$city'
     | '/fr/securite'
@@ -468,6 +488,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/blog/$'
     | '/industries/$industry'
+    | '/locations/$city'
     | '/resources/$slug'
     | '/services/$service'
     | '/blog/'
@@ -480,6 +501,7 @@ export interface FileRouteTypes {
     | '/.well-known/mcp/server-card.json'
     | '/fr/securite/$city'
     | '/location-review/$city/$service'
+    | '/locations/$city/$service'
     | '/locations/province/$province'
     | '/services/$service/$city'
     | '/fr/securite/'
@@ -509,6 +531,7 @@ export interface RootRouteChildren {
   DotwellKnownOauthProtectedResourceRoute: typeof DotwellKnownOauthProtectedResourceRoute
   BlogSplatRoute: typeof BlogSplatRoute
   IndustriesIndustryRoute: typeof IndustriesIndustryRoute
+  LocationsCityRoute: typeof LocationsCityRouteWithChildren
   ResourcesSlugRoute: typeof ResourcesSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
@@ -521,7 +544,6 @@ export interface RootRouteChildren {
   LocationReviewCityServiceRoute: typeof LocationReviewCityServiceRoute
   LocationsProvinceProvinceRoute: typeof LocationsProvinceProvinceRoute
   FrSecuriteIndexRoute: typeof FrSecuriteIndexRoute
-  LocationsCityIndexRoute: typeof LocationsCityIndexRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
@@ -695,6 +717,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/locations/$city': {
+      id: '/locations/$city'
+      path: '/locations/$city'
+      fullPath: '/locations/$city'
+      preLoaderRoute: typeof LocationsCityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/resources/': {
       id: '/resources/'
       path: '/resources'
@@ -760,10 +789,17 @@ declare module '@tanstack/react-router' {
     }
     '/locations/$city/': {
       id: '/locations/$city/'
-      path: '/locations/$city'
+      path: '/'
       fullPath: '/locations/$city/'
       preLoaderRoute: typeof LocationsCityIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof LocationsCityRoute
+    }
+    '/locations/$city/$service': {
+      id: '/locations/$city/$service'
+      path: '/$service'
+      fullPath: '/locations/$city/$service'
+      preLoaderRoute: typeof LocationsCityServiceRouteImport
+      parentRoute: typeof LocationsCityRoute
     }
     '/locations/province/$province': {
       id: '/locations/province/$province'
@@ -824,6 +860,20 @@ const ServicesRouteWithChildren = ServicesRoute._addFileChildren(
   ServicesRouteChildren,
 )
 
+interface LocationsCityRouteChildren {
+  LocationsCityServiceRoute: typeof LocationsCityServiceRoute
+  LocationsCityIndexRoute: typeof LocationsCityIndexRoute
+}
+
+const LocationsCityRouteChildren: LocationsCityRouteChildren = {
+  LocationsCityServiceRoute: LocationsCityServiceRoute,
+  LocationsCityIndexRoute: LocationsCityIndexRoute,
+}
+
+const LocationsCityRouteWithChildren = LocationsCityRoute._addFileChildren(
+  LocationsCityRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -847,6 +897,7 @@ const rootRouteChildren: RootRouteChildren = {
     DotwellKnownOauthProtectedResourceRoute,
   BlogSplatRoute: BlogSplatRoute,
   IndustriesIndustryRoute: IndustriesIndustryRoute,
+  LocationsCityRoute: LocationsCityRouteWithChildren,
   ResourcesSlugRoute: ResourcesSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,
@@ -860,7 +911,6 @@ const rootRouteChildren: RootRouteChildren = {
   LocationReviewCityServiceRoute: LocationReviewCityServiceRoute,
   LocationsProvinceProvinceRoute: LocationsProvinceProvinceRoute,
   FrSecuriteIndexRoute: FrSecuriteIndexRoute,
-  LocationsCityIndexRoute: LocationsCityIndexRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport

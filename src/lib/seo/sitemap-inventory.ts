@@ -1,11 +1,10 @@
-import { CITIES, REVIEW_CITY_INVENTORY } from "./cities";
+import { REVIEW_CITY_INVENTORY } from "./cities";
 import { PROVINCES } from "./provinces";
 import { SERVICES, SERVICE_SLUGS } from "./services";
-import { SERVICE_AREAS } from "./service-areas";
 import { INDUSTRIES } from "./industries";
 import { GUIDES } from "./resources";
 import { FR_CITIES } from "./fr";
-import { getLocationPilot } from "./location-pilots";
+import { OVERVIEW_CITIES } from "./community-addresses";
 import type { SitemapEntry } from "./sitemap";
 
 // Owner-authorized public URLs only; private research and deleted legacy addresses remain absent.
@@ -21,12 +20,9 @@ export const SITEMAP_GROUPS = {
   locations: [
     { path: "/locations" },
     ...PROVINCES.map((province) => ({ path: `/locations/province/${province.slug}` })),
-    ...CITIES.map((city) => ({
-      path: `/locations/${city.slug}`,
-      lastmod: getLocationPilot(city.slug)?.updated,
-    })),
+    ...OVERVIEW_CITIES.map((city) => ({ path: `/locations/${city.slug}` })),
   ],
-  "service-areas": SERVICE_AREAS.map((area) => ({ path: `/services/${area.service.slug}/${area.city.slug}` })),
+  "service-areas": [],
   resources: [
     { path: "/resources" },
     ...GUIDES.map((guide) => ({ path: `/resources/${guide.slug}` })),
@@ -36,9 +32,8 @@ export const SITEMAP_GROUPS = {
     ...FR_CITIES.map((city) => ({ path: `/fr/securite/${city.slug}` })),
   ],
   communities: [
-    { path: "/location-review" },
     ...REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.map((service) => ({
-      path: `/location-review/${city.slug}/${service}`,
+      path: `/locations/${city.slug}/${service}`,
     }))),
   ],
 } satisfies Record<string, SitemapEntry[]>;
