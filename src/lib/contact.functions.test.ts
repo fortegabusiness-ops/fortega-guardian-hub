@@ -1,3 +1,4 @@
+/// <reference types="bun" />
 import { afterEach, beforeEach, describe, expect, mock, test } from "bun:test";
 
 let setupFails = false;
