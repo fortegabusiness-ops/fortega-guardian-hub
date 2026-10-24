@@ -5,7 +5,8 @@
 - [x] Record alarm-package focus: CAD $25/month before tax, 60-month term, $0 upfront, specified devices; optional monitoring CAD $19.99/month extra; Canada-wide (owner-stated).
 - [x] Research and approve residential/business keywords — Abhay approved eight positives and three phrase exclusions on 2026-10-24; not applied to Google Ads.
 - [x] Prepare 15 headlines and four descriptions for the residential/business alarm package; all lines meet Google length limits, saved as pending approval.
-- [ ] Obtain ad-copy approval; resolve matching offer destination — published /services/intrusion lacks the package offer; awaits website authorization, remaining material terms and publication.
+- [x] Obtain approval of all 15 revised headlines and four unchanged descriptions — Abhay approved on 2026-10-24; nothing applied to Google Ads.
+- [ ] Resolve matching offer destination — published /services/intrusion lacks the package offer; awaits website authorization, remaining material terms and publication.
 - [ ] Agree consent, verify assessment measurement and live submission flow — awaits approved campaign content and consent decision.
 - [ ] Agree spend settings and create campaign — awaits measurement checks and explicit creation approval.
 
