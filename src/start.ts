@@ -15,8 +15,11 @@ const AGENT_DISCOVERY_LINKS = [
 ].join(", ");
 
 const agentDiscoveryHeaders = createMiddleware().server(async ({ next, request }) => {
-  const response = await next();
   const url = new URL(request.url);
+  if (url.pathname.startsWith("/lovable/")) {
+    return next();
+  }
+  const response = await next();
   if (url.pathname === "/" && response instanceof Response) {
     try {
       response.headers.append("Link", AGENT_DISCOVERY_LINKS);
@@ -33,6 +36,9 @@ const agentDiscoveryHeaders = createMiddleware().server(async ({ next, request }
  */
 const goneMiddleware = createMiddleware().server(async ({ next, request }) => {
   const url = new URL(request.url);
+  if (url.pathname.startsWith("/lovable/")) {
+    return next();
+  }
   const destination = getCommunityRedirect(url.pathname);
   if (destination) return new Response(null, { status: 301, headers: { Location: destination + url.search } });
   if (isLocationGone(url.pathname)) {
