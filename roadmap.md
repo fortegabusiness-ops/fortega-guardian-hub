@@ -2,7 +2,8 @@
 
 ## First Google Search campaign
 - [x] Record assessment-request goal, homeowners/businesses audience and Canada-wide scope; user selected Google Search. Connect Google Ads and select the user-approved account.
-- [ ] Agree service focus, ground brand, research and approve keywords and ad copy — awaits user service choice.
+- [x] Record alarm-package focus: CAD $25/month before tax, 60-month term, $0 upfront, specified devices; optional monitoring CAD $19.99/month extra; Canada-wide (owner-stated).
+- [ ] Ground the published offer, research and approve keywords and ad copy — Canadian Google planning estimates obtained; keyword approval, package destination and material offer checks pending.
 - [ ] Agree consent, verify assessment measurement and live submission flow — awaits approved campaign content and consent decision.
 - [ ] Agree spend settings and create campaign — awaits measurement checks and explicit creation approval.
 
