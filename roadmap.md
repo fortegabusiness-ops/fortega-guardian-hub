@@ -1,5 +1,11 @@
 # Fortega SEO roadmap
 
+## First Google Search campaign
+- [x] Record assessment-request goal, homeowners/businesses audience and Canada-wide scope; user selected Google Search. Connect Google Ads and select the user-approved account.
+- [ ] Agree service focus, ground brand, research and approve keywords and ad copy — awaits user service choice.
+- [ ] Agree consent, verify assessment measurement and live submission flow — awaits approved campaign content and consent decision.
+- [ ] Agree spend settings and create campaign — awaits measurement checks and explicit creation approval.
+
 ## Approved clean community addresses
 - [x] Save inspected source backup and exact migration map; excludes secrets, database contents, storage objects and external image originals.
 - [x] Created 225 city overviews, migrated 1,800 services and consolidated 208 overlapping service-city pages using direct permanent redirects. Updated discovery files to 2,086 primary URLs; all 2,086 responses and 2,009 redirects pass, 32 tests pass, desktop/phone navigation, dropdown answers and shared tracking verified. Preview only.
