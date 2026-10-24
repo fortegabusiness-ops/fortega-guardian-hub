@@ -8,7 +8,7 @@ import { compareDrafts, substantiveTokens } from '../src/lib/seo/location-draft-
 const cities = REVIEW_CITY_INVENTORY;
 const rows = cities.flatMap(city => SERVICE_SLUGS.map(service=> {
  const draft = LOCATION_SERVICE_DRAFTS.find(d=>d.city.slug===city.slug&&d.service.slug===service);
- return {city:city.slug, cityName:city.name, province:city.province, service, target:`/services/${service}/${city.slug}`, keyword:SERVICE_KEYWORDS[service as keyof typeof SERVICE_KEYWORDS].primary, reviewUrl:draft?`/location-review/${city.slug}/${service}`:null, status:draft?.status??'needs-city-research', currentlyEligible:SERVICE_AREA_COMBOS.some(a=>a.city===city.slug&&a.service===service), approvedForExpansion:false};
+ return {city:city.slug, cityName:city.name, province:city.province, service, target:`/locations/${city.slug}/${service}`, keyword:SERVICE_KEYWORDS[service as keyof typeof SERVICE_KEYWORDS].primary, reviewUrl:draft?`/locations/${city.slug}/${service}`:null, status:draft?.status??'needs-city-research', currentlyEligible:SERVICE_AREA_COMBOS.some(a=>a.city===city.slug&&a.service===service), approvedForExpansion:false};
 }));
 writeFileSync('.lovable/location-expansion-inventory.json',JSON.stringify({asOf:'2026-10-19',cities:cities.length,provinces:new Set(cities.map(c=>c.province)).size,targets:rows.length,rows},null,2));
 const comparisons = SERVICE_SLUGS.flatMap(service=>compareDrafts(LOCATION_SERVICE_DRAFTS.filter(d=>d.service.slug===service && d.local).map(d=>({id:`${d.city.slug}/${service}`,city:d.city.name,province:d.city.province,text:d.local?.body??''}))));

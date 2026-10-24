@@ -57,8 +57,8 @@ const rows = LOCATION_SERVICE_DRAFTS.map(draft => {
     'explicit-publication-authorization-required',
   ];
   return { city: draft.city.slug, province: draft.city.province, service: draft.service.slug,
-    reviewUrl: `/location-review/${draft.city.slug}/${draft.service.slug}`,
-    proposedProductionUrl: `/services/${draft.service.slug}/${draft.city.slug}`,
+    reviewUrl: `/locations/${draft.city.slug}/${draft.service.slug}`,
+    proposedProductionUrl: `/locations/${draft.city.slug}/${draft.service.slug}`,
     existingCoreProductionCombination: SERVICE_AREA_COMBOS.some(combo => combo.city === draft.city.slug && combo.service === draft.service.slug),
     researchDecision: evidence?.evidenceDecision ?? 'missing-assessment', checks, blockers,
     followupResearch: followupByDraft.get(`${draft.city.slug}/${draft.service.slug}`) ?? null,
