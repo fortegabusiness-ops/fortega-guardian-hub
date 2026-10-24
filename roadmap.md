@@ -52,3 +52,6 @@
 - 5. Case studies, testimonials, credentials (needs real client material)
 - 6. Resources/guides hub for AI answer engines
 - Remaining ~98 smaller cities still use province-level context (no invented local facts)
+
+## Open tasks
+- Start email-sending migration update (user consented 2026-10-24) after competitor research save.
