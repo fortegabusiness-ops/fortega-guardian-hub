@@ -2,7 +2,7 @@
 
 ## Approved clean community addresses
 - [x] Save inspected source backup and exact migration map; excludes secrets, database contents, storage objects and external image originals.
-- [ ] Create 225 city overviews, migrate 1,800 services, consolidate 208 overlapping service-city pages with direct redirects, update discovery files and verify navigation and tracking in preview.
+- [x] Created 225 city overviews, migrated 1,800 services and consolidated 208 overlapping service-city pages using direct permanent redirects. Updated discovery files to 2,086 primary URLs; all 2,086 responses and 2,009 redirects pass, 32 tests pass, desktop/phone navigation, dropdown answers and shared tracking verified. Preview only.
 - [ ] Publish clean addresses and notify search engines — awaits separate publication instruction.
 
 ## Whole-site discovery files
