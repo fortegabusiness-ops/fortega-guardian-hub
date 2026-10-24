@@ -48,7 +48,7 @@ import { Route as LocationsCityServiceRouteImport } from './routes/locations.$ci
 import { Route as LocationsProvinceProvinceRouteImport } from './routes/locations.province.$province'
 import { Route as ServicesServiceIndexRouteImport } from './routes/services.$service.index'
 import { Route as ServicesServiceCityRouteImport } from './routes/services.$service.$city'
-import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
+import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -253,10 +253,10 @@ const ServicesServiceCityRoute = ServicesServiceCityRouteImport.update({
   path: '/$city',
   getParentRoute: () => ServicesServiceRoute,
 } as any)
-const LovableEmailQueueProcessRoute =
-  LovableEmailQueueProcessRouteImport.update({
-    id: '/lovable/email/queue/process',
-    path: '/lovable/email/queue/process',
+const LovableEmailTransactionalPreviewRoute =
+  LovableEmailTransactionalPreviewRouteImport.update({
+    id: '/lovable/email/transactional/preview',
+    path: '/lovable/email/transactional/preview',
     getParentRoute: () => rootRouteImport,
   } as any)
 
@@ -300,7 +300,7 @@ export interface FileRoutesByFullPath {
   '/fr/securite/': typeof FrSecuriteIndexRoute
   '/locations/$city/': typeof LocationsCityIndexRoute
   '/services/$service/': typeof ServicesServiceIndexRoute
-  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -339,7 +339,7 @@ export interface FileRoutesByTo {
   '/fr/securite': typeof FrSecuriteIndexRoute
   '/locations/$city': typeof LocationsCityIndexRoute
   '/services/$service': typeof ServicesServiceIndexRoute
-  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -382,7 +382,7 @@ export interface FileRoutesById {
   '/fr/securite/': typeof FrSecuriteIndexRoute
   '/locations/$city/': typeof LocationsCityIndexRoute
   '/services/$service/': typeof ServicesServiceIndexRoute
-  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -426,7 +426,7 @@ export interface FileRouteTypes {
     | '/fr/securite/'
     | '/locations/$city/'
     | '/services/$service/'
-    | '/lovable/email/queue/process'
+    | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -465,7 +465,7 @@ export interface FileRouteTypes {
     | '/fr/securite'
     | '/locations/$city'
     | '/services/$service'
-    | '/lovable/email/queue/process'
+    | '/lovable/email/transactional/preview'
   id:
     | '__root__'
     | '/'
@@ -507,7 +507,7 @@ export interface FileRouteTypes {
     | '/fr/securite/'
     | '/locations/$city/'
     | '/services/$service/'
-    | '/lovable/email/queue/process'
+    | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -544,7 +544,7 @@ export interface RootRouteChildren {
   LocationReviewCityServiceRoute: typeof LocationReviewCityServiceRoute
   LocationsProvinceProvinceRoute: typeof LocationsProvinceProvinceRoute
   FrSecuriteIndexRoute: typeof FrSecuriteIndexRoute
-  LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
+  LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -822,11 +822,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesServiceCityRouteImport
       parentRoute: typeof ServicesServiceRoute
     }
-    '/lovable/email/queue/process': {
-      id: '/lovable/email/queue/process'
-      path: '/lovable/email/queue/process'
-      fullPath: '/lovable/email/queue/process'
-      preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
+    '/lovable/email/transactional/preview': {
+      id: '/lovable/email/transactional/preview'
+      path: '/lovable/email/transactional/preview'
+      fullPath: '/lovable/email/transactional/preview'
+      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -911,7 +911,7 @@ const rootRouteChildren: RootRouteChildren = {
   LocationReviewCityServiceRoute: LocationReviewCityServiceRoute,
   LocationsProvinceProvinceRoute: LocationsProvinceProvinceRoute,
   FrSecuriteIndexRoute: FrSecuriteIndexRoute,
-  LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
+  LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -9,73 +9,46 @@ const schema = z.object({
   message: z.string().trim().min(10).max(1500),
 });
 
-function esc(s: string) {
-  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]!));
-}
-
 export const submitContact = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => schema.parse(data))
   .handler(async ({ data }) => {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { sendTemplateEmail } = await import("@/lib/email-templates/send-email");
     const messageId = `contact-${crypto.randomUUID()}`;
     const RECIPIENT = "info@fortega.ca";
 
-    // Ensure an unsubscribe token exists for the recipient
-    let unsubscribeToken: string;
-    const { data: existing } = await supabaseAdmin
-      .from("email_unsubscribe_tokens")
-      .select("token")
-      .eq("email", RECIPIENT)
-      .maybeSingle();
-    if (existing?.token) {
-      unsubscribeToken = existing.token as string;
-    } else {
-      unsubscribeToken = crypto.randomUUID().replace(/-/g, "") + crypto.randomUUID().replace(/-/g, "");
-      await supabaseAdmin
-        .from("email_unsubscribe_tokens")
-        .insert({ token: unsubscribeToken, email: RECIPIENT });
+    try {
+      const result = await sendTemplateEmail("contact-notification", RECIPIENT, {
+        templateData: {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          service: data.service,
+          message: data.message,
+        },
+        idempotencyKey: messageId,
+        replyTo: data.email,
+      });
+
+      const { error: logError } = await supabaseAdmin.from("email_send_log").insert({
+        message_id: messageId,
+        template_name: "contact-form",
+        recipient_email: RECIPIENT,
+        status: result.sent ? "sent" : "suppressed",
+      });
+      if (logError) console.error("Failed to record contact email log", { code: logError.code, message: logError.message });
+    } catch (error) {
+      const errorMsg = error instanceof Error ? error.message : String(error);
+      const { error: logError } = await supabaseAdmin.from("email_send_log").insert({
+        message_id: messageId,
+        template_name: "contact-form",
+        recipient_email: RECIPIENT,
+        status: "failed",
+        error_message: errorMsg.slice(0, 1000),
+      });
+      if (logError) console.error("Failed to record contact email log", { code: logError.code, message: logError.message });
+      throw error instanceof Error ? error : new Error(errorMsg);
     }
-
-    const subject = `New contact request from ${data.name}`;
-    const html = `
-      <h2>New Contact Request</h2>
-      <p><strong>Name:</strong> ${esc(data.name)}</p>
-      <p><strong>Email:</strong> ${esc(data.email)}</p>
-      <p><strong>Phone:</strong> ${esc(data.phone)}</p>
-      <p><strong>Service:</strong> ${esc(data.service)}</p>
-      <p><strong>Message:</strong></p>
-      <p>${esc(data.message).replace(/\n/g, "<br/>")}</p>
-    `;
-    const text = `New Contact Request\n\nName: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nService: ${data.service}\n\nMessage:\n${data.message}`;
-
-    const payload = {
-      to: RECIPIENT,
-      from: "Fortega Website <notify@notify.fortega.ca>",
-      sender_domain: "notify.fortega.ca",
-      subject,
-      html,
-      text,
-      reply_to: data.email,
-      purpose: "transactional",
-      label: "contact-form",
-      message_id: messageId,
-      idempotency_key: messageId,
-      unsubscribe_token: unsubscribeToken,
-      queued_at: new Date().toISOString(),
-    };
-
-    const { error } = await supabaseAdmin.rpc("enqueue_email", {
-      queue_name: "transactional_emails",
-      payload,
-    });
-    if (error) throw new Error(error.message);
-
-    await supabaseAdmin.from("email_send_log").insert({
-      message_id: messageId,
-      template_name: "contact-form",
-      recipient_email: RECIPIENT,
-      status: "pending",
-    });
 
     return { ok: true };
   });
