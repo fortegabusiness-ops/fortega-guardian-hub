@@ -1,6 +1,6 @@
 # Fortega Security — robots.txt
 # Allow general crawlers and major AI / answer-engine crawlers to read and cite our content.
-# All public community-service pages under /location-review/ are included.
+# All public community-service pages under /locations/ are included.
 # Allowing a crawler does not guarantee indexing or AI answer inclusion.
 
 User-agent: *

@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CITIES } from "@/lib/seo/cities";
 import { PROVINCE_BY_NAME } from "@/lib/seo/provinces";
 import { REVIEW_PROVINCE_GROUPS } from "@/lib/seo/location-review-links";
 import { SERVICE_SLUGS, SERVICE_BY_SLUG } from "@/lib/seo/services";
@@ -9,6 +8,7 @@ const communityCount = REVIEW_PROVINCE_GROUPS.reduce((total, group) => total + g
 const locationsDescription = `Explore security planning for ${communityCount} Canadian communities, organized by province. Assessments can begin remotely using drawings, layouts and project details.`;
 
 export const Route = createFileRoute("/locations/")({
+  validateSearch: (search: Record<string, unknown>): { province?: string; service?: string } => ({ province: typeof search.province === "string" ? search.province : undefined, service: typeof search.service === "string" && SERVICE_SLUGS.includes(search.service) ? search.service : undefined }),
   head: () => ({
     meta: [
       { title: "Security Services Across Canada — Locations | Fortega" },
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/locations/")({
 });
 
 function LocationsIndex() {
-  const approvedSlugs = new Set(CITIES.map((c) => c.slug));
+  const filters = Route.useSearch();
   return (
     <>
       <section className="relative isolate overflow-hidden border-b border-border">
@@ -58,7 +58,7 @@ function LocationsIndex() {
         <div className="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
           <div className="space-y-12">
 
-            {REVIEW_PROVINCE_GROUPS.map(({ province, cities }) => {
+            {REVIEW_PROVINCE_GROUPS.filter(group => !filters.province || group.province === filters.province).map(({ province, cities }) => {
               const hub = PROVINCE_BY_NAME[province];
               return (
                 <div key={province}>
@@ -76,25 +76,22 @@ function LocationsIndex() {
                         province
                       )}
                     </h3>
-                    <Link to="/location-review" search={{ province }} className="text-sm font-medium text-brand-glow">{cities.length} communities →</Link>
+                    <Link to="/locations" search={{ province }} className="text-sm font-medium text-brand-glow">{cities.length} communities →</Link>
                   </div>
                   <ul className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
                     {cities.map(city => {
-                      const approved = approvedSlugs.has(city.slug);
                       return (
                         <li key={city.slug} className="min-w-0 border-t border-border pt-4" data-review-city={city.slug}>
                           <h4 className="font-semibold text-foreground">
-                            {approved ? (
+                            {(
                               <Link to="/locations/$city" params={{ city: city.slug }} className="hover:text-brand-glow">
                                 {city.name}
                               </Link>
-                            ) : (
-                              city.name
                             )}
                           </h4>
                           <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-                            {SERVICE_SLUGS.map(service => (
-                              <li key={service}><Link to="/location-review/$city/$service" params={{ city: city.slug, service }} className="text-muted-foreground transition-colors hover:text-brand-glow">{SERVICE_BY_SLUG[service]?.shortName}</Link></li>
+                            {SERVICE_SLUGS.filter(service => !filters.service || service === filters.service).map(service => (
+                              <li key={service}><Link to="/locations/$city/$service" params={{ city: city.slug, service }} className="text-muted-foreground transition-colors hover:text-brand-glow">{SERVICE_BY_SLUG[service]?.shortName}</Link></li>
                             ))}
                           </ul>
                         </li>
