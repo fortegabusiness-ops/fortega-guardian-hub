@@ -17,6 +17,7 @@ test("AI directory includes every authorized public address and no private addre
   for (const entry of Object.values(SITEMAP_GROUPS).flat()) {
     assert.ok(listed.includes(SITEMAP_BASE_URL + entry.path), entry.path);
   }
-  assert.equal(listed.filter((url) => url.includes("/location-review/")).length, 1800);
+  assert.equal(listed.filter((url) => /\/locations\/[^/]+\/[^/]+$/.test(url) && !url.includes("/province/")).length, 1800);
+  assert.equal(listed.some(url => url.includes("location-review")), false);
   assert.equal(listed.some((url) => /\/(api|admin|auth|lovable|internal)(\/|$)/.test(url)), false);
 });
