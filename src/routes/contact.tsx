@@ -81,8 +81,8 @@ function ContactPage() {
     try {
       await submit({ data: result.data });
       setSubmitted(true);
-    } catch (err) {
-      setServerError(err instanceof Error ? err.message : "Failed to send. Please try again.");
+    } catch {
+      setServerError("Unable to send your request. Please try again or call 1-888-869-1679.");
     } finally {
       setSending(false);
     }

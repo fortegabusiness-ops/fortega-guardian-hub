@@ -17,3 +17,4 @@
 - Jurisdiction planning context uses reviewed source records separately from municipal evidence; regional guidance never clears a draft's missing city-specific evidence flag.
 - Public Locations listings group the community-service inventory by province with crawlable links to its primary overview and service addresses; unrelated deleted legacy URLs remain protected.
 - City detail routing uses an Outlet layout with separate overview and service leaves so their titles, canonical addresses and bodies do not overlap.
+- Contact submission catches setup, sending and failure-log errors server-side and shows only a generic retry/call message; internal configuration and provider errors must never reach visitors.
