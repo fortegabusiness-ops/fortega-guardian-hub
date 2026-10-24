@@ -64,7 +64,7 @@ function buildFaqs(city: City) {
   return faqs;
 }
 
-export const Route = createFileRoute("/locations/$city")({
+export const Route = createFileRoute("/locations/$city/")({
   loader: ({ params }) => {
     const city = CITY_BY_SLUG[params.city];
     if (!city) throw notFound();
