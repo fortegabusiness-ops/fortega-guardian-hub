@@ -3,6 +3,7 @@ import { createStart, createMiddleware } from "@tanstack/react-start";
 import { renderErrorPage } from "./lib/error-page";
 import { attachSupabaseAuth } from "@/integrations/supabase/auth-attacher";
 import { isLocationGone } from "@/lib/seo/location-eligibility";
+import { getCommunityRedirect } from "@/lib/seo/community-addresses";
 
 const AGENT_DISCOVERY_LINKS = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
@@ -32,6 +33,8 @@ const agentDiscoveryHeaders = createMiddleware().server(async ({ next, request }
  */
 const goneMiddleware = createMiddleware().server(async ({ next, request }) => {
   const url = new URL(request.url);
+  const destination = getCommunityRedirect(url.pathname);
+  if (destination) return new Response(null, { status: 301, headers: { Location: destination + url.search } });
   if (isLocationGone(url.pathname)) {
     return new Response(null, { status: 410, statusText: "Gone" });
   }
