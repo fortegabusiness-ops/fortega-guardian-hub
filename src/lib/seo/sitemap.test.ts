@@ -10,7 +10,7 @@ import { GUIDES } from "./resources";
 import { INDUSTRIES } from "./industries";
 import { FR_CITIES } from "./fr";
 import { isLocationGone } from "./location-eligibility";
-import { getLocationPilot } from "./location-pilots";
+import { OVERVIEW_CITIES } from "./community-addresses";
 
 describe("whole-site public discovery inventory", () => {
   const entries = Object.values(SITEMAP_GROUPS).flat();
@@ -19,28 +19,26 @@ describe("whole-site public discovery inventory", () => {
     const expected = ["/", "/about", "/contact", "/industries", "/privacy", "/terms", "/services", "/locations", "/resources", "/fr/securite",
       ...INDUSTRIES.map((item) => `/industries/${item.slug}`),
       ...SERVICES.map((item) => `/services/${item.slug}`),
-      ...CITIES.map((item) => `/locations/${item.slug}`),
+      ...OVERVIEW_CITIES.map((item) => `/locations/${item.slug}`),
       ...PROVINCES.map((item) => `/locations/province/${item.slug}`),
-      ...SERVICE_AREAS.map((item) => `/services/${item.service.slug}/${item.city.slug}`),
       ...GUIDES.map((item) => `/resources/${item.slug}`),
       ...FR_CITIES.map((item) => `/fr/securite/${item.slug}`),
-      "/location-review",
-      ...REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.map((service) => `/location-review/${city.slug}/${service}`)),
+      ...REVIEW_CITY_INVENTORY.flatMap((city) => SERVICE_SLUGS.map((service) => `/locations/${city.slug}/${service}`)),
     ];
     assert.deepEqual([...paths].sort(), expected.sort());
     assert.equal(new Set(paths).size, paths.length);
   });
   test("includes all 1800 authorized community pages but excludes deleted and private addresses", () => {
-    assert.equal(SITEMAP_GROUPS.communities.length, 1801);
-    assert.equal(paths.includes("/location-review/iqaluit/cctv"), true);
+    assert.equal(SITEMAP_GROUPS.communities.length, 1800);
+    assert.equal(paths.includes("/locations/iqaluit/cctv"), true);
     assert.equal(paths.some((path) => path.startsWith("/api") || path.startsWith("/blog") || isLocationGone(path)), false);
-    assert.equal(paths.includes("/locations/iqaluit"), false);
+    assert.equal(paths.includes("/locations/iqaluit"), true);
     assert.equal(paths.includes("/services/cctv/dawson"), false);
   });
   test("retains only page-specific recorded modification dates", async () => {
     for (const entry of entries) {
       if ("lastmod" in entry && entry.lastmod) {
-        assert.equal(entry.lastmod, getLocationPilot(entry.path.split("/").at(-1) ?? "")?.updated);
+        assert.fail("No current inventory supplies a page-specific recorded revision after overview replacement");
       }
     }
     const undated = await sitemapXml([{ path: "/about" }]).text();

@@ -1,10 +1,12 @@
 import { CORE_CITY_SLUGS, isRemovedCity } from "./cities";
 import { getLocationPilot } from "./location-pilots";
 import { SERVICE_SLUGS } from "./services";
+import { COMMUNITY_BY_SLUG } from "./community-addresses";
 
 export function isLocationGone(pathname: string) {
   const parts = pathname.split("/").filter(Boolean);
   if (parts[0] === "locations" && parts.length === 2) {
+    if (COMMUNITY_BY_SLUG[parts[1]]) return false;
     return !getLocationPilot(parts[1]) && isRemovedCity(parts[1]);
   }
   if (parts[0] === "services" && parts.length === 3) {

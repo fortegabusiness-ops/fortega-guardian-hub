@@ -268,7 +268,7 @@ function ServiceDetailPage() {
               {cityPages.map((a) => (
                 <Link
                   key={a.city.slug}
-                  to="/services/$service/$city"
+                  to="/locations/$city/$service"
                   params={{ service: a.service.slug, city: a.city.slug }}
                   className="rounded-full border border-border bg-surface/40 px-4 py-1.5 text-sm text-foreground hover:border-brand-glow/60"
                 >

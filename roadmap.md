@@ -1,5 +1,10 @@
 # Fortega SEO roadmap
 
+## Approved clean community addresses
+- [x] Save inspected source backup and exact migration map; excludes secrets, database contents, storage objects and external image originals.
+- [x] Created 225 city overviews, migrated 1,800 services and consolidated 208 overlapping service-city pages using direct permanent redirects. Updated discovery files to 2,086 primary URLs; all 2,086 responses and 2,009 redirects pass, 32 tests pass, desktop/phone navigation, dropdown answers and shared tracking verified. Preview only.
+- [ ] Publish clean addresses and notify search engines — awaits separate publication instruction.
+
 ## Whole-site discovery files
 - [x] Refreshed robots.txt with the sitemap index and all seven child sections; regenerated llms.txt with described links for all 2,099 public pages, including 1,800 community services. Added discovery-file regression checks; all 28 SEO tests and live file checks pass. Not published.
 - [x] Owner authorized all 1,800 community-service addresses and their directory for indexing. Added seventh sitemap section and generated AI directory for 2,099 public pages; removed indexing blocks on valid community addresses and nofollow on all 1,800 Locations links. Verified every public address for HTTP 200, indexing, canonical and metadata, plus legacy 410/invalid 404; 26 tests pass. Private research and factual-readiness approval remain separate. Not published.

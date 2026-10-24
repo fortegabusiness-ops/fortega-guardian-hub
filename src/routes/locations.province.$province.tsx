@@ -192,7 +192,7 @@ function ProvincePage() {
                     {g.areas.map((a) => (
                       <Link
                         key={`${a.service.slug}-${a.city.slug}`}
-                        to="/services/$service/$city"
+                        to="/locations/$city/$service"
                         params={{ service: a.service.slug, city: a.city.slug }}
                         className="rounded-full border border-border bg-background px-4 py-1.5 text-sm text-foreground hover:border-brand-glow/60"
                       >

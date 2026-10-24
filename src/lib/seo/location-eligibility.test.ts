@@ -15,8 +15,8 @@ describe("reviewed city-only pilot", () => {
       for (const service of SERVICE_SLUGS) assert.equal(isLocationGone(`/services/${service}/${slug}`), true);
     });
   }
-  test("other deleted communities remain gone", () => {
-    assert.equal(isLocationGone("/locations/iqaluit"), true);
+  test("authorized city overviews are restored but unrelated legacy services remain gone", () => {
+    assert.equal(isLocationGone("/locations/iqaluit"), false);
     assert.equal(isLocationGone("/services/cctv/iqaluit"), true);
     assert.equal(isLocationGone("/fr/securite/sherbrooke"), true);
   });
