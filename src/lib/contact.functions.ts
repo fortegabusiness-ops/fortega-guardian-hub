@@ -12,12 +12,13 @@ const schema = z.object({
 export const submitContact = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => schema.parse(data))
   .handler(async ({ data }) => {
-    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const { sendTemplateEmail } = await import("@/lib/email-templates/send-email");
-    const messageId = `contact-${crypto.randomUUID()}`;
+    let messageId: string | undefined;
     const RECIPIENT = "info@fortega.ca";
 
     try {
+      const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+      const { sendTemplateEmail } = await import("@/lib/email-templates/send-email");
+      messageId = `contact-${crypto.randomUUID()}`;
       const result = await sendTemplateEmail("contact-notification", RECIPIENT, {
         templateData: {
           name: data.name,
@@ -39,15 +40,21 @@ export const submitContact = createServerFn({ method: "POST" })
       if (logError) console.error("Failed to record contact email log", { code: logError.code, message: logError.message });
     } catch (error) {
       const errorMsg = error instanceof Error ? error.message : String(error);
-      const { error: logError } = await supabaseAdmin.from("email_send_log").insert({
-        message_id: messageId,
-        template_name: "contact-form",
-        recipient_email: RECIPIENT,
-        status: "failed",
-        error_message: errorMsg.slice(0, 1000),
-      });
-      if (logError) console.error("Failed to record contact email log", { code: logError.code, message: logError.message });
-      throw error instanceof Error ? error : new Error(errorMsg);
+      console.error("Contact submission failed", { messageId, message: errorMsg });
+      try {
+        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+        const { error: logError } = await supabaseAdmin.from("email_send_log").insert({
+          message_id: messageId,
+          template_name: "contact-form",
+          recipient_email: RECIPIENT,
+          status: "failed",
+          error_message: errorMsg.slice(0, 1000),
+        });
+        if (logError) console.error("Failed to record contact email log", { code: logError.code, message: logError.message });
+      } catch {
+        console.error("Failed to record contact email failure");
+      }
+      throw new Error("Unable to send your request. Please try again or call 1-888-869-1679.");
     }
 
     return { ok: true };
