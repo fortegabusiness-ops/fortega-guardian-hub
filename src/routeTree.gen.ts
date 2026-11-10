@@ -25,6 +25,7 @@ import { Route as SitemapServicesDotxmlRouteImport } from './routes/sitemap-serv
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as DotwellKnownApiCatalogRouteImport } from './routes/[.]well-known.api-catalog'
+import { Route as DotwellKnownMtaStsDottxtRouteImport } from './routes/[.]well-known.mta-sts[.]txt'
 import { Route as DotwellKnownOauthAuthorizationServerRouteImport } from './routes/[.]well-known.oauth-authorization-server'
 import { Route as DotwellKnownOauthProtectedResourceRouteImport } from './routes/[.]well-known.oauth-protected-resource'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
@@ -132,6 +133,12 @@ const DotwellKnownApiCatalogRoute = DotwellKnownApiCatalogRouteImport.update({
   path: '/.well-known/api-catalog',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DotwellKnownMtaStsDottxtRoute =
+  DotwellKnownMtaStsDottxtRouteImport.update({
+    id: '/.well-known/mta-sts.txt',
+    path: '/.well-known/mta-sts.txt',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DotwellKnownOauthAuthorizationServerRoute =
   DotwellKnownOauthAuthorizationServerRouteImport.update({
     id: '/.well-known/oauth-authorization-server',
@@ -277,6 +284,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
+  '/.well-known/mta-sts.txt': typeof DotwellKnownMtaStsDottxtRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
   '/blog/$': typeof BlogSplatRoute
@@ -318,6 +326,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
+  '/.well-known/mta-sts.txt': typeof DotwellKnownMtaStsDottxtRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
   '/blog/$': typeof BlogSplatRoute
@@ -359,6 +368,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/.well-known/api-catalog': typeof DotwellKnownApiCatalogRoute
+  '/.well-known/mta-sts.txt': typeof DotwellKnownMtaStsDottxtRoute
   '/.well-known/oauth-authorization-server': typeof DotwellKnownOauthAuthorizationServerRoute
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
   '/blog/$': typeof BlogSplatRoute
@@ -403,6 +413,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
+    | '/.well-known/mta-sts.txt'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$'
@@ -444,6 +455,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
+    | '/.well-known/mta-sts.txt'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$'
@@ -484,6 +496,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/.well-known/api-catalog'
+    | '/.well-known/mta-sts.txt'
     | '/.well-known/oauth-authorization-server'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$'
@@ -527,6 +540,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   DotwellKnownApiCatalogRoute: typeof DotwellKnownApiCatalogRoute
+  DotwellKnownMtaStsDottxtRoute: typeof DotwellKnownMtaStsDottxtRoute
   DotwellKnownOauthAuthorizationServerRoute: typeof DotwellKnownOauthAuthorizationServerRoute
   DotwellKnownOauthProtectedResourceRoute: typeof DotwellKnownOauthProtectedResourceRoute
   BlogSplatRoute: typeof BlogSplatRoute
@@ -659,6 +673,13 @@ declare module '@tanstack/react-router' {
       path: '/.well-known/api-catalog'
       fullPath: '/.well-known/api-catalog'
       preLoaderRoute: typeof DotwellKnownApiCatalogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/mta-sts.txt': {
+      id: '/.well-known/mta-sts.txt'
+      path: '/.well-known/mta-sts.txt'
+      fullPath: '/.well-known/mta-sts.txt'
+      preLoaderRoute: typeof DotwellKnownMtaStsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.well-known/oauth-authorization-server': {
@@ -891,6 +912,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   DotwellKnownApiCatalogRoute: DotwellKnownApiCatalogRoute,
+  DotwellKnownMtaStsDottxtRoute: DotwellKnownMtaStsDottxtRoute,
   DotwellKnownOauthAuthorizationServerRoute:
     DotwellKnownOauthAuthorizationServerRoute,
   DotwellKnownOauthProtectedResourceRoute:
