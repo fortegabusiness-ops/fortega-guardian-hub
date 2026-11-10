@@ -1,0 +1,4 @@
+version: STSv1
+mode: testing
+mx: fortega-ca.mail.protection.outlook.com
+max_age: 86400
