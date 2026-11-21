@@ -109,7 +109,7 @@ function AlarmPackagePage() {
               </a>
             </div>
           </div>
-          <div className="lg:col-span-5">
+          <div className="self-start lg:col-span-5">
             <div className="rounded-2xl border border-brand-glow/40 bg-surface p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-foreground">Starting at</p>
               <p className="mt-2 font-display text-6xl font-bold text-foreground">$25<span className="text-2xl text-muted-foreground">/month</span></p>
@@ -119,9 +119,6 @@ function AlarmPackagePage() {
                   <li key={i.title} className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-brand-glow" />{i.title}</li>
                 ))}
               </ul>
-              <p className="mt-6 text-xs text-muted-foreground">
-                Prices in CAD, taxes extra. Your package price and terms are confirmed in writing after your free assessment.
-              </p>
             </div>
           </div>
         </div>
@@ -130,7 +127,7 @@ function AlarmPackagePage() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <h2 className="font-display text-3xl font-bold text-foreground">What's in the package</h2>
-          <p className="mt-3 max-w-2xl text-muted-foreground">Everything you need to start protecting doors, windows and key areas — for homes, shops and offices.</p>
+          <p className="mt-3 max-w-2xl text-muted-foreground">Everything you need to start protecting doors, windows and key areas — for homes, shops, offices, buildings and commercial properties.</p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {included.map(({ icon: Icon, title, text }) => (
               <div key={title} className="rounded-2xl border border-border bg-surface p-6">
