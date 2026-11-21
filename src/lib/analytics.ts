@@ -5,6 +5,11 @@ const measurementId = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_ANALYTICS_AP
   | string
   | undefined;
 
+// Google Ads account Fortega Prime (8582529417) tag and the
+// "Alarm package assessment request" lead conversion.
+export const GOOGLE_ADS_ID = "AW-18534266502";
+export const ALARM_LEAD_SEND_TO = "AW-18534266502/VCTGCLiru7wdEIbt6YVF";
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -16,12 +21,11 @@ let initialized = false;
 
 export function initAnalytics(): void {
   if (typeof window === "undefined" || initialized) return;
-  if (!measurementId) return;
   initialized = true;
 
   const script = document.createElement("script");
   script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId ?? GOOGLE_ADS_ID}`;
   document.head.appendChild(script);
 
   window.dataLayer = window.dataLayer || [];
@@ -33,7 +37,17 @@ export function initAnalytics(): void {
   window.gtag("js", new Date());
   // send_page_view: false — we send page_view manually so SPA route changes
   // are tracked exactly once with the correct path.
-  window.gtag("config", measurementId, { send_page_view: false });
+  if (measurementId) window.gtag("config", measurementId, { send_page_view: false });
+  window.gtag("config", GOOGLE_ADS_ID);
+}
+
+export function trackAlarmLeadConversion(): void {
+  if (typeof window === "undefined" || !window.gtag) return;
+  window.gtag("event", "conversion", {
+    send_to: ALARM_LEAD_SEND_TO,
+    value: 0,
+    currency: "CAD",
+  });
 }
 
 export function trackPageView(path: string): void {

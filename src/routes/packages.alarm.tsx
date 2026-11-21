@@ -4,6 +4,7 @@ import { z } from "zod";
 import { useServerFn } from "@tanstack/react-start";
 import { ArrowRight, Camera, CheckCircle2, DoorOpen, Phone, Radar, Router, Tablet } from "lucide-react";
 import { submitContact } from "@/lib/contact.functions";
+import { trackAlarmLeadConversion } from "@/lib/analytics";
 import { breadcrumbSchema, jsonLd, SITE_URL, socialMeta } from "@/lib/seo/schema";
 
 const TITLE = "Alarm Systems From $25/Month, $0 Upfront | Fortega";
@@ -78,6 +79,7 @@ function AlarmPackagePage() {
           message: `Alarm package assessment request.\nProperty: ${d.property}\nCity: ${d.city}\nFree device choice: ${d.choice}${d.notes ? `\nNotes: ${d.notes}` : ""}`,
         },
       });
+      trackAlarmLeadConversion();
       setSubmitted(true);
     } catch {
       setServerError("Unable to send your request. Please try again or call 1-888-869-1679.");
