@@ -10,7 +10,7 @@ import type { SitemapEntry } from "./sitemap";
 // Owner-authorized public URLs only; private research and deleted legacy addresses remain absent.
 export const SITEMAP_GROUPS = {
   core: [
-    ...["/", "/about", "/contact", "/industries", "/privacy", "/terms"].map((path) => ({ path })),
+    ...["/", "/about", "/contact", "/packages/alarm", "/industries", "/privacy", "/terms"].map((path) => ({ path })),
     ...INDUSTRIES.map((industry) => ({ path: `/industries/${industry.slug}` })),
   ],
   services: [

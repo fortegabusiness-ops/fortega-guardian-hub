@@ -35,6 +35,7 @@ import { Route as IndustriesIndustryRouteImport } from './routes/industries.$ind
 import { Route as LocationReviewIndexRouteImport } from './routes/location-review.index'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as LocationsCityRouteImport } from './routes/locations.$city'
+import { Route as PackagesAlarmRouteImport } from './routes/packages.alarm'
 import { Route as ResourcesIndexRouteImport } from './routes/resources.index'
 import { Route as ResourcesSlugRouteImport } from './routes/resources.$slug'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
@@ -186,6 +187,11 @@ const LocationsCityRoute = LocationsCityRouteImport.update({
   path: '/locations/$city',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PackagesAlarmRoute = PackagesAlarmRouteImport.update({
+  id: '/packages/alarm',
+  path: '/packages/alarm',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
   id: '/resources/',
   path: '/resources/',
@@ -290,6 +296,7 @@ export interface FileRoutesByFullPath {
   '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRouteWithChildren
+  '/packages/alarm': typeof PackagesAlarmRoute
   '/resources/$slug': typeof ResourcesSlugRoute
   '/services/$service': typeof ServicesServiceRouteWithChildren
   '/blog/': typeof BlogIndexRoute
@@ -331,6 +338,7 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof DotwellKnownOauthProtectedResourceRoute
   '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
+  '/packages/alarm': typeof PackagesAlarmRoute
   '/resources/$slug': typeof ResourcesSlugRoute
   '/blog': typeof BlogIndexRoute
   '/industries': typeof IndustriesIndexRoute
@@ -374,6 +382,7 @@ export interface FileRoutesById {
   '/blog/$': typeof BlogSplatRoute
   '/industries/$industry': typeof IndustriesIndustryRoute
   '/locations/$city': typeof LocationsCityRouteWithChildren
+  '/packages/alarm': typeof PackagesAlarmRoute
   '/resources/$slug': typeof ResourcesSlugRoute
   '/services/$service': typeof ServicesServiceRouteWithChildren
   '/blog/': typeof BlogIndexRoute
@@ -419,6 +428,7 @@ export interface FileRouteTypes {
     | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
+    | '/packages/alarm'
     | '/resources/$slug'
     | '/services/$service'
     | '/blog/'
@@ -460,6 +470,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/blog/$'
     | '/industries/$industry'
+    | '/packages/alarm'
     | '/resources/$slug'
     | '/blog'
     | '/industries'
@@ -502,6 +513,7 @@ export interface FileRouteTypes {
     | '/blog/$'
     | '/industries/$industry'
     | '/locations/$city'
+    | '/packages/alarm'
     | '/resources/$slug'
     | '/services/$service'
     | '/blog/'
@@ -546,6 +558,7 @@ export interface RootRouteChildren {
   BlogSplatRoute: typeof BlogSplatRoute
   IndustriesIndustryRoute: typeof IndustriesIndustryRoute
   LocationsCityRoute: typeof LocationsCityRouteWithChildren
+  PackagesAlarmRoute: typeof PackagesAlarmRoute
   ResourcesSlugRoute: typeof ResourcesSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   IndustriesIndexRoute: typeof IndustriesIndexRoute
@@ -745,6 +758,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsCityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/packages/alarm': {
+      id: '/packages/alarm'
+      path: '/packages/alarm'
+      fullPath: '/packages/alarm'
+      preLoaderRoute: typeof PackagesAlarmRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/resources/': {
       id: '/resources/'
       path: '/resources'
@@ -920,6 +940,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogSplatRoute: BlogSplatRoute,
   IndustriesIndustryRoute: IndustriesIndustryRoute,
   LocationsCityRoute: LocationsCityRouteWithChildren,
+  PackagesAlarmRoute: PackagesAlarmRoute,
   ResourcesSlugRoute: ResourcesSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   IndustriesIndexRoute: IndustriesIndexRoute,

@@ -16,7 +16,7 @@ describe("whole-site public discovery inventory", () => {
   const entries = Object.values(SITEMAP_GROUPS).flat();
   const paths = entries.map((entry) => entry.path);
   test("covers each public content inventory once", () => {
-    const expected = ["/", "/about", "/contact", "/industries", "/privacy", "/terms", "/services", "/locations", "/resources", "/fr/securite",
+    const expected = ["/", "/about", "/contact", "/packages/alarm", "/industries", "/privacy", "/terms", "/services", "/locations", "/resources", "/fr/securite",
       ...INDUSTRIES.map((item) => `/industries/${item.slug}`),
       ...SERVICES.map((item) => `/services/${item.slug}`),
       ...OVERVIEW_CITIES.map((item) => `/locations/${item.slug}`),
