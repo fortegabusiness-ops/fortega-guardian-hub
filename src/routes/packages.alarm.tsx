@@ -97,7 +97,7 @@ function AlarmPackagePage() {
               Alarm systems from $25/month. $0 upfront.
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-              Protect your home or business with a smart alarm package — and choose a free camera or
+              Protect your home or business with a smart home security alarm system or burglar alarm system — and choose a free camera or
               video doorbell. Request a free assessment and we'll recommend the right setup for your property.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -127,7 +127,7 @@ function AlarmPackagePage() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <h2 className="font-display text-3xl font-bold text-foreground">What's in the package</h2>
-          <p className="mt-3 max-w-2xl text-muted-foreground">Everything you need to start protecting doors, windows and key areas — for homes, shops, offices, buildings and commercial properties.</p>
+          <p className="mt-3 max-w-2xl text-muted-foreground">Everything you need to start protecting doors, windows and key areas — for homes, shops, offices, buildings and commercial properties. Ideal as a commercial burglar alarm system or one of our security alarm systems for business.</p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {included.map(({ icon: Icon, title, text }) => (
               <div key={title} className="rounded-2xl border border-border bg-surface p-6">
